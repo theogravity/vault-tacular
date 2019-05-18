@@ -11,9 +11,9 @@ then
     kill -9 $VAULT_PID
 fi
 
-export VAULT_API_ADDR='http://127.0.0.1:8200'
+export VAULT_API_ADDR='https://localhost:8200'
 
-vault server -dev -dev-root-token-id=root &
+vault server -dev -dev-root-token-id=root -config=dev-vault.hcl &
 sleep 2
 VAULT_PID=$!
 
