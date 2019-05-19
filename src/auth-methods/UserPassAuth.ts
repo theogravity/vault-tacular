@@ -1,5 +1,5 @@
 import { BaseAuth } from './BaseAuth'
-import { ISecret } from '../interfaces/auth-methods/IBaseAuth'
+import { ISecret } from '../interfaces/IBaseClient'
 import { IUserPassAuth } from '../interfaces/auth-methods/IUserPassAuth'
 import { IVaultResponse } from '../interfaces/IBaseClient'
 import {
@@ -29,7 +29,7 @@ export class UserPassAuth extends BaseAuth {
    * @link https://www.vaultproject.io/api/auth/userpass/index.html#create-update-user
    */
   async createOrUpdateUser (
-    token: VaultToken,
+    vToken: VaultToken,
     username: string,
     payload: IUserPassAuth.IUpsertPayload
   ): Promise<IVaultResponse<void>> {
@@ -37,7 +37,7 @@ export class UserPassAuth extends BaseAuth {
       this.getAPIUrl(UPSERT_PATH.replace(':username', username)),
       {
         headers: {
-          'X-Vault-Token': token
+          'X-Vault-Token': vToken
         },
         method: 'POST',
         json: payload

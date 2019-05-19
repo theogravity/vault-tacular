@@ -1,5 +1,5 @@
 import { BaseSysBackend } from './BaseSysBackend'
-import { IVaultResponse } from '../interfaces/IBaseClient'
+import { IVaultResponse, VaultToken } from '../interfaces/IBaseClient'
 
 const DEFAULT_PATH = '/sys/rotate'
 
@@ -11,8 +11,13 @@ export class RotateSysBackend extends BaseSysBackend {
    * previous encryption keys.
    * @link https://www.vaultproject.io/api/system/rotate.html#rotate-encryption-key
    */
-  async rotateEncryptionKey (): Promise<IVaultResponse<void>> {
+  async rotateEncryptionKey (
+    vToken: VaultToken
+  ): Promise<IVaultResponse<void>> {
     const res = await this.request(this.getAPIUrl(DEFAULT_PATH), {
+      headers: {
+        'X-Vault-Token': vToken
+      },
       method: 'PUT'
     })
 

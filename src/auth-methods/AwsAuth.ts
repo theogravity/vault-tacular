@@ -1,6 +1,6 @@
 import { BaseAuth } from './BaseAuth'
 import { IAwsAuth } from '../interfaces/auth-methods/IAwsAuth'
-import { ISecret } from '../interfaces/auth-methods/IBaseAuth'
+import { ISecret } from '../interfaces/IBaseClient'
 import { IVaultResponse } from '../interfaces/IBaseClient'
 import { BaseUrl, IBaseClientConfig } from '../interfaces/IBaseClient'
 

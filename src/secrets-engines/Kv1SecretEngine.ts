@@ -30,14 +30,14 @@ export class Kv1SecretEngine extends BaseSecretEngine {
    * @link https://www.vaultproject.io/api/secret/kv/kv-v1.html#read-secret
    */
   async readSecret (
-    token: VaultToken,
+    vToken: VaultToken,
     path: string
   ): Promise<IVaultResponse<IKv1SecretEngine.IReadSecretResponse>> {
     const res = await this.request(
       this.getAPIUrl(SECRET_READ_PATH.replace(':path', path)),
       {
         headers: {
-          'X-Vault-Token': token
+          'X-Vault-Token': vToken
         },
         method: 'GET'
       }
@@ -57,14 +57,14 @@ export class Kv1SecretEngine extends BaseSecretEngine {
    * @link https://www.vaultproject.io/api/secret/kv/kv-v1.html#list-secrets
    */
   async listSecrets (
-    token: VaultToken,
+    vToken: VaultToken,
     path: string
   ): Promise<IVaultResponse<IKv1SecretEngine.IListSecretsResponse>> {
     const res = await this.request(
       this.getAPIUrl(SECRET_LIST_PATH.replace(':path', path)),
       {
         headers: {
-          'X-Vault-Token': token
+          'X-Vault-Token': vToken
         },
         method: 'LIST'
       }
@@ -83,7 +83,7 @@ export class Kv1SecretEngine extends BaseSecretEngine {
    * @link https://www.vaultproject.io/api/secret/kv/kv-v1.html#create-update-secret
    */
   async createOrUpdateSecret (
-    token: VaultToken,
+    vToken: VaultToken,
     path: string,
     payload: IKv1SecretEngine.ICreateOrUpdateSecretPayload
   ): Promise<IVaultResponse<void>> {
@@ -91,7 +91,7 @@ export class Kv1SecretEngine extends BaseSecretEngine {
       this.getAPIUrl(SECRET_UPSERT_PATH.replace(':path', path)),
       {
         headers: {
-          'X-Vault-Token': token
+          'X-Vault-Token': vToken
         },
         method: 'POST',
         body: payload
@@ -108,14 +108,14 @@ export class Kv1SecretEngine extends BaseSecretEngine {
    * @link https://www.vaultproject.io/api/secret/kv/kv-v1.html#delete-secret
    */
   async deleteSecret (
-    token: VaultToken,
+    vToken: VaultToken,
     path: string
   ): Promise<IVaultResponse<void>> {
     const res = await this.request(
       this.getAPIUrl(SECRET_DELETE_PATH.replace(':path', path)),
       {
         headers: {
-          'X-Vault-Token': token
+          'X-Vault-Token': vToken
         },
         method: 'DELETE'
       }

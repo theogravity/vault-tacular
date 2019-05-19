@@ -1,5 +1,5 @@
 import { BaseAuth } from './BaseAuth'
-import { ISecret } from '../interfaces/auth-methods/IBaseAuth'
+import { ISecret } from '../interfaces/IBaseClient'
 import { ITlsCertificateAuth } from '../interfaces/auth-methods/ITlsCertificateAuth'
 import { IVaultResponse } from '../interfaces/IBaseClient'
 import {
@@ -29,7 +29,7 @@ export class TlsCertificateAuth extends BaseAuth {
    * @link https://www.vaultproject.io/api/auth/cert/index.html#create-ca-certificate-role
    */
   async createRole (
-    token: VaultToken,
+    vToken: VaultToken,
     name: string,
     payload: ITlsCertificateAuth.ICreateRolePayload
   ): Promise<IVaultResponse<void>> {
@@ -37,7 +37,7 @@ export class TlsCertificateAuth extends BaseAuth {
       this.getAPIUrl(CREATE_ROLE_PATH.replace(':name', name)),
       {
         headers: {
-          'X-Vault-Token': token
+          'X-Vault-Token': vToken
         },
         method: 'POST',
         json: payload
