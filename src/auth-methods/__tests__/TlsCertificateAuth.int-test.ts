@@ -17,9 +17,7 @@ const certKey = readFileSync(join(TEST_CERTS_DIR, 'rootCA.key'), {
   encoding: 'ASCII'
 })
 
-const auth = new TlsCertificateAuth({
-  baseUrl: process.env.VAULT_API_URL
-})
+const auth = new TlsCertificateAuth(process.env.VAULT_API_URL)
 
 describe('TlsCertificateAuth integration tests', () => {
   it('should login', async () => {

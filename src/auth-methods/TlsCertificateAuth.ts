@@ -2,7 +2,11 @@ import { BaseAuth } from './BaseAuth'
 import { ISecret } from '../interfaces/auth-methods/IBaseAuth'
 import { ITlsCertificateAuth } from '../interfaces/auth-methods/ITlsCertificateAuth'
 import { IVaultResponse } from '../interfaces'
-import { IBaseClientConfig, VaultToken } from '../interfaces/IBaseClient'
+import {
+  BaseUrl,
+  IBaseClientConfig,
+  VaultToken
+} from '../interfaces/IBaseClient'
 
 const DEFAULT_MOUNT_POINT = '/auth/cert'
 const CREATE_ROLE_PATH = '/certs/:name'
@@ -12,8 +16,8 @@ const LOGIN_PATH = '/login'
  * Uses TLS certificates for authentication.
  */
 export class TlsCertificateAuth extends BaseAuth {
-  constructor (config: IBaseClientConfig) {
-    super(config)
+  constructor (baseUrl: BaseUrl, config?: IBaseClientConfig) {
+    super(baseUrl, config)
 
     if (!this.config.mount) {
       this.config.mount = DEFAULT_MOUNT_POINT

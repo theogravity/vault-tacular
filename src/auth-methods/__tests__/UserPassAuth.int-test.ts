@@ -2,9 +2,7 @@ import cryptoRandomString from 'crypto-random-string'
 
 import { UserPassAuth } from '../UserPassAuth'
 
-const auth = new UserPassAuth({
-  baseUrl: process.env.VAULT_API_URL
-})
+const auth = new UserPassAuth(process.env.VAULT_API_URL)
 
 describe('UserPassAuth integration tests', () => {
   it('should login', async () => {

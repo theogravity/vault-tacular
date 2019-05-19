@@ -2,7 +2,11 @@ import { BaseAuth } from './BaseAuth'
 import { ISecret } from '../interfaces/auth-methods/IBaseAuth'
 import { IUserPassAuth } from '../interfaces/auth-methods/IUserPassAuth'
 import { IVaultResponse } from '../interfaces'
-import { IBaseClientConfig, VaultToken } from '../interfaces/IBaseClient'
+import {
+  BaseUrl,
+  IBaseClientConfig,
+  VaultToken
+} from '../interfaces/IBaseClient'
 
 const DEFAULT_MOUNT_POINT = '/auth/userpass'
 const LOGIN_PATH = '/login/:username'
@@ -12,8 +16,8 @@ const UPSERT_PATH = '/users/:username'
  * Username and password-based auth
  */
 export class UserPassAuth extends BaseAuth {
-  constructor (config: IBaseClientConfig) {
-    super(config)
+  constructor (baseUrl: BaseUrl, config?: IBaseClientConfig) {
+    super(baseUrl, config)
 
     if (!this.config.mount) {
       this.config.mount = DEFAULT_MOUNT_POINT

@@ -5,36 +5,51 @@ import request, {
   RequestPromise
 } from 'request-promise-native'
 
-import { IBaseClientConfig } from './interfaces/IBaseClient'
+import { BaseUrl, IBaseClientConfig } from './interfaces/IBaseClient'
 
 export abstract class BaseClient {
   protected config: IBaseClientConfig
+  protected baseUrl: BaseUrl
   private readonly httpClient: RequestPromiseAPI
 
-  protected constructor (config: IBaseClientConfig) {
+  protected constructor (baseUrl: BaseUrl, config: IBaseClientConfig = {}) {
+    this.baseUrl = baseUrl
     this.config = config
     this.httpClient = request
-
-    if (!this.config.logger) {
-      this.config.logger = console
-    }
   }
 
-  getLogger (): Partial<Console> {
-    return this.config.logger
-  }
-
+  /**
+   * Constructs a Vault URL
+   * @param path
+   */
   getAPIUrl (path: string) {
-    return this.config.baseUrl + this.config.mount + path
+    return this.baseUrl + this.config.mount + path
   }
 
   request (
     uri: string,
     options: RequestPromiseOptions = {}
   ): RequestPromise<FullResponse> {
-    return this.httpClient(uri, {
+    let opts = {
       resolveWithFullResponse: true,
       ...options
-    })
+    }
+
+    if (!opts.headers) {
+      opts.headers = {}
+    }
+
+    if (this.config.namespace) {
+      opts.headers['X-Vault-Namespace'] = this.config.namespace
+    }
+
+    if (this.config.reqOpts) {
+      opts = {
+        ...this.config.reqOpts,
+        ...opts
+      }
+    }
+
+    return this.httpClient(uri, opts)
   }
 }

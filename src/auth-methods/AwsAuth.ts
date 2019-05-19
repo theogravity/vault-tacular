@@ -2,7 +2,7 @@ import { BaseAuth } from './BaseAuth'
 import { IAwsAuth } from '../interfaces/auth-methods/IAwsAuth'
 import { ISecret } from '../interfaces/auth-methods/IBaseAuth'
 import { IVaultResponse } from '../interfaces'
-import { IBaseClientConfig } from '../interfaces/IBaseClient'
+import { BaseUrl, IBaseClientConfig } from '../interfaces/IBaseClient'
 
 const DEFAULT_MOUNT_POINT = '/auth/aws'
 const LOGIN_PATH = '/login'
@@ -11,8 +11,8 @@ const LOGIN_PATH = '/login'
  * The AWS secrets engine generates AWS access credentials dynamically based on IAM policies.
  */
 export class AwsAuth extends BaseAuth {
-  constructor (config: IBaseClientConfig) {
-    super(config)
+  constructor (baseUrl: BaseUrl, config?: IBaseClientConfig) {
+    super(baseUrl, config)
 
     if (!this.config.mount) {
       this.config.mount = DEFAULT_MOUNT_POINT

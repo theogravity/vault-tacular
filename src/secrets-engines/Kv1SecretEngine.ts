@@ -1,5 +1,9 @@
 import { BaseSecretEngine } from './BaseSecretEngine'
-import { IBaseClientConfig, VaultToken } from '../interfaces/IBaseClient'
+import {
+  BaseUrl,
+  IBaseClientConfig,
+  VaultToken
+} from '../interfaces/IBaseClient'
 import { IVaultResponse } from '../interfaces'
 import { IKv1SecretEngine } from '../interfaces/secrets-engines/IKv1SecretEngine'
 
@@ -13,8 +17,8 @@ const SECRET_DELETE_PATH = '/:path'
  * Vault KV secrets engine.
  */
 export class Kv1SecretEngine extends BaseSecretEngine {
-  constructor (config: IBaseClientConfig) {
-    super(config)
+  constructor (baseUrl: BaseUrl, config?: IBaseClientConfig) {
+    super(baseUrl, config)
 
     if (!this.config.mount) {
       this.config.mount = DEFAULT_MOUNT_POINT

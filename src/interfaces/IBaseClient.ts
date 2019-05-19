@@ -1,22 +1,31 @@
+import { RequestPromiseOptions } from 'request-promise-native'
+
 /**
  * Configuration parameters for client initialization
  */
 export interface IBaseClientConfig {
   /**
-   * Vault API url base
-   */
-  baseUrl: string
-  /**
    * Auth method mount point
    */
   mount?: string
   /**
-   * Custom logger
+   * Namespace path (Vault Enterprise feature)
+   * @link https://www.vaultproject.io/docs/enterprise/namespaces/index.html
    */
-  logger?: Partial<Console>
+  namespace?: string
+  /**
+   * Additional request module options
+   * @link https://www.npmjs.com/package/request
+   */
+  reqOpts?: RequestPromiseOptions
 }
 
 /**
  * Authentication token to access the API
  */
 export type VaultToken = string
+
+/**
+ * Vault API base url
+ */
+export type BaseUrl = string
