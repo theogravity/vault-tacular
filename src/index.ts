@@ -1,3 +1,6 @@
-const blah = 'abcd'
+import * as AuthMethods from './auth-methods'
+import * as SecretEngines from './secrets-engines'
+import * as SystemBackends from './system-backends'
+import { BaseClient } from './BaseClient'
 
-console.log(blah)
+export { AuthMethods, SecretEngines, SystemBackends, BaseClient }
