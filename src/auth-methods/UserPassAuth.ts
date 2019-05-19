@@ -2,11 +2,7 @@ import { BaseAuth } from './BaseAuth'
 import { ISecret } from '../interfaces/IBaseClient'
 import { IUserPassAuth } from '../interfaces/auth-methods/IUserPassAuth'
 import { IVaultResponse } from '../interfaces/IBaseClient'
-import {
-  BaseUrl,
-  IBaseClientConfig,
-  VaultToken
-} from '../interfaces/IBaseClient'
+import { BaseUrl, IBaseClientConfig } from '../interfaces/IBaseClient'
 
 const DEFAULT_MOUNT_POINT = '/auth/userpass'
 const LOGIN_PATH = '/login/:username'
@@ -29,18 +25,17 @@ export class UserPassAuth extends BaseAuth {
    * @link https://www.vaultproject.io/api/auth/userpass/index.html#create-update-user
    */
   async createOrUpdateUser (
-    vToken: VaultToken,
     username: string,
     payload: IUserPassAuth.IUpsertPayload
   ): Promise<IVaultResponse<void>> {
     const res = await this.request(
       this.getAPIUrl(UPSERT_PATH.replace(':username', username)),
       {
-        headers: {
-          'X-Vault-Token': vToken
-        },
         method: 'POST',
         json: payload
+      },
+      {
+        authRequired: true
       }
     )
 

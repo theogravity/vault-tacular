@@ -1,9 +1,5 @@
 import { BaseSecretEngine } from './BaseSecretEngine'
-import {
-  BaseUrl,
-  IBaseClientConfig,
-  VaultToken
-} from '../interfaces/IBaseClient'
+import { BaseUrl, IBaseClientConfig } from '../interfaces/IBaseClient'
 import { IVaultResponse } from '../interfaces/IBaseClient'
 import { IKv2SecretEngine } from '../interfaces/secrets-engines/IKv2SecretEngine'
 
@@ -37,16 +33,18 @@ export class Kv2SecretEngine extends BaseSecretEngine {
    * @link https://www.vaultproject.io/api/secret/kv/kv-v2.html#configure-the-kv-engine
    */
   async configEngine (
-    vToken: VaultToken,
     payload: IKv2SecretEngine.ISetConfigPayload = {}
   ): Promise<IVaultResponse<void>> {
-    const res = await this.request(this.getAPIUrl(CONFIGURE_ENGINE_PATH), {
-      headers: {
-        'X-Vault-Token': vToken
+    const res = await this.request(
+      this.getAPIUrl(CONFIGURE_ENGINE_PATH),
+      {
+        method: 'POST',
+        json: payload
       },
-      method: 'POST',
-      json: payload
-    })
+      {
+        authRequired: true
+      }
+    )
 
     return {
       statusCode: res.statusCode
@@ -57,15 +55,18 @@ export class Kv2SecretEngine extends BaseSecretEngine {
    * Retrieves the current configuration for the secrets backend at the given path.
    * @link https://www.vaultproject.io/api/secret/kv/kv-v2.html#read-kv-engine-configuration
    */
-  async readEngineConfig (
-    vToken: VaultToken
-  ): Promise<IVaultResponse<IKv2SecretEngine.IGetConfigResponse>> {
-    const res = await this.request(this.getAPIUrl(CONFIGURE_ENGINE_PATH), {
-      headers: {
-        'X-Vault-Token': vToken
+  async readEngineConfig (): Promise<
+    IVaultResponse<IKv2SecretEngine.IGetConfigResponse>
+  > {
+    const res = await this.request(
+      this.getAPIUrl(CONFIGURE_ENGINE_PATH),
+      {
+        method: 'GET'
       },
-      method: 'GET'
-    })
+      {
+        authRequired: true
+      }
+    )
 
     return {
       statusCode: res.statusCode,
@@ -78,18 +79,17 @@ export class Kv2SecretEngine extends BaseSecretEngine {
    * @link https://www.vaultproject.io/api/secret/kv/kv-v2.html#read-secret-version
    */
   async readSecretVersion (
-    vToken: VaultToken,
     path: string,
     payload: IKv2SecretEngine.IReadSecretVersionPayload
   ): Promise<IVaultResponse<IKv2SecretEngine.IReadSecretVersionResponse>> {
     const res = await this.request(
       this.getAPIUrl(SECRET_VERSION_PATH.replace(':path', path)),
       {
-        headers: {
-          'X-Vault-Token': vToken
-        },
         method: 'GET',
         qs: payload
+      },
+      {
+        authRequired: true
       }
     )
 
@@ -106,18 +106,17 @@ export class Kv2SecretEngine extends BaseSecretEngine {
    * @link https://www.vaultproject.io/api/secret/kv/kv-v2.html#create-update-secret
    */
   async createOrUpdateSecret (
-    vToken: VaultToken,
     path: string,
     payload: IKv2SecretEngine.ICreateUpdateSecretPayload
   ): Promise<IVaultResponse<IKv2SecretEngine.ICreateUpdateSecretResponse>> {
     const res = await this.request(
       this.getAPIUrl(SECRET_CREATE_UPDATE_PATH.replace(':path', path)),
       {
-        headers: {
-          'X-Vault-Token': vToken
-        },
         method: 'POST',
         body: payload
+      },
+      {
+        authRequired: true
       }
     )
 
@@ -134,16 +133,15 @@ export class Kv2SecretEngine extends BaseSecretEngine {
    * @link https://www.vaultproject.io/api/secret/kv/kv-v2.html#delete-latest-version-of-secret
    */
   async deleteLatestSecretVersion (
-    vToken: VaultToken,
     path: string
   ): Promise<IVaultResponse<void>> {
     const res = await this.request(
       this.getAPIUrl(SECRET_DELETE_LATEST_PATH.replace(':path', path)),
       {
-        headers: {
-          'X-Vault-Token': vToken
-        },
         method: 'DELETE'
+      },
+      {
+        authRequired: true
       }
     )
 
@@ -159,18 +157,17 @@ export class Kv2SecretEngine extends BaseSecretEngine {
    * @link https://www.vaultproject.io/api/secret/kv/kv-v2.html#delete-secret-versions
    */
   async deleteSecretVersions (
-    vToken: VaultToken,
     path: string,
     payload: IKv2SecretEngine.IDeleteSecretVersionsPayload
   ): Promise<IVaultResponse<void>> {
     const res = await this.request(
       this.getAPIUrl(SECRET_DELETE_VERSIONS_PATH.replace(':path', path)),
       {
-        headers: {
-          'X-Vault-Token': vToken
-        },
         method: 'POST',
         body: payload
+      },
+      {
+        authRequired: true
       }
     )
 
@@ -185,18 +182,17 @@ export class Kv2SecretEngine extends BaseSecretEngine {
    * @link https://www.vaultproject.io/api/secret/kv/kv-v2.html#undelete-secret-versions
    */
   async undeleteSecretVersions (
-    vToken: VaultToken,
     path: string,
     payload: IKv2SecretEngine.IUndeleteSecretVersionsPayload
   ): Promise<IVaultResponse<void>> {
     const res = await this.request(
       this.getAPIUrl(SECRET_UNDELETE_VERSIONS_PATH.replace(':path', path)),
       {
-        headers: {
-          'X-Vault-Token': vToken
-        },
         method: 'POST',
         body: payload
+      },
+      {
+        authRequired: true
       }
     )
 
@@ -211,18 +207,17 @@ export class Kv2SecretEngine extends BaseSecretEngine {
    * @link https://www.vaultproject.io/api/secret/kv/kv-v2.html#destroy-secret-versions
    */
   async destroySecretVersions (
-    vToken: VaultToken,
     path: string,
     payload: IKv2SecretEngine.IDestroySecretVersionsPayload
   ): Promise<IVaultResponse<void>> {
     const res = await this.request(
       this.getAPIUrl(SECRET_DESTROY_VERSIONS_PATH.replace(':path', path)),
       {
-        headers: {
-          'X-Vault-Token': vToken
-        },
         method: 'POST',
         body: payload
+      },
+      {
+        authRequired: true
       }
     )
 
@@ -239,16 +234,15 @@ export class Kv2SecretEngine extends BaseSecretEngine {
    * @link https://www.vaultproject.io/api/secret/kv/kv-v2.html#list-secrets
    */
   async listSecrets (
-    vToken: VaultToken,
     path: string
   ): Promise<IVaultResponse<IKv2SecretEngine.IListSecretsResponse>> {
     const res = await this.request(
       this.getAPIUrl(SECRET_LIST_PATH.replace(':path', path)),
       {
-        headers: {
-          'X-Vault-Token': vToken
-        },
         method: 'LIST'
+      },
+      {
+        authRequired: true
       }
     )
 
@@ -263,16 +257,15 @@ export class Kv2SecretEngine extends BaseSecretEngine {
    * @link https://www.vaultproject.io/api/secret/kv/kv-v2.html#read-secret-metadata
    */
   async readSecretMetadata (
-    vToken: VaultToken,
     path: string
   ): Promise<IVaultResponse<IKv2SecretEngine.IReadSecretMetadataResponse>> {
     const res = await this.request(
       this.getAPIUrl(SECRET_READ_METADATA_PATH.replace(':path', path)),
       {
-        headers: {
-          'X-Vault-Token': vToken
-        },
         method: 'GET'
+      },
+      {
+        authRequired: true
       }
     )
 
@@ -289,18 +282,17 @@ export class Kv2SecretEngine extends BaseSecretEngine {
    * @link https://www.vaultproject.io/api/secret/kv/kv-v2.html#update-metadata
    */
   async updateSecretMetadata (
-    vToken: VaultToken,
     path: string,
     payload: IKv2SecretEngine.IUpdateSecretMetadataPayload
   ): Promise<IVaultResponse<void>> {
     const res = await this.request(
       this.getAPIUrl(SECRET_UPDATE_METADATA_PATH.replace(':path', path)),
       {
-        headers: {
-          'X-Vault-Token': vToken
-        },
         method: 'POST',
         body: payload
+      },
+      {
+        authRequired: true
       }
     )
 
@@ -316,7 +308,6 @@ export class Kv2SecretEngine extends BaseSecretEngine {
    * @link https://www.vaultproject.io/api/secret/kv/kv-v2.html#delete-metadata-and-all-versions
    */
   async deleteMetadataAndAllVersions (
-    vToken: VaultToken,
     path: string
   ): Promise<IVaultResponse<void>> {
     const res = await this.request(
@@ -324,10 +315,10 @@ export class Kv2SecretEngine extends BaseSecretEngine {
         SECRET_DELETE_METADATA_AND_ALL_VERS_PATH.replace(':path', path)
       ),
       {
-        headers: {
-          'X-Vault-Token': vToken
-        },
         method: 'DELETE'
+      },
+      {
+        authRequired: true
       }
     )
 

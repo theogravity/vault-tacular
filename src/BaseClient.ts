@@ -5,13 +5,22 @@ import request, {
   RequestPromise
 } from 'request-promise-native'
 
-import { BaseUrl, IBaseClientConfig } from './interfaces/IBaseClient'
+import {
+  BaseUrl,
+  IBaseClientConfig,
+  IClientReqParams
+} from './interfaces/IBaseClient'
 
 export abstract class BaseClient {
   protected config: IBaseClientConfig
   protected baseUrl: BaseUrl
+  private readonly authTokenFn: Function
   private readonly httpClient: RequestPromiseAPI
 
+  /**
+   * @param baseUrl The URL to the Vault API including the version path
+   * @param config
+   */
   protected constructor (baseUrl: BaseUrl, config: IBaseClientConfig = {}) {
     this.baseUrl = baseUrl
     this.config = config
@@ -30,17 +39,22 @@ export abstract class BaseClient {
     return this.baseUrl + path
   }
 
-  request (
+  async request (
     uri: string,
-    options: RequestPromiseOptions = {}
-  ): RequestPromise<FullResponse> {
+    reqOpts: RequestPromiseOptions = {},
+    reqParams: IClientReqParams = {}
+  ): Promise<RequestPromise<FullResponse>> {
     let opts = {
       resolveWithFullResponse: true,
-      ...options
+      ...reqOpts
     }
 
     if (!opts.headers) {
       opts.headers = {}
+    }
+
+    if (reqParams.authRequired && this.config.authTokenFn) {
+      opts.headers['X-Vault-Token'] = await this.config.authTokenFn()
     }
 
     if (this.config.namespace) {

@@ -18,6 +18,12 @@ export interface IBaseClientConfig {
    * @link https://www.npmjs.com/package/request
    */
   reqOpts?: RequestPromiseOptions
+  /**
+   * An (async) function that returns the token used for the
+   * Authorization / X-Vault-Token header. The client does *not* cache the result;
+   * the function should implement caching and renewal of the token if necessary.
+   */
+  authTokenFn?: Function
 }
 
 /**
@@ -128,4 +134,11 @@ export interface IWrapInfo {
    * token or gain knowledge of the token ID inside.
    */
   wrapped_accessor: string
+}
+
+export interface IClientReqParams {
+  /**
+   * True if the Authorization / X-Vault-Token header needs to be set
+   */
+  authRequired?: boolean
 }

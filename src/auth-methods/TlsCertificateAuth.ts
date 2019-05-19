@@ -2,11 +2,7 @@ import { BaseAuth } from './BaseAuth'
 import { ISecret } from '../interfaces/IBaseClient'
 import { ITlsCertificateAuth } from '../interfaces/auth-methods/ITlsCertificateAuth'
 import { IVaultResponse } from '../interfaces/IBaseClient'
-import {
-  BaseUrl,
-  IBaseClientConfig,
-  VaultToken
-} from '../interfaces/IBaseClient'
+import { BaseUrl, IBaseClientConfig } from '../interfaces/IBaseClient'
 
 const DEFAULT_MOUNT_POINT = '/auth/cert'
 const CREATE_ROLE_PATH = '/certs/:name'
@@ -29,18 +25,17 @@ export class TlsCertificateAuth extends BaseAuth {
    * @link https://www.vaultproject.io/api/auth/cert/index.html#create-ca-certificate-role
    */
   async createRole (
-    vToken: VaultToken,
     name: string,
     payload: ITlsCertificateAuth.ICreateRolePayload
   ): Promise<IVaultResponse<void>> {
     const res = await this.request(
       this.getAPIUrl(CREATE_ROLE_PATH.replace(':name', name)),
       {
-        headers: {
-          'X-Vault-Token': vToken
-        },
         method: 'POST',
         json: payload
+      },
+      {
+        authRequired: true
       }
     )
 

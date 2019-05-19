@@ -17,7 +17,11 @@ const certKey = readFileSync(join(TEST_CERTS_DIR, 'rootCA.key'), {
   encoding: 'ASCII'
 })
 
-const auth = new TlsCertificateAuth(process.env.VAULT_API_URL)
+const auth = new TlsCertificateAuth(process.env.VAULT_API_URL, {
+  authTokenFn: () => {
+    return process.env.VAULT_TOKEN
+  }
+})
 
 describe('TlsCertificateAuth integration tests', () => {
   it('should login', async () => {
@@ -34,7 +38,7 @@ describe('TlsCertificateAuth integration tests', () => {
 })
 
 async function assocateRoleToCert () {
-  await auth.createRole(process.env.VAULT_TOKEN, 'test_cert_role', {
+  await auth.createRole('test_cert_role', {
     certificate: rootCACert.split('\n').join('\n')
   })
 }

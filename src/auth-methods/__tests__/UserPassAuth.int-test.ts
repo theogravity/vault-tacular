@@ -2,7 +2,11 @@ import cryptoRandomString from 'crypto-random-string'
 
 import { UserPassAuth } from '../UserPassAuth'
 
-const auth = new UserPassAuth(process.env.VAULT_API_URL)
+const auth = new UserPassAuth(process.env.VAULT_API_URL, {
+  authTokenFn: () => {
+    return process.env.VAULT_TOKEN
+  }
+})
 
 describe('UserPassAuth integration tests', () => {
   it('should login', async () => {
@@ -31,7 +35,7 @@ async function createUser () {
     length: 10
   })
 
-  await auth.createOrUpdateUser(process.env.VAULT_TOKEN, username, {
+  await auth.createOrUpdateUser(username, {
     password
   })
 

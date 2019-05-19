@@ -1,9 +1,5 @@
 import { BaseSecretEngine } from './BaseSecretEngine'
-import {
-  BaseUrl,
-  IBaseClientConfig,
-  VaultToken
-} from '../interfaces/IBaseClient'
+import { BaseUrl, IBaseClientConfig } from '../interfaces/IBaseClient'
 import { IVaultResponse } from '../interfaces/IBaseClient'
 import { IKv1SecretEngine } from '../interfaces/secrets-engines/IKv1SecretEngine'
 
@@ -30,16 +26,15 @@ export class Kv1SecretEngine extends BaseSecretEngine {
    * @link https://www.vaultproject.io/api/secret/kv/kv-v1.html#read-secret
    */
   async readSecret (
-    vToken: VaultToken,
     path: string
   ): Promise<IVaultResponse<IKv1SecretEngine.IReadSecretResponse>> {
     const res = await this.request(
       this.getAPIUrl(SECRET_READ_PATH.replace(':path', path)),
       {
-        headers: {
-          'X-Vault-Token': vToken
-        },
         method: 'GET'
+      },
+      {
+        authRequired: true
       }
     )
 
@@ -57,16 +52,15 @@ export class Kv1SecretEngine extends BaseSecretEngine {
    * @link https://www.vaultproject.io/api/secret/kv/kv-v1.html#list-secrets
    */
   async listSecrets (
-    vToken: VaultToken,
     path: string
   ): Promise<IVaultResponse<IKv1SecretEngine.IListSecretsResponse>> {
     const res = await this.request(
       this.getAPIUrl(SECRET_LIST_PATH.replace(':path', path)),
       {
-        headers: {
-          'X-Vault-Token': vToken
-        },
         method: 'LIST'
+      },
+      {
+        authRequired: true
       }
     )
 
@@ -83,18 +77,17 @@ export class Kv1SecretEngine extends BaseSecretEngine {
    * @link https://www.vaultproject.io/api/secret/kv/kv-v1.html#create-update-secret
    */
   async createOrUpdateSecret (
-    vToken: VaultToken,
     path: string,
     payload: IKv1SecretEngine.ICreateOrUpdateSecretPayload
   ): Promise<IVaultResponse<void>> {
     const res = await this.request(
       this.getAPIUrl(SECRET_UPSERT_PATH.replace(':path', path)),
       {
-        headers: {
-          'X-Vault-Token': vToken
-        },
         method: 'POST',
         body: payload
+      },
+      {
+        authRequired: true
       }
     )
 
@@ -107,17 +100,14 @@ export class Kv1SecretEngine extends BaseSecretEngine {
    * Deletes the secret at the specified location.
    * @link https://www.vaultproject.io/api/secret/kv/kv-v1.html#delete-secret
    */
-  async deleteSecret (
-    vToken: VaultToken,
-    path: string
-  ): Promise<IVaultResponse<void>> {
+  async deleteSecret (path: string): Promise<IVaultResponse<void>> {
     const res = await this.request(
       this.getAPIUrl(SECRET_DELETE_PATH.replace(':path', path)),
       {
-        headers: {
-          'X-Vault-Token': vToken
-        },
         method: 'DELETE'
+      },
+      {
+        authRequired: true
       }
     )
 

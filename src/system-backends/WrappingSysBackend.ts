@@ -1,5 +1,5 @@
 import { BaseSysBackend } from './BaseSysBackend'
-import { IVaultResponse, VaultToken } from '../interfaces/IBaseClient'
+import { IVaultResponse } from '../interfaces/IBaseClient'
 import { IWrappingSysBackend } from '../interfaces/system-backend/IWrappingSysBackend'
 
 const WRAPPING_LOOKUP_PATH = '/sys/wrapping/lookup'
@@ -15,18 +15,20 @@ export class WrappingSysBackend extends BaseSysBackend {
    * @param token Wrapping token ID
    */
   async lookup (
-    vToken: VaultToken,
     token: string
   ): Promise<IVaultResponse<IWrappingSysBackend.ILookupResponse>> {
-    const res = await this.request(this.getAPIUrl(WRAPPING_LOOKUP_PATH), {
-      headers: {
-        'X-Vault-Token': vToken
+    const res = await this.request(
+      this.getAPIUrl(WRAPPING_LOOKUP_PATH),
+      {
+        method: 'POST',
+        body: {
+          token
+        }
       },
-      method: 'POST',
-      body: {
-        token
+      {
+        authRequired: true
       }
-    })
+    )
 
     return {
       statusCode: res.statusCode,
@@ -44,18 +46,20 @@ export class WrappingSysBackend extends BaseSysBackend {
    * @param token Wrapping token ID
    */
   async rewrap (
-    vToken: VaultToken,
     token: string
   ): Promise<IVaultResponse<IWrappingSysBackend.IRewrapResponse>> {
-    const res = await this.request(this.getAPIUrl(WRAPPING_REWRAP_PATH), {
-      headers: {
-        'X-Vault-Token': vToken
+    const res = await this.request(
+      this.getAPIUrl(WRAPPING_REWRAP_PATH),
+      {
+        method: 'POST',
+        body: {
+          token
+        }
       },
-      method: 'POST',
-      body: {
-        token
+      {
+        authRequired: true
       }
-    })
+    )
 
     return {
       statusCode: res.statusCode,
@@ -81,7 +85,6 @@ export class WrappingSysBackend extends BaseSysBackend {
    * Do not use the wrapping token in both locations.
    */
   async unwrap (
-    vToken: VaultToken,
     token?: string
   ): Promise<IVaultResponse<IWrappingSysBackend.IUnwrapResponse>> {
     let body = {}
@@ -92,13 +95,16 @@ export class WrappingSysBackend extends BaseSysBackend {
       }
     }
 
-    const res = await this.request(this.getAPIUrl(WRAPPING_UNWRAP_PATH), {
-      headers: {
-        'X-Vault-Token': vToken
+    const res = await this.request(
+      this.getAPIUrl(WRAPPING_UNWRAP_PATH),
+      {
+        method: 'POST',
+        body
       },
-      method: 'POST',
-      body
-    })
+      {
+        authRequired: true
+      }
+    )
 
     return {
       statusCode: res.statusCode,
@@ -111,18 +117,22 @@ export class WrappingSysBackend extends BaseSysBackend {
    * @link https://www.vaultproject.io/api/system/wrapping-wrap.html
    */
   async wrap (
-    vToken: VaultToken,
     wrapTtl: number | string,
     payload: IWrappingSysBackend.IWrapPayload
   ): Promise<IVaultResponse<IWrappingSysBackend.IWrapResponse>> {
-    const res = await this.request(this.getAPIUrl(WRAPPING_WRAP_PATH), {
-      headers: {
-        'X-Vault-Token': vToken,
-        'X-Vault-Wrap-TTL': wrapTtl
+    const res = await this.request(
+      this.getAPIUrl(WRAPPING_WRAP_PATH),
+      {
+        headers: {
+          'X-Vault-Wrap-TTL': wrapTtl
+        },
+        method: 'POST',
+        body: payload
       },
-      method: 'POST',
-      body: payload
-    })
+      {
+        authRequired: true
+      }
+    )
 
     return {
       statusCode: res.statusCode,
