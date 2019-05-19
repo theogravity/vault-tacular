@@ -29,3 +29,8 @@ export type VaultToken = string
  * Vault API base url
  */
 export type BaseUrl = string
+
+export interface IVaultResponse<T> {
+  statusCode: number
+  data?: T
+}

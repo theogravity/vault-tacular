@@ -1,11 +1,10 @@
-import { BaseSystemBackend } from './BaseSystemBackend'
-import { IVaultResponse } from '../interfaces'
-import { IInitSysBackend } from '../interfaces/system-backend/IInitSysBackend'
+import { BaseSysBackend } from './BaseSysBackend'
+import { IVaultResponse } from '../interfaces/IBaseClient'
 import { IUnsealSysBackend } from '../interfaces/system-backend/IUnsealSysBackend'
 
 const DEFAULT_PATH = '/sys/unseal'
 
-export class UnsealSysBackend extends BaseSystemBackend {
+export class UnsealSysBackend extends BaseSysBackend {
   /**
    * This endpoint is used to enter a single master key share to progress the unsealing of the
    * Vault. If the threshold number of master key shares is reached, Vault will attempt to unseal

@@ -1,7 +1,7 @@
 import { BaseAuth } from './BaseAuth'
 import { ISecret } from '../interfaces/auth-methods/IBaseAuth'
 import { IUserPassAuth } from '../interfaces/auth-methods/IUserPassAuth'
-import { IVaultResponse } from '../interfaces'
+import { IVaultResponse } from '../interfaces/IBaseClient'
 import {
   BaseUrl,
   IBaseClientConfig,

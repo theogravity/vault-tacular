@@ -1,7 +1,7 @@
 import { BaseAuth } from './BaseAuth'
 import { IAwsAuth } from '../interfaces/auth-methods/IAwsAuth'
 import { ISecret } from '../interfaces/auth-methods/IBaseAuth'
-import { IVaultResponse } from '../interfaces'
+import { IVaultResponse } from '../interfaces/IBaseClient'
 import { BaseUrl, IBaseClientConfig } from '../interfaces/IBaseClient'
 
 const DEFAULT_MOUNT_POINT = '/auth/aws'

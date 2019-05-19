@@ -1,10 +1,10 @@
-import { BaseSystemBackend } from './BaseSystemBackend'
-import { IVaultResponse } from '../interfaces'
+import { BaseSysBackend } from './BaseSysBackend'
+import { IVaultResponse } from '../interfaces/IBaseClient'
 import { IInitSysBackend } from '../interfaces/system-backend/IInitSysBackend'
 
 const DEFAULT_PATH = '/sys/init'
 
-export class InitSysBackend extends BaseSystemBackend {
+export class InitSysBackend extends BaseSysBackend {
   /**
    * Returns the initialization status of Vault.
    * @link https://www.vaultproject.io/api/system/init.html#read-initialization-status

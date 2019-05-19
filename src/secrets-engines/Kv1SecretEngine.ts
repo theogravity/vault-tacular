@@ -4,7 +4,7 @@ import {
   IBaseClientConfig,
   VaultToken
 } from '../interfaces/IBaseClient'
-import { IVaultResponse } from '../interfaces'
+import { IVaultResponse } from '../interfaces/IBaseClient'
 import { IKv1SecretEngine } from '../interfaces/secrets-engines/IKv1SecretEngine'
 
 const DEFAULT_MOUNT_POINT = '/secret'
