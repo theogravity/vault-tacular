@@ -97,7 +97,7 @@ export interface ISecret {
   /**
    * Secret-related data
    */
-  data: object
+  data?: object
   /**
    * List of warnings
    */
@@ -107,7 +107,7 @@ export interface ISecret {
    * If the lease is renewable
    */
   renewable: boolean
-  auth: ISecretAuth
+  auth?: ISecretAuth
 }
 
 /**

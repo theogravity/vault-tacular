@@ -2,3 +2,9 @@ src/
 .babelrc
 test-report.xml
 .circleci/
+test-certs/
+dev-vault.hcl
+start-dev-vault.sh
+jest.config.js
+jest-int.config.js
+wallaby.js

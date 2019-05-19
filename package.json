@@ -2,11 +2,11 @@
   "name": "@theogravity/vault-client",
   "private": true,
   "version": "1.0.0",
-  "description": "Client for Hashicorp Vault featuring a pluggable interface",
+  "description": "Client for Hashicorp Vault written in Typescript with detailed documentation.",
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
-    "build": "npm run build:clean && npm run compile",
+    "build": "npm run build:clean && npm run compile && npm run typedoc",
     "compile": "tsc",
     "build:clean": "rm -rf build/*",
     "debug": "ts-node-dev --inspect -- src/index.ts",
@@ -20,13 +20,13 @@
     "lint-staged": "lint-staged",
     "prepare-publish": "npm run changelog:verify && version-bump && npm run changelog:release",
     "version-bump": "version-bump",
-    "changelog:help": "changelog-version",
+    "changelog:help": "changelog-version ",
     "changelog:verify": "changelog-version verify",
     "changelog:prepare": "changelog-version prepare",
     "changelog:release": "changelog-version release",
     "lint": "prettier-standard src/**/*.ts && standard src/**/*.ts",
     "ts-node-dev": "ts-node-dev",
-    "generate-client": "openapi-generator generate -i openapi.json --skip-validate-spec -g typescript-axios -o src/client --additional-properties supportsES6=true"
+    "typedoc": "typedoc --out api-docs/ --module commonjs --exclude **/__tests__/**/*.ts  --excludeProtected --excludePrivate --target ES6 src/"
   },
   "repository": {
     "type": "git",
@@ -66,6 +66,7 @@
     "ts-jest": "^24.0.2",
     "ts-node": "^8.1.0",
     "ts-node-dev": "^1.0.0-pre.39",
+    "typedoc": "^0.14.2",
     "typescript": "^3.4.5"
   },
   "standard": {

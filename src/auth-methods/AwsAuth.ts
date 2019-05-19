@@ -34,7 +34,7 @@ export class AwsAuth extends BaseAuth {
 
     return {
       statusCode: res.statusCode,
-      data: res.body as ISecret
+      data: res.body
     }
   }
 

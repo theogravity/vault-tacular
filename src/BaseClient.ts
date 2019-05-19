@@ -31,7 +31,7 @@ export abstract class BaseClient {
    * Constructs a Vault URL
    * @param path
    */
-  getAPIUrl (path: string) {
+  protected getAPIUrl (path: string) {
     if (this.config.mount) {
       return this.baseUrl + this.config.mount + path
     }
@@ -39,7 +39,7 @@ export abstract class BaseClient {
     return this.baseUrl + path
   }
 
-  async request (
+  protected async request (
     uri: string,
     reqOpts: RequestPromiseOptions = {},
     reqParams: IClientReqParams = {}
