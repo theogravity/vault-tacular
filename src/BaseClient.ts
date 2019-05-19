@@ -23,7 +23,11 @@ export abstract class BaseClient {
    * @param path
    */
   getAPIUrl (path: string) {
-    return this.baseUrl + this.config.mount + path
+    if (this.config.mount) {
+      return this.baseUrl + this.config.mount + path
+    }
+
+    return this.baseUrl + path
   }
 
   request (
