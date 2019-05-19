@@ -9,7 +9,7 @@ const auth = new UserPassAuth({
 describe('UserPassAuth integration tests', () => {
   it('should login', async () => {
     const user = await createUser()
-    const resp = await auth.login(user)
+    const resp = await auth.login(user.username, user)
 
     expect(resp).toMatchObject({
       statusCode: 200,
@@ -33,8 +33,7 @@ async function createUser () {
     length: 10
   })
 
-  await auth.create(process.env.VAULT_TOKEN, {
-    username,
+  await auth.createOrUpdateUser(process.env.VAULT_TOKEN, username, {
     password
   })
 

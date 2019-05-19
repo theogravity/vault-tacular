@@ -1,8 +1,8 @@
 import { BaseAuth } from './BaseAuth'
-import { ISecret, VaultToken } from '../interfaces/auth-methods/IBaseAuth'
+import { ISecret } from '../interfaces/auth-methods/IBaseAuth'
 import { ITlsCertificateAuth } from '../interfaces/auth-methods/ITlsCertificateAuth'
 import { IVaultResponse } from '../interfaces'
-import { IBaseAuthConfig } from '../interfaces/auth-methods/IBaseAuth'
+import { IBaseClientConfig, VaultToken } from '../interfaces/IBaseClient'
 
 const DEFAULT_MOUNT_POINT = '/auth/cert'
 const CREATE_ROLE_PATH = '/certs/:name'
@@ -12,7 +12,7 @@ const LOGIN_PATH = '/login'
  * Uses TLS certificates for authentication.
  */
 export class TlsCertificateAuth extends BaseAuth {
-  constructor (config: IBaseAuthConfig) {
+  constructor (config: IBaseClientConfig) {
     super(config)
 
     if (!this.config.mount) {
@@ -26,10 +26,11 @@ export class TlsCertificateAuth extends BaseAuth {
    */
   async createRole (
     token: VaultToken,
+    name: string,
     payload: ITlsCertificateAuth.ICreateRolePayload
   ): Promise<IVaultResponse<void>> {
     const res = await this.request(
-      this.getAPIUrl(CREATE_ROLE_PATH.replace(':name', payload.name)),
+      this.getAPIUrl(CREATE_ROLE_PATH.replace(':name', name)),
       {
         headers: {
           'X-Vault-Token': token

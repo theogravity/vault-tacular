@@ -36,8 +36,7 @@ describe('TlsCertificateAuth integration tests', () => {
 })
 
 async function assocateRoleToCert () {
-  await auth.createRole(process.env.VAULT_TOKEN, {
-    certificate: rootCACert.split('\n').join('\n'),
-    name: 'test_cert_role'
+  await auth.createRole(process.env.VAULT_TOKEN, 'test_cert_role', {
+    certificate: rootCACert.split('\n').join('\n')
   })
 }

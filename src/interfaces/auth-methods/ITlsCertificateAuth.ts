@@ -25,10 +25,6 @@ export namespace ITlsCertificateAuth {
 
   export interface ICreateRolePayload {
     /**
-     * The name of the certificate role
-     */
-    name: string
-    /**
      * The PEM-format CA certificate
      */
     certificate: string

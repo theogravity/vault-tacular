@@ -3,10 +3,6 @@ import { IBaseLoginPayload } from './IBaseAuth'
 export namespace IUserPassAuth {
   export interface IUpsertPayload {
     /**
-     * The username for the user
-     */
-    username: string
-    /**
      * The password for the user. Only required when creating the user
      */
     password: string
@@ -31,10 +27,6 @@ export namespace IUserPassAuth {
   }
 
   export interface ILoginPayload extends IBaseLoginPayload {
-    /**
-     * The username for the user
-     */
-    username: string
     /**
      * The password for the user
      */

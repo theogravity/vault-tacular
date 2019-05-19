@@ -8,7 +8,7 @@ npm-login: &npm-login
   # NPM_TOKEN is manually defined in CircleCI
   # project settings > Build settings > Environment variables
   # Add the NPM_TOKEN name and the value is your npm token
-  # Get your npm token via npm token create
+  # Get your npm token via npm token createOrUpdateUser
   # https://docs.npmjs.com/cli/token
   run:
     name: Create .npmrc
