@@ -6,7 +6,7 @@
   "main": "build/index.js",
   "types": "build/index.d.ts",
   "scripts": {
-    "build": "npm run build:clean && npm run compile && npm run typedoc",
+    "build": "npm run build:clean && npm run compile",
     "compile": "tsc",
     "build:clean": "rm -rf build/*",
     "debug": "ts-node-dev --inspect -- src/index.ts",
@@ -17,6 +17,7 @@
     "test:coverage:watch": "jest --coverage --watch",
     "toc": "toc-md README.md README.md",
     "add-readme": "git add README.md",
+    "add-docs": "git add api-docs/",
     "lint-staged": "lint-staged",
     "prepare-publish": "npm run changelog:verify && version-bump && npm run changelog:release",
     "version-bump": "version-bump",
