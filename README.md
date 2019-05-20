@@ -1,5 +1,7 @@
 # vault-client
 
+[![CircleCI](https://circleci.com/gh/theogravity/vault-client.svg?style=svg)](https://circleci.com/gh/theogravity/vault-client)
+
 A client for Hashicorp Vault written in Typescript.
 
 [API Docs](api-docs)
@@ -27,6 +29,8 @@ A client for Hashicorp Vault written in Typescript.
     - [Init vault](#init-vault)
     - [Create a user using the username/password auth engine](#create-a-user-using-the-usernamepassword-auth-engine)
     - [Create / Read a secret](#create--read-a-secret)
+- [Troubleshooting](#troubleshooting)
+    - [Unsure if the API is working or not](#unsure-if-the-api-is-working-or-not)
 
 
 ## API Support
@@ -201,3 +205,14 @@ async function create () {
   console.log(rslt.result)
 }
 ```
+
+## Troubleshooting
+
+### Unsure if the API is working or not
+
+This library uses `request` and `request-promise-native` under the hood.
+
+You can debug API calls by adding `NODE_DEBUG=request` to your
+node command:
+
+`$ NODE_DEBUG=request npm run app`

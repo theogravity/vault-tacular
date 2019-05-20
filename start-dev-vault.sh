@@ -11,12 +11,11 @@ then
     kill -9 $VAULT_PID
 fi
 
-export VAULT_API_ADDR='https://localhost:8200'
-export VAULT_ADDR='https://localhost:8200'
-
 vault server -dev -dev-root-token-id=root -config=dev-vault.hcl &
 sleep 2
 VAULT_PID=$!
+
+export VAULT_ADDR='https://localhost:8300'
 
 echo "Mounting all builtin backends..."
 

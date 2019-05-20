@@ -48,6 +48,11 @@ jobs:
           curl -sO https://releases.hashicorp.com/vault/1.1.2/vault_1.1.2_linux_amd64.zip
           unzip vault_1.1.2_linux_amd64.zip
           sudo mv vault /usr/local/bin/
+          rm vault_1.1.2_linux_amd64.zip
+    - run:
+        name: Register test Certificiate Authority
+        command: |
+          sudo cp test-certs/rootCA.crt /etc/ssl/certs
     - save_cache:
         paths:
           - node_modules
