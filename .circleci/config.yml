@@ -31,7 +31,7 @@ jobs:
         # You need to add a deploy key with write permission in order for the CI to commit changes
         # back to the repo
         # https://circleci.com/docs/2.0/gh-bb-integration/#adding-readwrite-deployment-keys-to-github-or-bitbucket
-        - "c6:88:8c:c5:04:59:f2:e2:ae:f2:f8:c2:82:d4:89:59"
+        - "4d:a0:5f:2e:f9:b7:6d:8d:80:85:17:94:90:7f:ab:f9"
     # Download and cache dependencies so subsequent builds run faster
     - restore_cache:
         keys:
@@ -43,16 +43,17 @@ jobs:
         command: |
           npm i
     - run:
-        name: Download Hashicorp Vault
+        name: Install Hashicorp Vault
         command: |
           curl -sO https://releases.hashicorp.com/vault/1.1.2/vault_1.1.2_linux_amd64.zip
           unzip vault_1.1.2_linux_amd64.zip
           sudo mv vault /usr/local/bin/
     - save_cache:
         paths:
-        - node_modules
+          - node_modules
         key: dependencies-{{ checksum "package-lock.json" }}
-    - run: Run unit tests
+    - run:
+        name: Run unit tests
         command: |
           npm run test
     - run:
