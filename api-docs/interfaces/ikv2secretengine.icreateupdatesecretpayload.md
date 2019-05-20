@@ -23,7 +23,7 @@
 
 **● data**: *`object`*
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:40](https://github.com/theogravity/vault-client/blob/91e39ec/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L40)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:40](https://github.com/theogravity/vault-tacular/blob/560d138/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L40)*
 
 The contents of the result map will be stored and returned on read
 
@@ -38,7 +38,7 @@ ___
 
 **● options**: *`object`*
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:46](https://github.com/theogravity/vault-client/blob/91e39ec/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L46)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:46](https://github.com/theogravity/vault-tacular/blob/560d138/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L46)*
 
 An object that holds option settings
 

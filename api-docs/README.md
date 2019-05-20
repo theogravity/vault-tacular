@@ -93,7 +93,7 @@ System Backends
 
 **Ƭ BaseUrl**: *`string`*
 
-*Defined in [interfaces/IBaseClient.ts:39](https://github.com/theogravity/vault-client/blob/91e39ec/src/interfaces/IBaseClient.ts#L39)*
+*Defined in [interfaces/IBaseClient.ts:39](https://github.com/theogravity/vault-tacular/blob/560d138/src/interfaces/IBaseClient.ts#L39)*
 
 Vault API base url
 
@@ -104,7 +104,7 @@ ___
 
 **Ƭ VaultToken**: *`string`*
 
-*Defined in [interfaces/IBaseClient.ts:32](https://github.com/theogravity/vault-client/blob/91e39ec/src/interfaces/IBaseClient.ts#L32)*
+*Defined in [interfaces/IBaseClient.ts:32](https://github.com/theogravity/vault-tacular/blob/560d138/src/interfaces/IBaseClient.ts#L32)*
 
 Authentication token to access the API
 
@@ -115,7 +115,7 @@ ___
 
 **Ƭ VaultWarnings**: *`Array`<`string`>*
 
-*Defined in [interfaces/IBaseClient.ts:34](https://github.com/theogravity/vault-client/blob/91e39ec/src/interfaces/IBaseClient.ts#L34)*
+*Defined in [interfaces/IBaseClient.ts:34](https://github.com/theogravity/vault-tacular/blob/560d138/src/interfaces/IBaseClient.ts#L34)*
 
 ___
 

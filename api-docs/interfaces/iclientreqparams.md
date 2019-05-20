@@ -22,7 +22,7 @@
 
 **● authRequired**: *`boolean`*
 
-*Defined in [interfaces/IBaseClient.ts:142](https://github.com/theogravity/vault-client/blob/91e39ec/src/interfaces/IBaseClient.ts#L142)*
+*Defined in [interfaces/IBaseClient.ts:142](https://github.com/theogravity/vault-tacular/blob/560d138/src/interfaces/IBaseClient.ts#L142)*
 
 True if the Authorization / X-Vault-Token header needs to be set
 

@@ -31,7 +31,7 @@
 
 *Inherited from [BaseSysBackend](basesysbackend.md).[constructor](basesysbackend.md#constructor)*
 
-*Defined in [system-backends/BaseSysBackend.ts:4](https://github.com/theogravity/vault-client/blob/91e39ec/src/system-backends/BaseSysBackend.ts#L4)*
+*Defined in [system-backends/BaseSysBackend.ts:4](https://github.com/theogravity/vault-tacular/blob/560d138/src/system-backends/BaseSysBackend.ts#L4)*
 
 **Parameters:**
 
@@ -52,7 +52,7 @@ ___
 
 ▸ **checkStatus**(payload?: *[IReadHealthInfoPayload](../interfaces/ihealthsysbackend.ireadhealthinfopayload.md)*): `Promise`<[IVaultResponse](../interfaces/ivaultresponse.md)<`void`>>
 
-*Defined in [system-backends/HealthSysBackend.ts:40](https://github.com/theogravity/vault-client/blob/91e39ec/src/system-backends/HealthSysBackend.ts#L40)*
+*Defined in [system-backends/HealthSysBackend.ts:40](https://github.com/theogravity/vault-tacular/blob/560d138/src/system-backends/HealthSysBackend.ts#L40)*
 
 Same as readHealthInfo, but only returns a status code and no response body.
 
@@ -73,7 +73,7 @@ ___
 
 ▸ **readHealthInfo**(payload?: *[IReadHealthInfoPayload](../interfaces/ihealthsysbackend.ireadhealthinfopayload.md)*): `Promise`<[IVaultResponse](../interfaces/ivaultresponse.md)<[IReadHealthInfoResponse](../interfaces/ihealthsysbackend.ireadhealthinforesponse.md)>>
 
-*Defined in [system-backends/HealthSysBackend.ts:23](https://github.com/theogravity/vault-client/blob/91e39ec/src/system-backends/HealthSysBackend.ts#L23)*
+*Defined in [system-backends/HealthSysBackend.ts:23](https://github.com/theogravity/vault-tacular/blob/560d138/src/system-backends/HealthSysBackend.ts#L23)*
 
 This endpoint returns the health status of Vault. This matches the semantics of a Consul HTTP health check and provides a simple way to monitor the health of a Vault instance.
 
