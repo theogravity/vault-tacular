@@ -23,7 +23,7 @@ echo "Mounting all builtin backends..."
 #vault auth enable alicloud
 #vault auth enable app-id
 #vault auth enable approle
-vault auth enable aws
+#vault auth enable aws
 #vault auth enable azure
 #vault auth enable centrify
 vault auth enable cert
