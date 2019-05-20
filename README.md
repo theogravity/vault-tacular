@@ -1,6 +1,6 @@
-# vault-client
+# vault-tacular
 
-[![CircleCI](https://circleci.com/gh/theogravity/vault-client.svg?style=svg)](https://circleci.com/gh/theogravity/vault-client)
+[![CircleCI](https://circleci.com/gh/theogravity/vault-tacular.svg?style=svg)](https://circleci.com/gh/theogravity/vault-tacular)
 
 A client for Hashicorp Vault written in Typescript.
 
@@ -60,7 +60,7 @@ issue or PR if you find any problems with an existing implementation.)
 
 ## Installation
 
-`$ npm i @theogravity/vault-client`
+`$ npm i vault-tacular`
 
 ## Usage
 
@@ -116,7 +116,7 @@ For example, the `UserPassAuth.ts` file has a corresponding
 ### Init vault
 
 ```javascript
-import { InitSysBackend } from '@theogravity/vault-client'
+import { InitSysBackend } from 'vault-tacular'
 
 const initBackend = new InitSysBackend('http://localhost:8200/v1')
 
@@ -131,7 +131,7 @@ async function InitVault () {
 ### Create a user using the username/password auth engine
 
 ```javascript
-import { UserPassAuth } from '@theogravity/vault-client'
+import { UserPassAuth } from 'vault-tacular'
 
 const auth = new UserPassAuth('http://localhost:8200/v1', {
   authTokenFn: () => {
@@ -160,7 +160,7 @@ async function createUser () {
 import {
   UserPassAuth,
   Kv1SecretEngine
-} from '@theogravity/vault-client'
+} from 'vault-tacular'
 
 const VAULT_API_URL = 'http://localhost:8200/v1'
 

@@ -1,5 +1,5 @@
 {
-  "name": "@theogravity/vault-client",
+  "name": "vault-tacular",
   "version": "0.1.2",
   "description": "Client for Hashicorp Vault written in Typescript with detailed documentation.",
   "main": "build/index.js",
@@ -27,14 +27,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/theogravity/boilerplate.git"
+    "url": "git+https://github.com/theogravity/vault-tacular.git"
   },
   "author": "Theo Gravity <theo@suteki.nu>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/theogravity/boilerplate/issues"
+    "url": "https://github.com/theogravity/vault-tacular/issues"
   },
-  "homepage": "https://github.com/theogravity/boilerplate#readme",
+  "keywords": ["hashicorp", "vault", "client", "secrets", "manage", "engine", "auth", "typescript"],
+  "homepage": "https://github.com/theogravity/vault-tacular#readme",
   "dependencies": {
     "cross-fetch": "^3.0.2",
     "request": "^2.88.0",
