@@ -12,6 +12,7 @@ then
 fi
 
 export VAULT_API_ADDR='https://localhost:8200'
+export VAULT_ADDR='https://localhost:8200'
 
 vault server -dev -dev-root-token-id=root -config=dev-vault.hcl &
 sleep 2
@@ -23,7 +24,7 @@ echo "Mounting all builtin backends..."
 #vault auth enable alicloud
 #vault auth enable app-id
 #vault auth enable approle
-#vault auth enable aws
+vault auth enable aws
 #vault auth enable azure
 #vault auth enable centrify
 vault auth enable cert
