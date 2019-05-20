@@ -17,6 +17,8 @@ Contributions of all kind are welcomed!
 
 ## When implementing a new API
 
+The following will help minimize code review friction:
+
 ### Ask questions
 
 If you are adding something that does not fit into the existing code
@@ -57,6 +59,8 @@ through the request body
 implementing.
 - Be aware of the Vault API marking a parameter as required when building
 your interfaces
+
+Update `api-docs-index.md` if applicable.
 
 ### Tests
 

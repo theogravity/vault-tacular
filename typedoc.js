@@ -1,7 +1,7 @@
 module.exports = {
   name: 'Vault client for node.js',
   theme: 'markdown',
-  readme: 'none',
+  readme: 'api-docs-index.md',
   externalPattern: 'node_modules',
   module: 'commonjs',
   exclude: '**/__tests__/**/*.ts',

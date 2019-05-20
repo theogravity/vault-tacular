@@ -22,7 +22,7 @@
 
 **● version**: *`number`*
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:21](https://github.com/theogravity/vault-tacular/blob/2099cfa/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L21)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:21](https://github.com/theogravity/vault-client/blob/91e39ec/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L21)*
 
 Specifies the version to return. If not set the latest version is returned.
 

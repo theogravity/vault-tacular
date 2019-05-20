@@ -31,7 +31,7 @@
 
 *Inherited from [BaseSysBackend](basesysbackend.md).[constructor](basesysbackend.md#constructor)*
 
-*Defined in [system-backends/BaseSysBackend.ts:4](https://github.com/theogravity/vault-tacular/blob/2099cfa/src/system-backends/BaseSysBackend.ts#L4)*
+*Defined in [system-backends/BaseSysBackend.ts:4](https://github.com/theogravity/vault-client/blob/91e39ec/src/system-backends/BaseSysBackend.ts#L4)*
 
 **Parameters:**
 
@@ -52,7 +52,7 @@ ___
 
 ▸ **readInitStatus**(): `Promise`<[IVaultResponse](../interfaces/ivaultresponse.md)<[IReadInitStatusResponse](../interfaces/iinitsysbackend.ireadinitstatusresponse.md)>>
 
-*Defined in [system-backends/InitSysBackend.ts:12](https://github.com/theogravity/vault-tacular/blob/2099cfa/src/system-backends/InitSysBackend.ts#L12)*
+*Defined in [system-backends/InitSysBackend.ts:12](https://github.com/theogravity/vault-client/blob/91e39ec/src/system-backends/InitSysBackend.ts#L12)*
 
 Returns the initialization status of Vault.
 
@@ -67,7 +67,7 @@ ___
 
 ▸ **startInit**(payload: *[IStartInitPayload](../interfaces/iinitsysbackend.istartinitpayload.md)*, enterprisePayload?: *[IStartInitEntPayload](../interfaces/iinitsysbackend.istartinitentpayload.md)*): `Promise`<[IVaultResponse](../interfaces/ivaultresponse.md)<[IStartInitResponse](../interfaces/iinitsysbackend.istartinitresponse.md)>>
 
-*Defined in [system-backends/InitSysBackend.ts:29](https://github.com/theogravity/vault-tacular/blob/2099cfa/src/system-backends/InitSysBackend.ts#L29)*
+*Defined in [system-backends/InitSysBackend.ts:29](https://github.com/theogravity/vault-client/blob/91e39ec/src/system-backends/InitSysBackend.ts#L29)*
 
 Initializes a new Vault. The Vault must not have been previously initialized. The recovery options, as well as the stored shares option, are only available when using Vault HSM.
 

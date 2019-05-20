@@ -22,7 +22,7 @@
 
 **● versions**: *`number`[]*
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:86](https://github.com/theogravity/vault-tacular/blob/2099cfa/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L86)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:86](https://github.com/theogravity/vault-client/blob/91e39ec/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L86)*
 
 The versions to destroy. Their result will be permanently deleted.
 

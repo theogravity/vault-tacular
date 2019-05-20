@@ -1,5 +1,34 @@
 
-#  Vault client for node.js
+vault-tacular API Listing
+=========================
+
+For more information on how these classes correspond, see the Hashicorp API docs:
+
+[https://www.vaultproject.io/api/overview.html](https://www.vaultproject.io/api/overview.html)
+
+Auth Methods
+------------
+
+*   [AwsAuth](classes/awsauth.md): AWS
+*   [TlsCertificateAuth](classes/tlscertificateauth.md): TLS Certificates
+*   [TokenAuth](classes/tokenauth.md): Token
+*   [UserPassAuth](classes/userpassauth.md): Username and Password
+
+Secrets Engines
+---------------
+
+*   [Kv1SecretEngine](classes/kv1secretengine.md): Key/value v1
+*   [Kv2SecretEngine](classes/kv2secretengine.md): Key/value v2
+*   [PostgreSqlEngine](classes/postgresqlengine.md): Databases/PostgreSQL
+
+System Backends
+---------------
+
+*   [HealthSysBackend](classes/healthsysbackend.md): `/sys/health`
+*   [InitSysBackend](classes/initsysbackend.md): `/sys/init`
+*   [RotateSysBackend](classes/rotatesysbackend.md): `/sys/rotate`
+*   [UnsealSysBackend](classes/unsealsysbackend.md): `/sys/unseal`
+*   [WrappingSysBackend](classes/wrappingsysbackend.md): `/sys/wrapping/*`
 
 ## Index
 
@@ -64,7 +93,7 @@
 
 **Ƭ BaseUrl**: *`string`*
 
-*Defined in [interfaces/IBaseClient.ts:39](https://github.com/theogravity/vault-tacular/blob/2099cfa/src/interfaces/IBaseClient.ts#L39)*
+*Defined in [interfaces/IBaseClient.ts:39](https://github.com/theogravity/vault-client/blob/91e39ec/src/interfaces/IBaseClient.ts#L39)*
 
 Vault API base url
 
@@ -75,7 +104,7 @@ ___
 
 **Ƭ VaultToken**: *`string`*
 
-*Defined in [interfaces/IBaseClient.ts:32](https://github.com/theogravity/vault-tacular/blob/2099cfa/src/interfaces/IBaseClient.ts#L32)*
+*Defined in [interfaces/IBaseClient.ts:32](https://github.com/theogravity/vault-client/blob/91e39ec/src/interfaces/IBaseClient.ts#L32)*
 
 Authentication token to access the API
 
@@ -86,7 +115,7 @@ ___
 
 **Ƭ VaultWarnings**: *`Array`<`string`>*
 
-*Defined in [interfaces/IBaseClient.ts:34](https://github.com/theogravity/vault-tacular/blob/2099cfa/src/interfaces/IBaseClient.ts#L34)*
+*Defined in [interfaces/IBaseClient.ts:34](https://github.com/theogravity/vault-client/blob/91e39ec/src/interfaces/IBaseClient.ts#L34)*
 
 ___
 

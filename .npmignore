@@ -12,3 +12,4 @@ api-docs/
 typedoc.js
 .version-bump.js
 .changelog.js
+api-docs-index.md

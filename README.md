@@ -1,10 +1,11 @@
 # vault-tacular
 
-[![CircleCI](https://circleci.com/gh/theogravity/vault-tacular.svg?style=svg)](https://circleci.com/gh/theogravity/vault-tacular)
+[![npm version](https://badge.fury.io/js/vault-tacular.svg)](https://badge.fury.io/js/vault-tacular) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 A client for Hashicorp Vault written in Typescript.
 
-[API Docs](api-docs)
+- [API Docs](api-docs)
+- [CircleCI Status](https://circleci.com/gh/theogravity/vault-tacular)
 
 ## Features
 

@@ -29,7 +29,7 @@
 
 **● data**: *`object`*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:30](https://github.com/theogravity/vault-tacular/blob/2099cfa/src/interfaces/system-backend/IWrappingSysBackend.ts#L30)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:30](https://github.com/theogravity/vault-client/blob/91e39ec/src/interfaces/system-backend/IWrappingSysBackend.ts#L30)*
 
 The set of parameters in the wrapped response from wrap().
 
@@ -44,7 +44,7 @@ ___
 
 **● lease_duration**: *`number`*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:25](https://github.com/theogravity/vault-tacular/blob/2099cfa/src/interfaces/system-backend/IWrappingSysBackend.ts#L25)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:25](https://github.com/theogravity/vault-client/blob/91e39ec/src/interfaces/system-backend/IWrappingSysBackend.ts#L25)*
 
 ___
 <a id="lease_id"></a>
@@ -53,7 +53,7 @@ ___
 
 **● lease_id**: *`string`*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:24](https://github.com/theogravity/vault-tacular/blob/2099cfa/src/interfaces/system-backend/IWrappingSysBackend.ts#L24)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:24](https://github.com/theogravity/vault-client/blob/91e39ec/src/interfaces/system-backend/IWrappingSysBackend.ts#L24)*
 
 ___
 <a id="renewable"></a>
@@ -62,7 +62,7 @@ ___
 
 **● renewable**: *`boolean`*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:26](https://github.com/theogravity/vault-tacular/blob/2099cfa/src/interfaces/system-backend/IWrappingSysBackend.ts#L26)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:26](https://github.com/theogravity/vault-client/blob/91e39ec/src/interfaces/system-backend/IWrappingSysBackend.ts#L26)*
 
 ___
 <a id="request_id"></a>
@@ -71,7 +71,7 @@ ___
 
 **● request_id**: *`string`*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:23](https://github.com/theogravity/vault-tacular/blob/2099cfa/src/interfaces/system-backend/IWrappingSysBackend.ts#L23)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:23](https://github.com/theogravity/vault-client/blob/91e39ec/src/interfaces/system-backend/IWrappingSysBackend.ts#L23)*
 
 ___
 <a id="warnings"></a>
@@ -80,7 +80,7 @@ ___
 
 **● warnings**: *[VaultWarnings](../#vaultwarnings)*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:33](https://github.com/theogravity/vault-tacular/blob/2099cfa/src/interfaces/system-backend/IWrappingSysBackend.ts#L33)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:33](https://github.com/theogravity/vault-client/blob/91e39ec/src/interfaces/system-backend/IWrappingSysBackend.ts#L33)*
 
 ___
 
