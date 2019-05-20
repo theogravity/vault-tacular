@@ -16,7 +16,7 @@ export class UnsealSysBackend extends BaseSysBackend {
   ): Promise<IVaultResponse<IUnsealSysBackend.ISubmitUnsealKeyResponse>> {
     const res = await this.request(this.getAPIUrl(DEFAULT_PATH), {
       method: 'PUT',
-      body: payload
+      json: payload
     })
 
     return {

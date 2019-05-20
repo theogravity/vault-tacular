@@ -46,7 +46,7 @@ export class BaseDatabaseEngine extends BaseSecretEngine {
       this.getAPIUrl(CONFIGURE_CONN_PATH.replace(':name', name)),
       {
         method: 'POST',
-        body: payload
+        json: payload
       },
       {
         authRequired: true
@@ -183,7 +183,7 @@ export class BaseDatabaseEngine extends BaseSecretEngine {
       this.getAPIUrl(UPSERT_ROLE_PATH.replace(':name', name)),
       {
         method: 'POST',
-        body: payload
+        json: payload
       },
       {
         authRequired: true

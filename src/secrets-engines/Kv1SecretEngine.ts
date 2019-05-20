@@ -84,7 +84,7 @@ export class Kv1SecretEngine extends BaseSecretEngine {
       this.getAPIUrl(SECRET_UPSERT_PATH.replace(':path', path)),
       {
         method: 'POST',
-        body: payload
+        json: payload
       },
       {
         authRequired: true

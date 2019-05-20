@@ -113,7 +113,7 @@ export class Kv2SecretEngine extends BaseSecretEngine {
       this.getAPIUrl(SECRET_CREATE_UPDATE_PATH.replace(':path', path)),
       {
         method: 'POST',
-        body: payload
+        json: payload
       },
       {
         authRequired: true
@@ -164,7 +164,7 @@ export class Kv2SecretEngine extends BaseSecretEngine {
       this.getAPIUrl(SECRET_DELETE_VERSIONS_PATH.replace(':path', path)),
       {
         method: 'POST',
-        body: payload
+        json: payload
       },
       {
         authRequired: true
@@ -189,7 +189,7 @@ export class Kv2SecretEngine extends BaseSecretEngine {
       this.getAPIUrl(SECRET_UNDELETE_VERSIONS_PATH.replace(':path', path)),
       {
         method: 'POST',
-        body: payload
+        json: payload
       },
       {
         authRequired: true
@@ -214,7 +214,7 @@ export class Kv2SecretEngine extends BaseSecretEngine {
       this.getAPIUrl(SECRET_DESTROY_VERSIONS_PATH.replace(':path', path)),
       {
         method: 'POST',
-        body: payload
+        json: payload
       },
       {
         authRequired: true
@@ -289,7 +289,7 @@ export class Kv2SecretEngine extends BaseSecretEngine {
       this.getAPIUrl(SECRET_UPDATE_METADATA_PATH.replace(':path', path)),
       {
         method: 'POST',
-        body: payload
+        json: payload
       },
       {
         authRequired: true

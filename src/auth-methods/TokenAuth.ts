@@ -75,7 +75,7 @@ export class TokenAuth extends BaseAuth {
       this.getAPIUrl(CREATE_TOKEN_PATH),
       {
         method: 'POST',
-        body: payload
+        json: payload
       },
       {
         authRequired: true
@@ -99,7 +99,7 @@ export class TokenAuth extends BaseAuth {
       this.getAPIUrl(CREATE_ORPHAN_TOKEN_PATH),
       {
         method: 'POST',
-        body: payload
+        json: payload
       },
       {
         authRequired: true
@@ -128,7 +128,7 @@ export class TokenAuth extends BaseAuth {
       ),
       {
         method: 'POST',
-        body: payload
+        json: payload
       },
       {
         authRequired: true
@@ -154,7 +154,7 @@ export class TokenAuth extends BaseAuth {
       this.getAPIUrl(LOOKUP_TOKEN_PATH),
       {
         method: 'POST',
-        body: {
+        json: {
           token
         }
       },
@@ -206,7 +206,7 @@ export class TokenAuth extends BaseAuth {
       this.getAPIUrl(LOOKUP_ACCESSOR_PATH),
       {
         method: 'POST',
-        body: {
+        json: {
           accessor
         }
       },
@@ -236,7 +236,7 @@ export class TokenAuth extends BaseAuth {
       this.getAPIUrl(RENEW_TOKEN_PATH),
       {
         method: 'POST',
-        body: {
+        json: {
           token,
           ...payload
         }
@@ -266,7 +266,7 @@ export class TokenAuth extends BaseAuth {
       this.getAPIUrl(RENEW_TOKEN_SELF_PATH),
       {
         method: 'POST',
-        body: payload
+        json: payload
       },
       {
         authRequired: true
@@ -291,7 +291,7 @@ export class TokenAuth extends BaseAuth {
       this.getAPIUrl(REVOKE_TOKEN_PATH),
       {
         method: 'POST',
-        body: {
+        json: {
           token
         }
       },
@@ -342,7 +342,7 @@ export class TokenAuth extends BaseAuth {
       this.getAPIUrl(REVOKE_ACCESSOR_PATH),
       {
         method: 'POST',
-        body: {
+        json: {
           accessor
         }
       },
@@ -372,7 +372,7 @@ export class TokenAuth extends BaseAuth {
       this.getAPIUrl(REVOKE_ORPHAN_AND_CHILDREN_PATH),
       {
         method: 'POST',
-        body: {
+        json: {
           token
         }
       },
@@ -451,7 +451,7 @@ export class TokenAuth extends BaseAuth {
       this.getAPIUrl(UPSERT_TOKEN_ROLE_PATH.replace(':role_name', roleName)),
       {
         method: 'POST',
-        body: payload
+        json: payload
       },
       {
         authRequired: true

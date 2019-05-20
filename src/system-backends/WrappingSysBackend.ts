@@ -21,7 +21,7 @@ export class WrappingSysBackend extends BaseSysBackend {
       this.getAPIUrl(WRAPPING_LOOKUP_PATH),
       {
         method: 'POST',
-        body: {
+        json: {
           token
         }
       },
@@ -52,7 +52,7 @@ export class WrappingSysBackend extends BaseSysBackend {
       this.getAPIUrl(WRAPPING_REWRAP_PATH),
       {
         method: 'POST',
-        body: {
+        json: {
           token
         }
       },
@@ -127,7 +127,7 @@ export class WrappingSysBackend extends BaseSysBackend {
           'X-Vault-Wrap-TTL': wrapTtl
         },
         method: 'POST',
-        body: payload
+        json: payload
       },
       {
         authRequired: true
