@@ -22,7 +22,7 @@
 
 **● increment**: *`string`*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:117](https://github.com/theogravity/vault-client/blob/e1877fc/src/interfaces/auth-methods/ITokenAuth.ts#L117)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:117](https://github.com/theogravity/vault-tacular/blob/fa3cc87/src/interfaces/auth-methods/ITokenAuth.ts#L117)*
 
 An optional requested lease increment can be provided. This increment may be ignored.
 

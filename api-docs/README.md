@@ -101,7 +101,7 @@ System Backends
 
 **Ƭ BaseUrl**: *`string`*
 
-*Defined in [interfaces/IBaseClient.ts:39](https://github.com/theogravity/vault-client/blob/e1877fc/src/interfaces/IBaseClient.ts#L39)*
+*Defined in [interfaces/IBaseClient.ts:39](https://github.com/theogravity/vault-tacular/blob/fa3cc87/src/interfaces/IBaseClient.ts#L39)*
 
 Vault API base url
 
@@ -112,7 +112,7 @@ ___
 
 **Ƭ VaultToken**: *`string`*
 
-*Defined in [interfaces/IBaseClient.ts:32](https://github.com/theogravity/vault-client/blob/e1877fc/src/interfaces/IBaseClient.ts#L32)*
+*Defined in [interfaces/IBaseClient.ts:32](https://github.com/theogravity/vault-tacular/blob/fa3cc87/src/interfaces/IBaseClient.ts#L32)*
 
 Authentication token to access the API
 
@@ -123,7 +123,7 @@ ___
 
 **Ƭ VaultWarnings**: *`Array`<`string`>*
 
-*Defined in [interfaces/IBaseClient.ts:34](https://github.com/theogravity/vault-client/blob/e1877fc/src/interfaces/IBaseClient.ts#L34)*
+*Defined in [interfaces/IBaseClient.ts:34](https://github.com/theogravity/vault-tacular/blob/fa3cc87/src/interfaces/IBaseClient.ts#L34)*
 
 ___
 
@@ -133,9 +133,9 @@ ___
 
 ###  getTokenFromFile
 
-▸ **getTokenFromFile**(path: *`string`*, cacheToken?: *`boolean`*): `Promise`<`Object`>
+▸ **getTokenFromFile**(path: *`string`*, cacheToken?: *`boolean`*): `(Anonymous function)`
 
-*Defined in [auth-token-funcs/get-token-from-file.ts:9](https://github.com/theogravity/vault-client/blob/e1877fc/src/auth-token-funcs/get-token-from-file.ts#L9)*
+*Defined in [auth-token-funcs/get-token-from-file.ts:10](https://github.com/theogravity/vault-tacular/blob/fa3cc87/src/auth-token-funcs/get-token-from-file.ts#L10)*
 
 Read a token from a file. Useful if using the vault agent and need to read from a file sink.
 
@@ -146,7 +146,8 @@ Read a token from a file. Useful if using the vault agent and need to read from 
 | path | `string` | - |  Path to the file containing the token |
 | `Default value` cacheToken | `boolean` | true |  If true, will cache the token once read. If false, will read from the file each time the request requires a token. Default is true. |
 
-**Returns:** `Promise`<`Object`>
+**Returns:** `(Anonymous function)`
+An async function that when called, will read the file for the token
 
 ___
 
