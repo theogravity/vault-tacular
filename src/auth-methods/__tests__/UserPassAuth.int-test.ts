@@ -11,7 +11,7 @@ const auth = new UserPassAuth(process.env.VAULT_API_URL, {
 describe('UserPassAuth integration tests', () => {
   it('should login', async () => {
     const user = await createUser()
-    const resp = await auth.login(user.username, user)
+    const resp = await auth.login(user.username, user.password)
 
     expect(resp).toMatchObject({
       result: {

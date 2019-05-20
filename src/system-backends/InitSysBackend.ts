@@ -27,10 +27,10 @@ export class InitSysBackend extends BaseSysBackend {
    * @link https://www.vaultproject.io/api/system/init.html#start-initialization
    */
   async startInit (
-    payload: IInitSysBackend.IStartInitEntPayload,
+    payload: IInitSysBackend.IStartInitPayload,
     enterprisePayload?: IInitSysBackend.IStartInitEntPayload
   ): Promise<IVaultResponse<IInitSysBackend.IStartInitResponse>> {
-    let body = payload
+    let body: any = payload
 
     if (enterprisePayload) {
       body = {

@@ -9,3 +9,6 @@ jest.config.js
 jest-int.config.js
 wallaby.js
 api-docs/
+typedoc.js
+.version-bump.js
+.changelog.js

@@ -60,6 +60,11 @@ export abstract class BaseClient {
       opts.headers = {}
     }
 
+    if (reqParams.authRequired && !this.config.authTokenFn) {
+      throw Error(`[vault-client] API call to ${uri} requires an auth token, but the 
+'authTokenFn' config parameter is not defined`)
+    }
+
     if (reqParams.authRequired && this.config.authTokenFn) {
       opts.headers['X-Vault-Token'] = await this.config.authTokenFn()
     }

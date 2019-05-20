@@ -1,7 +1,6 @@
 {
   "name": "@theogravity/vault-client",
-  "private": true,
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Client for Hashicorp Vault written in Typescript with detailed documentation.",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -15,19 +14,16 @@
     "test:int": "./start-dev-vault.sh && NODE_EXTRA_CA_CERTS=test-certs/rootCA.crt VAULT_TOKEN=root VAULT_API_URL=https://localhost:8300/v1 jest -c jest-int.config.js",
     "test:watch": "jest --watch",
     "test:coverage:watch": "jest --coverage --watch",
-    "toc": "toc-md README.md README.md",
-    "add-readme": "git add README.md",
-    "add-docs": "git add api-docs/",
     "lint-staged": "lint-staged",
     "prepare-publish": "npm run changelog:verify && version-bump && npm run changelog:release",
     "version-bump": "version-bump",
-    "changelog:help": "changelog-version ",
+    "changelog:help": "changelog-version",
     "changelog:verify": "changelog-version verify",
     "changelog:prepare": "changelog-version prepare",
     "changelog:release": "changelog-version release",
     "lint": "prettier-standard src/**/*.ts && standard src/**/*.ts",
     "ts-node-dev": "ts-node-dev",
-    "typedoc": "typedoc --out api-docs/ --module commonjs --exclude **/__tests__/**/*.ts  --excludeProtected --excludePrivate --target ES6 src/"
+    "typedoc": "typedoc --options typedoc.js --out api-docs src/"
   },
   "repository": {
     "type": "git",
@@ -64,11 +60,11 @@
     "regenerator-runtime": "^0.13.2",
     "source-map-support": "^0.5.12",
     "standard": "^12.0.1",
-    "toc-md-alt": "^0.3.0",
     "ts-jest": "^24.0.2",
     "ts-node": "^8.1.0",
     "ts-node-dev": "^1.0.0-pre.39",
     "typedoc": "^0.14.2",
+    "typedoc-plugin-markdown": "^1.2.1",
     "typescript": "^3.4.5"
   },
   "standard": {

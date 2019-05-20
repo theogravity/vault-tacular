@@ -24,6 +24,10 @@ then
   # Version bump package.json, stamp CHANGELOG.md
   npm run prepare-publish
 
+  # Generate api docs
+  npm run typedoc
+  git add api-docs/
+
   # Changelog is now stamped with the version / time info - add to git
   git add CHANGELOG.md
   git add package.json

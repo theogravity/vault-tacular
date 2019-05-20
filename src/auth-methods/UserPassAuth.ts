@@ -48,13 +48,15 @@ export class UserPassAuth extends BaseAuth {
    */
   async login (
     username: string,
-    payload: IUserPassAuth.ILoginPayload
+    password: string
   ): Promise<IVaultResponse<ISecret>> {
     const res = await this.request(
       this.getAPIUrl(LOGIN_PATH.replace(':username', username)),
       {
         method: 'POST',
-        json: payload
+        json: {
+          password
+        }
       }
     )
 

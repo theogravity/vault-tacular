@@ -1,5 +1,3 @@
-import { IBaseLoginPayload } from './IBaseAuth'
-
 export namespace IUserPassAuth {
   export interface IUpsertPayload {
     /**
@@ -24,12 +22,5 @@ export namespace IUserPassAuth {
      * IPs falling within the range of the specified CIDR(s).
      */
     bound_cidrs?: string | Array<string>
-  }
-
-  export interface ILoginPayload extends IBaseLoginPayload {
-    /**
-     * The password for the user
-     */
-    password: string
   }
 }
