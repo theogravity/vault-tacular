@@ -5,15 +5,15 @@ import { IKv2SecretEngine } from '../interfaces/secrets-engines/IKv2SecretEngine
 
 const DEFAULT_MOUNT_POINT = '/kv'
 const CONFIGURE_ENGINE_PATH = '/config'
-const SECRET_VERSION_PATH = '/result/:path'
-const SECRET_CREATE_UPDATE_PATH = '/result/:path'
-const SECRET_DELETE_LATEST_PATH = '/result/:path'
+const SECRET_VERSION_PATH = '/data/:path'
+const SECRET_CREATE_UPDATE_PATH = '/data/:path'
+const SECRET_DELETE_LATEST_PATH = '/data/:path'
 const SECRET_DELETE_VERSIONS_PATH = '/delete/:path'
 const SECRET_UNDELETE_VERSIONS_PATH = '/undelete/:path'
 const SECRET_DESTROY_VERSIONS_PATH = '/destroy/:path'
 const SECRET_LIST_PATH = '/metadata/:path'
 const SECRET_READ_METADATA_PATH = '/metadata/:path'
-const SECRET_UPDATE_METADATA_PATH = '/secret/metadata/:path'
+const SECRET_UPDATE_METADATA_PATH = '/metadata/:path'
 const SECRET_DELETE_METADATA_AND_ALL_VERS_PATH = '/metadata/:path'
 
 /**
@@ -77,7 +77,7 @@ export class Kv2SecretEngine extends BaseSecretEngine {
    */
   async readSecretVersion (
     path: string,
-    payload: IKv2SecretEngine.IReadSecretVersionPayload
+    payload: IKv2SecretEngine.IReadSecretVersionPayload = {}
   ): Promise<IVaultResponse<IKv2SecretEngine.IReadSecretVersionResponse>> {
     const res = await this.request(
       this.getAPIUrl(SECRET_VERSION_PATH.replace(':path', path)),

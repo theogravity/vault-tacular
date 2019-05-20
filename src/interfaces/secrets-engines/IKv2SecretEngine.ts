@@ -22,7 +22,9 @@ export namespace IKv2SecretEngine {
   }
 
   export interface IReadSecretVersionResponse {
-    data: object
+    data: {
+      [s: string]: any
+    }
     metadata: {
       created_time: string
       deletion_time: string
