@@ -23,7 +23,7 @@
 
 **● data**: *`object`*
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:25](https://github.com/theogravity/vault-client/blob/38077d0/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L25)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:25](https://github.com/theogravity/vault-client/blob/a3d9e21/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L25)*
 
 #### Type declaration
 
@@ -36,7 +36,7 @@ ___
 
 **● metadata**: *`object`*
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:28](https://github.com/theogravity/vault-client/blob/38077d0/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L28)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:28](https://github.com/theogravity/vault-client/blob/a3d9e21/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L28)*
 
 #### Type declaration
 

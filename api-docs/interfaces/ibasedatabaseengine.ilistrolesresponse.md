@@ -26,7 +26,7 @@
 
 **● auth**: *[ISecretAuth](isecretauth.md)*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:101](https://github.com/theogravity/vault-client/blob/38077d0/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L101)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:101](https://github.com/theogravity/vault-client/blob/a3d9e21/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L101)*
 
 ___
 <a id="data"></a>
@@ -35,7 +35,7 @@ ___
 
 **● data**: *`object`*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:102](https://github.com/theogravity/vault-client/blob/38077d0/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L102)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:102](https://github.com/theogravity/vault-client/blob/a3d9e21/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L102)*
 
 #### Type declaration
 
@@ -46,7 +46,7 @@ ___
 
 **● lease_duration**: *`number`*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:105](https://github.com/theogravity/vault-client/blob/38077d0/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L105)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:105](https://github.com/theogravity/vault-client/blob/a3d9e21/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L105)*
 
 ___
 <a id="lease_id"></a>
@@ -55,7 +55,7 @@ ___
 
 **● lease_id**: *`string`*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:106](https://github.com/theogravity/vault-client/blob/38077d0/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L106)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:106](https://github.com/theogravity/vault-client/blob/a3d9e21/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L106)*
 
 ___
 <a id="renewable"></a>
@@ -64,7 +64,7 @@ ___
 
 **● renewable**: *`boolean`*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:107](https://github.com/theogravity/vault-client/blob/38077d0/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L107)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:107](https://github.com/theogravity/vault-client/blob/a3d9e21/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L107)*
 
 ___
 

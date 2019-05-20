@@ -32,7 +32,7 @@ The AWS secrets engine generates AWS access credentials dynamically based on IAM
 
 ⊕ **new AwsAuth**(baseUrl: *[BaseUrl](../#baseurl)*, config?: *[IBaseClientConfig](../interfaces/ibaseclientconfig.md)*): [AwsAuth](awsauth.md)
 
-*Defined in [auth-methods/AwsAuth.ts:13](https://github.com/theogravity/vault-client/blob/38077d0/src/auth-methods/AwsAuth.ts#L13)*
+*Defined in [auth-methods/AwsAuth.ts:13](https://github.com/theogravity/vault-client/blob/a3d9e21/src/auth-methods/AwsAuth.ts#L13)*
 
 **Parameters:**
 
@@ -53,7 +53,7 @@ ___
 
 ▸ **login**(payload?: *[ILoginPayload](../interfaces/iawsauth.iloginpayload.md)*): `Promise`<[IVaultResponse](../interfaces/ivaultresponse.md)<[ISecret](../interfaces/isecret.md)>>
 
-*Defined in [auth-methods/AwsAuth.ts:27](https://github.com/theogravity/vault-client/blob/38077d0/src/auth-methods/AwsAuth.ts#L27)*
+*Defined in [auth-methods/AwsAuth.ts:27](https://github.com/theogravity/vault-client/blob/a3d9e21/src/auth-methods/AwsAuth.ts#L27)*
 
 Generic AWS login
 
@@ -74,7 +74,7 @@ ___
 
 ▸ **loginUsingEc2**(payload: *[ILoginEc2Payload](../interfaces/iawsauth.iloginec2payload.md)*): `Promise`<[IVaultResponse](../interfaces/ivaultresponse.md)<[ISecret](../interfaces/isecret.md)>>
 
-*Defined in [auth-methods/AwsAuth.ts:54](https://github.com/theogravity/vault-client/blob/38077d0/src/auth-methods/AwsAuth.ts#L54)*
+*Defined in [auth-methods/AwsAuth.ts:54](https://github.com/theogravity/vault-client/blob/a3d9e21/src/auth-methods/AwsAuth.ts#L54)*
 
 AWS EC2 login with EC2-required payload only
 
@@ -95,7 +95,7 @@ ___
 
 ▸ **loginUsingIam**(payload: *[ILoginIamPayload](../interfaces/iawsauth.iloginiampayload.md)*): `Promise`<[IVaultResponse](../interfaces/ivaultresponse.md)<[ISecret](../interfaces/isecret.md)>>
 
-*Defined in [auth-methods/AwsAuth.ts:44](https://github.com/theogravity/vault-client/blob/38077d0/src/auth-methods/AwsAuth.ts#L44)*
+*Defined in [auth-methods/AwsAuth.ts:44](https://github.com/theogravity/vault-client/blob/a3d9e21/src/auth-methods/AwsAuth.ts#L44)*
 
 AWS IAM login with IAM-required payload only
 

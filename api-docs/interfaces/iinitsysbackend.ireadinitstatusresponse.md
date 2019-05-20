@@ -22,7 +22,7 @@
 
 **● initialized**: *`boolean`*
 
-*Defined in [interfaces/system-backend/IInitSysBackend.ts:3](https://github.com/theogravity/vault-client/blob/38077d0/src/interfaces/system-backend/IInitSysBackend.ts#L3)*
+*Defined in [interfaces/system-backend/IInitSysBackend.ts:3](https://github.com/theogravity/vault-client/blob/a3d9e21/src/interfaces/system-backend/IInitSysBackend.ts#L3)*
 
 ___
 

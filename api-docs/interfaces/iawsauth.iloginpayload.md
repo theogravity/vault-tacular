@@ -30,7 +30,7 @@
 
 **● iam_http_request_method**: *`string`*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:5](https://github.com/theogravity/vault-client/blob/38077d0/src/interfaces/auth-methods/IAwsAuth.ts#L5)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:5](https://github.com/theogravity/vault-client/blob/a3d9e21/src/interfaces/auth-methods/IAwsAuth.ts#L5)*
 
 ___
 <a id="iam_request_body"></a>
@@ -39,7 +39,7 @@ ___
 
 **● iam_request_body**: *`string`*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:7](https://github.com/theogravity/vault-client/blob/38077d0/src/interfaces/auth-methods/IAwsAuth.ts#L7)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:7](https://github.com/theogravity/vault-client/blob/a3d9e21/src/interfaces/auth-methods/IAwsAuth.ts#L7)*
 
 ___
 <a id="iam_request_headers"></a>
@@ -48,7 +48,7 @@ ___
 
 **● iam_request_headers**: *`string`*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:8](https://github.com/theogravity/vault-client/blob/38077d0/src/interfaces/auth-methods/IAwsAuth.ts#L8)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:8](https://github.com/theogravity/vault-client/blob/a3d9e21/src/interfaces/auth-methods/IAwsAuth.ts#L8)*
 
 ___
 <a id="iam_request_url"></a>
@@ -57,7 +57,7 @@ ___
 
 **● iam_request_url**: *`string`*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:6](https://github.com/theogravity/vault-client/blob/38077d0/src/interfaces/auth-methods/IAwsAuth.ts#L6)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:6](https://github.com/theogravity/vault-client/blob/a3d9e21/src/interfaces/auth-methods/IAwsAuth.ts#L6)*
 
 ___
 <a id="identity"></a>
@@ -66,7 +66,7 @@ ___
 
 **● identity**: *`string`*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:9](https://github.com/theogravity/vault-client/blob/38077d0/src/interfaces/auth-methods/IAwsAuth.ts#L9)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:9](https://github.com/theogravity/vault-client/blob/a3d9e21/src/interfaces/auth-methods/IAwsAuth.ts#L9)*
 
 ___
 <a id="pcks7"></a>
@@ -75,7 +75,7 @@ ___
 
 **● pcks7**: *`string`*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:11](https://github.com/theogravity/vault-client/blob/38077d0/src/interfaces/auth-methods/IAwsAuth.ts#L11)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:11](https://github.com/theogravity/vault-client/blob/a3d9e21/src/interfaces/auth-methods/IAwsAuth.ts#L11)*
 
 ___
 <a id="signature"></a>
@@ -84,7 +84,7 @@ ___
 
 **● signature**: *`string`*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:10](https://github.com/theogravity/vault-client/blob/38077d0/src/interfaces/auth-methods/IAwsAuth.ts#L10)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:10](https://github.com/theogravity/vault-client/blob/a3d9e21/src/interfaces/auth-methods/IAwsAuth.ts#L10)*
 
 ___
 

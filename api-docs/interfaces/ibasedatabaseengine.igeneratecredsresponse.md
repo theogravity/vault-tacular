@@ -22,7 +22,7 @@
 
 **● data**: *`object`*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:111](https://github.com/theogravity/vault-client/blob/38077d0/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L111)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:111](https://github.com/theogravity/vault-client/blob/a3d9e21/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L111)*
 
 #### Type declaration
 

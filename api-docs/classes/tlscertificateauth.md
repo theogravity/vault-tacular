@@ -31,7 +31,7 @@ Uses TLS certificates for authentication.
 
 ⊕ **new TlsCertificateAuth**(baseUrl: *[BaseUrl](../#baseurl)*, config?: *[IBaseClientConfig](../interfaces/ibaseclientconfig.md)*): [TlsCertificateAuth](tlscertificateauth.md)
 
-*Defined in [auth-methods/TlsCertificateAuth.ts:14](https://github.com/theogravity/vault-client/blob/38077d0/src/auth-methods/TlsCertificateAuth.ts#L14)*
+*Defined in [auth-methods/TlsCertificateAuth.ts:14](https://github.com/theogravity/vault-client/blob/a3d9e21/src/auth-methods/TlsCertificateAuth.ts#L14)*
 
 **Parameters:**
 
@@ -52,7 +52,7 @@ ___
 
 ▸ **createRole**(name: *`string`*, payload: *[ICreateRolePayload](../interfaces/itlscertificateauth.icreaterolepayload.md)*): `Promise`<[IVaultResponse](../interfaces/ivaultresponse.md)<`void`>>
 
-*Defined in [auth-methods/TlsCertificateAuth.ts:27](https://github.com/theogravity/vault-client/blob/38077d0/src/auth-methods/TlsCertificateAuth.ts#L27)*
+*Defined in [auth-methods/TlsCertificateAuth.ts:27](https://github.com/theogravity/vault-client/blob/a3d9e21/src/auth-methods/TlsCertificateAuth.ts#L27)*
 
 Sets a CA cert and associated parameters in a role name.
 
@@ -74,7 +74,7 @@ ___
 
 ▸ **login**(payload: *[ILoginPayload](../interfaces/itlscertificateauth.iloginpayload.md)*): `Promise`<[IVaultResponse](../interfaces/ivaultresponse.md)<[ISecret](../interfaces/isecret.md)>>
 
-*Defined in [auth-methods/TlsCertificateAuth.ts:55](https://github.com/theogravity/vault-client/blob/38077d0/src/auth-methods/TlsCertificateAuth.ts#L55)*
+*Defined in [auth-methods/TlsCertificateAuth.ts:55](https://github.com/theogravity/vault-client/blob/a3d9e21/src/auth-methods/TlsCertificateAuth.ts#L55)*
 
 Log in and fetch a token. If there is a valid chain to a CA configured in the method and all role constraints are matched, a token will be issued. If the certificate has DNS SANs in it, each of those will be verified. If Common Name is required to be verified, then it should be a fully qualified DNS domain name and must be duplicated as a DNS SAN (see [https://tools.ietf.org/html/rfc6125#section-2.3)](https://tools.ietf.org/html/rfc6125#section-2.3)).
 
