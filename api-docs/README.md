@@ -14,6 +14,10 @@ Auth Methods
 *   [TokenAuth](classes/tokenauth.md): Token
 *   [UserPassAuth](classes/userpassauth.md): Username and Password
 
+### Auth token function helpers
+
+*   [getTokenFromFile](#gettokenfromfile): Reads a token from a file. Useful with vault agent.
+
 Secrets Engines
 ---------------
 
@@ -83,6 +87,10 @@ System Backends
 * [VaultToken](#vaulttoken)
 * [VaultWarnings](#vaultwarnings)
 
+### Functions
+
+* [getTokenFromFile](#gettokenfromfile)
+
 ---
 
 ## Type aliases
@@ -93,7 +101,7 @@ System Backends
 
 **Ƭ BaseUrl**: *`string`*
 
-*Defined in [interfaces/IBaseClient.ts:39](https://github.com/theogravity/vault-tacular/blob/560d138/src/interfaces/IBaseClient.ts#L39)*
+*Defined in [interfaces/IBaseClient.ts:39](https://github.com/theogravity/vault-client/blob/e1877fc/src/interfaces/IBaseClient.ts#L39)*
 
 Vault API base url
 
@@ -104,7 +112,7 @@ ___
 
 **Ƭ VaultToken**: *`string`*
 
-*Defined in [interfaces/IBaseClient.ts:32](https://github.com/theogravity/vault-tacular/blob/560d138/src/interfaces/IBaseClient.ts#L32)*
+*Defined in [interfaces/IBaseClient.ts:32](https://github.com/theogravity/vault-client/blob/e1877fc/src/interfaces/IBaseClient.ts#L32)*
 
 Authentication token to access the API
 
@@ -115,7 +123,30 @@ ___
 
 **Ƭ VaultWarnings**: *`Array`<`string`>*
 
-*Defined in [interfaces/IBaseClient.ts:34](https://github.com/theogravity/vault-tacular/blob/560d138/src/interfaces/IBaseClient.ts#L34)*
+*Defined in [interfaces/IBaseClient.ts:34](https://github.com/theogravity/vault-client/blob/e1877fc/src/interfaces/IBaseClient.ts#L34)*
+
+___
+
+## Functions
+
+<a id="gettokenfromfile"></a>
+
+###  getTokenFromFile
+
+▸ **getTokenFromFile**(path: *`string`*, cacheToken?: *`boolean`*): `Promise`<`Object`>
+
+*Defined in [auth-token-funcs/get-token-from-file.ts:9](https://github.com/theogravity/vault-client/blob/e1877fc/src/auth-token-funcs/get-token-from-file.ts#L9)*
+
+Read a token from a file. Useful if using the vault agent and need to read from a file sink.
+
+**Parameters:**
+
+| Name | Type | Default value | Description |
+| ------ | ------ | ------ | ------ |
+| path | `string` | - |  Path to the file containing the token |
+| `Default value` cacheToken | `boolean` | true |  If true, will cache the token once read. If false, will read from the file each time the request requires a token. Default is true. |
+
+**Returns:** `Promise`<`Object`>
 
 ___
 

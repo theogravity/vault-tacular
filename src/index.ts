@@ -17,6 +17,7 @@ import { Kv2SecretEngine } from './secrets-engines/Kv2SecretEngine'
 import { PostgreSqlEngine } from './secrets-engines/databases/PostgreSqlEngine'
 import { BaseDatabaseEngine } from './secrets-engines/databases/BaseDatabaseEngine'
 import { WrappingSysBackend } from './system-backends/WrappingSysBackend'
+import { getTokenFromFile } from './auth-token-funcs/get-token-from-file'
 
 export default {
   BaseAuth,
@@ -37,5 +38,7 @@ export default {
   InitSysBackend,
   RotateSysBackend,
   UnsealSysBackend,
-  WrappingSysBackend
+  WrappingSysBackend,
+
+  getTokenFromFile
 }

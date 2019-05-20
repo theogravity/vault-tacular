@@ -12,6 +12,10 @@ https://www.vaultproject.io/api/overview.html
 - [TokenAuth](classes/tokenauth.md): Token
 - [UserPassAuth](classes/userpassauth.md): Username and Password
 
+### Auth token function helpers
+
+- [getTokenFromFile](#gettokenfromfile): Reads a token from a file. Useful with vault agent.
+
 ## Secrets Engines
 
 - [Kv1SecretEngine](classes/kv1secretengine.md): Key/value v1

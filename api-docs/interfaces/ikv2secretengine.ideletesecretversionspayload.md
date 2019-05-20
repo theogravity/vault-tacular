@@ -22,7 +22,7 @@
 
 **● versions**: *`number`[]*
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:71](https://github.com/theogravity/vault-tacular/blob/560d138/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L71)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:71](https://github.com/theogravity/vault-client/blob/e1877fc/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L71)*
 
 The versions to be deleted. The versioned result will not be deleted, but it will no longer be returned in normal get requests.
 

@@ -1,3 +1,7 @@
+# UNRELEASED
+
+Add helper function, `getTokenFromFile` to load a token from a file.
+
 # 0.1.4 - Mon May 20 2019 07:11:56
 
 Update docs

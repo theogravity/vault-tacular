@@ -29,6 +29,7 @@ A client for Hashicorp Vault written in Typescript.
 - [Examples](#examples)
     - [Init vault](#init-vault)
     - [Create a user using the username/password auth engine](#create-a-user-using-the-usernamepassword-auth-engine)
+    - [Read a token from a file](#read-a-token-from-a-file)
     - [Create / Read a secret](#create--read-a-secret)
 - [Troubleshooting](#troubleshooting)
     - [Unsure if the API is working or not](#unsure-if-the-api-is-working-or-not)
@@ -153,6 +154,16 @@ async function createUser () {
     password
   }
 }
+```
+
+### Read a token from a file
+
+```javascript
+import { UserPassAuth, getTokenFromFile } from 'vault-tacular'
+
+const auth = new UserPassAuth('http://localhost:8200/v1', {
+  authTokenFn: getTokenFromFile('/tmp/token')
+})
 ```
 
 ### Create / Read a secret
