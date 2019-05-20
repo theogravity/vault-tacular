@@ -42,7 +42,8 @@
   "dependencies": {
     "cross-fetch": "^3.0.2",
     "request": "^2.88.0",
-    "request-promise-native": "^1.0.7"
+    "request-promise-native": "^1.0.7",
+    "url-join": "^4.0.0"
   },
   "devDependencies": {
     "@theo.gravity/changelog-version": "^2.1.8",

@@ -45,7 +45,8 @@ vault auth enable userpass
 #vault secrets enable consul
 #vault secrets enable database
 #vault secrets enable gcp
-vault secrets enable kv
+vault secrets enable -version=2 -path=kv2 kv
+vault secrets enable -version=1 -path=kv1 kv
 #vault secrets enable mongodb
 #vault secrets enable mssql
 #vault secrets enable mysql

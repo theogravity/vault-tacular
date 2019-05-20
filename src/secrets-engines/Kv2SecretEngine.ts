@@ -3,7 +3,7 @@ import { BaseUrl, IBaseClientConfig } from '../interfaces/IBaseClient'
 import { IVaultResponse } from '../interfaces/IBaseClient'
 import { IKv2SecretEngine } from '../interfaces/secrets-engines/IKv2SecretEngine'
 
-const DEFAULT_MOUNT_POINT = '/secret'
+const DEFAULT_MOUNT_POINT = '/kv'
 const CONFIGURE_ENGINE_PATH = '/config'
 const SECRET_VERSION_PATH = '/result/:path'
 const SECRET_CREATE_UPDATE_PATH = '/result/:path'

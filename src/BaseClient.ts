@@ -5,6 +5,8 @@ import request, {
   RequestPromise
 } from 'request-promise-native'
 
+import urlJoin from 'url-join'
+
 import {
   BaseUrl,
   IBaseClientConfig,
@@ -15,7 +17,6 @@ import { StatusCodeError } from 'request-promise-native/errors'
 export abstract class BaseClient {
   protected config: IBaseClientConfig
   protected baseUrl: BaseUrl
-  private readonly authTokenFn: Function
   private readonly httpClient: RequestPromiseAPI
 
   /**
@@ -34,10 +35,10 @@ export abstract class BaseClient {
    */
   protected getAPIUrl (path: string) {
     if (this.config.mount) {
-      return this.baseUrl + this.config.mount + path
+      return urlJoin(this.baseUrl, this.config.mount, path)
     }
 
-    return this.baseUrl + path
+    return urlJoin(this.baseUrl, path)
   }
 
   /**
