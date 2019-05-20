@@ -8,3 +8,4 @@ start-dev-vault.sh
 jest.config.js
 jest-int.config.js
 wallaby.js
+api-docs/
