@@ -10,6 +10,7 @@ import {
   IBaseClientConfig,
   IClientReqParams
 } from './interfaces/IBaseClient'
+import { StatusCodeError } from 'request-promise-native/errors'
 
 export abstract class BaseClient {
   protected config: IBaseClientConfig
@@ -39,12 +40,17 @@ export abstract class BaseClient {
     return this.baseUrl + path
   }
 
+  /**
+   * @throws StatusCodeError
+   * @throws RequestError
+   */
   protected async request (
     uri: string,
     reqOpts: RequestPromiseOptions = {},
     reqParams: IClientReqParams = {}
   ): Promise<RequestPromise<FullResponse>> {
     let opts = {
+      json: true,
       resolveWithFullResponse: true,
       ...reqOpts
     }

@@ -28,7 +28,7 @@ export class TlsCertificateAuth extends BaseAuth {
     name: string,
     payload: ITlsCertificateAuth.ICreateRolePayload
   ): Promise<IVaultResponse<void>> {
-    const res = await this.request(
+    await this.request(
       this.getAPIUrl(CREATE_ROLE_PATH.replace(':name', name)),
       {
         method: 'POST',
@@ -39,10 +39,7 @@ export class TlsCertificateAuth extends BaseAuth {
       }
     )
 
-    return {
-      statusCode: res.statusCode,
-      data: res.body
-    }
+    return
   }
 
   /**
@@ -69,8 +66,7 @@ export class TlsCertificateAuth extends BaseAuth {
     })
 
     return {
-      statusCode: res.statusCode,
-      data: res.body
+      result: res.body
     }
   }
 }

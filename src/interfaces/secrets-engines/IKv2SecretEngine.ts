@@ -33,7 +33,7 @@ export namespace IKv2SecretEngine {
 
   export interface ICreateUpdateSecretPayload {
     /**
-     * The contents of the data map will be stored and returned on read
+     * The contents of the result map will be stored and returned on read
      */
     data: {
       [key: string]: any
@@ -63,7 +63,7 @@ export namespace IKv2SecretEngine {
 
   export interface IDeleteSecretVersionsPayload {
     /**
-     * The versions to be deleted. The versioned data will not be deleted, but it will no longer be
+     * The versions to be deleted. The versioned result will not be deleted, but it will no longer be
      * returned in normal get requests.
      */
     versions: number[]
@@ -71,7 +71,7 @@ export namespace IKv2SecretEngine {
 
   export interface IUndeleteSecretVersionsPayload {
     /**
-     * The versions to undelete. The versions will be restored and their data will be returned
+     * The versions to undelete. The versions will be restored and their result will be returned
      * on normal get requests.
      */
     versions: number[]
@@ -79,7 +79,7 @@ export namespace IKv2SecretEngine {
 
   export interface IDestroySecretVersionsPayload {
     /**
-     * The versions to destroy. Their data will be permanently deleted.
+     * The versions to destroy. Their result will be permanently deleted.
      */
     versions: number[]
   }

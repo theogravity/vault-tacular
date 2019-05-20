@@ -5,7 +5,6 @@ import {
   IVaultResponse
 } from '../../interfaces/IBaseClient'
 import { IPostgreSqlEngine } from '../../interfaces/secrets-engines/databases/IPostgreSqlEngine'
-import { IBaseDatabaseEngine } from '../../interfaces/secrets-engines/databases/IBaseDatabaseEngine'
 
 const PLUGIN_NAME = 'postgresql-database-plugin'
 

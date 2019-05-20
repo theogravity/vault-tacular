@@ -39,8 +39,7 @@ export class Kv1SecretEngine extends BaseSecretEngine {
     )
 
     return {
-      statusCode: res.statusCode,
-      data: res.body
+      result: res.body
     }
   }
 
@@ -65,8 +64,7 @@ export class Kv1SecretEngine extends BaseSecretEngine {
     )
 
     return {
-      statusCode: res.statusCode,
-      data: res.body
+      result: res.body
     }
   }
 
@@ -80,7 +78,7 @@ export class Kv1SecretEngine extends BaseSecretEngine {
     path: string,
     payload: IKv1SecretEngine.ICreateOrUpdateSecretPayload
   ): Promise<IVaultResponse<void>> {
-    const res = await this.request(
+    await this.request(
       this.getAPIUrl(SECRET_UPSERT_PATH.replace(':path', path)),
       {
         method: 'POST',
@@ -91,9 +89,7 @@ export class Kv1SecretEngine extends BaseSecretEngine {
       }
     )
 
-    return {
-      statusCode: res.statusCode
-    }
+    return
   }
 
   /**
@@ -101,7 +97,7 @@ export class Kv1SecretEngine extends BaseSecretEngine {
    * @link https://www.vaultproject.io/api/secret/kv/kv-v1.html#delete-secret
    */
   async deleteSecret (path: string): Promise<IVaultResponse<void>> {
-    const res = await this.request(
+    await this.request(
       this.getAPIUrl(SECRET_DELETE_PATH.replace(':path', path)),
       {
         method: 'DELETE'
@@ -111,8 +107,6 @@ export class Kv1SecretEngine extends BaseSecretEngine {
       }
     )
 
-    return {
-      statusCode: res.statusCode
-    }
+    return
   }
 }

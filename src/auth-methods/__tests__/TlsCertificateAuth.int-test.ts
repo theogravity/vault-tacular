@@ -33,7 +33,7 @@ describe('TlsCertificateAuth integration tests', () => {
       key: Buffer.from(certKey, 'ascii')
     })
 
-    expect(resp.data.auth.client_token).toBeDefined()
+    expect(resp.result.auth.client_token).toBeDefined()
   })
 })
 

@@ -13,7 +13,7 @@ export class HealthSysBackend extends BaseSysBackend {
    *
    * - 200 if initialized, unsealed, and active
    * - 429 if unsealed and standby
-   * - 472 if data recovery mode replication secondary and active
+   * - 472 if result recovery mode replication secondary and active
    * - 473 if performance standby
    * - 501 if not initialized
    * - 503 if sealed
@@ -29,8 +29,7 @@ export class HealthSysBackend extends BaseSysBackend {
     })
 
     return {
-      statusCode: res.statusCode,
-      data: res.body
+      result: res.body
     }
   }
 
@@ -41,13 +40,11 @@ export class HealthSysBackend extends BaseSysBackend {
   async checkStatus (
     payload: IHealthSysBackend.IReadHealthInfoPayload = {}
   ): Promise<IVaultResponse<void>> {
-    const res = await this.request(this.getAPIUrl(DEFAULT_PATH), {
+    await this.request(this.getAPIUrl(DEFAULT_PATH), {
       method: 'HEAD',
       qs: payload
     })
 
-    return {
-      statusCode: res.statusCode
-    }
+    return
   }
 }

@@ -17,8 +17,7 @@ export class InitSysBackend extends BaseSysBackend {
     })
 
     return {
-      statusCode: res.statusCode,
-      data: res.body
+      result: res.body
     }
   }
 
@@ -46,8 +45,7 @@ export class InitSysBackend extends BaseSysBackend {
     })
 
     return {
-      statusCode: res.statusCode,
-      data: res.body
+      result: res.body
     }
   }
 }

@@ -42,7 +42,7 @@ export class BaseDatabaseEngine extends BaseSecretEngine {
   protected async _configConnection<
     T extends IBaseDatabaseEngine.IConfigConnectionPayload
   > (name: string, payload: T): Promise<IVaultResponse<void>> {
-    const res = await this.request(
+    await this.request(
       this.getAPIUrl(CONFIGURE_CONN_PATH.replace(':name', name)),
       {
         method: 'POST',
@@ -53,9 +53,7 @@ export class BaseDatabaseEngine extends BaseSecretEngine {
       }
     )
 
-    return {
-      statusCode: res.statusCode
-    }
+    return
   }
 
   /**
@@ -77,8 +75,7 @@ export class BaseDatabaseEngine extends BaseSecretEngine {
     )
 
     return {
-      statusCode: res.statusCode,
-      data: res.body
+      result: res.body
     }
   }
 
@@ -100,8 +97,7 @@ export class BaseDatabaseEngine extends BaseSecretEngine {
     )
 
     return {
-      statusCode: res.statusCode,
-      data: res.body
+      result: res.body
     }
   }
 
@@ -111,7 +107,7 @@ export class BaseDatabaseEngine extends BaseSecretEngine {
    * @param name Specifies the name for this database connection.
    */
   async deleteConnection (name: string): Promise<IVaultResponse<void>> {
-    const res = await this.request(
+    await this.request(
       this.getAPIUrl(DELETE_CONN_PATH.replace(':name', name)),
       {
         method: 'DELETE'
@@ -121,9 +117,7 @@ export class BaseDatabaseEngine extends BaseSecretEngine {
       }
     )
 
-    return {
-      statusCode: res.statusCode
-    }
+    return
   }
 
   /**
@@ -133,7 +127,7 @@ export class BaseDatabaseEngine extends BaseSecretEngine {
    * @param name Specifies the name for this database connection.
    */
   async resetConnection (name: string): Promise<IVaultResponse<void>> {
-    const res = await this.request(
+    await this.request(
       this.getAPIUrl(RESET_CONN_PATH.replace(':name', name)),
       {
         method: 'POST'
@@ -143,9 +137,7 @@ export class BaseDatabaseEngine extends BaseSecretEngine {
       }
     )
 
-    return {
-      statusCode: res.statusCode
-    }
+    return
   }
 
   /**
@@ -155,7 +147,7 @@ export class BaseDatabaseEngine extends BaseSecretEngine {
    * @param name Specifies the name of the connection to rotate.
    */
   async rotateRootCreds (name: string): Promise<IVaultResponse<void>> {
-    const res = await this.request(
+    await this.request(
       this.getAPIUrl(ROTATE_ROOT_CREDS_PATH.replace(':name', name)),
       {
         method: 'POST'
@@ -165,9 +157,7 @@ export class BaseDatabaseEngine extends BaseSecretEngine {
       }
     )
 
-    return {
-      statusCode: res.statusCode
-    }
+    return
   }
 
   /**
@@ -179,7 +169,7 @@ export class BaseDatabaseEngine extends BaseSecretEngine {
     name: string,
     payload: IBaseDatabaseEngine.IUpsertRolePayload
   ): Promise<IVaultResponse<void>> {
-    const res = await this.request(
+    await this.request(
       this.getAPIUrl(UPSERT_ROLE_PATH.replace(':name', name)),
       {
         method: 'POST',
@@ -190,9 +180,7 @@ export class BaseDatabaseEngine extends BaseSecretEngine {
       }
     )
 
-    return {
-      statusCode: res.statusCode
-    }
+    return
   }
 
   /**
@@ -214,8 +202,7 @@ export class BaseDatabaseEngine extends BaseSecretEngine {
     )
 
     return {
-      statusCode: res.statusCode,
-      data: res.body
+      result: res.body
     }
   }
 
@@ -237,8 +224,7 @@ export class BaseDatabaseEngine extends BaseSecretEngine {
     )
 
     return {
-      statusCode: res.statusCode,
-      data: res.body
+      result: res.body
     }
   }
 
@@ -248,7 +234,7 @@ export class BaseDatabaseEngine extends BaseSecretEngine {
    * @param name Specifies the name of the role to delete
    */
   async deleteRole (name: string): Promise<IVaultResponse<void>> {
-    const res = await this.request(
+    await this.request(
       this.getAPIUrl(DELETE_ROLE_PATH.replace(':name', name)),
       {
         method: 'DELETE'
@@ -258,9 +244,7 @@ export class BaseDatabaseEngine extends BaseSecretEngine {
       }
     )
 
-    return {
-      statusCode: res.statusCode
-    }
+    return
   }
 
   /**
@@ -282,8 +266,7 @@ export class BaseDatabaseEngine extends BaseSecretEngine {
     )
 
     return {
-      statusCode: res.statusCode,
-      data: res.body
+      result: res.body
     }
   }
 }

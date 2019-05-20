@@ -33,8 +33,7 @@ export class AwsAuth extends BaseAuth {
     })
 
     return {
-      statusCode: res.statusCode,
-      data: res.body
+      result: res.body
     }
   }
 

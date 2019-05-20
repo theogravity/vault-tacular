@@ -39,8 +39,7 @@ export type VaultWarnings = Array<string>
 export type BaseUrl = string
 
 export interface IVaultResponse<T> {
-  statusCode: number
-  data?: T
+  result?: T
 }
 
 /**
@@ -95,7 +94,7 @@ export interface ISecret {
    */
   lease_duration: number
   /**
-   * Secret-related data
+   * Secret-related result
    */
   data?: object
   /**
@@ -111,7 +110,7 @@ export interface ISecret {
 }
 
 /**
- * Response-wrapped token data
+ * Response-wrapped token result
  */
 export interface IWrapInfo {
   /**

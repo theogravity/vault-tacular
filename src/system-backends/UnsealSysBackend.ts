@@ -20,8 +20,7 @@ export class UnsealSysBackend extends BaseSysBackend {
     })
 
     return {
-      statusCode: res.statusCode,
-      data: res.body
+      result: res.body
     }
   }
 }

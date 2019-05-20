@@ -17,7 +17,7 @@ const LOOKUP_TOKEN_SELF_PATH = '/lookup-self'
 const LOOKUP_ACCESSOR_PATH = '/lookup-accessor'
 const RENEW_TOKEN_PATH = '/renew'
 const RENEW_TOKEN_SELF_PATH = '/renew-self'
-const REVOKE_TOKEN_PATH = '/revoke-token'
+const REVOKE_TOKEN_PATH = '/revoke'
 const REVOKE_TOKEN_SELF_PATH = '/revoke-self'
 const REVOKE_ACCESSOR_PATH = '/revoke-accessor'
 const REVOKE_ORPHAN_AND_CHILDREN_PATH = '/revoke-orphan'
@@ -59,8 +59,7 @@ export class TokenAuth extends BaseAuth {
     )
 
     return {
-      statusCode: res.statusCode,
-      data: res.body
+      result: res.body
     }
   }
 
@@ -83,8 +82,7 @@ export class TokenAuth extends BaseAuth {
     )
 
     return {
-      statusCode: res.statusCode,
-      data: res.body
+      result: res.body
     }
   }
 
@@ -107,8 +105,7 @@ export class TokenAuth extends BaseAuth {
     )
 
     return {
-      statusCode: res.statusCode,
-      data: res.body
+      result: res.body
     }
   }
 
@@ -136,8 +133,7 @@ export class TokenAuth extends BaseAuth {
     )
 
     return {
-      statusCode: res.statusCode,
-      data: res.body
+      result: res.body
     }
   }
 
@@ -164,8 +160,7 @@ export class TokenAuth extends BaseAuth {
     )
 
     return {
-      statusCode: res.statusCode,
-      data: res.body
+      result: res.body
     }
   }
 
@@ -188,8 +183,7 @@ export class TokenAuth extends BaseAuth {
     )
 
     return {
-      statusCode: res.statusCode,
-      data: res.body
+      result: res.body
     }
   }
 
@@ -216,8 +210,7 @@ export class TokenAuth extends BaseAuth {
     )
 
     return {
-      statusCode: res.statusCode,
-      data: res.body
+      result: res.body
     }
   }
 
@@ -228,7 +221,7 @@ export class TokenAuth extends BaseAuth {
    * @link https://www.vaultproject.io/api/auth/token/index.html#renew-a-token
    * @param token Token to renew.
    */
-  async rewnewToken (
+  async renewToken (
     token: string,
     payload: ITokenAuth.IRenewTokenPayload = {}
   ): Promise<IVaultResponse<ITokenAuth.IRenewTokenResponse>> {
@@ -247,8 +240,7 @@ export class TokenAuth extends BaseAuth {
     )
 
     return {
-      statusCode: res.statusCode,
-      data: res.body
+      result: res.body
     }
   }
 
@@ -274,8 +266,7 @@ export class TokenAuth extends BaseAuth {
     )
 
     return {
-      statusCode: res.statusCode,
-      data: res.body
+      result: res.body
     }
   }
 
@@ -287,7 +278,7 @@ export class TokenAuth extends BaseAuth {
    * @param token Token to revoke
    */
   async revokeToken (token: string): Promise<IVaultResponse<void>> {
-    const res = await this.request(
+    await this.request(
       this.getAPIUrl(REVOKE_TOKEN_PATH),
       {
         method: 'POST',
@@ -300,9 +291,7 @@ export class TokenAuth extends BaseAuth {
       }
     )
 
-    return {
-      statusCode: res.statusCode
-    }
+    return
   }
 
   /**
@@ -311,7 +300,7 @@ export class TokenAuth extends BaseAuth {
    * @link https://www.vaultproject.io/api/auth/token/index.html#revoke-a-token-self-
    */
   async revokeTokenSelf (): Promise<IVaultResponse<void>> {
-    const res = await this.request(
+    await this.request(
       this.getAPIUrl(REVOKE_TOKEN_SELF_PATH),
       {
         method: 'POST'
@@ -321,9 +310,7 @@ export class TokenAuth extends BaseAuth {
       }
     )
 
-    return {
-      statusCode: res.statusCode
-    }
+    return
   }
 
   /**
@@ -338,7 +325,7 @@ export class TokenAuth extends BaseAuth {
   async revokeTokenByAccessor (
     accessor: string
   ): Promise<IVaultResponse<void>> {
-    const res = await this.request(
+    await this.request(
       this.getAPIUrl(REVOKE_ACCESSOR_PATH),
       {
         method: 'POST',
@@ -351,9 +338,7 @@ export class TokenAuth extends BaseAuth {
       }
     )
 
-    return {
-      statusCode: res.statusCode
-    }
+    return
   }
 
   /**
@@ -368,7 +353,7 @@ export class TokenAuth extends BaseAuth {
   async revokeTokenAndOprhanChildren (
     token: string
   ): Promise<IVaultResponse<void>> {
-    const res = await this.request(
+    await this.request(
       this.getAPIUrl(REVOKE_ORPHAN_AND_CHILDREN_PATH),
       {
         method: 'POST',
@@ -381,9 +366,7 @@ export class TokenAuth extends BaseAuth {
       }
     )
 
-    return {
-      statusCode: res.statusCode
-    }
+    return
   }
 
   /**
@@ -405,8 +388,7 @@ export class TokenAuth extends BaseAuth {
     )
 
     return {
-      statusCode: res.statusCode,
-      data: res.body
+      result: res.body
     }
   }
 
@@ -428,8 +410,7 @@ export class TokenAuth extends BaseAuth {
     )
 
     return {
-      statusCode: res.statusCode,
-      data: res.body
+      result: res.body
     }
   }
 
@@ -447,7 +428,7 @@ export class TokenAuth extends BaseAuth {
     roleName: string,
     payload: ITokenAuth.IUpsertTokenRolePayload = {}
   ): Promise<IVaultResponse<void>> {
-    const res = await this.request(
+    await this.request(
       this.getAPIUrl(UPSERT_TOKEN_ROLE_PATH.replace(':role_name', roleName)),
       {
         method: 'POST',
@@ -458,9 +439,7 @@ export class TokenAuth extends BaseAuth {
       }
     )
 
-    return {
-      statusCode: res.statusCode
-    }
+    return
   }
 
   /**
@@ -502,8 +481,7 @@ export class TokenAuth extends BaseAuth {
     )
 
     return {
-      statusCode: res.statusCode,
-      data: res.body
+      result: res.body
     }
   }
 }

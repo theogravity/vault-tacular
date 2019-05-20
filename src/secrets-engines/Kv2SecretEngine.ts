@@ -5,9 +5,9 @@ import { IKv2SecretEngine } from '../interfaces/secrets-engines/IKv2SecretEngine
 
 const DEFAULT_MOUNT_POINT = '/secret'
 const CONFIGURE_ENGINE_PATH = '/config'
-const SECRET_VERSION_PATH = '/data/:path'
-const SECRET_CREATE_UPDATE_PATH = '/data/:path'
-const SECRET_DELETE_LATEST_PATH = '/data/:path'
+const SECRET_VERSION_PATH = '/result/:path'
+const SECRET_CREATE_UPDATE_PATH = '/result/:path'
+const SECRET_DELETE_LATEST_PATH = '/result/:path'
 const SECRET_DELETE_VERSIONS_PATH = '/delete/:path'
 const SECRET_UNDELETE_VERSIONS_PATH = '/undelete/:path'
 const SECRET_DESTROY_VERSIONS_PATH = '/destroy/:path'
@@ -35,7 +35,7 @@ export class Kv2SecretEngine extends BaseSecretEngine {
   async configEngine (
     payload: IKv2SecretEngine.ISetConfigPayload = {}
   ): Promise<IVaultResponse<void>> {
-    const res = await this.request(
+    await this.request(
       this.getAPIUrl(CONFIGURE_ENGINE_PATH),
       {
         method: 'POST',
@@ -46,9 +46,7 @@ export class Kv2SecretEngine extends BaseSecretEngine {
       }
     )
 
-    return {
-      statusCode: res.statusCode
-    }
+    return
   }
 
   /**
@@ -69,8 +67,7 @@ export class Kv2SecretEngine extends BaseSecretEngine {
     )
 
     return {
-      statusCode: res.statusCode,
-      data: res.body
+      result: res.body
     }
   }
 
@@ -94,8 +91,7 @@ export class Kv2SecretEngine extends BaseSecretEngine {
     )
 
     return {
-      statusCode: res.statusCode,
-      data: res.body
+      result: res.body
     }
   }
 
@@ -121,21 +117,20 @@ export class Kv2SecretEngine extends BaseSecretEngine {
     )
 
     return {
-      statusCode: res.statusCode,
-      data: res.body
+      result: res.body
     }
   }
 
   /**
    * Issues a soft delete of the secret's latest version at the specified location. This marks the
-   * version as deleted and will stop it from being returned from reads, but the underlying data
+   * version as deleted and will stop it from being returned from reads, but the underlying result
    * will not be removed. A delete can be undone using the undelete path.
    * @link https://www.vaultproject.io/api/secret/kv/kv-v2.html#delete-latest-version-of-secret
    */
   async deleteLatestSecretVersion (
     path: string
   ): Promise<IVaultResponse<void>> {
-    const res = await this.request(
+    await this.request(
       this.getAPIUrl(SECRET_DELETE_LATEST_PATH.replace(':path', path)),
       {
         method: 'DELETE'
@@ -145,14 +140,12 @@ export class Kv2SecretEngine extends BaseSecretEngine {
       }
     )
 
-    return {
-      statusCode: res.statusCode
-    }
+    return
   }
 
   /**
    * Issues a soft delete of the specified versions of the secret. This marks the versions as
-   * deleted and will stop them from being returned from reads, but the underlying data will not
+   * deleted and will stop them from being returned from reads, but the underlying result will not
    * be removed. A delete can be undone using the undelete path.
    * @link https://www.vaultproject.io/api/secret/kv/kv-v2.html#delete-secret-versions
    */
@@ -160,7 +153,7 @@ export class Kv2SecretEngine extends BaseSecretEngine {
     path: string,
     payload: IKv2SecretEngine.IDeleteSecretVersionsPayload
   ): Promise<IVaultResponse<void>> {
-    const res = await this.request(
+    await this.request(
       this.getAPIUrl(SECRET_DELETE_VERSIONS_PATH.replace(':path', path)),
       {
         method: 'POST',
@@ -171,21 +164,19 @@ export class Kv2SecretEngine extends BaseSecretEngine {
       }
     )
 
-    return {
-      statusCode: res.statusCode
-    }
+    return
   }
 
   /**
-   * Undeletes the data for the provided version and path in the key-value store. This restores
-   * the data, allowing it to be returned on get requests.
+   * Undeletes the result for the provided version and path in the key-value store. This restores
+   * the result, allowing it to be returned on get requests.
    * @link https://www.vaultproject.io/api/secret/kv/kv-v2.html#undelete-secret-versions
    */
   async undeleteSecretVersions (
     path: string,
     payload: IKv2SecretEngine.IUndeleteSecretVersionsPayload
   ): Promise<IVaultResponse<void>> {
-    const res = await this.request(
+    await this.request(
       this.getAPIUrl(SECRET_UNDELETE_VERSIONS_PATH.replace(':path', path)),
       {
         method: 'POST',
@@ -196,13 +187,11 @@ export class Kv2SecretEngine extends BaseSecretEngine {
       }
     )
 
-    return {
-      statusCode: res.statusCode
-    }
+    return
   }
 
   /**
-   * Permanently removes the specified version data for the provided key and version numbers
+   * Permanently removes the specified version result for the provided key and version numbers
    * from the key-value store.
    * @link https://www.vaultproject.io/api/secret/kv/kv-v2.html#destroy-secret-versions
    */
@@ -210,7 +199,7 @@ export class Kv2SecretEngine extends BaseSecretEngine {
     path: string,
     payload: IKv2SecretEngine.IDestroySecretVersionsPayload
   ): Promise<IVaultResponse<void>> {
-    const res = await this.request(
+    await this.request(
       this.getAPIUrl(SECRET_DESTROY_VERSIONS_PATH.replace(':path', path)),
       {
         method: 'POST',
@@ -221,9 +210,7 @@ export class Kv2SecretEngine extends BaseSecretEngine {
       }
     )
 
-    return {
-      statusCode: res.statusCode
-    }
+    return
   }
 
   /**
@@ -247,8 +234,7 @@ export class Kv2SecretEngine extends BaseSecretEngine {
     )
 
     return {
-      statusCode: res.statusCode,
-      data: res.body
+      result: res.body
     }
   }
 
@@ -270,8 +256,7 @@ export class Kv2SecretEngine extends BaseSecretEngine {
     )
 
     return {
-      statusCode: res.statusCode,
-      data: res.body
+      result: res.body
     }
   }
 
@@ -285,7 +270,7 @@ export class Kv2SecretEngine extends BaseSecretEngine {
     path: string,
     payload: IKv2SecretEngine.IUpdateSecretMetadataPayload
   ): Promise<IVaultResponse<void>> {
-    const res = await this.request(
+    await this.request(
       this.getAPIUrl(SECRET_UPDATE_METADATA_PATH.replace(':path', path)),
       {
         method: 'POST',
@@ -296,21 +281,18 @@ export class Kv2SecretEngine extends BaseSecretEngine {
       }
     )
 
-    return {
-      statusCode: res.statusCode,
-      data: res.body
-    }
+    return
   }
 
   /**
-   * Permanently deletes the key metadata and all version data for the specified key.
+   * Permanently deletes the key metadata and all version result for the specified key.
    * All version history will be removed.
    * @link https://www.vaultproject.io/api/secret/kv/kv-v2.html#delete-metadata-and-all-versions
    */
   async deleteMetadataAndAllVersions (
     path: string
   ): Promise<IVaultResponse<void>> {
-    const res = await this.request(
+    await this.request(
       this.getAPIUrl(
         SECRET_DELETE_METADATA_AND_ALL_VERS_PATH.replace(':path', path)
       ),
@@ -322,8 +304,6 @@ export class Kv2SecretEngine extends BaseSecretEngine {
       }
     )
 
-    return {
-      statusCode: res.statusCode
-    }
+    return
   }
 }

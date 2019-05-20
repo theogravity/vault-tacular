@@ -31,8 +31,7 @@ export class WrappingSysBackend extends BaseSysBackend {
     )
 
     return {
-      statusCode: res.statusCode,
-      data: res.body
+      result: res.body
     }
   }
 
@@ -62,8 +61,7 @@ export class WrappingSysBackend extends BaseSysBackend {
     )
 
     return {
-      statusCode: res.statusCode,
-      data: res.body
+      result: res.body
     }
   }
 
@@ -107,13 +105,12 @@ export class WrappingSysBackend extends BaseSysBackend {
     )
 
     return {
-      statusCode: res.statusCode,
-      data: res.body
+      result: res.body
     }
   }
 
   /**
-   * wraps the given user-supplied data inside a response-wrapped token.
+   * wraps the given user-supplied result inside a response-wrapped token.
    * @link https://www.vaultproject.io/api/system/wrapping-wrap.html
    */
   async wrap (
@@ -135,8 +132,7 @@ export class WrappingSysBackend extends BaseSysBackend {
     )
 
     return {
-      statusCode: res.statusCode,
-      data: res.body
+      result: res.body
     }
   }
 }

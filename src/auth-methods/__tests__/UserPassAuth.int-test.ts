@@ -14,8 +14,7 @@ describe('UserPassAuth integration tests', () => {
     const resp = await auth.login(user.username, user)
 
     expect(resp).toMatchObject({
-      statusCode: 200,
-      data: {
+      result: {
         auth: {
           metadata: {
             username: user.username
