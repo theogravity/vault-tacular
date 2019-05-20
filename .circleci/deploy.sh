@@ -31,6 +31,7 @@ then
   # Changelog is now stamped with the version / time info - add to git
   git add CHANGELOG.md
   git add package.json
+  git add package-lock.json
 
   # Amend the version commit with a ci skip so when we push the commits from the CI
   # The CI does not end up recursively building it
