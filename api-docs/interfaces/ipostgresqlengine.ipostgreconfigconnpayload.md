@@ -35,7 +35,7 @@
 
 *Inherited from [IConfigConnectionPayload](ibasedatabaseengine.iconfigconnectionpayload.md).[allowed_roles](ibasedatabaseengine.iconfigconnectionpayload.md#allowed_roles)*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:20](https://github.com/theogravity/vault-client/blob/a3d9e21/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L20)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:20](https://github.com/theogravity/vault-tacular/blob/2099cfa/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L20)*
 
 List of the roles allowed to use this connection. Defaults to empty (no roles), if contains a "\*" any role can use this connection.
 
@@ -46,7 +46,7 @@ ___
 
 **● connection_url**: *`string`*
 
-*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:11](https://github.com/theogravity/vault-client/blob/a3d9e21/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L11)*
+*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:11](https://github.com/theogravity/vault-tacular/blob/2099cfa/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L11)*
 
 Specifies the PostgreSQL DSN. This field can be templated and supports passing the username and password parameters in the following format {{field\_name}}. A templated connection URL is required when using root credential rotation.
 
@@ -57,7 +57,7 @@ ___
 
 **● max_connection_lifetime**: *`string`*
 
-*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:30](https://github.com/theogravity/vault-client/blob/a3d9e21/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L30)*
+*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:30](https://github.com/theogravity/vault-tacular/blob/2099cfa/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L30)*
 
 Specifies the maximum amount of time a connection may be reused. If <= 0s connections are reused forever.
 
@@ -70,7 +70,7 @@ ___
 
 **● max_idle_connections**: *`number`*
 
-*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:24](https://github.com/theogravity/vault-client/blob/a3d9e21/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L24)*
+*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:24](https://github.com/theogravity/vault-tacular/blob/2099cfa/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L24)*
 
 Specifies the maximum number of idle connections to the database. A zero uses the value of max\_open\_connections and a negative value disables idle connections. If larger than max\_open\_connections it will be reduced to be equal.
 
@@ -81,7 +81,7 @@ ___
 
 **● max_open_connections**: *`number`*
 
-*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:17](https://github.com/theogravity/vault-client/blob/a3d9e21/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L17)*
+*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:17](https://github.com/theogravity/vault-tacular/blob/2099cfa/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L17)*
 
 Specifies the maximum number of open connections to the database.
 
@@ -94,7 +94,7 @@ ___
 
 **● password**: *`string`*
 
-*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:39](https://github.com/theogravity/vault-client/blob/a3d9e21/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L39)*
+*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:39](https://github.com/theogravity/vault-tacular/blob/2099cfa/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L39)*
 
 The root credential password used in the connection URL.
 
@@ -105,7 +105,7 @@ ___
 
 **● plugin_name**: *`string`*
 
-*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:46](https://github.com/theogravity/vault-client/blob/a3d9e21/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L46)*
+*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:46](https://github.com/theogravity/vault-tacular/blob/2099cfa/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L46)*
 
 Name of the postgres plugin to use. You should generally not have to define this.
 
@@ -120,7 +120,7 @@ ___
 
 *Inherited from [IConfigConnectionPayload](ibasedatabaseengine.iconfigconnectionpayload.md).[root_rotation_statements](ibasedatabaseengine.iconfigconnectionpayload.md#root_rotation_statements)*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:26](https://github.com/theogravity/vault-client/blob/a3d9e21/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L26)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:26](https://github.com/theogravity/vault-tacular/blob/2099cfa/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L26)*
 
 Specifies the database statements to be executed to rotate the root user's credentials. See the plugin's API page for more information on support and formatting for this parameter.
 
@@ -131,7 +131,7 @@ ___
 
 **● username**: *`string`*
 
-*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:35](https://github.com/theogravity/vault-client/blob/a3d9e21/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L35)*
+*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:35](https://github.com/theogravity/vault-tacular/blob/2099cfa/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L35)*
 
 The root credential username used in the connection URL.
 
@@ -144,7 +144,7 @@ ___
 
 *Inherited from [IConfigConnectionPayload](ibasedatabaseengine.iconfigconnectionpayload.md).[verify_connection](ibasedatabaseengine.iconfigconnectionpayload.md#verify_connection)*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:14](https://github.com/theogravity/vault-client/blob/a3d9e21/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L14)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:14](https://github.com/theogravity/vault-tacular/blob/2099cfa/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L14)*
 
 Specifies if the connection is verified during initial configuration. Defaults to true.
 
