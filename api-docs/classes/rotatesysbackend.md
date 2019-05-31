@@ -30,7 +30,7 @@
 
 *Inherited from [BaseSysBackend](basesysbackend.md).[constructor](basesysbackend.md#constructor)*
 
-*Defined in [system-backends/BaseSysBackend.ts:4](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/system-backends/BaseSysBackend.ts#L4)*
+*Defined in [system-backends/BaseSysBackend.ts:4](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/system-backends/BaseSysBackend.ts#L4)*
 
 **Parameters:**
 
@@ -51,7 +51,7 @@ ___
 
 ▸ **rotateEncryptionKey**(): `Promise`<[IVaultResponse](../interfaces/ivaultresponse.md)<`void`>>
 
-*Defined in [system-backends/RotateSysBackend.ts:14](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/system-backends/RotateSysBackend.ts#L14)*
+*Defined in [system-backends/RotateSysBackend.ts:14](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/system-backends/RotateSysBackend.ts#L14)*
 
 triggers a rotation of the backend encryption key. This is the key that is used to encrypt result written to the storage backend, and is not provided to operators. This operation is done online. Future values are encrypted with the new key, while old values are decrypted with previous encryption keys.
 

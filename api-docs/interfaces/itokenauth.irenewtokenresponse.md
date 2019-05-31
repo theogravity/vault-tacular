@@ -22,7 +22,7 @@
 
 **● auth**: *[ISecretAuth](isecretauth.md)*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:121](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/interfaces/auth-methods/ITokenAuth.ts#L121)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:121](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/auth-methods/ITokenAuth.ts#L121)*
 
 ___
 

@@ -1,4 +1,4 @@
-# UNRELEASED
+# 0.2.1 - Fri May 31 2019 19:31:51
 
 [Breaking] Rename `authTokenFn` -> `authToken`, allow for a string value
 along with a fuction

@@ -24,7 +24,7 @@
 
 **● keys**: *`Array`<`string`>*
 
-*Defined in [interfaces/system-backend/IInitSysBackend.ts:63](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/interfaces/system-backend/IInitSysBackend.ts#L63)*
+*Defined in [interfaces/system-backend/IInitSysBackend.ts:63](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/system-backend/IInitSysBackend.ts#L63)*
 
 Master keys (encrypted if pgp\_keys was provided)
 
@@ -35,7 +35,7 @@ ___
 
 **● keys_base64**: *`Array`<`string`>*
 
-*Defined in [interfaces/system-backend/IInitSysBackend.ts:67](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/interfaces/system-backend/IInitSysBackend.ts#L67)*
+*Defined in [interfaces/system-backend/IInitSysBackend.ts:67](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/system-backend/IInitSysBackend.ts#L67)*
 
 Master keys in base64 format
 
@@ -46,7 +46,7 @@ ___
 
 **● root_token**: *`string`*
 
-*Defined in [interfaces/system-backend/IInitSysBackend.ts:71](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/interfaces/system-backend/IInitSysBackend.ts#L71)*
+*Defined in [interfaces/system-backend/IInitSysBackend.ts:71](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/system-backend/IInitSysBackend.ts#L71)*
 
 Initial root token
 

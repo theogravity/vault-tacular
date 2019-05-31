@@ -28,7 +28,7 @@
 
 **● cluster_id**: *`string`*
 
-*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:40](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/interfaces/system-backend/IUnsealSysBackend.ts#L40)*
+*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:40](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/system-backend/IUnsealSysBackend.ts#L40)*
 
 ___
 <a id="cluster_name"></a>
@@ -37,7 +37,7 @@ ___
 
 **● cluster_name**: *`string`*
 
-*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:39](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/interfaces/system-backend/IUnsealSysBackend.ts#L39)*
+*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:39](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/system-backend/IUnsealSysBackend.ts#L39)*
 
 ___
 <a id="n"></a>
@@ -46,7 +46,7 @@ ___
 
 **● n**: *`number`*
 
-*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:31](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/interfaces/system-backend/IUnsealSysBackend.ts#L31)*
+*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:31](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/system-backend/IUnsealSysBackend.ts#L31)*
 
 Number of shares
 
@@ -57,7 +57,7 @@ ___
 
 **● progress**: *`number`*
 
-*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:35](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/interfaces/system-backend/IUnsealSysBackend.ts#L35)*
+*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:35](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/system-backend/IUnsealSysBackend.ts#L35)*
 
 Number of successful shares used to unseal
 
@@ -68,7 +68,7 @@ ___
 
 **● sealed**: *`boolean`*
 
-*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:23](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/interfaces/system-backend/IUnsealSysBackend.ts#L23)*
+*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:23](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/system-backend/IUnsealSysBackend.ts#L23)*
 
 ___
 <a id="t"></a>
@@ -77,7 +77,7 @@ ___
 
 **● t**: *`number`*
 
-*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:27](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/interfaces/system-backend/IUnsealSysBackend.ts#L27)*
+*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:27](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/system-backend/IUnsealSysBackend.ts#L27)*
 
 Threshold
 
@@ -88,7 +88,7 @@ ___
 
 **● version**: *`string`*
 
-*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:36](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/interfaces/system-backend/IUnsealSysBackend.ts#L36)*
+*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:36](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/system-backend/IUnsealSysBackend.ts#L36)*
 
 ___
 

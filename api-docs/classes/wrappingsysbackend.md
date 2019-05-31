@@ -33,7 +33,7 @@
 
 *Inherited from [BaseSysBackend](basesysbackend.md).[constructor](basesysbackend.md#constructor)*
 
-*Defined in [system-backends/BaseSysBackend.ts:4](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/system-backends/BaseSysBackend.ts#L4)*
+*Defined in [system-backends/BaseSysBackend.ts:4](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/system-backends/BaseSysBackend.ts#L4)*
 
 **Parameters:**
 
@@ -54,7 +54,7 @@ ___
 
 ▸ **lookup**(token: *`string`*): `Promise`<[IVaultResponse](../interfaces/ivaultresponse.md)<[ILookupResponse](../interfaces/iwrappingsysbackend.ilookupresponse.md)>>
 
-*Defined in [system-backends/WrappingSysBackend.ts:17](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/system-backends/WrappingSysBackend.ts#L17)*
+*Defined in [system-backends/WrappingSysBackend.ts:17](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/system-backends/WrappingSysBackend.ts#L17)*
 
 Looks up wrapping properties for the given token.
 
@@ -75,7 +75,7 @@ ___
 
 ▸ **rewrap**(token: *`string`*): `Promise`<[IVaultResponse](../interfaces/ivaultresponse.md)<[IRewrapResponse](../interfaces/iwrappingsysbackend.irewrapresponse.md)>>
 
-*Defined in [system-backends/WrappingSysBackend.ts:47](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/system-backends/WrappingSysBackend.ts#L47)*
+*Defined in [system-backends/WrappingSysBackend.ts:47](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/system-backends/WrappingSysBackend.ts#L47)*
 
 Rewraps a response-wrapped token. The new token will use the same creation TTL as the original token and contain the same response. The old token will be invalidated. This can be used for long-term storage of a secret in a response-wrapped token when rotation is a requirement.
 
@@ -96,7 +96,7 @@ ___
 
 ▸ **unwrap**(token?: *`string`*): `Promise`<[IVaultResponse](../interfaces/ivaultresponse.md)<[IUnwrapResponse](../interfaces/iwrappingsysbackend.iunwrapresponse.md)>>
 
-*Defined in [system-backends/WrappingSysBackend.ts:85](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/system-backends/WrappingSysBackend.ts#L85)*
+*Defined in [system-backends/WrappingSysBackend.ts:85](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/system-backends/WrappingSysBackend.ts#L85)*
 
 Returns the original response inside the given wrapping token. Unlike simply reading cubbyhole/response (which is deprecated), this endpoint provides additional validation checks on the token, returns the original value on the wire rather than a JSON string representation of it, and ensures that the response is properly audit-logged.
 
@@ -119,7 +119,7 @@ ___
 
 ▸ **wrap**(wrapTtl: *`number` \| `string`*, payload: *[IWrapPayload](../interfaces/iwrappingsysbackend.iwrappayload.md)*): `Promise`<[IVaultResponse](../interfaces/ivaultresponse.md)<[IWrapResponse](../interfaces/iwrappingsysbackend.iwrapresponse.md)>>
 
-*Defined in [system-backends/WrappingSysBackend.ts:116](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/system-backends/WrappingSysBackend.ts#L116)*
+*Defined in [system-backends/WrappingSysBackend.ts:116](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/system-backends/WrappingSysBackend.ts#L116)*
 
 wraps the given user-supplied result inside a response-wrapped token.
 

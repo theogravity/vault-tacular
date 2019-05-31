@@ -34,7 +34,7 @@
 
 ⊕ **new BaseSysBackend**(baseUrl: *[BaseUrl](../#baseurl)*, authTokenFn?: *`Function`*): [BaseSysBackend](basesysbackend.md)
 
-*Defined in [system-backends/BaseSysBackend.ts:4](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/system-backends/BaseSysBackend.ts#L4)*
+*Defined in [system-backends/BaseSysBackend.ts:4](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/system-backends/BaseSysBackend.ts#L4)*
 
 **Parameters:**
 

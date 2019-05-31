@@ -26,7 +26,7 @@
 
 **● auth**: *`string`*
 
-*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:13](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L13)*
+*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:13](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L13)*
 
 ___
 <a id="data"></a>
@@ -35,7 +35,7 @@ ___
 
 **● data**: *`object`*
 
-*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:14](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L14)*
+*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:14](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L14)*
 
 #### Type declaration
 
@@ -46,7 +46,7 @@ ___
 
 **● lease_duration**: *`number`*
 
-*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:17](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L17)*
+*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:17](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L17)*
 
 ___
 <a id="lease_id"></a>
@@ -55,7 +55,7 @@ ___
 
 **● lease_id**: *`string`*
 
-*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:18](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L18)*
+*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:18](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L18)*
 
 ___
 <a id="renewable"></a>
@@ -64,7 +64,7 @@ ___
 
 **● renewable**: *`boolean`*
 
-*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:19](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L19)*
+*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:19](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L19)*
 
 ___
 

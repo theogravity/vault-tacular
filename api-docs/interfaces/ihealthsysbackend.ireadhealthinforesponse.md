@@ -33,7 +33,7 @@ Note: replication\_perf\_mode and replication\_dr\_mode reflect the state of the
 
 **● cluster_id**: *`string`*
 
-*Defined in [interfaces/system-backend/IHealthSysBackend.ts:57](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/interfaces/system-backend/IHealthSysBackend.ts#L57)*
+*Defined in [interfaces/system-backend/IHealthSysBackend.ts:57](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/system-backend/IHealthSysBackend.ts#L57)*
 
 ___
 <a id="cluster_name"></a>
@@ -42,7 +42,7 @@ ___
 
 **● cluster_name**: *`string`*
 
-*Defined in [interfaces/system-backend/IHealthSysBackend.ts:56](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/interfaces/system-backend/IHealthSysBackend.ts#L56)*
+*Defined in [interfaces/system-backend/IHealthSysBackend.ts:56](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/system-backend/IHealthSysBackend.ts#L56)*
 
 ___
 <a id="initialized"></a>
@@ -51,7 +51,7 @@ ___
 
 **● initialized**: *`boolean`*
 
-*Defined in [interfaces/system-backend/IHealthSysBackend.ts:48](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/interfaces/system-backend/IHealthSysBackend.ts#L48)*
+*Defined in [interfaces/system-backend/IHealthSysBackend.ts:48](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/system-backend/IHealthSysBackend.ts#L48)*
 
 ___
 <a id="performance_standby"></a>
@@ -60,7 +60,7 @@ ___
 
 **● performance_standby**: *`boolean`*
 
-*Defined in [interfaces/system-backend/IHealthSysBackend.ts:51](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/interfaces/system-backend/IHealthSysBackend.ts#L51)*
+*Defined in [interfaces/system-backend/IHealthSysBackend.ts:51](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/system-backend/IHealthSysBackend.ts#L51)*
 
 ___
 <a id="replication_dr_mode"></a>
@@ -69,7 +69,7 @@ ___
 
 **● replication_dr_mode**: *`string`*
 
-*Defined in [interfaces/system-backend/IHealthSysBackend.ts:53](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/interfaces/system-backend/IHealthSysBackend.ts#L53)*
+*Defined in [interfaces/system-backend/IHealthSysBackend.ts:53](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/system-backend/IHealthSysBackend.ts#L53)*
 
 ___
 <a id="replication_perf_mode"></a>
@@ -78,7 +78,7 @@ ___
 
 **● replication_perf_mode**: *`string`*
 
-*Defined in [interfaces/system-backend/IHealthSysBackend.ts:52](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/interfaces/system-backend/IHealthSysBackend.ts#L52)*
+*Defined in [interfaces/system-backend/IHealthSysBackend.ts:52](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/system-backend/IHealthSysBackend.ts#L52)*
 
 ___
 <a id="sealed"></a>
@@ -87,7 +87,7 @@ ___
 
 **● sealed**: *`boolean`*
 
-*Defined in [interfaces/system-backend/IHealthSysBackend.ts:49](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/interfaces/system-backend/IHealthSysBackend.ts#L49)*
+*Defined in [interfaces/system-backend/IHealthSysBackend.ts:49](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/system-backend/IHealthSysBackend.ts#L49)*
 
 ___
 <a id="server_time_utc"></a>
@@ -96,7 +96,7 @@ ___
 
 **● server_time_utc**: *`number`*
 
-*Defined in [interfaces/system-backend/IHealthSysBackend.ts:54](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/interfaces/system-backend/IHealthSysBackend.ts#L54)*
+*Defined in [interfaces/system-backend/IHealthSysBackend.ts:54](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/system-backend/IHealthSysBackend.ts#L54)*
 
 ___
 <a id="standby"></a>
@@ -105,7 +105,7 @@ ___
 
 **● standby**: *`boolean`*
 
-*Defined in [interfaces/system-backend/IHealthSysBackend.ts:50](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/interfaces/system-backend/IHealthSysBackend.ts#L50)*
+*Defined in [interfaces/system-backend/IHealthSysBackend.ts:50](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/system-backend/IHealthSysBackend.ts#L50)*
 
 ___
 <a id="version"></a>
@@ -114,7 +114,7 @@ ___
 
 **● version**: *`string`*
 
-*Defined in [interfaces/system-backend/IHealthSysBackend.ts:55](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/interfaces/system-backend/IHealthSysBackend.ts#L55)*
+*Defined in [interfaces/system-backend/IHealthSysBackend.ts:55](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/system-backend/IHealthSysBackend.ts#L55)*
 
 ___
 
