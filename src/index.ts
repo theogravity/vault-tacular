@@ -19,26 +19,47 @@ import { BaseDatabaseEngine } from './secrets-engines/databases/BaseDatabaseEngi
 import { WrappingSysBackend } from './system-backends/WrappingSysBackend'
 import { getTokenFromFile } from './auth-token-funcs/get-token-from-file'
 
-export default {
+import { IAwsAuth } from './interfaces/auth-methods/IAwsAuth'
+import { ITlsCertificateAuth } from './interfaces/auth-methods/ITlsCertificateAuth'
+import { IUserPassAuth } from './interfaces/auth-methods/IUserPassAuth'
+import { IBaseDatabaseEngine } from './interfaces/secrets-engines/databases/IBaseDatabaseEngine'
+import { IPostgreSqlEngine } from './interfaces/secrets-engines/databases/IPostgreSqlEngine'
+import { IKv1SecretEngine } from './interfaces/secrets-engines/IKv1SecretEngine'
+import { IKv2SecretEngine } from './interfaces/secrets-engines/IKv2SecretEngine'
+import { IHealthSysBackend } from './interfaces/system-backend/IHealthSysBackend'
+import { IInitSysBackend } from './interfaces/system-backend/IInitSysBackend'
+import { IUnsealSysBackend } from './interfaces/system-backend/IUnsealSysBackend'
+import { IWrappingSysBackend } from './interfaces/system-backend/IWrappingSysBackend'
+import * as IBaseClient from './interfaces/IBaseClient'
+
+export {
   BaseAuth,
   AwsAuth,
   TlsCertificateAuth,
   UserPassAuth,
   TokenAuth,
-
   BaseSecretEngine,
   Kv1SecretEngine,
   Kv2SecretEngine,
-
   BaseDatabaseEngine,
   PostgreSqlEngine,
-
   BaseSysBackend,
   HealthSysBackend,
   InitSysBackend,
   RotateSysBackend,
   UnsealSysBackend,
   WrappingSysBackend,
-
-  getTokenFromFile
+  getTokenFromFile,
+  IAwsAuth,
+  ITlsCertificateAuth,
+  IUserPassAuth,
+  IBaseDatabaseEngine,
+  IPostgreSqlEngine,
+  IKv1SecretEngine,
+  IKv2SecretEngine,
+  IHealthSysBackend,
+  IInitSysBackend,
+  IUnsealSysBackend,
+  IWrappingSysBackend,
+  IBaseClient
 }

@@ -1,3 +1,7 @@
+# UNRELEASED
+
+Fix default exports, add interfaces to exports
+
 # 0.1.5 - Mon May 20 2019 07:35:32
 
 Add helper function, `getTokenFromFile` to load a token from a file.
