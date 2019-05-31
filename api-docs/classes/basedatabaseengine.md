@@ -38,7 +38,7 @@
 
 ⊕ **new BaseDatabaseEngine**(baseUrl: *[BaseUrl](../#baseurl)*, config?: *[IBaseClientConfig](../interfaces/ibaseclientconfig.md)*): [BaseDatabaseEngine](basedatabaseengine.md)
 
-*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:22](https://github.com/theogravity/vault-tacular/blob/fa3cc87/src/secrets-engines/databases/BaseDatabaseEngine.ts#L22)*
+*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:22](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/secrets-engines/databases/BaseDatabaseEngine.ts#L22)*
 
 **Parameters:**
 
@@ -59,7 +59,7 @@ ___
 
 ▸ **deleteConnection**(name: *`string`*): `Promise`<[IVaultResponse](../interfaces/ivaultresponse.md)<`void`>>
 
-*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:109](https://github.com/theogravity/vault-tacular/blob/fa3cc87/src/secrets-engines/databases/BaseDatabaseEngine.ts#L109)*
+*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:109](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/secrets-engines/databases/BaseDatabaseEngine.ts#L109)*
 
 This endpoint deletes a connection.
 
@@ -80,7 +80,7 @@ ___
 
 ▸ **deleteRole**(name: *`string`*): `Promise`<[IVaultResponse](../interfaces/ivaultresponse.md)<`void`>>
 
-*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:236](https://github.com/theogravity/vault-tacular/blob/fa3cc87/src/secrets-engines/databases/BaseDatabaseEngine.ts#L236)*
+*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:236](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/secrets-engines/databases/BaseDatabaseEngine.ts#L236)*
 
 Deletes the role definition.
 
@@ -101,7 +101,7 @@ ___
 
 ▸ **generateCreds**(name: *`string`*): `Promise`<[IVaultResponse](../interfaces/ivaultresponse.md)<[IGenerateCredsResponse](../interfaces/ibasedatabaseengine.igeneratecredsresponse.md)>>
 
-*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:255](https://github.com/theogravity/vault-tacular/blob/fa3cc87/src/secrets-engines/databases/BaseDatabaseEngine.ts#L255)*
+*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:255](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/secrets-engines/databases/BaseDatabaseEngine.ts#L255)*
 
 Generates a new set of dynamic credentials based on the named role.
 
@@ -122,7 +122,7 @@ ___
 
 ▸ **listConnections**(): `Promise`<[IVaultResponse](../interfaces/ivaultresponse.md)<[IListConnectionsResponse](../interfaces/ibasedatabaseengine.ilistconnectionsresponse.md)>>
 
-*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:86](https://github.com/theogravity/vault-tacular/blob/fa3cc87/src/secrets-engines/databases/BaseDatabaseEngine.ts#L86)*
+*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:86](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/secrets-engines/databases/BaseDatabaseEngine.ts#L86)*
 
 Returns a list of available connections. Only the connection names are returned, not any values.
 
@@ -137,7 +137,7 @@ ___
 
 ▸ **listRoles**(): `Promise`<[IVaultResponse](../interfaces/ivaultresponse.md)<[IListRolesResponse](../interfaces/ibasedatabaseengine.ilistrolesresponse.md)>>
 
-*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:213](https://github.com/theogravity/vault-tacular/blob/fa3cc87/src/secrets-engines/databases/BaseDatabaseEngine.ts#L213)*
+*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:213](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/secrets-engines/databases/BaseDatabaseEngine.ts#L213)*
 
 Returns a list of available roles. Only the role names are returned, not any values.
 
@@ -152,7 +152,7 @@ ___
 
 ▸ **readConnection**(name: *`string`*): `Promise`<[IVaultResponse](../interfaces/ivaultresponse.md)<[IReadConnectionResponse](../interfaces/ibasedatabaseengine.ireadconnectionresponse.md)>>
 
-*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:64](https://github.com/theogravity/vault-tacular/blob/fa3cc87/src/secrets-engines/databases/BaseDatabaseEngine.ts#L64)*
+*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:64](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/secrets-engines/databases/BaseDatabaseEngine.ts#L64)*
 
 This endpoint returns the configuration settings for a connection.
 
@@ -173,7 +173,7 @@ ___
 
 ▸ **readRole**(name: *`string`*): `Promise`<[IVaultResponse](../interfaces/ivaultresponse.md)<[IReadRoleResponse](../interfaces/ibasedatabaseengine.ireadroleresponse.md)>>
 
-*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:191](https://github.com/theogravity/vault-tacular/blob/fa3cc87/src/secrets-engines/databases/BaseDatabaseEngine.ts#L191)*
+*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:191](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/secrets-engines/databases/BaseDatabaseEngine.ts#L191)*
 
 Queries the role definition.
 
@@ -194,7 +194,7 @@ ___
 
 ▸ **resetConnection**(name: *`string`*): `Promise`<[IVaultResponse](../interfaces/ivaultresponse.md)<`void`>>
 
-*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:129](https://github.com/theogravity/vault-tacular/blob/fa3cc87/src/secrets-engines/databases/BaseDatabaseEngine.ts#L129)*
+*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:129](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/secrets-engines/databases/BaseDatabaseEngine.ts#L129)*
 
 Closes a connection and it's underlying plugin and restarts it with the configuration stored in the barrier.
 
@@ -215,7 +215,7 @@ ___
 
 ▸ **rotateRootCreds**(name: *`string`*): `Promise`<[IVaultResponse](../interfaces/ivaultresponse.md)<`void`>>
 
-*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:149](https://github.com/theogravity/vault-tacular/blob/fa3cc87/src/secrets-engines/databases/BaseDatabaseEngine.ts#L149)*
+*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:149](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/secrets-engines/databases/BaseDatabaseEngine.ts#L149)*
 
 Rotate the root superuser credentials stored for the database connection. This user must have permissions to update its own password.
 

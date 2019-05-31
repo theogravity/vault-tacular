@@ -22,7 +22,7 @@
 
 **● initialized**: *`boolean`*
 
-*Defined in [interfaces/system-backend/IInitSysBackend.ts:3](https://github.com/theogravity/vault-tacular/blob/fa3cc87/src/interfaces/system-backend/IInitSysBackend.ts#L3)*
+*Defined in [interfaces/system-backend/IInitSysBackend.ts:3](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/interfaces/system-backend/IInitSysBackend.ts#L3)*
 
 ___
 

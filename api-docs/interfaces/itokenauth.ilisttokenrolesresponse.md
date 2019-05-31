@@ -22,7 +22,7 @@
 
 **● data**: *`object`*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:140](https://github.com/theogravity/vault-tacular/blob/fa3cc87/src/interfaces/auth-methods/ITokenAuth.ts#L140)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:140](https://github.com/theogravity/vault-tacular/blob/cbfbab1/src/interfaces/auth-methods/ITokenAuth.ts#L140)*
 
 #### Type declaration
 
