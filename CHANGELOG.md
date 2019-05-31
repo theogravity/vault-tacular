@@ -1,3 +1,8 @@
+# UNRELEASED
+
+[Breaking] Rename `authTokenFn` -> `authToken`, allow for a string value
+along with a fuction
+
 # 0.1.6 - Fri May 31 2019 02:28:10
 
 Fix default exports, add interfaces to exports

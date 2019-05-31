@@ -10,7 +10,7 @@ export class BaseSysBackend extends BaseClient {
    */
   constructor (baseUrl: BaseUrl, authTokenFn?: Function) {
     super(baseUrl, {
-      authTokenFn
+      authToken: authTokenFn
     })
   }
 }

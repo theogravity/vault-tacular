@@ -98,14 +98,14 @@ You can initialize auth or secret engines with the following signature:
    * Authorization / X-Vault-Token header. The client does *not* cache the result;
    * the function should implement caching and renewal of the token if necessary.
    */
-  authTokenFn?: Function
+  authToken?: Function
 ```
 
 ### System Backends
 
 The signature for a backend is:
 
-`new <SysBackend>(baseUrl, authTokenFn?)`
+`new <SysBackend>(baseUrl, authToken?)`
 
 ## Examples
 
@@ -136,7 +136,7 @@ async function InitVault () {
 import { UserPassAuth } from 'vault-tacular'
 
 const auth = new UserPassAuth('http://localhost:8200/v1', {
-  authTokenFn: () => {
+  authToken: () => {
     return '...'
   }
 })
@@ -162,7 +162,9 @@ async function createUser () {
 import { UserPassAuth, getTokenFromFile } from 'vault-tacular'
 
 const auth = new UserPassAuth('http://localhost:8200/v1', {
-  authTokenFn: getTokenFromFile('/tmp/token')
+  // getTokenFromFile returns a function that when executes,
+  // reads the current value from '/tmp/token'
+  authToken: getTokenFromFile('/tmp/token')
 })
 ```
 
@@ -181,7 +183,7 @@ async function create () {
   const password = 'test-pass'
 
   const auth = new UserPassAuth(VAULT_API_URL, {
-    authTokenFn: () => {
+    authToken: () => {
       // you will need to return a token that has the ability to
       // create users
       return '...'
@@ -194,7 +196,7 @@ async function create () {
   })
 
   // Generate the function that will fetch and return the user's token
-  const authTokenFn = async () => {
+  const authToken = async () => {
     const user = await auth.login(username, password)
 
     return user.result.auth.client_token
@@ -202,7 +204,7 @@ async function create () {
 
   // Create an instance of the kv secret engine
   const secrets = new Kv1SecretEngine(VAULT_API_URL, {
-    authTokenFn
+    authToken
   })
 
   // Write a secret

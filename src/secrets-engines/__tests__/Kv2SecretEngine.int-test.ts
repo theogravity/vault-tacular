@@ -1,7 +1,7 @@
 import { Kv2SecretEngine } from '../Kv2SecretEngine'
 
 const engine = new Kv2SecretEngine(process.env.VAULT_API_URL, {
-  authTokenFn: () => {
+  authToken: () => {
     return process.env.VAULT_TOKEN
   },
   mount: 'kv2'
