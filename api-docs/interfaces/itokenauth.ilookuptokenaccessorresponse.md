@@ -1,32 +1,27 @@
-[Vault client for node.js](../README.md) > [ITokenAuth](../modules/itokenauth.md) > [ILookupTokenAccessorResponse](../interfaces/itokenauth.ilookuptokenaccessorresponse.md)
+> **[Vault client for node.js](../README.md)**
+
+[Globals](../globals.md) / [ITokenAuth](../modules/itokenauth.md) / [ILookupTokenAccessorResponse](itokenauth.ilookuptokenaccessorresponse.md) /
 
 # Interface: ILookupTokenAccessorResponse
 
 ## Hierarchy
 
- [ILookupTokenResponse](itokenauth.ilookuptokenresponse.md)
+* [ILookupTokenResponse](itokenauth.ilookuptokenresponse.md)
 
-**↳ ILookupTokenAccessorResponse**
+  * **ILookupTokenAccessorResponse**
 
-## Index
+### Index
 
-### Properties
+#### Properties
 
 * [data](itokenauth.ilookuptokenaccessorresponse.md#data)
 
----
-
 ## Properties
-
-<a id="data"></a>
 
 ###  data
 
-**● data**: *`ILookupTokenRes`*
+• **data**: *`ILookupTokenRes`*
 
 *Inherited from [ILookupTokenResponse](itokenauth.ilookuptokenresponse.md).[data](itokenauth.ilookuptokenresponse.md#data)*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:108](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/auth-methods/ITokenAuth.ts#L108)*
-
-___
-
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:108](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/auth-methods/ITokenAuth.ts#L108)*

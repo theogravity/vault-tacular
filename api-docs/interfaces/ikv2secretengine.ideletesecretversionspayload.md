@@ -1,30 +1,26 @@
-[Vault client for node.js](../README.md) > [IKv2SecretEngine](../modules/ikv2secretengine.md) > [IDeleteSecretVersionsPayload](../interfaces/ikv2secretengine.ideletesecretversionspayload.md)
+> **[Vault client for node.js](../README.md)**
+
+[Globals](../globals.md) / [IKv2SecretEngine](../modules/ikv2secretengine.md) / [IDeleteSecretVersionsPayload](ikv2secretengine.ideletesecretversionspayload.md) /
 
 # Interface: IDeleteSecretVersionsPayload
 
 ## Hierarchy
 
-**IDeleteSecretVersionsPayload**
+* **IDeleteSecretVersionsPayload**
 
-## Index
+### Index
 
-### Properties
+#### Properties
 
 * [versions](ikv2secretengine.ideletesecretversionspayload.md#versions)
 
----
-
 ## Properties
-
-<a id="versions"></a>
 
 ###  versions
 
-**● versions**: *`number`[]*
+• **versions**: *number[]*
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:71](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L71)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:71](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L71)*
 
-The versions to be deleted. The versioned result will not be deleted, but it will no longer be returned in normal get requests.
-
-___
-
+The versions to be deleted. The versioned result will not be deleted, but it will no longer be
+returned in normal get requests.

@@ -1,30 +1,25 @@
-[Vault client for node.js](../README.md) > [IBaseDatabaseEngine](../modules/ibasedatabaseengine.md) > [IGenerateCredsResponse](../interfaces/ibasedatabaseengine.igeneratecredsresponse.md)
+> **[Vault client for node.js](../README.md)**
+
+[Globals](../globals.md) / [IBaseDatabaseEngine](../modules/ibasedatabaseengine.md) / [IGenerateCredsResponse](ibasedatabaseengine.igeneratecredsresponse.md) /
 
 # Interface: IGenerateCredsResponse
 
 ## Hierarchy
 
-**IGenerateCredsResponse**
+* **IGenerateCredsResponse**
 
-## Index
+### Index
 
-### Properties
+#### Properties
 
 * [data](ibasedatabaseengine.igeneratecredsresponse.md#data)
 
----
-
 ## Properties
-
-<a id="data"></a>
 
 ###  data
 
-**● data**: *`object`*
+• **data**: *object*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:111](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L111)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:111](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L111)*
 
-#### Type declaration
-
-___
-
+#### Type declaration:

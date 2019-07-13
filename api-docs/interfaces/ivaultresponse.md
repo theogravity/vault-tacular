@@ -1,30 +1,27 @@
-[Vault client for node.js](../README.md) > [IVaultResponse](../interfaces/ivaultresponse.md)
+> **[Vault client for node.js](../README.md)**
 
-# Interface: IVaultResponse
+[Globals](../globals.md) / [IVaultResponse](ivaultresponse.md) /
+
+# Interface: IVaultResponse <**T**>
 
 ## Type parameters
-#### T 
+
+▪ **T**
+
 ## Hierarchy
 
-**IVaultResponse**
+* **IVaultResponse**
 
-## Index
+### Index
 
-### Properties
+#### Properties
 
-* [result](ivaultresponse.md#result)
-
----
+* [result](ivaultresponse.md#optional-result)
 
 ## Properties
 
-<a id="result"></a>
+### `Optional` result
 
-### `<Optional>` result
+• **result**? : *`T`*
 
-**● result**: *`T`*
-
-*Defined in [interfaces/IBaseClient.ts:42](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/IBaseClient.ts#L42)*
-
-___
-
+*Defined in [interfaces/IBaseClient.ts:42](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/IBaseClient.ts#L42)*

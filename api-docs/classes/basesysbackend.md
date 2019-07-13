@@ -1,49 +1,44 @@
-[Vault client for node.js](../README.md) > [BaseSysBackend](../classes/basesysbackend.md)
+> **[Vault client for node.js](../README.md)**
+
+[Globals](../globals.md) / [BaseSysBackend](basesysbackend.md) /
 
 # Class: BaseSysBackend
 
 ## Hierarchy
 
- [BaseClient](baseclient.md)
+* [BaseClient](baseclient.md)
 
-**↳ BaseSysBackend**
+  * **BaseSysBackend**
 
-↳  [HealthSysBackend](healthsysbackend.md)
+  * [HealthSysBackend](healthsysbackend.md)
 
-↳  [RotateSysBackend](rotatesysbackend.md)
+  * [RotateSysBackend](rotatesysbackend.md)
 
-↳  [UnsealSysBackend](unsealsysbackend.md)
+  * [UnsealSysBackend](unsealsysbackend.md)
 
-↳  [InitSysBackend](initsysbackend.md)
+  * [InitSysBackend](initsysbackend.md)
 
-↳  [WrappingSysBackend](wrappingsysbackend.md)
+  * [WrappingSysBackend](wrappingsysbackend.md)
 
-## Index
+### Index
 
-### Constructors
+#### Constructors
 
 * [constructor](basesysbackend.md#constructor)
 
----
-
 ## Constructors
-
-<a id="constructor"></a>
 
 ###  constructor
 
-⊕ **new BaseSysBackend**(baseUrl: *[BaseUrl](../#baseurl)*, authTokenFn?: *`Function`*): [BaseSysBackend](basesysbackend.md)
+\+ **new BaseSysBackend**(`baseUrl`: [BaseUrl](../globals.md#baseurl), `authTokenFn?`: `Function`): *[BaseSysBackend](basesysbackend.md)*
 
-*Defined in [system-backends/BaseSysBackend.ts:4](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/system-backends/BaseSysBackend.ts#L4)*
+*Defined in [system-backends/BaseSysBackend.ts:4](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/system-backends/BaseSysBackend.ts#L4)*
 
 **Parameters:**
 
-| Name | Type | Description |
-| ------ | ------ | ------ |
-| baseUrl | [BaseUrl](../#baseurl) |  The URL to the Vault API including the version path |
-| `Optional` authTokenFn | `Function` |
+Name | Type | Description |
+------ | ------ | ------ |
+`baseUrl` | [BaseUrl](../globals.md#baseurl) | The URL to the Vault API including the version path |
+`authTokenFn?` | `Function` | - |
 
-**Returns:** [BaseSysBackend](basesysbackend.md)
-
-___
-
+**Returns:** *[BaseSysBackend](basesysbackend.md)*

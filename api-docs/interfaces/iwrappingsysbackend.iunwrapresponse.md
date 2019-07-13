@@ -1,16 +1,18 @@
-[Vault client for node.js](../README.md) > [IWrappingSysBackend](../modules/iwrappingsysbackend.md) > [IUnwrapResponse](../interfaces/iwrappingsysbackend.iunwrapresponse.md)
+> **[Vault client for node.js](../README.md)**
+
+[Globals](../globals.md) / [IWrappingSysBackend](../modules/iwrappingsysbackend.md) / [IUnwrapResponse](iwrappingsysbackend.iunwrapresponse.md) /
 
 # Interface: IUnwrapResponse
 
 ## Hierarchy
 
-**IUnwrapResponse**
+* **IUnwrapResponse**
 
-↳  [IWrapResponse](iwrappingsysbackend.iwrapresponse.md)
+  * [IWrapResponse](iwrappingsysbackend.iwrapresponse.md)
 
-## Index
+### Index
 
-### Properties
+#### Properties
 
 * [data](iwrappingsysbackend.iunwrapresponse.md#data)
 * [lease_duration](iwrappingsysbackend.iunwrapresponse.md#lease_duration)
@@ -19,68 +21,56 @@
 * [request_id](iwrappingsysbackend.iunwrapresponse.md#request_id)
 * [warnings](iwrappingsysbackend.iunwrapresponse.md#warnings)
 
----
-
 ## Properties
-
-<a id="data"></a>
 
 ###  data
 
-**● data**: *`object`*
+• **data**: *object*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:30](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/system-backend/IWrappingSysBackend.ts#L30)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:30](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/system-backend/IWrappingSysBackend.ts#L30)*
 
 The set of parameters in the wrapped response from wrap().
 
-#### Type declaration
+#### Type declaration:
 
-[key: `string`]: `any`
+● \[▪ **key**: *string*\]: any
 
 ___
-<a id="lease_duration"></a>
 
 ###  lease_duration
 
-**● lease_duration**: *`number`*
+• **lease_duration**: *number*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:25](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/system-backend/IWrappingSysBackend.ts#L25)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:25](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/system-backend/IWrappingSysBackend.ts#L25)*
 
 ___
-<a id="lease_id"></a>
 
 ###  lease_id
 
-**● lease_id**: *`string`*
+• **lease_id**: *string*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:24](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/system-backend/IWrappingSysBackend.ts#L24)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:24](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/system-backend/IWrappingSysBackend.ts#L24)*
 
 ___
-<a id="renewable"></a>
 
 ###  renewable
 
-**● renewable**: *`boolean`*
+• **renewable**: *boolean*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:26](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/system-backend/IWrappingSysBackend.ts#L26)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:26](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/system-backend/IWrappingSysBackend.ts#L26)*
 
 ___
-<a id="request_id"></a>
 
 ###  request_id
 
-**● request_id**: *`string`*
+• **request_id**: *string*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:23](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/system-backend/IWrappingSysBackend.ts#L23)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:23](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/system-backend/IWrappingSysBackend.ts#L23)*
 
 ___
-<a id="warnings"></a>
 
 ###  warnings
 
-**● warnings**: *[VaultWarnings](../#vaultwarnings)*
+• **warnings**: *[VaultWarnings](../globals.md#vaultwarnings)*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:33](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/system-backend/IWrappingSysBackend.ts#L33)*
-
-___
-
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:33](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/system-backend/IWrappingSysBackend.ts#L33)*

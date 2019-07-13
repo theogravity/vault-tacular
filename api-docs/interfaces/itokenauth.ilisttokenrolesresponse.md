@@ -1,30 +1,25 @@
-[Vault client for node.js](../README.md) > [ITokenAuth](../modules/itokenauth.md) > [IListTokenRolesResponse](../interfaces/itokenauth.ilisttokenrolesresponse.md)
+> **[Vault client for node.js](../README.md)**
+
+[Globals](../globals.md) / [ITokenAuth](../modules/itokenauth.md) / [IListTokenRolesResponse](itokenauth.ilisttokenrolesresponse.md) /
 
 # Interface: IListTokenRolesResponse
 
 ## Hierarchy
 
-**IListTokenRolesResponse**
+* **IListTokenRolesResponse**
 
-## Index
+### Index
 
-### Properties
+#### Properties
 
 * [data](itokenauth.ilisttokenrolesresponse.md#data)
 
----
-
 ## Properties
-
-<a id="data"></a>
 
 ###  data
 
-**● data**: *`object`*
+• **data**: *object*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:140](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/auth-methods/ITokenAuth.ts#L140)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:140](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/auth-methods/ITokenAuth.ts#L140)*
 
-#### Type declaration
-
-___
-
+#### Type declaration:

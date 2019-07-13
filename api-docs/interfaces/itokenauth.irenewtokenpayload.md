@@ -1,30 +1,25 @@
-[Vault client for node.js](../README.md) > [ITokenAuth](../modules/itokenauth.md) > [IRenewTokenPayload](../interfaces/itokenauth.irenewtokenpayload.md)
+> **[Vault client for node.js](../README.md)**
+
+[Globals](../globals.md) / [ITokenAuth](../modules/itokenauth.md) / [IRenewTokenPayload](itokenauth.irenewtokenpayload.md) /
 
 # Interface: IRenewTokenPayload
 
 ## Hierarchy
 
-**IRenewTokenPayload**
+* **IRenewTokenPayload**
 
-## Index
+### Index
 
-### Properties
+#### Properties
 
-* [increment](itokenauth.irenewtokenpayload.md#increment)
-
----
+* [increment](itokenauth.irenewtokenpayload.md#optional-increment)
 
 ## Properties
 
-<a id="increment"></a>
+### `Optional` increment
 
-### `<Optional>` increment
+• **increment**? : *string*
 
-**● increment**: *`string`*
-
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:117](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/auth-methods/ITokenAuth.ts#L117)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:117](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/auth-methods/ITokenAuth.ts#L117)*
 
 An optional requested lease increment can be provided. This increment may be ignored.
-
-___
-

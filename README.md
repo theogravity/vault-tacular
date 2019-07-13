@@ -23,13 +23,16 @@ A client for Hashicorp Vault written in Typescript.
 - [Features](#features)
 - [API Support](#api-support)
 - [Installation](#installation)
+    - [If you are using `AwsAuth` / `getTokenUsingIam`](#if-you-are-using-awsauth--gettokenusingiam)
 - [Usage](#usage)
 - [Auth / Secret Engines](#auth--secret-engines)
-    - [System Backends](#system-backends)
+- [System Backends](#system-backends)
+- [Reading tokens](#reading-tokens)
+    - [Basic token read example](#basic-token-read-example)
+    - [Token read helpers](#token-read-helpers)
 - [Examples](#examples)
     - [Init vault](#init-vault)
     - [Create a user using the username/password auth engine](#create-a-user-using-the-usernamepassword-auth-engine)
-    - [Read a token from a file](#read-a-token-from-a-file)
     - [Create / Read a secret](#create--read-a-secret)
 - [Troubleshooting](#troubleshooting)
     - [Unsure if the API is working or not](#unsure-if-the-api-is-working-or-not)
@@ -64,6 +67,18 @@ issue or PR if you find any problems with an existing implementation.)
 
 `$ npm i vault-tacular`
 
+Some engines might use provider-specific libraries, which are not installed
+by default (if you use TLS auth, why would you need AWS-based auth
+and its dependencies?).
+
+Required dependencies for certain engines are listed below.
+
+### If you are using `AwsAuth` / `getTokenUsingIam`
+
+```
+$ npm i awscred aws4
+```
+
 ## Usage
 
 See the [API Docs](api-docs/) for more info
@@ -94,18 +109,76 @@ You can initialize auth or secret engines with the following signature:
    */
   reqOpts?: RequestPromiseOptions
   /**
-   * An (async) function that returns the token used for the
+   * The token value, or an (async) function that returns the token used for the
    * Authorization / X-Vault-Token header. The client does *not* cache the result;
    * the function should implement caching and renewal of the token if necessary.
    */
-  authToken?: Function
+  authToken?: string | Function
 ```
 
-### System Backends
+## System Backends
 
 The signature for a backend is:
 
 `new <SysBackend>(baseUrl, authToken?)`
+
+## Reading tokens
+
+The vault clients generally require an auth token to perform various actions.
+
+The client may accept an `authToken` parameter, which can be a token
+string itself (useful for testing), or a callback function that the client would
+execute before vault requests to fetch the token.
+
+### Basic token read example
+
+```javascript
+import { UserPassAuth } from 'vault-tacular'
+
+const auth = new UserPassAuth('http://localhost:8200/v1', {
+  authToken: 'my-token'
+})
+```
+
+```javascript
+import { UserPassAuth } from 'vault-tacular'
+
+const auth = new UserPassAuth('http://localhost:8200/v1', {
+  // callback function
+  authToken: async () => {
+    return 'my-token'
+  }
+})
+```
+
+### Token read helpers
+
+`vault-tacular` provides some helpers for common use-cases.
+
+#### Read a token from a file
+
+```javascript
+import { UserPassAuth, AuthTokenHelpers } from 'vault-tacular'
+
+const auth = new UserPassAuth('http://localhost:8200/v1', {
+  // getTokenFromFile returns a function that when executes,
+  // reads the current value from '/tmp/token'
+  authToken: AuthTokenHelpers.getTokenFromFile('/tmp/token')
+})
+```
+
+#### Read a token using AWS IAM
+
+```javascript
+import { Kv1SecretEngine, AuthTokenHelpers } from 'vault-tacular'
+
+const VAULT_API_URL = 'http://localhost:8200/v1'
+const auth = new AwsAuth(VAULT_API_URL)
+
+const secrets = new Kv1SecretEngine(VAULT_API_URL, {
+  authToken: AuthTokenHelpers.getTokenUsingIam(auth, 'iam-role')
+})
+```
 
 ## Examples
 
@@ -154,18 +227,6 @@ async function createUser () {
     password
   }
 }
-```
-
-### Read a token from a file
-
-```javascript
-import { UserPassAuth, getTokenFromFile } from 'vault-tacular'
-
-const auth = new UserPassAuth('http://localhost:8200/v1', {
-  // getTokenFromFile returns a function that when executes,
-  // reads the current value from '/tmp/token'
-  authToken: getTokenFromFile('/tmp/token')
-})
 ```
 
 ### Create / Read a secret

@@ -1,10 +1,12 @@
-[Vault client for node.js](../README.md) > [IBaseDatabaseEngine](../modules/ibasedatabaseengine.md)
+> **[Vault client for node.js](../README.md)**
+
+[Globals](../globals.md) / [IBaseDatabaseEngine](ibasedatabaseengine.md) /
 
 # Module: IBaseDatabaseEngine
 
-## Index
+### Index
 
-### Interfaces
+#### Interfaces
 
 * [IConfigConnectionPayload](../interfaces/ibasedatabaseengine.iconfigconnectionpayload.md)
 * [IGenerateCredsResponse](../interfaces/ibasedatabaseengine.igeneratecredsresponse.md)
@@ -13,6 +15,3 @@
 * [IReadConnectionResponse](../interfaces/ibasedatabaseengine.ireadconnectionresponse.md)
 * [IReadRoleResponse](../interfaces/ibasedatabaseengine.ireadroleresponse.md)
 * [IUpsertRolePayload](../interfaces/ibasedatabaseengine.iupsertrolepayload.md)
-
----
-

@@ -17,7 +17,6 @@ import { Kv2SecretEngine } from './secrets-engines/Kv2SecretEngine'
 import { PostgreSqlEngine } from './secrets-engines/databases/PostgreSqlEngine'
 import { BaseDatabaseEngine } from './secrets-engines/databases/BaseDatabaseEngine'
 import { WrappingSysBackend } from './system-backends/WrappingSysBackend'
-import { getTokenFromFile } from './auth-token-funcs/get-token-from-file'
 
 import { IAwsAuth } from './interfaces/auth-methods/IAwsAuth'
 import { ITlsCertificateAuth } from './interfaces/auth-methods/ITlsCertificateAuth'
@@ -31,9 +30,11 @@ import { IInitSysBackend } from './interfaces/system-backend/IInitSysBackend'
 import { IUnsealSysBackend } from './interfaces/system-backend/IUnsealSysBackend'
 import { IWrappingSysBackend } from './interfaces/system-backend/IWrappingSysBackend'
 import * as IBaseClient from './interfaces/IBaseClient'
+import * as AuthTokenHelpers from './auth-token-helpers'
 
 export {
   BaseAuth,
+  AuthTokenHelpers,
   AwsAuth,
   TlsCertificateAuth,
   UserPassAuth,
@@ -49,7 +50,6 @@ export {
   RotateSysBackend,
   UnsealSysBackend,
   WrappingSysBackend,
-  getTokenFromFile,
   IAwsAuth,
   ITlsCertificateAuth,
   IUserPassAuth,

@@ -1,48 +1,42 @@
-[Vault client for node.js](../README.md) > [IKv2SecretEngine](../modules/ikv2secretengine.md) > [ICreateUpdateSecretPayload](../interfaces/ikv2secretengine.icreateupdatesecretpayload.md)
+> **[Vault client for node.js](../README.md)**
+
+[Globals](../globals.md) / [IKv2SecretEngine](../modules/ikv2secretengine.md) / [ICreateUpdateSecretPayload](ikv2secretengine.icreateupdatesecretpayload.md) /
 
 # Interface: ICreateUpdateSecretPayload
 
 ## Hierarchy
 
-**ICreateUpdateSecretPayload**
+* **ICreateUpdateSecretPayload**
 
-## Index
+### Index
 
-### Properties
+#### Properties
 
 * [data](ikv2secretengine.icreateupdatesecretpayload.md#data)
-* [options](ikv2secretengine.icreateupdatesecretpayload.md#options)
-
----
+* [options](ikv2secretengine.icreateupdatesecretpayload.md#optional-options)
 
 ## Properties
 
-<a id="data"></a>
-
 ###  data
 
-**● data**: *`object`*
+• **data**: *object*
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:40](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L40)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:40](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L40)*
 
 The contents of the result map will be stored and returned on read
 
-#### Type declaration
+#### Type declaration:
 
-[key: `string`]: `any`
+● \[▪ **key**: *string*\]: any
 
 ___
-<a id="options"></a>
 
-### `<Optional>` options
+### `Optional` options
 
-**● options**: *`object`*
+• **options**? : *object*
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:46](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L46)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:46](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L46)*
 
 An object that holds option settings
 
-#### Type declaration
-
-___
-
+#### Type declaration:

@@ -1,69 +1,62 @@
-[Vault client for node.js](../README.md) > [UnsealSysBackend](../classes/unsealsysbackend.md)
+> **[Vault client for node.js](../README.md)**
+
+[Globals](../globals.md) / [UnsealSysBackend](unsealsysbackend.md) /
 
 # Class: UnsealSysBackend
 
 ## Hierarchy
 
-↳  [BaseSysBackend](basesysbackend.md)
+  * [BaseSysBackend](basesysbackend.md)
 
-**↳ UnsealSysBackend**
+  * **UnsealSysBackend**
 
-## Index
+### Index
 
-### Constructors
+#### Constructors
 
 * [constructor](unsealsysbackend.md#constructor)
 
-### Methods
+#### Methods
 
 * [submitUnsealKey](unsealsysbackend.md#submitunsealkey)
 
----
-
 ## Constructors
-
-<a id="constructor"></a>
 
 ###  constructor
 
-⊕ **new UnsealSysBackend**(baseUrl: *[BaseUrl](../#baseurl)*, authTokenFn?: *`Function`*): [UnsealSysBackend](unsealsysbackend.md)
+\+ **new UnsealSysBackend**(`baseUrl`: [BaseUrl](../globals.md#baseurl), `authTokenFn?`: `Function`): *[UnsealSysBackend](unsealsysbackend.md)*
 
 *Inherited from [BaseSysBackend](basesysbackend.md).[constructor](basesysbackend.md#constructor)*
 
-*Defined in [system-backends/BaseSysBackend.ts:4](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/system-backends/BaseSysBackend.ts#L4)*
+*Defined in [system-backends/BaseSysBackend.ts:4](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/system-backends/BaseSysBackend.ts#L4)*
 
 **Parameters:**
 
-| Name | Type | Description |
-| ------ | ------ | ------ |
-| baseUrl | [BaseUrl](../#baseurl) |  The URL to the Vault API including the version path |
-| `Optional` authTokenFn | `Function` |
+Name | Type | Description |
+------ | ------ | ------ |
+`baseUrl` | [BaseUrl](../globals.md#baseurl) | The URL to the Vault API including the version path |
+`authTokenFn?` | `Function` | - |
 
-**Returns:** [UnsealSysBackend](unsealsysbackend.md)
-
-___
+**Returns:** *[UnsealSysBackend](unsealsysbackend.md)*
 
 ## Methods
 
-<a id="submitunsealkey"></a>
-
 ###  submitUnsealKey
 
-▸ **submitUnsealKey**(payload: *[ISubmitUnsealKeyPayload](../interfaces/iunsealsysbackend.isubmitunsealkeypayload.md)*): `Promise`<[IVaultResponse](../interfaces/ivaultresponse.md)<[ISubmitUnsealKeyResponse](../interfaces/iunsealsysbackend.isubmitunsealkeyresponse.md)>>
+▸ **submitUnsealKey**(`payload`: [ISubmitUnsealKeyPayload](../interfaces/iunsealsysbackend.isubmitunsealkeypayload.md)): *`Promise<IVaultResponse<ISubmitUnsealKeyResponse>>`*
 
-*Defined in [system-backends/UnsealSysBackend.ts:14](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/system-backends/UnsealSysBackend.ts#L14)*
+*Defined in [system-backends/UnsealSysBackend.ts:14](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/system-backends/UnsealSysBackend.ts#L14)*
 
-This endpoint is used to enter a single master key share to progress the unsealing of the Vault. If the threshold number of master key shares is reached, Vault will attempt to unseal the Vault. Otherwise, this API must be called multiple times until that threshold is met.
+This endpoint is used to enter a single master key share to progress the unsealing of the
+Vault. If the threshold number of master key shares is reached, Vault will attempt to unseal
+the Vault. Otherwise, this API must be called multiple times until that threshold is met.
 
-*__link__*: [https://www.vaultproject.io/api/system/unseal.html#sys-unseal](https://www.vaultproject.io/api/system/unseal.html#sys-unseal)
+**`link`** https://www.vaultproject.io/api/system/unseal.html#sys-unseal
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| payload | [ISubmitUnsealKeyPayload](../interfaces/iunsealsysbackend.isubmitunsealkeypayload.md) |
+Name | Type |
+------ | ------ |
+`payload` | [ISubmitUnsealKeyPayload](../interfaces/iunsealsysbackend.isubmitunsealkeypayload.md) |
 
-**Returns:** `Promise`<[IVaultResponse](../interfaces/ivaultresponse.md)<[ISubmitUnsealKeyResponse](../interfaces/iunsealsysbackend.isubmitunsealkeyresponse.md)>>
-
-___
-
+**Returns:** *`Promise<IVaultResponse<ISubmitUnsealKeyResponse>>`*

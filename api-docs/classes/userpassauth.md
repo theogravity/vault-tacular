@@ -1,4 +1,6 @@
-[Vault client for node.js](../README.md) > [UserPassAuth](../classes/userpassauth.md)
+> **[Vault client for node.js](../README.md)**
+
+[Globals](../globals.md) / [UserPassAuth](userpassauth.md) /
 
 # Class: UserPassAuth
 
@@ -6,88 +8,76 @@ Username and password-based auth
 
 ## Hierarchy
 
-↳  [BaseAuth](baseauth.md)
+  * [BaseAuth](baseauth.md)
 
-**↳ UserPassAuth**
+  * **UserPassAuth**
 
-## Index
+### Index
 
-### Constructors
+#### Constructors
 
 * [constructor](userpassauth.md#constructor)
 
-### Methods
+#### Methods
 
 * [createOrUpdateUser](userpassauth.md#createorupdateuser)
 * [login](userpassauth.md#login)
 
----
-
 ## Constructors
-
-<a id="constructor"></a>
 
 ###  constructor
 
-⊕ **new UserPassAuth**(baseUrl: *[BaseUrl](../#baseurl)*, config?: *[IBaseClientConfig](../interfaces/ibaseclientconfig.md)*): [UserPassAuth](userpassauth.md)
+\+ **new UserPassAuth**(`baseUrl`: [BaseUrl](../globals.md#baseurl), `config?`: [IBaseClientConfig](../interfaces/ibaseclientconfig.md)): *[UserPassAuth](userpassauth.md)*
 
-*Defined in [auth-methods/UserPassAuth.ts:14](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/auth-methods/UserPassAuth.ts#L14)*
+*Defined in [auth-methods/UserPassAuth.ts:14](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/auth-methods/UserPassAuth.ts#L14)*
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| baseUrl | [BaseUrl](../#baseurl) |
-| `Optional` config | [IBaseClientConfig](../interfaces/ibaseclientconfig.md) |
+Name | Type |
+------ | ------ |
+`baseUrl` | [BaseUrl](../globals.md#baseurl) |
+`config?` | [IBaseClientConfig](../interfaces/ibaseclientconfig.md) |
 
-**Returns:** [UserPassAuth](userpassauth.md)
-
-___
+**Returns:** *[UserPassAuth](userpassauth.md)*
 
 ## Methods
 
-<a id="createorupdateuser"></a>
-
 ###  createOrUpdateUser
 
-▸ **createOrUpdateUser**(username: *`string`*, payload: *[IUpsertPayload](../interfaces/iuserpassauth.iupsertpayload.md)*): `Promise`<[IVaultResponse](../interfaces/ivaultresponse.md)<`void`>>
+▸ **createOrUpdateUser**(`username`: string, `payload`: [IUpsertPayload](../interfaces/iuserpassauth.iupsertpayload.md)): *`Promise<IVaultResponse<void>>`*
 
-*Defined in [auth-methods/UserPassAuth.ts:27](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/auth-methods/UserPassAuth.ts#L27)*
+*Defined in [auth-methods/UserPassAuth.ts:27](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/auth-methods/UserPassAuth.ts#L27)*
 
 Create or update a user.
 
-*__link__*: [https://www.vaultproject.io/api/auth/userpass/index.html#create-update-user](https://www.vaultproject.io/api/auth/userpass/index.html#create-update-user)
+**`link`** https://www.vaultproject.io/api/auth/userpass/index.html#create-update-user
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| username | `string` |
-| payload | [IUpsertPayload](../interfaces/iuserpassauth.iupsertpayload.md) |
+Name | Type |
+------ | ------ |
+`username` | string |
+`payload` | [IUpsertPayload](../interfaces/iuserpassauth.iupsertpayload.md) |
 
-**Returns:** `Promise`<[IVaultResponse](../interfaces/ivaultresponse.md)<`void`>>
+**Returns:** *`Promise<IVaultResponse<void>>`*
 
 ___
-<a id="login"></a>
 
 ###  login
 
-▸ **login**(username: *`string`*, password: *`string`*): `Promise`<[IVaultResponse](../interfaces/ivaultresponse.md)<[ISecret](../interfaces/isecret.md)>>
+▸ **login**(`username`: string, `password`: string): *`Promise<IVaultResponse<ISecret>>`*
 
-*Defined in [auth-methods/UserPassAuth.ts:49](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/auth-methods/UserPassAuth.ts#L49)*
+*Defined in [auth-methods/UserPassAuth.ts:49](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/auth-methods/UserPassAuth.ts#L49)*
 
 Login with the username and password.
 
-*__link__*: [https://www.vaultproject.io/api/auth/userpass/index.html#login](https://www.vaultproject.io/api/auth/userpass/index.html#login)
+**`link`** https://www.vaultproject.io/api/auth/userpass/index.html#login
 
 **Parameters:**
 
-| Name | Type |
-| ------ | ------ |
-| username | `string` |
-| password | `string` |
+Name | Type |
+------ | ------ |
+`username` | string |
+`password` | string |
 
-**Returns:** `Promise`<[IVaultResponse](../interfaces/ivaultresponse.md)<[ISecret](../interfaces/isecret.md)>>
-
-___
-
+**Returns:** *`Promise<IVaultResponse<ISecret>>`*

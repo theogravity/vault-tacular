@@ -1,10 +1,12 @@
-[Vault client for node.js](../README.md) > [IKv2SecretEngine](../modules/ikv2secretengine.md)
+> **[Vault client for node.js](../README.md)**
+
+[Globals](../globals.md) / [IKv2SecretEngine](ikv2secretengine.md) /
 
 # Module: IKv2SecretEngine
 
-## Index
+### Index
 
-### Interfaces
+#### Interfaces
 
 * [ICreateUpdateSecretPayload](../interfaces/ikv2secretengine.icreateupdatesecretpayload.md)
 * [ICreateUpdateSecretResponse](../interfaces/ikv2secretengine.icreateupdatesecretresponse.md)
@@ -18,6 +20,3 @@
 * [ISetConfigPayload](../interfaces/ikv2secretengine.isetconfigpayload.md)
 * [IUndeleteSecretVersionsPayload](../interfaces/ikv2secretengine.iundeletesecretversionspayload.md)
 * [IUpdateSecretMetadataPayload](../interfaces/ikv2secretengine.iupdatesecretmetadatapayload.md)
-
----
-

@@ -1,4 +1,6 @@
-[Vault client for node.js](../README.md) > [IBaseClientConfig](../interfaces/ibaseclientconfig.md)
+> **[Vault client for node.js](../README.md)**
+
+[Globals](../globals.md) / [IBaseClientConfig](ibaseclientconfig.md) /
 
 # Interface: IBaseClientConfig
 
@@ -6,67 +8,59 @@ Configuration parameters for client initialization
 
 ## Hierarchy
 
-**IBaseClientConfig**
+* **IBaseClientConfig**
 
-## Index
+### Index
 
-### Properties
+#### Properties
 
-* [authToken](ibaseclientconfig.md#authtoken)
-* [mount](ibaseclientconfig.md#mount)
-* [namespace](ibaseclientconfig.md#namespace)
-* [reqOpts](ibaseclientconfig.md#reqopts)
-
----
+* [authToken](ibaseclientconfig.md#optional-authtoken)
+* [mount](ibaseclientconfig.md#optional-mount)
+* [namespace](ibaseclientconfig.md#optional-namespace)
+* [reqOpts](ibaseclientconfig.md#optional-reqopts)
 
 ## Properties
 
-<a id="authtoken"></a>
+### `Optional` authToken
 
-### `<Optional>` authToken
+• **authToken**? : *string | `Function`*
 
-**● authToken**: *`string` \| `Function`*
+*Defined in [interfaces/IBaseClient.ts:26](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/IBaseClient.ts#L26)*
 
-*Defined in [interfaces/IBaseClient.ts:26](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/IBaseClient.ts#L26)*
-
-The token value, or an (async) function that returns the token used for the Authorization / X-Vault-Token header. The client does _not_ cache the result; the function should implement caching and renewal of the token if necessary.
+The token value, or an (async) function that returns the token used for the
+Authorization / X-Vault-Token header. The client does *not* cache the result;
+the function should implement caching and renewal of the token if necessary.
 
 ___
-<a id="mount"></a>
 
-### `<Optional>` mount
+### `Optional` mount
 
-**● mount**: *`string`*
+• **mount**? : *string*
 
-*Defined in [interfaces/IBaseClient.ts:10](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/IBaseClient.ts#L10)*
+*Defined in [interfaces/IBaseClient.ts:10](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/IBaseClient.ts#L10)*
 
 Auth method mount point
 
 ___
-<a id="namespace"></a>
 
-### `<Optional>` namespace
+### `Optional` namespace
 
-**● namespace**: *`string`*
+• **namespace**? : *string*
 
-*Defined in [interfaces/IBaseClient.ts:15](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/IBaseClient.ts#L15)*
+*Defined in [interfaces/IBaseClient.ts:15](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/IBaseClient.ts#L15)*
 
 Namespace path (Vault Enterprise feature)
 
-*__link__*: [https://www.vaultproject.io/docs/enterprise/namespaces/index.html](https://www.vaultproject.io/docs/enterprise/namespaces/index.html)
+**`link`** https://www.vaultproject.io/docs/enterprise/namespaces/index.html
 
 ___
-<a id="reqopts"></a>
 
-### `<Optional>` reqOpts
+### `Optional` reqOpts
 
-**● reqOpts**: *`RequestPromiseOptions`*
+• **reqOpts**? : *`RequestPromiseOptions`*
 
-*Defined in [interfaces/IBaseClient.ts:20](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/IBaseClient.ts#L20)*
+*Defined in [interfaces/IBaseClient.ts:20](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/IBaseClient.ts#L20)*
 
 Additional request module options
 
-*__link__*: [https://www.npmjs.com/package/request](https://www.npmjs.com/package/request)
-
-___
-
+**`link`** https://www.npmjs.com/package/request

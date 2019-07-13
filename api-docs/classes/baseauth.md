@@ -1,22 +1,19 @@
-[Vault client for node.js](../README.md) > [BaseAuth](../classes/baseauth.md)
+> **[Vault client for node.js](../README.md)**
+
+[Globals](../globals.md) / [BaseAuth](baseauth.md) /
 
 # Class: BaseAuth
 
 ## Hierarchy
 
- [BaseClient](baseclient.md)
+* [BaseClient](baseclient.md)
 
-**↳ BaseAuth**
+  * **BaseAuth**
 
-↳  [AwsAuth](awsauth.md)
+  * [AwsAuth](awsauth.md)
 
-↳  [TlsCertificateAuth](tlscertificateauth.md)
+  * [TlsCertificateAuth](tlscertificateauth.md)
 
-↳  [TokenAuth](tokenauth.md)
+  * [TokenAuth](tokenauth.md)
 
-↳  [UserPassAuth](userpassauth.md)
-
-## Index
-
----
-
+  * [UserPassAuth](userpassauth.md)

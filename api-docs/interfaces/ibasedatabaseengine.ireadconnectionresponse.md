@@ -1,30 +1,25 @@
-[Vault client for node.js](../README.md) > [IBaseDatabaseEngine](../modules/ibasedatabaseengine.md) > [IReadConnectionResponse](../interfaces/ibasedatabaseengine.ireadconnectionresponse.md)
+> **[Vault client for node.js](../README.md)**
+
+[Globals](../globals.md) / [IBaseDatabaseEngine](../modules/ibasedatabaseengine.md) / [IReadConnectionResponse](ibasedatabaseengine.ireadconnectionresponse.md) /
 
 # Interface: IReadConnectionResponse
 
 ## Hierarchy
 
-**IReadConnectionResponse**
+* **IReadConnectionResponse**
 
-## Index
+### Index
 
-### Properties
+#### Properties
 
 * [data](ibasedatabaseengine.ireadconnectionresponse.md#data)
 
----
-
 ## Properties
-
-<a id="data"></a>
 
 ###  data
 
-**● data**: *`object`*
+• **data**: *object*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:30](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L30)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:30](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L30)*
 
-#### Type declaration
-
-___
-
+#### Type declaration:

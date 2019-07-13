@@ -1,12 +1,11 @@
-[Vault client for node.js](../README.md) > [IUserPassAuth](../modules/iuserpassauth.md)
+> **[Vault client for node.js](../README.md)**
+
+[Globals](../globals.md) / [IUserPassAuth](iuserpassauth.md) /
 
 # Module: IUserPassAuth
 
-## Index
+### Index
 
-### Interfaces
+#### Interfaces
 
 * [IUpsertPayload](../interfaces/iuserpassauth.iupsertpayload.md)
-
----
-

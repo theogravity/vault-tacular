@@ -1,18 +1,15 @@
-[Vault client for node.js](../README.md) > [IBaseLoginPayload](../interfaces/ibaseloginpayload.md)
+> **[Vault client for node.js](../README.md)**
+
+[Globals](../globals.md) / [IBaseLoginPayload](ibaseloginpayload.md) /
 
 # Interface: IBaseLoginPayload
 
 ## Hierarchy
 
-**IBaseLoginPayload**
+* **IBaseLoginPayload**
 
-↳  [ILoginPayload](iawsauth.iloginpayload.md)
+  * [ILoginPayload](iawsauth.iloginpayload.md)
 
-↳  [IBaseAwsLoginPayload](iawsauth.ibaseawsloginpayload.md)
+  * [IBaseAwsLoginPayload](iawsauth.ibaseawsloginpayload.md)
 
-↳  [ILoginPayload](itlscertificateauth.iloginpayload.md)
-
-## Index
-
----
-
+  * [ILoginPayload](itlscertificateauth.iloginpayload.md)

@@ -1,30 +1,26 @@
-[Vault client for node.js](../README.md) > [IKv2SecretEngine](../modules/ikv2secretengine.md) > [IUndeleteSecretVersionsPayload](../interfaces/ikv2secretengine.iundeletesecretversionspayload.md)
+> **[Vault client for node.js](../README.md)**
+
+[Globals](../globals.md) / [IKv2SecretEngine](../modules/ikv2secretengine.md) / [IUndeleteSecretVersionsPayload](ikv2secretengine.iundeletesecretversionspayload.md) /
 
 # Interface: IUndeleteSecretVersionsPayload
 
 ## Hierarchy
 
-**IUndeleteSecretVersionsPayload**
+* **IUndeleteSecretVersionsPayload**
 
-## Index
+### Index
 
-### Properties
+#### Properties
 
 * [versions](ikv2secretengine.iundeletesecretversionspayload.md#versions)
 
----
-
 ## Properties
-
-<a id="versions"></a>
 
 ###  versions
 
-**● versions**: *`number`[]*
+• **versions**: *number[]*
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:79](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L79)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:79](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L79)*
 
-The versions to undelete. The versions will be restored and their result will be returned on normal get requests.
-
-___
-
+The versions to undelete. The versions will be restored and their result will be returned
+on normal get requests.

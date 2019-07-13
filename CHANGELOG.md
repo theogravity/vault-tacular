@@ -1,3 +1,10 @@
+# UNRELEASED
+
+- [Breaking] `getTokenFromFile` moved into `AuthTokenHelpers.getTokenFromFile`
+- Add IAM token helper, `AuthTokenHelpers.getTokenUsingIam`
+- `AwsAuth` now has required dependency `aws4`, is an optional install
+- Add easier IAM auth via `AwsAuth.getTokenUsingIamLogin`
+
 # 0.2.1 - Fri May 31 2019 19:31:51
 
 [Breaking] Rename `authTokenFn` -> `authToken`, allow for a string value

@@ -100,4 +100,38 @@ export namespace IAwsAuth {
      */
     pcks7: string
   }
+
+  export interface IGetTokenUsingIamLoginPayload {
+    /**
+     * Name of the role against which the login is being attempted. If role is not specified, then
+     * the login endpoint looks for a role bearing the name of the AMI ID of the EC2 instance that
+     * is trying to login if using the ec2 auth method, or the "friendly name"
+     * (i.e., role name or username) of the IAM principal authenticated. If a matching role is not
+     * found, login fails.
+     */
+    role: string
+    /**
+     * AWS credentials for use with signing the login request to AWS STS by the aws4 module. If not defined,
+     * process.env.
+     */
+    credentials?: IAwsCredentials
+    /**
+     * The AWS STS Url. Default is https://sts.amazonaws.com
+     */
+    stsUrl?: string
+    /**
+     * Additional headers to pass / encode for the aws sts:GetCallerIdentity call
+     * This could include the Vault-AWS-IAM-Server-ID header that may be required by certain
+     * vault configurations
+     */
+    iamRequestHeaders?: {
+      [key: string]: string
+    }
+  }
+
+  export interface IAwsCredentials {
+    accessKeyId?: string
+    secretAccessKey?: string
+    sessionToken?: string
+  }
 }

@@ -1,18 +1,15 @@
-[Vault client for node.js](../README.md) > [BaseClient](../classes/baseclient.md)
+> **[Vault client for node.js](../README.md)**
+
+[Globals](../globals.md) / [BaseClient](baseclient.md) /
 
 # Class: BaseClient
 
 ## Hierarchy
 
-**BaseClient**
+* **BaseClient**
 
-↳  [BaseAuth](baseauth.md)
+  * [BaseAuth](baseauth.md)
 
-↳  [BaseSysBackend](basesysbackend.md)
+  * [BaseSysBackend](basesysbackend.md)
 
-↳  [BaseSecretEngine](basesecretengine.md)
-
-## Index
-
----
-
+  * [BaseSecretEngine](basesecretengine.md)

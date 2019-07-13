@@ -1,28 +1,23 @@
-[Vault client for node.js](../README.md) > [IInitSysBackend](../modules/iinitsysbackend.md) > [IReadInitStatusResponse](../interfaces/iinitsysbackend.ireadinitstatusresponse.md)
+> **[Vault client for node.js](../README.md)**
+
+[Globals](../globals.md) / [IInitSysBackend](../modules/iinitsysbackend.md) / [IReadInitStatusResponse](iinitsysbackend.ireadinitstatusresponse.md) /
 
 # Interface: IReadInitStatusResponse
 
 ## Hierarchy
 
-**IReadInitStatusResponse**
+* **IReadInitStatusResponse**
 
-## Index
+### Index
 
-### Properties
+#### Properties
 
 * [initialized](iinitsysbackend.ireadinitstatusresponse.md#initialized)
 
----
-
 ## Properties
-
-<a id="initialized"></a>
 
 ###  initialized
 
-**● initialized**: *`boolean`*
+• **initialized**: *boolean*
 
-*Defined in [interfaces/system-backend/IInitSysBackend.ts:3](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/system-backend/IInitSysBackend.ts#L3)*
-
-___
-
+*Defined in [interfaces/system-backend/IInitSysBackend.ts:3](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/system-backend/IInitSysBackend.ts#L3)*

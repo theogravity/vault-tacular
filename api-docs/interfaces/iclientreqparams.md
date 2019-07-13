@@ -1,30 +1,25 @@
-[Vault client for node.js](../README.md) > [IClientReqParams](../interfaces/iclientreqparams.md)
+> **[Vault client for node.js](../README.md)**
+
+[Globals](../globals.md) / [IClientReqParams](iclientreqparams.md) /
 
 # Interface: IClientReqParams
 
 ## Hierarchy
 
-**IClientReqParams**
+* **IClientReqParams**
 
-## Index
+### Index
 
-### Properties
+#### Properties
 
-* [authRequired](iclientreqparams.md#authrequired)
-
----
+* [authRequired](iclientreqparams.md#optional-authrequired)
 
 ## Properties
 
-<a id="authrequired"></a>
+### `Optional` authRequired
 
-### `<Optional>` authRequired
+• **authRequired**? : *boolean*
 
-**● authRequired**: *`boolean`*
-
-*Defined in [interfaces/IBaseClient.ts:142](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/IBaseClient.ts#L142)*
+*Defined in [interfaces/IBaseClient.ts:142](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/IBaseClient.ts#L142)*
 
 True if the Authorization / X-Vault-Token header needs to be set
-
-___
-

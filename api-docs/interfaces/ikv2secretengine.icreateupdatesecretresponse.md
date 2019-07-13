@@ -1,30 +1,25 @@
-[Vault client for node.js](../README.md) > [IKv2SecretEngine](../modules/ikv2secretengine.md) > [ICreateUpdateSecretResponse](../interfaces/ikv2secretengine.icreateupdatesecretresponse.md)
+> **[Vault client for node.js](../README.md)**
+
+[Globals](../globals.md) / [IKv2SecretEngine](../modules/ikv2secretengine.md) / [ICreateUpdateSecretResponse](ikv2secretengine.icreateupdatesecretresponse.md) /
 
 # Interface: ICreateUpdateSecretResponse
 
 ## Hierarchy
 
-**ICreateUpdateSecretResponse**
+* **ICreateUpdateSecretResponse**
 
-## Index
+### Index
 
-### Properties
+#### Properties
 
 * [data](ikv2secretengine.icreateupdatesecretresponse.md#data)
 
----
-
 ## Properties
-
-<a id="data"></a>
 
 ###  data
 
-**● data**: *`object`*
+• **data**: *object*
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:58](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L58)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:58](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L58)*
 
-#### Type declaration
-
-___
-
+#### Type declaration:

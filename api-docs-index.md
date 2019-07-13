@@ -12,9 +12,12 @@ https://www.vaultproject.io/api/overview.html
 - [TokenAuth](classes/tokenauth.md): Token
 - [UserPassAuth](classes/userpassauth.md): Username and Password
 
-### Auth token function helpers
+### Auth token fetch helpers
 
-- [getTokenFromFile](#gettokenfromfile): Reads a token from a file. Useful with vault agent.
+Supplied by importing `AuthTokenHelpers`.
+
+- [getTokenFromFile](api-docs/globals.md#gettokenfromfile): Reads a token from a file. Useful with vault agent.
+- [getTokenUsingIam](api-docs/globals.md#gettokenusingiam): Reads a token using AWS IAM
 
 ## Secrets Engines
 

@@ -1,4 +1,6 @@
-[Vault client for node.js](../README.md) > [IWrappingSysBackend](../modules/iwrappingsysbackend.md) > [IWrapPayload](../interfaces/iwrappingsysbackend.iwrappayload.md)
+> **[Vault client for node.js](../README.md)**
+
+[Globals](../globals.md) / [IWrappingSysBackend](../modules/iwrappingsysbackend.md) / [IWrapPayload](iwrappingsysbackend.iwrappayload.md) /
 
 # Interface: IWrapPayload
 
@@ -6,14 +8,10 @@ The exact set of given parameters will be contained in the wrapped response.
 
 ## Hierarchy
 
-**IWrapPayload**
+* **IWrapPayload**
 
 ## Indexable
 
-\[key: `string`\]:&nbsp;`any`
+● \[▪ **key**: *string*\]: any
+
 The exact set of given parameters will be contained in the wrapped response.
-
-## Index
-
----
-

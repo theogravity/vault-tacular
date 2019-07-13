@@ -1,13 +1,12 @@
-[Vault client for node.js](../README.md) > [ITlsCertificateAuth](../modules/itlscertificateauth.md)
+> **[Vault client for node.js](../README.md)**
+
+[Globals](../globals.md) / [ITlsCertificateAuth](itlscertificateauth.md) /
 
 # Module: ITlsCertificateAuth
 
-## Index
+### Index
 
-### Interfaces
+#### Interfaces
 
 * [ICreateRolePayload](../interfaces/itlscertificateauth.icreaterolepayload.md)
 * [ILoginPayload](../interfaces/itlscertificateauth.iloginpayload.md)
-
----
-

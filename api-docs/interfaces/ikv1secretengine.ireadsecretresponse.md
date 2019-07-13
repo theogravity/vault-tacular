@@ -1,14 +1,16 @@
-[Vault client for node.js](../README.md) > [IKv1SecretEngine](../modules/ikv1secretengine.md) > [IReadSecretResponse](../interfaces/ikv1secretengine.ireadsecretresponse.md)
+> **[Vault client for node.js](../README.md)**
+
+[Globals](../globals.md) / [IKv1SecretEngine](../modules/ikv1secretengine.md) / [IReadSecretResponse](ikv1secretengine.ireadsecretresponse.md) /
 
 # Interface: IReadSecretResponse
 
 ## Hierarchy
 
-**IReadSecretResponse**
+* **IReadSecretResponse**
 
-## Index
+### Index
 
-### Properties
+#### Properties
 
 * [auth](ikv1secretengine.ireadsecretresponse.md#auth)
 * [data](ikv1secretengine.ireadsecretresponse.md#data)
@@ -16,57 +18,46 @@
 * [lease_id](ikv1secretengine.ireadsecretresponse.md#lease_id)
 * [renewable](ikv1secretengine.ireadsecretresponse.md#renewable)
 
----
-
 ## Properties
-
-<a id="auth"></a>
 
 ###  auth
 
-**● auth**: *`string`*
+• **auth**: *string*
 
-*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:3](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L3)*
+*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:3](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L3)*
 
 ___
-<a id="data"></a>
 
 ###  data
 
-**● data**: *`object`*
+• **data**: *object*
 
-*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:4](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L4)*
+*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:4](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L4)*
 
-#### Type declaration
+#### Type declaration:
 
-[key: `string`]: `any`
+● \[▪ **key**: *string*\]: any
 
 ___
-<a id="lease_duration"></a>
 
 ###  lease_duration
 
-**● lease_duration**: *`number`*
+• **lease_duration**: *number*
 
-*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:7](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L7)*
+*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:7](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L7)*
 
 ___
-<a id="lease_id"></a>
 
 ###  lease_id
 
-**● lease_id**: *`string`*
+• **lease_id**: *string*
 
-*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:8](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L8)*
+*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:8](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L8)*
 
 ___
-<a id="renewable"></a>
 
 ###  renewable
 
-**● renewable**: *`boolean`*
+• **renewable**: *boolean*
 
-*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:9](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L9)*
-
-___
-
+*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:9](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L9)*

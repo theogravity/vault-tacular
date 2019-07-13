@@ -1,44 +1,38 @@
-[Vault client for node.js](../README.md) > [IKv2SecretEngine](../modules/ikv2secretengine.md) > [IReadSecretVersionResponse](../interfaces/ikv2secretengine.ireadsecretversionresponse.md)
+> **[Vault client for node.js](../README.md)**
+
+[Globals](../globals.md) / [IKv2SecretEngine](../modules/ikv2secretengine.md) / [IReadSecretVersionResponse](ikv2secretengine.ireadsecretversionresponse.md) /
 
 # Interface: IReadSecretVersionResponse
 
 ## Hierarchy
 
-**IReadSecretVersionResponse**
+* **IReadSecretVersionResponse**
 
-## Index
+### Index
 
-### Properties
+#### Properties
 
 * [data](ikv2secretengine.ireadsecretversionresponse.md#data)
 * [metadata](ikv2secretengine.ireadsecretversionresponse.md#metadata)
 
----
-
 ## Properties
-
-<a id="data"></a>
 
 ###  data
 
-**● data**: *`object`*
+• **data**: *object*
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:25](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L25)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:25](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L25)*
 
-#### Type declaration
+#### Type declaration:
 
-[s: `string`]: `any`
+● \[▪ **s**: *string*\]: any
 
 ___
-<a id="metadata"></a>
 
 ###  metadata
 
-**● metadata**: *`object`*
+• **metadata**: *object*
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:28](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L28)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:28](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L28)*
 
-#### Type declaration
-
-___
-
+#### Type declaration:

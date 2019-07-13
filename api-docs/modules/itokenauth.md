@@ -1,10 +1,12 @@
-[Vault client for node.js](../README.md) > [ITokenAuth](../modules/itokenauth.md)
+> **[Vault client for node.js](../README.md)**
+
+[Globals](../globals.md) / [ITokenAuth](itokenauth.md) /
 
 # Module: ITokenAuth
 
-## Index
+### Index
 
-### Interfaces
+#### Interfaces
 
 * [ICreateTokenPayload](../interfaces/itokenauth.icreatetokenpayload.md)
 * [IListAccessorsResponse](../interfaces/itokenauth.ilistaccessorsresponse.md)
@@ -15,6 +17,3 @@
 * [IRenewTokenPayload](../interfaces/itokenauth.irenewtokenpayload.md)
 * [IRenewTokenResponse](../interfaces/itokenauth.irenewtokenresponse.md)
 * [IUpsertTokenRolePayload](../interfaces/itokenauth.iupserttokenrolepayload.md)
-
----
-

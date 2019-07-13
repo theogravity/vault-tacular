@@ -1,30 +1,25 @@
-[Vault client for node.js](../README.md) > [IKv2SecretEngine](../modules/ikv2secretengine.md) > [IReadSecretVersionPayload](../interfaces/ikv2secretengine.ireadsecretversionpayload.md)
+> **[Vault client for node.js](../README.md)**
+
+[Globals](../globals.md) / [IKv2SecretEngine](../modules/ikv2secretengine.md) / [IReadSecretVersionPayload](ikv2secretengine.ireadsecretversionpayload.md) /
 
 # Interface: IReadSecretVersionPayload
 
 ## Hierarchy
 
-**IReadSecretVersionPayload**
+* **IReadSecretVersionPayload**
 
-## Index
+### Index
 
-### Properties
+#### Properties
 
-* [version](ikv2secretengine.ireadsecretversionpayload.md#version)
-
----
+* [version](ikv2secretengine.ireadsecretversionpayload.md#optional-version)
 
 ## Properties
 
-<a id="version"></a>
+### `Optional` version
 
-### `<Optional>` version
+• **version**? : *number*
 
-**● version**: *`number`*
-
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:21](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L21)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:21](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L21)*
 
 Specifies the version to return. If not set the latest version is returned.
-
-___
-

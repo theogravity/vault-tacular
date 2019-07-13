@@ -1,28 +1,23 @@
-[Vault client for node.js](../README.md) > [ITokenAuth](../modules/itokenauth.md) > [IRenewTokenResponse](../interfaces/itokenauth.irenewtokenresponse.md)
+> **[Vault client for node.js](../README.md)**
+
+[Globals](../globals.md) / [ITokenAuth](../modules/itokenauth.md) / [IRenewTokenResponse](itokenauth.irenewtokenresponse.md) /
 
 # Interface: IRenewTokenResponse
 
 ## Hierarchy
 
-**IRenewTokenResponse**
+* **IRenewTokenResponse**
 
-## Index
+### Index
 
-### Properties
+#### Properties
 
 * [auth](itokenauth.irenewtokenresponse.md#auth)
 
----
-
 ## Properties
-
-<a id="auth"></a>
 
 ###  auth
 
-**● auth**: *[ISecretAuth](isecretauth.md)*
+• **auth**: *[ISecretAuth](isecretauth.md)*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:121](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/auth-methods/ITokenAuth.ts#L121)*
-
-___
-
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:121](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/auth-methods/ITokenAuth.ts#L121)*

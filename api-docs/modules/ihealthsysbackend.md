@@ -1,13 +1,12 @@
-[Vault client for node.js](../README.md) > [IHealthSysBackend](../modules/ihealthsysbackend.md)
+> **[Vault client for node.js](../README.md)**
+
+[Globals](../globals.md) / [IHealthSysBackend](ihealthsysbackend.md) /
 
 # Module: IHealthSysBackend
 
-## Index
+### Index
 
-### Interfaces
+#### Interfaces
 
 * [IReadHealthInfoPayload](../interfaces/ihealthsysbackend.ireadhealthinfopayload.md)
 * [IReadHealthInfoResponse](../interfaces/ihealthsysbackend.ireadhealthinforesponse.md)
-
----
-

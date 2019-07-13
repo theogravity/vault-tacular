@@ -1,28 +1,23 @@
-[Vault client for node.js](../README.md) > [IBaseDatabaseEngine](../modules/ibasedatabaseengine.md) > [IReadRoleResponse](../interfaces/ibasedatabaseengine.ireadroleresponse.md)
+> **[Vault client for node.js](../README.md)**
+
+[Globals](../globals.md) / [IBaseDatabaseEngine](../modules/ibasedatabaseengine.md) / [IReadRoleResponse](ibasedatabaseengine.ireadroleresponse.md) /
 
 # Interface: IReadRoleResponse
 
 ## Hierarchy
 
-**IReadRoleResponse**
+* **IReadRoleResponse**
 
-## Index
+### Index
 
-### Properties
+#### Properties
 
 * [data](ibasedatabaseengine.ireadroleresponse.md#data)
 
----
-
 ## Properties
-
-<a id="data"></a>
 
 ###  data
 
-**● data**: *[IUpsertRolePayload](ibasedatabaseengine.iupsertrolepayload.md)*
+• **data**: *[IUpsertRolePayload](ibasedatabaseengine.iupsertrolepayload.md)*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:97](https://github.com/theogravity/vault-tacular/blob/ffc4ac1/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L97)*
-
-___
-
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:97](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L97)*

@@ -1,13 +1,12 @@
-[Vault client for node.js](../README.md) > [IPostgreSqlEngine](../modules/ipostgresqlengine.md)
+> **[Vault client for node.js](../README.md)**
+
+[Globals](../globals.md) / [IPostgreSqlEngine](ipostgresqlengine.md) /
 
 # Module: IPostgreSqlEngine
 
-## Index
+### Index
 
-### Interfaces
+#### Interfaces
 
 * [IPostgreConfigConnPayload](../interfaces/ipostgresqlengine.ipostgreconfigconnpayload.md)
 * [IUpsertRolePayload](../interfaces/ipostgresqlengine.iupsertrolepayload.md)
-
----
-
