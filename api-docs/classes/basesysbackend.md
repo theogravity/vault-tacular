@@ -32,7 +32,7 @@
 
 \+ **new BaseSysBackend**(`baseUrl`: [BaseUrl](../globals.md#baseurl), `authTokenFn?`: `Function`): *[BaseSysBackend](basesysbackend.md)*
 
-*Defined in [system-backends/BaseSysBackend.ts:4](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/system-backends/BaseSysBackend.ts#L4)*
+*Defined in [system-backends/BaseSysBackend.ts:4](https://github.com/theogravity/vault-tacular/blob/c36eea1/src/system-backends/BaseSysBackend.ts#L4)*
 
 **Parameters:**
 

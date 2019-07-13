@@ -69,7 +69,7 @@
 
 Ƭ **BaseUrl**: *string*
 
-*Defined in [interfaces/IBaseClient.ts:39](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/IBaseClient.ts#L39)*
+*Defined in [interfaces/IBaseClient.ts:39](https://github.com/theogravity/vault-tacular/blob/c36eea1/src/interfaces/IBaseClient.ts#L39)*
 
 Vault API base url
 
@@ -79,7 +79,7 @@ ___
 
 Ƭ **VaultToken**: *string*
 
-*Defined in [interfaces/IBaseClient.ts:32](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/IBaseClient.ts#L32)*
+*Defined in [interfaces/IBaseClient.ts:32](https://github.com/theogravity/vault-tacular/blob/c36eea1/src/interfaces/IBaseClient.ts#L32)*
 
 Authentication token to access the API
 
@@ -89,7 +89,7 @@ ___
 
 Ƭ **VaultWarnings**: *`Array<string>`*
 
-*Defined in [interfaces/IBaseClient.ts:34](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/IBaseClient.ts#L34)*
+*Defined in [interfaces/IBaseClient.ts:34](https://github.com/theogravity/vault-tacular/blob/c36eea1/src/interfaces/IBaseClient.ts#L34)*
 
 ## Functions
 
@@ -97,7 +97,7 @@ ___
 
 ▸ **getTokenFromFile**(`path`: string, `cacheToken`: boolean): *`(Anonymous function)`*
 
-*Defined in [auth-token-helpers/get-token-from-file.ts:10](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/auth-token-helpers/get-token-from-file.ts#L10)*
+*Defined in [auth-token-helpers/get-token-from-file.ts:10](https://github.com/theogravity/vault-tacular/blob/c36eea1/src/auth-token-helpers/get-token-from-file.ts#L10)*
 
 Read a token from a file. Useful if using the vault agent and need to read from a file sink.
 
@@ -118,7 +118,7 @@ ___
 
 ▸ **getTokenUsingIam**(`awsAuthClient`: [AwsAuth](classes/awsauth.md), `role`: string, `opts`: [IGetTokenUsingIamOpts](interfaces/igettokenusingiamopts.md)): *`(Anonymous function)`*
 
-*Defined in [auth-token-helpers/get-token-using-iam.ts:30](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/auth-token-helpers/get-token-using-iam.ts#L30)*
+*Defined in [auth-token-helpers/get-token-using-iam.ts:30](https://github.com/theogravity/vault-tacular/blob/c36eea1/src/auth-token-helpers/get-token-using-iam.ts#L30)*
 
 Uses AWS IAM auth to get the vault token.
 - Caches the token

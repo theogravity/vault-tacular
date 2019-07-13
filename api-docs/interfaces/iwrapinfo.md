@@ -25,7 +25,7 @@ Response-wrapped token result
 
 • **creation_time**: *string*
 
-*Defined in [interfaces/IBaseClient.ts:119](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/IBaseClient.ts#L119)*
+*Defined in [interfaces/IBaseClient.ts:119](https://github.com/theogravity/vault-tacular/blob/c36eea1/src/interfaces/IBaseClient.ts#L119)*
 
 The time that the response-wrapping token was created
 
@@ -35,7 +35,7 @@ ___
 
 • **token**: *string*
 
-*Defined in [interfaces/IBaseClient.ts:123](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/IBaseClient.ts#L123)*
+*Defined in [interfaces/IBaseClient.ts:123](https://github.com/theogravity/vault-tacular/blob/c36eea1/src/interfaces/IBaseClient.ts#L123)*
 
 The actual token value
 
@@ -45,7 +45,7 @@ ___
 
 • **ttl**: *number*
 
-*Defined in [interfaces/IBaseClient.ts:127](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/IBaseClient.ts#L127)*
+*Defined in [interfaces/IBaseClient.ts:127](https://github.com/theogravity/vault-tacular/blob/c36eea1/src/interfaces/IBaseClient.ts#L127)*
 
 The TTL of the response-wrapping token itself
 
@@ -55,7 +55,7 @@ ___
 
 • **wrapped_accessor**: *string*
 
-*Defined in [interfaces/IBaseClient.ts:135](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/IBaseClient.ts#L135)*
+*Defined in [interfaces/IBaseClient.ts:135](https://github.com/theogravity/vault-tacular/blob/c36eea1/src/interfaces/IBaseClient.ts#L135)*
 
 If the wrapped response is an authentication response containing a Vault token,
 this is the value of the wrapped token's accessor. This is useful for orchestration

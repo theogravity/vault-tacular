@@ -28,7 +28,7 @@
 
 • **iam_http_request_method**? : *string*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:5](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/auth-methods/IAwsAuth.ts#L5)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:5](https://github.com/theogravity/vault-tacular/blob/c36eea1/src/interfaces/auth-methods/IAwsAuth.ts#L5)*
 
 ___
 
@@ -36,7 +36,7 @@ ___
 
 • **iam_request_body**? : *string*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:7](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/auth-methods/IAwsAuth.ts#L7)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:7](https://github.com/theogravity/vault-tacular/blob/c36eea1/src/interfaces/auth-methods/IAwsAuth.ts#L7)*
 
 ___
 
@@ -44,7 +44,7 @@ ___
 
 • **iam_request_headers**? : *string*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:8](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/auth-methods/IAwsAuth.ts#L8)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:8](https://github.com/theogravity/vault-tacular/blob/c36eea1/src/interfaces/auth-methods/IAwsAuth.ts#L8)*
 
 ___
 
@@ -52,7 +52,7 @@ ___
 
 • **iam_request_url**? : *string*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:6](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/auth-methods/IAwsAuth.ts#L6)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:6](https://github.com/theogravity/vault-tacular/blob/c36eea1/src/interfaces/auth-methods/IAwsAuth.ts#L6)*
 
 ___
 
@@ -60,7 +60,7 @@ ___
 
 • **identity**? : *string*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:9](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/auth-methods/IAwsAuth.ts#L9)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:9](https://github.com/theogravity/vault-tacular/blob/c36eea1/src/interfaces/auth-methods/IAwsAuth.ts#L9)*
 
 ___
 
@@ -68,7 +68,7 @@ ___
 
 • **pcks7**? : *string*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:11](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/auth-methods/IAwsAuth.ts#L11)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:11](https://github.com/theogravity/vault-tacular/blob/c36eea1/src/interfaces/auth-methods/IAwsAuth.ts#L11)*
 
 ___
 
@@ -76,4 +76,4 @@ ___
 
 • **signature**? : *string*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:10](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/auth-methods/IAwsAuth.ts#L10)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:10](https://github.com/theogravity/vault-tacular/blob/c36eea1/src/interfaces/auth-methods/IAwsAuth.ts#L10)*

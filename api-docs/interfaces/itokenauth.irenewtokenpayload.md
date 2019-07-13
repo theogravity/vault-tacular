@@ -20,6 +20,6 @@
 
 • **increment**? : *string*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:117](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/auth-methods/ITokenAuth.ts#L117)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:117](https://github.com/theogravity/vault-tacular/blob/c36eea1/src/interfaces/auth-methods/ITokenAuth.ts#L117)*
 
 An optional requested lease increment can be provided. This increment may be ignored.

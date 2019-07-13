@@ -21,7 +21,7 @@
 
 • **iamRequestHeaders**? : *object*
 
-*Defined in [auth-token-helpers/get-token-using-iam.ts:16](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/auth-token-helpers/get-token-using-iam.ts#L16)*
+*Defined in [auth-token-helpers/get-token-using-iam.ts:16](https://github.com/theogravity/vault-tacular/blob/c36eea1/src/auth-token-helpers/get-token-using-iam.ts#L16)*
 
 Additional headers to pass / encode for the aws sts:GetCallerIdentity call
 This could include the Vault-AWS-IAM-Server-ID header that may be required by certain
@@ -37,6 +37,6 @@ ___
 
 • **stsUrl**? : *string*
 
-*Defined in [auth-token-helpers/get-token-using-iam.ts:10](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/auth-token-helpers/get-token-using-iam.ts#L10)*
+*Defined in [auth-token-helpers/get-token-using-iam.ts:10](https://github.com/theogravity/vault-tacular/blob/c36eea1/src/auth-token-helpers/get-token-using-iam.ts#L10)*
 
 The AWS STS Url. Default is https://sts.amazonaws.com

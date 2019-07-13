@@ -1,4 +1,4 @@
-# UNRELEASED
+# 0.3.1 - Sat Jul 13 2019 20:16:18
 
 - [Breaking] `getTokenFromFile` moved into `AuthTokenHelpers.getTokenFromFile`
 - Add IAM token helper, `AuthTokenHelpers.getTokenUsingIam`

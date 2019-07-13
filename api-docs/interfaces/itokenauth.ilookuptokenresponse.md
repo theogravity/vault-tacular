@@ -22,4 +22,4 @@
 
 • **data**: *`ILookupTokenRes`*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:108](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/auth-methods/ITokenAuth.ts#L108)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:108](https://github.com/theogravity/vault-tacular/blob/c36eea1/src/interfaces/auth-methods/ITokenAuth.ts#L108)*

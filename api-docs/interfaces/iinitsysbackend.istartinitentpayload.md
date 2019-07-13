@@ -25,7 +25,7 @@ Enterprise-only features for vault initialization
 
 • **recovery_pgp_keys**? : *`Array<string>`*
 
-*Defined in [interfaces/system-backend/IInitSysBackend.ts:56](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/system-backend/IInitSysBackend.ts#L56)*
+*Defined in [interfaces/system-backend/IInitSysBackend.ts:56](https://github.com/theogravity/vault-tacular/blob/c36eea1/src/interfaces/system-backend/IInitSysBackend.ts#L56)*
 
 Specifies an array of PGP public keys used to encrypt the output recovery keys.
 Ordering is preserved. The keys must be base64-encoded from their original binary
@@ -37,7 +37,7 @@ ___
 
 • **recovery_shares**: *number*
 
-*Defined in [interfaces/system-backend/IInitSysBackend.ts:43](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/system-backend/IInitSysBackend.ts#L43)*
+*Defined in [interfaces/system-backend/IInitSysBackend.ts:43](https://github.com/theogravity/vault-tacular/blob/c36eea1/src/interfaces/system-backend/IInitSysBackend.ts#L43)*
 
 Specifies the number of shares to split the recovery key into.
 
@@ -47,7 +47,7 @@ ___
 
 • **recovery_threshold**: *number*
 
-*Defined in [interfaces/system-backend/IInitSysBackend.ts:49](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/system-backend/IInitSysBackend.ts#L49)*
+*Defined in [interfaces/system-backend/IInitSysBackend.ts:49](https://github.com/theogravity/vault-tacular/blob/c36eea1/src/interfaces/system-backend/IInitSysBackend.ts#L49)*
 
 Specifies the number of shares required to reconstruct the recovery key. This must
 be less than or equal to recovery_shares.
@@ -58,7 +58,7 @@ ___
 
 • **stored_shares**: *number*
 
-*Defined in [interfaces/system-backend/IInitSysBackend.ts:38](https://github.com/theogravity/vault-tacular/blob/0b78a16/src/interfaces/system-backend/IInitSysBackend.ts#L38)*
+*Defined in [interfaces/system-backend/IInitSysBackend.ts:38](https://github.com/theogravity/vault-tacular/blob/c36eea1/src/interfaces/system-backend/IInitSysBackend.ts#L38)*
 
 Specifies the number of shares that should be encrypted by the HSM and stored for
 auto-unsealing. Currently must be the same as secret_shares.
