@@ -3,7 +3,7 @@ import cryptoRandomString from 'crypto-random-string'
 import { TokenAuth } from '../TokenAuth'
 
 const auth = new TokenAuth(process.env.VAULT_API_URL, {
-  authToken: () => {
+  authToken: async () => {
     return process.env.VAULT_TOKEN
   }
 })

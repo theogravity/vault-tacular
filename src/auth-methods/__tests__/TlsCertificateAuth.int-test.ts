@@ -18,7 +18,7 @@ const certKey = readFileSync(join(TEST_CERTS_DIR, 'rootCA.key'), {
 })
 
 const auth = new TlsCertificateAuth(process.env.VAULT_API_URL, {
-  authToken: () => {
+  authToken: async () => {
     return process.env.VAULT_TOKEN
   }
 })

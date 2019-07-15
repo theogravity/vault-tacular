@@ -209,7 +209,7 @@ async function InitVault () {
 import { UserPassAuth } from 'vault-tacular'
 
 const auth = new UserPassAuth('http://localhost:8200/v1', {
-  authToken: () => {
+  authToken: async () => {
     return '...'
   }
 })
@@ -244,7 +244,7 @@ async function create () {
   const password = 'test-pass'
 
   const auth = new UserPassAuth(VAULT_API_URL, {
-    authToken: () => {
+    authToken: async () => {
       // you will need to return a token that has the ability to
       // create users
       return '...'
