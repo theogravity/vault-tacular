@@ -24,18 +24,18 @@
 
 ###  constructor
 
-\+ **new UnsealSysBackend**(`baseUrl`: [BaseUrl](../globals.md#baseurl), `authTokenFn?`: `Function`): *[UnsealSysBackend](unsealsysbackend.md)*
+\+ **new UnsealSysBackend**(`baseUrl`: [BaseUrl](../globals.md#baseurl), `authToken?`: [AuthTokenParam](../globals.md#authtokenparam)): *[UnsealSysBackend](unsealsysbackend.md)*
 
 *Inherited from [BaseSysBackend](basesysbackend.md).[constructor](basesysbackend.md#constructor)*
 
-*Defined in [system-backends/BaseSysBackend.ts:4](https://github.com/theogravity/vault-tacular/blob/c36eea1/src/system-backends/BaseSysBackend.ts#L4)*
+*Defined in [system-backends/BaseSysBackend.ts:4](https://github.com/theogravity/vault-tacular/blob/2b2acb5/src/system-backends/BaseSysBackend.ts#L4)*
 
 **Parameters:**
 
 Name | Type | Description |
 ------ | ------ | ------ |
 `baseUrl` | [BaseUrl](../globals.md#baseurl) | The URL to the Vault API including the version path |
-`authTokenFn?` | `Function` | - |
+`authToken?` | [AuthTokenParam](../globals.md#authtokenparam) | - |
 
 **Returns:** *[UnsealSysBackend](unsealsysbackend.md)*
 
@@ -45,7 +45,7 @@ Name | Type | Description |
 
 ▸ **submitUnsealKey**(`payload`: [ISubmitUnsealKeyPayload](../interfaces/iunsealsysbackend.isubmitunsealkeypayload.md)): *`Promise<IVaultResponse<ISubmitUnsealKeyResponse>>`*
 
-*Defined in [system-backends/UnsealSysBackend.ts:14](https://github.com/theogravity/vault-tacular/blob/c36eea1/src/system-backends/UnsealSysBackend.ts#L14)*
+*Defined in [system-backends/UnsealSysBackend.ts:14](https://github.com/theogravity/vault-tacular/blob/2b2acb5/src/system-backends/UnsealSysBackend.ts#L14)*
 
 This endpoint is used to enter a single master key share to progress the unsealing of the
 Vault. If the threshold number of master key shares is reached, Vault will attempt to unseal

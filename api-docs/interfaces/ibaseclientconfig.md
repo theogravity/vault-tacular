@@ -23,11 +23,11 @@ Configuration parameters for client initialization
 
 ### `Optional` authToken
 
-• **authToken**? : *string | `Function`*
+• **authToken**? : *[AuthTokenParam](../globals.md#authtokenparam)*
 
-*Defined in [interfaces/IBaseClient.ts:26](https://github.com/theogravity/vault-tacular/blob/c36eea1/src/interfaces/IBaseClient.ts#L26)*
+*Defined in [interfaces/IBaseClient.ts:26](https://github.com/theogravity/vault-tacular/blob/2b2acb5/src/interfaces/IBaseClient.ts#L26)*
 
-The token value, or an (async) function that returns the token used for the
+The token value, or an async function that returns the token used for the
 Authorization / X-Vault-Token header. The client does *not* cache the result;
 the function should implement caching and renewal of the token if necessary.
 
@@ -37,7 +37,7 @@ ___
 
 • **mount**? : *string*
 
-*Defined in [interfaces/IBaseClient.ts:10](https://github.com/theogravity/vault-tacular/blob/c36eea1/src/interfaces/IBaseClient.ts#L10)*
+*Defined in [interfaces/IBaseClient.ts:10](https://github.com/theogravity/vault-tacular/blob/2b2acb5/src/interfaces/IBaseClient.ts#L10)*
 
 Auth method mount point
 
@@ -47,7 +47,7 @@ ___
 
 • **namespace**? : *string*
 
-*Defined in [interfaces/IBaseClient.ts:15](https://github.com/theogravity/vault-tacular/blob/c36eea1/src/interfaces/IBaseClient.ts#L15)*
+*Defined in [interfaces/IBaseClient.ts:15](https://github.com/theogravity/vault-tacular/blob/2b2acb5/src/interfaces/IBaseClient.ts#L15)*
 
 Namespace path (Vault Enterprise feature)
 
@@ -59,7 +59,7 @@ ___
 
 • **reqOpts**? : *`RequestPromiseOptions`*
 
-*Defined in [interfaces/IBaseClient.ts:20](https://github.com/theogravity/vault-tacular/blob/c36eea1/src/interfaces/IBaseClient.ts#L20)*
+*Defined in [interfaces/IBaseClient.ts:20](https://github.com/theogravity/vault-tacular/blob/2b2acb5/src/interfaces/IBaseClient.ts#L20)*
 
 Additional request module options
 

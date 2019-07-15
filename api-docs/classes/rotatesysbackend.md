@@ -24,18 +24,18 @@
 
 ###  constructor
 
-\+ **new RotateSysBackend**(`baseUrl`: [BaseUrl](../globals.md#baseurl), `authTokenFn?`: `Function`): *[RotateSysBackend](rotatesysbackend.md)*
+\+ **new RotateSysBackend**(`baseUrl`: [BaseUrl](../globals.md#baseurl), `authToken?`: [AuthTokenParam](../globals.md#authtokenparam)): *[RotateSysBackend](rotatesysbackend.md)*
 
 *Inherited from [BaseSysBackend](basesysbackend.md).[constructor](basesysbackend.md#constructor)*
 
-*Defined in [system-backends/BaseSysBackend.ts:4](https://github.com/theogravity/vault-tacular/blob/c36eea1/src/system-backends/BaseSysBackend.ts#L4)*
+*Defined in [system-backends/BaseSysBackend.ts:4](https://github.com/theogravity/vault-tacular/blob/2b2acb5/src/system-backends/BaseSysBackend.ts#L4)*
 
 **Parameters:**
 
 Name | Type | Description |
 ------ | ------ | ------ |
 `baseUrl` | [BaseUrl](../globals.md#baseurl) | The URL to the Vault API including the version path |
-`authTokenFn?` | `Function` | - |
+`authToken?` | [AuthTokenParam](../globals.md#authtokenparam) | - |
 
 **Returns:** *[RotateSysBackend](rotatesysbackend.md)*
 
@@ -45,7 +45,7 @@ Name | Type | Description |
 
 ▸ **rotateEncryptionKey**(): *`Promise<IVaultResponse<void>>`*
 
-*Defined in [system-backends/RotateSysBackend.ts:14](https://github.com/theogravity/vault-tacular/blob/c36eea1/src/system-backends/RotateSysBackend.ts#L14)*
+*Defined in [system-backends/RotateSysBackend.ts:14](https://github.com/theogravity/vault-tacular/blob/2b2acb5/src/system-backends/RotateSysBackend.ts#L14)*
 
 triggers a rotation of the backend encryption key. This is the key that is used to encrypt
 result written to the storage backend, and is not provided to operators. This operation is done

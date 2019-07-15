@@ -25,7 +25,7 @@
 
 *Inherited from [ISetConfigPayload](ikv2secretengine.isetconfigpayload.md).[cas_required](ikv2secretengine.isetconfigpayload.md#optional-cas_required)*
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:12](https://github.com/theogravity/vault-tacular/blob/c36eea1/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L12)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:12](https://github.com/theogravity/vault-tacular/blob/2b2acb5/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L12)*
 
 If true all keys will require the cas parameter to be set on all write requests.
 
@@ -37,7 +37,7 @@ ___
 
 *Inherited from [ISetConfigPayload](ikv2secretengine.isetconfigpayload.md).[max_versions](ikv2secretengine.isetconfigpayload.md#optional-max_versions)*
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:8](https://github.com/theogravity/vault-tacular/blob/c36eea1/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L8)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:8](https://github.com/theogravity/vault-tacular/blob/2b2acb5/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L8)*
 
 The number of versions to keep per key. This value applies to all keys, but a key's metadata
 setting can overwrite this value. Once a key has more than the configured allowed versions

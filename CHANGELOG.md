@@ -1,4 +1,4 @@
-# UNRELEASED
+# 0.3.2 - Mon Jul 15 2019 22:03:13
 
 - Add new type, `AuthTokenHelperFunc`, for defining Token Helpers
 - Update all token helpers and `IBaseClient` accordingly to reflect the new type

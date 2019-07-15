@@ -20,4 +20,4 @@
 
 • **initialized**: *boolean*
 
-*Defined in [interfaces/system-backend/IInitSysBackend.ts:3](https://github.com/theogravity/vault-tacular/blob/c36eea1/src/interfaces/system-backend/IInitSysBackend.ts#L3)*
+*Defined in [interfaces/system-backend/IInitSysBackend.ts:3](https://github.com/theogravity/vault-tacular/blob/2b2acb5/src/interfaces/system-backend/IInitSysBackend.ts#L3)*
