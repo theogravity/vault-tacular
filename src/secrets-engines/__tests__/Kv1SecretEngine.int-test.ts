@@ -1,7 +1,7 @@
 import { Kv1SecretEngine } from '../Kv1SecretEngine'
 
 const engine = new Kv1SecretEngine(process.env.VAULT_API_URL, {
-  authToken: () => {
+  authToken: async () => {
     return process.env.VAULT_TOKEN
   },
   mount: 'kv1'

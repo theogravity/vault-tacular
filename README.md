@@ -109,11 +109,11 @@ You can initialize auth or secret engines with the following signature:
    */
   reqOpts?: RequestPromiseOptions
   /**
-   * The token value, or an (async) function that returns the token used for the
+   * The token value, or an async function that returns the token used for the
    * Authorization / X-Vault-Token header. The client does *not* cache the result;
    * the function should implement caching and renewal of the token if necessary.
    */
-  authToken?: string | Function
+  authToken?: AuthTokenParam
 ```
 
 ## System Backends
@@ -209,7 +209,7 @@ async function InitVault () {
 import { UserPassAuth } from 'vault-tacular'
 
 const auth = new UserPassAuth('http://localhost:8200/v1', {
-  authToken: () => {
+  authToken: async () => {
     return '...'
   }
 })
@@ -244,7 +244,7 @@ async function create () {
   const password = 'test-pass'
 
   const auth = new UserPassAuth(VAULT_API_URL, {
-    authToken: () => {
+    authToken: async () => {
       // you will need to return a token that has the ability to
       // create users
       return '...'

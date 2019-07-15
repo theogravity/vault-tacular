@@ -1,4 +1,5 @@
 import { readFile } from 'fs'
+import { AuthTokenHelperFunc } from '../interfaces/IBaseClient'
 
 /**
  * Read a token from a file. Useful if using the vault agent and need to read from a file sink.
@@ -7,7 +8,10 @@ import { readFile } from 'fs'
  * the request requires a token. Default is true.
  * @returns {Function} An async function that when called, will read the file for the token
  */
-export function getTokenFromFile (path: string, cacheToken: boolean = true) {
+export function getTokenFromFile (
+  path: string,
+  cacheToken: boolean = true
+): AuthTokenHelperFunc {
   return () => {
     let token
 
