@@ -109,11 +109,11 @@ You can initialize auth or secret engines with the following signature:
    */
   reqOpts?: RequestPromiseOptions
   /**
-   * The token value, or an (async) function that returns the token used for the
+   * The token value, or an async function that returns the token used for the
    * Authorization / X-Vault-Token header. The client does *not* cache the result;
    * the function should implement caching and renewal of the token if necessary.
    */
-  authToken?: string | Function
+  authToken?: AuthTokenParam
 ```
 
 ## System Backends

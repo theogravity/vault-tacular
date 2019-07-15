@@ -19,11 +19,11 @@ export interface IBaseClientConfig {
    */
   reqOpts?: RequestPromiseOptions
   /**
-   * The token value, or an (async) function that returns the token used for the
+   * The token value, or an async function that returns the token used for the
    * Authorization / X-Vault-Token header. The client does *not* cache the result;
    * the function should implement caching and renewal of the token if necessary.
    */
-  authToken?: string | Function
+  authToken?: AuthTokenParam
 }
 
 /**
@@ -32,6 +32,12 @@ export interface IBaseClientConfig {
 export type VaultToken = string
 
 export type VaultWarnings = Array<string>
+
+/**
+ * An auth token helper function returns a function that returns a string, representing the vault token
+ */
+export type AuthTokenHelperFunc = () => Promise<VaultToken>
+export type AuthTokenParam = VaultToken | AuthTokenHelperFunc
 
 /**
  * Vault API base url
@@ -120,7 +126,7 @@ export interface IWrapInfo {
   /**
    * The actual token value
    */
-  token: string
+  token: VaultToken
   /**
    * The TTL of the response-wrapping token itself
    */

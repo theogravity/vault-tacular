@@ -1,7 +1,7 @@
 import awscred from 'awscred'
 import { EventEmitter } from 'events'
 import { AwsAuth, IAwsAuth } from '..'
-import { ISecretAuth } from '../interfaces/IBaseClient'
+import { AuthTokenHelperFunc, ISecretAuth } from '../interfaces/IBaseClient'
 
 export interface IGetTokenUsingIamOpts {
   /**
@@ -31,9 +31,10 @@ export function getTokenUsingIam (
   awsAuthClient: AwsAuth,
   role: string,
   opts: IGetTokenUsingIamOpts = {}
-) {
+): AuthTokenHelperFunc {
+  const manager = new IamTokenManager(awsAuthClient, role, opts)
+
   return async () => {
-    const manager = new IamTokenManager(awsAuthClient, role, opts)
     return manager.getToken()
   }
 }

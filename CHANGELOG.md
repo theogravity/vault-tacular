@@ -1,3 +1,8 @@
+# UNRELEASED
+
+- Add new type, `AuthTokenHelperFunc`, for defining Token Helpers
+- Update all token helpers and `IBaseClient` accordingly to reflect the new type
+
 # 0.3.1 - Sat Jul 13 2019 20:16:18
 
 - [Breaking] `getTokenFromFile` moved into `AuthTokenHelpers.getTokenFromFile`
