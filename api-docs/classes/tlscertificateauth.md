@@ -29,7 +29,7 @@ Uses TLS certificates for authentication.
 
 \+ **new TlsCertificateAuth**(`baseUrl`: [BaseUrl](../globals.md#baseurl), `config?`: [IBaseClientConfig](../interfaces/ibaseclientconfig.md)): *[TlsCertificateAuth](tlscertificateauth.md)*
 
-*Defined in [auth-methods/TlsCertificateAuth.ts:14](https://github.com/theogravity/vault-tacular/blob/2b2acb5/src/auth-methods/TlsCertificateAuth.ts#L14)*
+*Defined in [auth-methods/TlsCertificateAuth.ts:14](https://github.com/theogravity/vault-tacular/blob/13bcf09/src/auth-methods/TlsCertificateAuth.ts#L14)*
 
 **Parameters:**
 
@@ -46,7 +46,7 @@ Name | Type |
 
 ▸ **createRole**(`name`: string, `payload`: [ICreateRolePayload](../interfaces/itlscertificateauth.icreaterolepayload.md)): *`Promise<IVaultResponse<void>>`*
 
-*Defined in [auth-methods/TlsCertificateAuth.ts:27](https://github.com/theogravity/vault-tacular/blob/2b2acb5/src/auth-methods/TlsCertificateAuth.ts#L27)*
+*Defined in [auth-methods/TlsCertificateAuth.ts:27](https://github.com/theogravity/vault-tacular/blob/13bcf09/src/auth-methods/TlsCertificateAuth.ts#L27)*
 
 Sets a CA cert and associated parameters in a role name.
 
@@ -67,7 +67,7 @@ ___
 
 ▸ **login**(`payload`: [ILoginPayload](../interfaces/itlscertificateauth.iloginpayload.md)): *`Promise<IVaultResponse<ISecret>>`*
 
-*Defined in [auth-methods/TlsCertificateAuth.ts:55](https://github.com/theogravity/vault-tacular/blob/2b2acb5/src/auth-methods/TlsCertificateAuth.ts#L55)*
+*Defined in [auth-methods/TlsCertificateAuth.ts:55](https://github.com/theogravity/vault-tacular/blob/13bcf09/src/auth-methods/TlsCertificateAuth.ts#L55)*
 
 Log in and fetch a token. If there is a valid chain to a CA configured in the method and all
 role constraints are matched, a token will be issued. If the certificate has DNS SANs in it,

@@ -20,4 +20,4 @@
 
 • **auth**: *[ISecretAuth](isecretauth.md)*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:121](https://github.com/theogravity/vault-tacular/blob/2b2acb5/src/interfaces/auth-methods/ITokenAuth.ts#L121)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:121](https://github.com/theogravity/vault-tacular/blob/13bcf09/src/interfaces/auth-methods/ITokenAuth.ts#L121)*

@@ -20,6 +20,6 @@
 
 • **data**: *object*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:140](https://github.com/theogravity/vault-tacular/blob/2b2acb5/src/interfaces/auth-methods/ITokenAuth.ts#L140)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:140](https://github.com/theogravity/vault-tacular/blob/13bcf09/src/interfaces/auth-methods/ITokenAuth.ts#L140)*
 
 #### Type declaration:

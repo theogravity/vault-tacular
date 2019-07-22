@@ -24,7 +24,7 @@
 
 • **auth**: *string*
 
-*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:13](https://github.com/theogravity/vault-tacular/blob/2b2acb5/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L13)*
+*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:13](https://github.com/theogravity/vault-tacular/blob/13bcf09/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L13)*
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 • **data**: *object*
 
-*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:14](https://github.com/theogravity/vault-tacular/blob/2b2acb5/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L14)*
+*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:14](https://github.com/theogravity/vault-tacular/blob/13bcf09/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L14)*
 
 #### Type declaration:
 
@@ -42,7 +42,7 @@ ___
 
 • **lease_duration**: *number*
 
-*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:17](https://github.com/theogravity/vault-tacular/blob/2b2acb5/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L17)*
+*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:17](https://github.com/theogravity/vault-tacular/blob/13bcf09/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L17)*
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 • **lease_id**: *string*
 
-*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:18](https://github.com/theogravity/vault-tacular/blob/2b2acb5/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L18)*
+*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:18](https://github.com/theogravity/vault-tacular/blob/13bcf09/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L18)*
 
 ___
 
@@ -58,4 +58,4 @@ ___
 
 • **renewable**: *boolean*
 
-*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:19](https://github.com/theogravity/vault-tacular/blob/2b2acb5/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L19)*
+*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:19](https://github.com/theogravity/vault-tacular/blob/13bcf09/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L19)*
