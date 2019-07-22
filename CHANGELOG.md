@@ -1,3 +1,7 @@
+# UNRELEASED
+
+Fix `getTokenUsingIam` helper, where the token refresh callback was improperly defined
+
 # 0.3.2 - Mon Jul 15 2019 22:03:13
 
 - Add new type, `AuthTokenHelperFunc`, for defining Token Helpers
