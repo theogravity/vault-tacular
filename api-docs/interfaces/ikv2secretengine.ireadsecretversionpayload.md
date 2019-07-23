@@ -20,6 +20,6 @@
 
 • **version**? : *number*
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:21](https://github.com/theogravity/vault-tacular/blob/27041c7/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L21)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:21](https://github.com/theogravity/vault-tacular/blob/7a596ac/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L21)*
 
 Specifies the version to return. If not set the latest version is returned.

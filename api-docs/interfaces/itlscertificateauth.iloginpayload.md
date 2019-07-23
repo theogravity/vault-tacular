@@ -25,7 +25,7 @@
 
 • **ca**: *`Buffer`*
 
-*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:15](https://github.com/theogravity/vault-tacular/blob/27041c7/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L15)*
+*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:15](https://github.com/theogravity/vault-tacular/blob/7a596ac/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L15)*
 
 Certificate authority PEM to auth with vault
 
@@ -35,7 +35,7 @@ ___
 
 • **cert**: *`Buffer`*
 
-*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:19](https://github.com/theogravity/vault-tacular/blob/27041c7/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L19)*
+*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:19](https://github.com/theogravity/vault-tacular/blob/7a596ac/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L19)*
 
 Client certificate PEM to auth with vault
 
@@ -45,7 +45,7 @@ ___
 
 • **key**: *`Buffer`*
 
-*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:23](https://github.com/theogravity/vault-tacular/blob/27041c7/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L23)*
+*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:23](https://github.com/theogravity/vault-tacular/blob/7a596ac/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L23)*
 
 Private key PEM to auth with vault
 
@@ -55,7 +55,7 @@ ___
 
 • **name**: *string*
 
-*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:11](https://github.com/theogravity/vault-tacular/blob/27041c7/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L11)*
+*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:11](https://github.com/theogravity/vault-tacular/blob/7a596ac/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L11)*
 
 Authenticate against only the named certificate role,
 returning its policy list if successful.

@@ -20,6 +20,6 @@
 
 • **data**: *object*
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:96](https://github.com/theogravity/vault-tacular/blob/27041c7/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L96)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:96](https://github.com/theogravity/vault-tacular/blob/7a596ac/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L96)*
 
 #### Type declaration:
