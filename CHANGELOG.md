@@ -1,6 +1,6 @@
 # UNRELEASED
 
-Re-release of the prior fix to fix build issues.
+Fix `getTokenUsingIam` refresh helper, add unit tests for `IamTokenManager`
 
 # 0.3.3 - Mon Jul 22 2019 20:17:35
 
