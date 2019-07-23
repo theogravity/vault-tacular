@@ -28,7 +28,7 @@
 
 • **allowed_policies**? : *`Array<string>`*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:153](https://github.com/theogravity/vault-tacular/blob/13bcf09/src/interfaces/auth-methods/ITokenAuth.ts#L153)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:153](https://github.com/theogravity/vault-tacular/blob/27041c7/src/interfaces/auth-methods/ITokenAuth.ts#L153)*
 
 If set, tokens can be created with any subset of the policies in this list, rather than
 the normal semantics of tokens being a subset of the calling token's policies.
@@ -42,7 +42,7 @@ ___
 
 • **bound_cidrs**? : *string | `Array<string>`*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:201](https://github.com/theogravity/vault-tacular/blob/13bcf09/src/interfaces/auth-methods/ITokenAuth.ts#L201)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:201](https://github.com/theogravity/vault-tacular/blob/27041c7/src/interfaces/auth-methods/ITokenAuth.ts#L201)*
 
 If set, restricts usage of the generated token to client IPs falling within the range of the
 specified CIDR(s). Unlike most other role parameters, this is not reevaluated from the
@@ -55,7 +55,7 @@ ___
 
 • **disallowed_policies**? : *`Array<string>`*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:160](https://github.com/theogravity/vault-tacular/blob/13bcf09/src/interfaces/auth-methods/ITokenAuth.ts#L160)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:160](https://github.com/theogravity/vault-tacular/blob/27041c7/src/interfaces/auth-methods/ITokenAuth.ts#L160)*
 
  If set, successful token creation via this role will require that no policies in the given
  list are requested. The parameter is a comma-delimited string of policy names. Adding
@@ -68,7 +68,7 @@ ___
 
 • **explicit_max_ttl**? : *number*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:186](https://github.com/theogravity/vault-tacular/blob/13bcf09/src/interfaces/auth-methods/ITokenAuth.ts#L186)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:186](https://github.com/theogravity/vault-tacular/blob/27041c7/src/interfaces/auth-methods/ITokenAuth.ts#L186)*
 
 Provides a maximum lifetime for any tokens issued against this role, including periodic
 tokens. Unlike direct token creation, where the value for an explicit max TTL is stored in
@@ -82,7 +82,7 @@ ___
 
 • **orphan**? : *boolean*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:165](https://github.com/theogravity/vault-tacular/blob/13bcf09/src/interfaces/auth-methods/ITokenAuth.ts#L165)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:165](https://github.com/theogravity/vault-tacular/blob/27041c7/src/interfaces/auth-methods/ITokenAuth.ts#L165)*
 
 If true, tokens created against this policy will be orphan tokens (they will have no parent).
 As such, they will not be automatically revoked by the revocation of any other token.
@@ -93,7 +93,7 @@ ___
 
 • **path_suffix**? : *string*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:194](https://github.com/theogravity/vault-tacular/blob/13bcf09/src/interfaces/auth-methods/ITokenAuth.ts#L194)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:194](https://github.com/theogravity/vault-tacular/blob/27041c7/src/interfaces/auth-methods/ITokenAuth.ts#L194)*
 
 If set, tokens created against this role will have the given suffix as part of their path in
 addition to the role name. This can be useful in certain scenarios, such as keeping the same
@@ -107,7 +107,7 @@ ___
 
 • **period**? : *string*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:171](https://github.com/theogravity/vault-tacular/blob/13bcf09/src/interfaces/auth-methods/ITokenAuth.ts#L171)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:171](https://github.com/theogravity/vault-tacular/blob/27041c7/src/interfaces/auth-methods/ITokenAuth.ts#L171)*
 
 If specified, the token will be periodic; it will have no maximum TTL
 (unless an "explicit-max-ttl" is also set) but every renewal will use the given period.
@@ -119,7 +119,7 @@ ___
 
 • **renewable**? : *boolean*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:178](https://github.com/theogravity/vault-tacular/blob/13bcf09/src/interfaces/auth-methods/ITokenAuth.ts#L178)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:178](https://github.com/theogravity/vault-tacular/blob/27041c7/src/interfaces/auth-methods/ITokenAuth.ts#L178)*
 
 Set to false to disable the ability of the token to be renewed past its initial TTL.
 Setting the value to true will allow the token to be renewable up to the system/mount
@@ -133,7 +133,7 @@ ___
 
 • **token_type**? : *string*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:209](https://github.com/theogravity/vault-tacular/blob/13bcf09/src/interfaces/auth-methods/ITokenAuth.ts#L209)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:209](https://github.com/theogravity/vault-tacular/blob/27041c7/src/interfaces/auth-methods/ITokenAuth.ts#L209)*
 
  Specifies the type of tokens that should be returned by the role. If either service or
  batch is specified, that kind of token will always be returned. If default-service, service

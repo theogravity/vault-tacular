@@ -24,4 +24,4 @@
 
 *Inherited from [ILookupTokenResponse](itokenauth.ilookuptokenresponse.md).[data](itokenauth.ilookuptokenresponse.md#data)*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:108](https://github.com/theogravity/vault-tacular/blob/13bcf09/src/interfaces/auth-methods/ITokenAuth.ts#L108)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:108](https://github.com/theogravity/vault-tacular/blob/27041c7/src/interfaces/auth-methods/ITokenAuth.ts#L108)*

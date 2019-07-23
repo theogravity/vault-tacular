@@ -23,7 +23,7 @@
 
 • **credentials**? : *[IAwsCredentials](iawsauth.iawscredentials.md)*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:117](https://github.com/theogravity/vault-tacular/blob/13bcf09/src/interfaces/auth-methods/IAwsAuth.ts#L117)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:117](https://github.com/theogravity/vault-tacular/blob/27041c7/src/interfaces/auth-methods/IAwsAuth.ts#L117)*
 
 AWS credentials for use with signing the login request to AWS STS by the aws4 module. If not defined,
 process.env.
@@ -34,7 +34,7 @@ ___
 
 • **iamRequestHeaders**? : *object*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:127](https://github.com/theogravity/vault-tacular/blob/13bcf09/src/interfaces/auth-methods/IAwsAuth.ts#L127)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:127](https://github.com/theogravity/vault-tacular/blob/27041c7/src/interfaces/auth-methods/IAwsAuth.ts#L127)*
 
 Additional headers to pass / encode for the aws sts:GetCallerIdentity call
 This could include the Vault-AWS-IAM-Server-ID header that may be required by certain
@@ -50,7 +50,7 @@ ___
 
 • **role**: *string*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:112](https://github.com/theogravity/vault-tacular/blob/13bcf09/src/interfaces/auth-methods/IAwsAuth.ts#L112)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:112](https://github.com/theogravity/vault-tacular/blob/27041c7/src/interfaces/auth-methods/IAwsAuth.ts#L112)*
 
 Name of the role against which the login is being attempted. If role is not specified, then
 the login endpoint looks for a role bearing the name of the AMI ID of the EC2 instance that
@@ -64,6 +64,6 @@ ___
 
 • **stsUrl**? : *string*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:121](https://github.com/theogravity/vault-tacular/blob/13bcf09/src/interfaces/auth-methods/IAwsAuth.ts#L121)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:121](https://github.com/theogravity/vault-tacular/blob/27041c7/src/interfaces/auth-methods/IAwsAuth.ts#L121)*
 
 The AWS STS Url. Default is https://sts.amazonaws.com

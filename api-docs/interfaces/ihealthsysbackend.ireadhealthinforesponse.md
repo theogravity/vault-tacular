@@ -33,7 +33,7 @@ time for the active node to inform the standby of its status.
 
 • **cluster_id**: *string*
 
-*Defined in [interfaces/system-backend/IHealthSysBackend.ts:57](https://github.com/theogravity/vault-tacular/blob/13bcf09/src/interfaces/system-backend/IHealthSysBackend.ts#L57)*
+*Defined in [interfaces/system-backend/IHealthSysBackend.ts:57](https://github.com/theogravity/vault-tacular/blob/27041c7/src/interfaces/system-backend/IHealthSysBackend.ts#L57)*
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 • **cluster_name**: *string*
 
-*Defined in [interfaces/system-backend/IHealthSysBackend.ts:56](https://github.com/theogravity/vault-tacular/blob/13bcf09/src/interfaces/system-backend/IHealthSysBackend.ts#L56)*
+*Defined in [interfaces/system-backend/IHealthSysBackend.ts:56](https://github.com/theogravity/vault-tacular/blob/27041c7/src/interfaces/system-backend/IHealthSysBackend.ts#L56)*
 
 ___
 
@@ -49,7 +49,7 @@ ___
 
 • **initialized**: *boolean*
 
-*Defined in [interfaces/system-backend/IHealthSysBackend.ts:48](https://github.com/theogravity/vault-tacular/blob/13bcf09/src/interfaces/system-backend/IHealthSysBackend.ts#L48)*
+*Defined in [interfaces/system-backend/IHealthSysBackend.ts:48](https://github.com/theogravity/vault-tacular/blob/27041c7/src/interfaces/system-backend/IHealthSysBackend.ts#L48)*
 
 ___
 
@@ -57,7 +57,7 @@ ___
 
 • **performance_standby**: *boolean*
 
-*Defined in [interfaces/system-backend/IHealthSysBackend.ts:51](https://github.com/theogravity/vault-tacular/blob/13bcf09/src/interfaces/system-backend/IHealthSysBackend.ts#L51)*
+*Defined in [interfaces/system-backend/IHealthSysBackend.ts:51](https://github.com/theogravity/vault-tacular/blob/27041c7/src/interfaces/system-backend/IHealthSysBackend.ts#L51)*
 
 ___
 
@@ -65,7 +65,7 @@ ___
 
 • **replication_dr_mode**: *string*
 
-*Defined in [interfaces/system-backend/IHealthSysBackend.ts:53](https://github.com/theogravity/vault-tacular/blob/13bcf09/src/interfaces/system-backend/IHealthSysBackend.ts#L53)*
+*Defined in [interfaces/system-backend/IHealthSysBackend.ts:53](https://github.com/theogravity/vault-tacular/blob/27041c7/src/interfaces/system-backend/IHealthSysBackend.ts#L53)*
 
 ___
 
@@ -73,7 +73,7 @@ ___
 
 • **replication_perf_mode**: *string*
 
-*Defined in [interfaces/system-backend/IHealthSysBackend.ts:52](https://github.com/theogravity/vault-tacular/blob/13bcf09/src/interfaces/system-backend/IHealthSysBackend.ts#L52)*
+*Defined in [interfaces/system-backend/IHealthSysBackend.ts:52](https://github.com/theogravity/vault-tacular/blob/27041c7/src/interfaces/system-backend/IHealthSysBackend.ts#L52)*
 
 ___
 
@@ -81,7 +81,7 @@ ___
 
 • **sealed**: *boolean*
 
-*Defined in [interfaces/system-backend/IHealthSysBackend.ts:49](https://github.com/theogravity/vault-tacular/blob/13bcf09/src/interfaces/system-backend/IHealthSysBackend.ts#L49)*
+*Defined in [interfaces/system-backend/IHealthSysBackend.ts:49](https://github.com/theogravity/vault-tacular/blob/27041c7/src/interfaces/system-backend/IHealthSysBackend.ts#L49)*
 
 ___
 
@@ -89,7 +89,7 @@ ___
 
 • **server_time_utc**: *number*
 
-*Defined in [interfaces/system-backend/IHealthSysBackend.ts:54](https://github.com/theogravity/vault-tacular/blob/13bcf09/src/interfaces/system-backend/IHealthSysBackend.ts#L54)*
+*Defined in [interfaces/system-backend/IHealthSysBackend.ts:54](https://github.com/theogravity/vault-tacular/blob/27041c7/src/interfaces/system-backend/IHealthSysBackend.ts#L54)*
 
 ___
 
@@ -97,7 +97,7 @@ ___
 
 • **standby**: *boolean*
 
-*Defined in [interfaces/system-backend/IHealthSysBackend.ts:50](https://github.com/theogravity/vault-tacular/blob/13bcf09/src/interfaces/system-backend/IHealthSysBackend.ts#L50)*
+*Defined in [interfaces/system-backend/IHealthSysBackend.ts:50](https://github.com/theogravity/vault-tacular/blob/27041c7/src/interfaces/system-backend/IHealthSysBackend.ts#L50)*
 
 ___
 
@@ -105,4 +105,4 @@ ___
 
 • **version**: *string*
 
-*Defined in [interfaces/system-backend/IHealthSysBackend.ts:55](https://github.com/theogravity/vault-tacular/blob/13bcf09/src/interfaces/system-backend/IHealthSysBackend.ts#L55)*
+*Defined in [interfaces/system-backend/IHealthSysBackend.ts:55](https://github.com/theogravity/vault-tacular/blob/27041c7/src/interfaces/system-backend/IHealthSysBackend.ts#L55)*

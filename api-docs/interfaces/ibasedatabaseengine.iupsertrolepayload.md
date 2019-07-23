@@ -28,7 +28,7 @@
 
 • **creation_statements**: *`Array<string>`*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:73](https://github.com/theogravity/vault-tacular/blob/13bcf09/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L73)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:73](https://github.com/theogravity/vault-tacular/blob/27041c7/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L73)*
 
 Specifies the database statements executed to create and configure a user. See the plugin's
 API page for more information on support and formatting for this parameter.
@@ -39,7 +39,7 @@ ___
 
 • **db_name**: *string*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:52](https://github.com/theogravity/vault-tacular/blob/13bcf09/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L52)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:52](https://github.com/theogravity/vault-tacular/blob/27041c7/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L52)*
 
 The name of the database connection to use for this role.
 
@@ -49,7 +49,7 @@ ___
 
 • **default_ttl**? : *number | string*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:59](https://github.com/theogravity/vault-tacular/blob/13bcf09/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L59)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:59](https://github.com/theogravity/vault-tacular/blob/27041c7/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L59)*
 
  Specifies the TTL for the leases associated with this role.
  Accepts time suffixed strings ("1h") or an integer number of seconds. Defaults to
@@ -61,7 +61,7 @@ ___
 
 • **max_ttl**? : *number | string*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:67](https://github.com/theogravity/vault-tacular/blob/13bcf09/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L67)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:67](https://github.com/theogravity/vault-tacular/blob/27041c7/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L67)*
 
  Specifies the maximum TTL for the leases associated with this role.
  Accepts time suffixed strings ("1h") or an integer number of seconds.
@@ -74,7 +74,7 @@ ___
 
 • **renew_statements**? : *`Array<string>`*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:93](https://github.com/theogravity/vault-tacular/blob/13bcf09/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L93)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:93](https://github.com/theogravity/vault-tacular/blob/27041c7/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L93)*
 
 Specifies the database statements to be executed to renew a user. Not every plugin type will
 support this functionality. See the plugin's API page for more information on support and
@@ -86,7 +86,7 @@ ___
 
 • **revocation_statements**? : *`Array<string>`*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:79](https://github.com/theogravity/vault-tacular/blob/13bcf09/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L79)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:79](https://github.com/theogravity/vault-tacular/blob/27041c7/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L79)*
 
  Specifies the database statements to be executed to revoke a user. See the plugin's API
  page for more information on support and formatting for this parameter.
@@ -97,7 +97,7 @@ ___
 
 • **rollback_statements**? : *`Array<string>`*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:86](https://github.com/theogravity/vault-tacular/blob/13bcf09/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L86)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:86](https://github.com/theogravity/vault-tacular/blob/27041c7/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L86)*
 
 Specifies the database statements to be executed rollback a create operation in the event
 of an error. Not every plugin type will support this functionality. See the plugin's API
