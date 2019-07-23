@@ -51,7 +51,12 @@ function loadCredentials (): Promise<IAwsAuth.IAwsCredentials> {
   })
 }
 
-class IamTokenManager {
+/**
+ * Manages the fetch/storage/refresh of the auth token.
+ * Exported for unit tests.
+ * @ignore
+ */
+export class IamTokenManager {
   private role: string
   private token: string
   private refreshTimer: any
@@ -84,7 +89,7 @@ class IamTokenManager {
 
   private enableRefresh = secs => {
     if (this.refreshTimer) {
-      setTimeout(this.refreshTimer)
+      clearTimeout(this.refreshTimer)
       this.refreshTimer = null
     }
 

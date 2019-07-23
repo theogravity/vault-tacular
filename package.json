@@ -13,6 +13,7 @@
     "test": "jest -c jest.config.js",
     "test:int": "./start-dev-vault.sh && NODE_EXTRA_CA_CERTS=test-certs/rootCA.crt VAULT_TOKEN=root VAULT_API_URL=https://localhost:8300/v1 jest -c jest-int.config.js",
     "test:watch": "jest --watch",
+    "test:debug": "NODE_ENV=test node --inspect-brk node_modules/.bin/jest --runInBand -c ./jest.config.js",
     "test:coverage:watch": "jest --coverage --watch",
     "lint-staged": "lint-staged",
     "prepare-publish": "npm run changelog:verify && version-bump && npm run changelog:release",

@@ -1,3 +1,7 @@
+# UNRELEASED
+
+Fix `getTokenUsingIam` refresh helper, add unit tests for `IamTokenManager`
+
 # 0.3.3 - Mon Jul 22 2019 20:17:35
 
 Fix `getTokenUsingIam` helper, where the token refresh callback was improperly defined
