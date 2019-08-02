@@ -20,7 +20,7 @@
 
 • **versions**: *number[]*
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:79](https://github.com/theogravity/vault-tacular/blob/7a596ac/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L79)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:79](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L79)*
 
 The versions to undelete. The versions will be restored and their result will be returned
 on normal get requests.

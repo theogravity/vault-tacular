@@ -1,4 +1,4 @@
-# UNRELEASED
+# 0.3.6 - Fri Aug 02 2019 22:45:26
 
 Add STS region detection for the `getTokenUsingIam` token helper.
 

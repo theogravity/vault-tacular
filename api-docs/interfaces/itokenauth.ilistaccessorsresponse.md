@@ -31,7 +31,7 @@
 
 *Inherited from [ISecret](isecret.md).[auth](isecret.md#optional-auth)*
 
-*Defined in [interfaces/IBaseClient.ts:115](https://github.com/theogravity/vault-tacular/blob/7a596ac/src/interfaces/IBaseClient.ts#L115)*
+*Defined in [interfaces/IBaseClient.ts:115](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/interfaces/IBaseClient.ts#L115)*
 
 ___
 
@@ -41,7 +41,7 @@ ___
 
 *Overrides [ISecret](isecret.md).[data](isecret.md#optional-data)*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:5](https://github.com/theogravity/vault-tacular/blob/7a596ac/src/interfaces/auth-methods/ITokenAuth.ts#L5)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:5](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/interfaces/auth-methods/ITokenAuth.ts#L5)*
 
 #### Type declaration:
 
@@ -53,7 +53,7 @@ ___
 
 *Inherited from [ISecret](isecret.md).[lease_duration](isecret.md#lease_duration)*
 
-*Defined in [interfaces/IBaseClient.ts:101](https://github.com/theogravity/vault-tacular/blob/7a596ac/src/interfaces/IBaseClient.ts#L101)*
+*Defined in [interfaces/IBaseClient.ts:101](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/interfaces/IBaseClient.ts#L101)*
 
 Along with the lease ID, a lease duration can be read.
 The lease duration is a Time To Live value: the time in seconds for
@@ -67,7 +67,7 @@ ___
 
 *Inherited from [ISecret](isecret.md).[lease_id](isecret.md#lease_id)*
 
-*Defined in [interfaces/IBaseClient.ts:95](https://github.com/theogravity/vault-tacular/blob/7a596ac/src/interfaces/IBaseClient.ts#L95)*
+*Defined in [interfaces/IBaseClient.ts:95](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/interfaces/IBaseClient.ts#L95)*
 
 When reading a dynamic secret, such as via vault read, Vault always returns a lease_id.
 This is the ID used with commands such as vault renew and vault revoke to manage the
@@ -81,7 +81,7 @@ ___
 
 *Inherited from [ISecret](isecret.md).[renewable](isecret.md#renewable)*
 
-*Defined in [interfaces/IBaseClient.ts:114](https://github.com/theogravity/vault-tacular/blob/7a596ac/src/interfaces/IBaseClient.ts#L114)*
+*Defined in [interfaces/IBaseClient.ts:114](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/interfaces/IBaseClient.ts#L114)*
 
 If the lease is renewable
 
@@ -93,7 +93,7 @@ ___
 
 *Inherited from [ISecret](isecret.md).[request_id](isecret.md#request_id)*
 
-*Defined in [interfaces/IBaseClient.ts:89](https://github.com/theogravity/vault-tacular/blob/7a596ac/src/interfaces/IBaseClient.ts#L89)*
+*Defined in [interfaces/IBaseClient.ts:89](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/interfaces/IBaseClient.ts#L89)*
 
 ___
 
@@ -103,7 +103,7 @@ ___
 
 *Inherited from [ISecret](isecret.md).[warnings](isecret.md#warnings)*
 
-*Defined in [interfaces/IBaseClient.ts:109](https://github.com/theogravity/vault-tacular/blob/7a596ac/src/interfaces/IBaseClient.ts#L109)*
+*Defined in [interfaces/IBaseClient.ts:109](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/interfaces/IBaseClient.ts#L109)*
 
 List of warnings
 
@@ -115,4 +115,4 @@ ___
 
 *Inherited from [ISecret](isecret.md).[wrap_info](isecret.md#optional-wrap_info)*
 
-*Defined in [interfaces/IBaseClient.ts:110](https://github.com/theogravity/vault-tacular/blob/7a596ac/src/interfaces/IBaseClient.ts#L110)*
+*Defined in [interfaces/IBaseClient.ts:110](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/interfaces/IBaseClient.ts#L110)*

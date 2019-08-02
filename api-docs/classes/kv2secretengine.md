@@ -39,7 +39,7 @@ Vault KV secrets engine while running in versioned mode.
 
 \+ **new Kv2SecretEngine**(`baseUrl`: [BaseUrl](../globals.md#baseurl), `config?`: [IBaseClientConfig](../interfaces/ibaseclientconfig.md)): *[Kv2SecretEngine](kv2secretengine.md)*
 
-*Defined in [secrets-engines/Kv2SecretEngine.ts:22](https://github.com/theogravity/vault-tacular/blob/7a596ac/src/secrets-engines/Kv2SecretEngine.ts#L22)*
+*Defined in [secrets-engines/Kv2SecretEngine.ts:22](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/secrets-engines/Kv2SecretEngine.ts#L22)*
 
 **Parameters:**
 
@@ -56,7 +56,7 @@ Name | Type |
 
 ▸ **configEngine**(`payload`: [ISetConfigPayload](../interfaces/ikv2secretengine.isetconfigpayload.md)): *`Promise<IVaultResponse<void>>`*
 
-*Defined in [secrets-engines/Kv2SecretEngine.ts:35](https://github.com/theogravity/vault-tacular/blob/7a596ac/src/secrets-engines/Kv2SecretEngine.ts#L35)*
+*Defined in [secrets-engines/Kv2SecretEngine.ts:35](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/secrets-engines/Kv2SecretEngine.ts#L35)*
 
 Configures backend level settings that are applied to every key in the key-value store.
 
@@ -76,7 +76,7 @@ ___
 
 ▸ **createOrUpdateSecret**(`path`: string, `payload`: [ICreateUpdateSecretPayload](../interfaces/ikv2secretengine.icreateupdatesecretpayload.md)): *`Promise<IVaultResponse<ICreateUpdateSecretResponse>>`*
 
-*Defined in [secrets-engines/Kv2SecretEngine.ts:104](https://github.com/theogravity/vault-tacular/blob/7a596ac/src/secrets-engines/Kv2SecretEngine.ts#L104)*
+*Defined in [secrets-engines/Kv2SecretEngine.ts:104](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/secrets-engines/Kv2SecretEngine.ts#L104)*
 
 Creates a new version of a secret at the specified location. If the value does not yet exist,
 the calling token must have an ACL policy granting the create capability. If the value already
@@ -99,7 +99,7 @@ ___
 
 ▸ **deleteLatestSecretVersion**(`path`: string): *`Promise<IVaultResponse<void>>`*
 
-*Defined in [secrets-engines/Kv2SecretEngine.ts:130](https://github.com/theogravity/vault-tacular/blob/7a596ac/src/secrets-engines/Kv2SecretEngine.ts#L130)*
+*Defined in [secrets-engines/Kv2SecretEngine.ts:130](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/secrets-engines/Kv2SecretEngine.ts#L130)*
 
 Issues a soft delete of the secret's latest version at the specified location. This marks the
 version as deleted and will stop it from being returned from reads, but the underlying result
@@ -121,7 +121,7 @@ ___
 
 ▸ **deleteMetadataAndAllVersions**(`path`: string): *`Promise<IVaultResponse<void>>`*
 
-*Defined in [secrets-engines/Kv2SecretEngine.ts:292](https://github.com/theogravity/vault-tacular/blob/7a596ac/src/secrets-engines/Kv2SecretEngine.ts#L292)*
+*Defined in [secrets-engines/Kv2SecretEngine.ts:292](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/secrets-engines/Kv2SecretEngine.ts#L292)*
 
 Permanently deletes the key metadata and all version result for the specified key.
 All version history will be removed.
@@ -142,7 +142,7 @@ ___
 
 ▸ **deleteSecretVersions**(`path`: string, `payload`: [IDeleteSecretVersionsPayload](../interfaces/ikv2secretengine.ideletesecretversionspayload.md)): *`Promise<IVaultResponse<void>>`*
 
-*Defined in [secrets-engines/Kv2SecretEngine.ts:152](https://github.com/theogravity/vault-tacular/blob/7a596ac/src/secrets-engines/Kv2SecretEngine.ts#L152)*
+*Defined in [secrets-engines/Kv2SecretEngine.ts:152](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/secrets-engines/Kv2SecretEngine.ts#L152)*
 
 Issues a soft delete of the specified versions of the secret. This marks the versions as
 deleted and will stop them from being returned from reads, but the underlying result will not
@@ -165,7 +165,7 @@ ___
 
 ▸ **destroySecretVersions**(`path`: string, `payload`: [IDestroySecretVersionsPayload](../interfaces/ikv2secretengine.idestroysecretversionspayload.md)): *`Promise<IVaultResponse<void>>`*
 
-*Defined in [secrets-engines/Kv2SecretEngine.ts:198](https://github.com/theogravity/vault-tacular/blob/7a596ac/src/secrets-engines/Kv2SecretEngine.ts#L198)*
+*Defined in [secrets-engines/Kv2SecretEngine.ts:198](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/secrets-engines/Kv2SecretEngine.ts#L198)*
 
 Permanently removes the specified version result for the provided key and version numbers
 from the key-value store.
@@ -187,7 +187,7 @@ ___
 
 ▸ **listSecrets**(`path`: string): *`Promise<IVaultResponse<IListSecretsResponse>>`*
 
-*Defined in [secrets-engines/Kv2SecretEngine.ts:223](https://github.com/theogravity/vault-tacular/blob/7a596ac/src/secrets-engines/Kv2SecretEngine.ts#L223)*
+*Defined in [secrets-engines/Kv2SecretEngine.ts:223](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/secrets-engines/Kv2SecretEngine.ts#L223)*
 
 Returns a list of key names at the specified location. Folders are suffixed with /.
 The input must be a folder; list on a file will not return a value. Note that no policy-based
@@ -210,7 +210,7 @@ ___
 
 ▸ **readEngineConfig**(): *`Promise<IVaultResponse<IGetConfigResponse>>`*
 
-*Defined in [secrets-engines/Kv2SecretEngine.ts:56](https://github.com/theogravity/vault-tacular/blob/7a596ac/src/secrets-engines/Kv2SecretEngine.ts#L56)*
+*Defined in [secrets-engines/Kv2SecretEngine.ts:56](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/secrets-engines/Kv2SecretEngine.ts#L56)*
 
 Retrieves the current configuration for the secrets backend at the given path.
 
@@ -224,7 +224,7 @@ ___
 
 ▸ **readSecretMetadata**(`path`: string): *`Promise<IVaultResponse<IReadSecretMetadataResponse>>`*
 
-*Defined in [secrets-engines/Kv2SecretEngine.ts:245](https://github.com/theogravity/vault-tacular/blob/7a596ac/src/secrets-engines/Kv2SecretEngine.ts#L245)*
+*Defined in [secrets-engines/Kv2SecretEngine.ts:245](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/secrets-engines/Kv2SecretEngine.ts#L245)*
 
 Retrieves the metadata and versions for the secret at the specified path.
 
@@ -244,7 +244,7 @@ ___
 
 ▸ **readSecretVersion**(`path`: string, `payload`: [IReadSecretVersionPayload](../interfaces/ikv2secretengine.ireadsecretversionpayload.md)): *`Promise<IVaultResponse<IReadSecretVersionResponse>>`*
 
-*Defined in [secrets-engines/Kv2SecretEngine.ts:78](https://github.com/theogravity/vault-tacular/blob/7a596ac/src/secrets-engines/Kv2SecretEngine.ts#L78)*
+*Defined in [secrets-engines/Kv2SecretEngine.ts:78](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/secrets-engines/Kv2SecretEngine.ts#L78)*
 
 Retrieves the secret at the specified location
 
@@ -265,7 +265,7 @@ ___
 
 ▸ **undeleteSecretVersions**(`path`: string, `payload`: [IUndeleteSecretVersionsPayload](../interfaces/ikv2secretengine.iundeletesecretversionspayload.md)): *`Promise<IVaultResponse<void>>`*
 
-*Defined in [secrets-engines/Kv2SecretEngine.ts:175](https://github.com/theogravity/vault-tacular/blob/7a596ac/src/secrets-engines/Kv2SecretEngine.ts#L175)*
+*Defined in [secrets-engines/Kv2SecretEngine.ts:175](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/secrets-engines/Kv2SecretEngine.ts#L175)*
 
 Undeletes the result for the provided version and path in the key-value store. This restores
 the result, allowing it to be returned on get requests.
@@ -287,7 +287,7 @@ ___
 
 ▸ **updateSecretMetadata**(`path`: string, `payload`: [IUpdateSecretMetadataPayload](../interfaces/ikv2secretengine.iupdatesecretmetadatapayload.md)): *`Promise<IVaultResponse<void>>`*
 
-*Defined in [secrets-engines/Kv2SecretEngine.ts:269](https://github.com/theogravity/vault-tacular/blob/7a596ac/src/secrets-engines/Kv2SecretEngine.ts#L269)*
+*Defined in [secrets-engines/Kv2SecretEngine.ts:269](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/secrets-engines/Kv2SecretEngine.ts#L269)*
 
 creates a new version of a secret at the specified location. If the value does not yet exist,
 the calling token must have an ACL policy granting the create capability. If the value

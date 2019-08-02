@@ -31,7 +31,7 @@ The AWS secrets engine generates AWS access credentials dynamically based on IAM
 
 \+ **new AwsAuth**(`baseUrl`: [BaseUrl](../globals.md#baseurl), `config?`: [IBaseClientConfig](../interfaces/ibaseclientconfig.md)): *[AwsAuth](awsauth.md)*
 
-*Defined in [auth-methods/AwsAuth.ts:14](https://github.com/theogravity/vault-tacular/blob/7a596ac/src/auth-methods/AwsAuth.ts#L14)*
+*Defined in [auth-methods/AwsAuth.ts:14](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/auth-methods/AwsAuth.ts#L14)*
 
 **Parameters:**
 
@@ -48,7 +48,7 @@ Name | Type |
 
 ▸ **getTokenUsingIamLogin**(`payload`: [IGetTokenUsingIamLoginPayload](../interfaces/iawsauth.igettokenusingiamloginpayload.md)): *`Promise<IVaultResponse<ISecret>>`*
 
-*Defined in [auth-methods/AwsAuth.ts:45](https://github.com/theogravity/vault-tacular/blob/7a596ac/src/auth-methods/AwsAuth.ts#L45)*
+*Defined in [auth-methods/AwsAuth.ts:45](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/auth-methods/AwsAuth.ts#L45)*
 
 Wrapper around loginUsingIam() that performs the additional steps
 necessary to construct a proper IAM login request to get a token
@@ -67,7 +67,7 @@ ___
 
 ▸ **login**(`payload`: [ILoginPayload](../interfaces/iawsauth.iloginpayload.md)): *`Promise<IVaultResponse<ISecret>>`*
 
-*Defined in [auth-methods/AwsAuth.ts:28](https://github.com/theogravity/vault-tacular/blob/7a596ac/src/auth-methods/AwsAuth.ts#L28)*
+*Defined in [auth-methods/AwsAuth.ts:28](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/auth-methods/AwsAuth.ts#L28)*
 
 Generic AWS login
 
@@ -87,7 +87,7 @@ ___
 
 ▸ **loginUsingEc2**(`payload`: [ILoginEc2Payload](../interfaces/iawsauth.iloginec2payload.md)): *`Promise<IVaultResponse<ISecret>>`*
 
-*Defined in [auth-methods/AwsAuth.ts:85](https://github.com/theogravity/vault-tacular/blob/7a596ac/src/auth-methods/AwsAuth.ts#L85)*
+*Defined in [auth-methods/AwsAuth.ts:85](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/auth-methods/AwsAuth.ts#L85)*
 
 AWS EC2 login with EC2-required payload only
 
@@ -107,7 +107,7 @@ ___
 
 ▸ **loginUsingIam**(`payload`: [ILoginIamPayload](../interfaces/iawsauth.iloginiampayload.md)): *`Promise<IVaultResponse<ISecret>>`*
 
-*Defined in [auth-methods/AwsAuth.ts:75](https://github.com/theogravity/vault-tacular/blob/7a596ac/src/auth-methods/AwsAuth.ts#L75)*
+*Defined in [auth-methods/AwsAuth.ts:75](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/auth-methods/AwsAuth.ts#L75)*
 
 AWS IAM login with IAM-required payload only
 
