@@ -5,9 +5,13 @@ import { AuthTokenHelperFunc, ISecretAuth } from '../interfaces/IBaseClient'
 
 export interface IGetTokenUsingIamOpts {
   /**
-   * The AWS STS Url. Default is https://sts.amazonaws.com
+   * The AWS STS Url. Default is https://sts.amazonaws.com if stsRegion is not specified.
    */
   stsUrl?: string
+  /**
+   * AWS STS region. Used to resolve the STS url if stsUrl is not specified.
+   */
+  stsRegion?: string
   /**
    * Additional headers to pass / encode for the aws sts:GetCallerIdentity call
    * This could include the Vault-AWS-IAM-Server-ID header that may be required by certain
@@ -91,22 +95,14 @@ export function getStsUrlFromRegion (region: string) {
   }
 }
 
-interface ILoadCredentialsRslt {
-  credentials: IAwsAuth.IAwsCredentials
-  region: string
-}
-
-function loadCredentials (): Promise<ILoadCredentialsRslt> {
+function loadCredentials (): Promise<IAwsAuth.IAwsCredentials> {
   return new Promise((resolve, reject) => {
     awscred.load((err, data) => {
       if (err) {
         return reject(err)
       }
 
-      return resolve({
-        credentials: data.credentials,
-        region: data.region
-      })
+      return resolve(data.credentials)
     })
   })
 }
@@ -160,12 +156,10 @@ export class IamTokenManager {
   }
 
   private async doFetch (): Promise<ISecretAuth> {
-    const creds = await loadCredentials()
-
     const resp = await this.awsAuthClient.getTokenUsingIamLogin({
       role: this.role,
-      credentials: creds.credentials,
-      stsUrl: this.opts.stsUrl || getStsUrlFromRegion(creds.region),
+      credentials: await loadCredentials(),
+      stsUrl: this.opts.stsUrl || getStsUrlFromRegion(this.opts.stsRegion),
       iamRequestHeaders: this.opts.iamRequestHeaders
     })
 
