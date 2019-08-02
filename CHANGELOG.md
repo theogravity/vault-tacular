@@ -1,3 +1,7 @@
+# UNRELEASED
+
+Add STS region detection for the `getTokenUsingIam` token helper.
+
 # 0.3.5 - Tue Jul 23 2019 05:18:11
 
 Fix build publish issues

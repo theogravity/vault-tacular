@@ -39,14 +39,74 @@ export function getTokenUsingIam (
   }
 }
 
-function loadCredentials (): Promise<IAwsAuth.IAwsCredentials> {
+/**
+ * Translates a region to an sts host
+ * @see https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_enable-regions.html
+ * @param {string} region the AWS region
+ */
+export function getStsUrlFromRegion (region: string) {
+  switch (region) {
+    case 'us-east-2':
+      return 'https://sts.us-east-2.amazonaws.com'
+    case 'us-east-1':
+      return 'https://sts.us-east-1.amazonaws.com'
+    case 'us-west-1':
+      return 'https://sts.us-west-1.amazonaws.com'
+    case 'us-west-2':
+      return 'https://sts.us-west-2.amazonaws.com'
+    case 'ca-central-1':
+      return 'https://sts.ca-central-1.amazonaws.com'
+    case 'ap-northeast-1':
+      return 'https://sts.ap-northeast-1.amazonaws.com'
+    case 'ap-northeast-2':
+      return 'https://sts.ap-northeast-2.amazonaws.com'
+    case 'ap-south-1':
+      return 'https://sts.ap-south-1.amazonaws.com'
+    case 'ap-southeast-1':
+      return 'https://sts.ap-southeast-1.amazonaws.com'
+    case 'ap-southeast-2':
+      return 'https://sts.ap-southeast-2.amazonaws.com'
+    case 'ap-east-1':
+      return 'https://sts.ap-east-1.amazonaws.com'
+    case 'me-south-1':
+      return 'https://sts.me-south-1.amazonaws.com'
+    case 'eu-central-1':
+      return 'https://sts.eu-central-1.amazonaws.com'
+    case 'eu-west-1':
+      return 'https://sts.eu-west-1.amazonaws.com'
+    case 'eu-west-2':
+      return 'https://sts.eu-west-2.amazonaws.com'
+    case 'eu-west-3':
+      return 'https://sts.eu-west-3.amazonaws.com'
+    case 'eu-north-1':
+      return 'https://sts.eu-north-1.amazonaws.com'
+    case 'sa-east-1':
+      return 'https://sts.sa-east-1.amazonaws.com'
+    default:
+      if (region) {
+        return `https://sts.${region}.amazonaws.com`
+      }
+
+      return 'https://sts.amazonaws.com'
+  }
+}
+
+interface ILoadCredentialsRslt {
+  credentials: IAwsAuth.IAwsCredentials
+  region: string
+}
+
+function loadCredentials (): Promise<ILoadCredentialsRslt> {
   return new Promise((resolve, reject) => {
     awscred.load((err, data) => {
       if (err) {
         return reject(err)
       }
 
-      return resolve(data.credentials)
+      return resolve({
+        credentials: data.credentials,
+        region: data.region
+      })
     })
   })
 }
@@ -100,10 +160,12 @@ export class IamTokenManager {
   }
 
   private async doFetch (): Promise<ISecretAuth> {
+    const creds = await loadCredentials()
+
     const resp = await this.awsAuthClient.getTokenUsingIamLogin({
       role: this.role,
-      credentials: await loadCredentials(),
-      stsUrl: this.opts.stsUrl,
+      credentials: creds.credentials,
+      stsUrl: this.opts.stsUrl || getStsUrlFromRegion(creds.region),
       iamRequestHeaders: this.opts.iamRequestHeaders
     })
 
