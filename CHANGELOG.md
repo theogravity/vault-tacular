@@ -1,4 +1,4 @@
-# UNRELEASED
+# 0.3.7 - Fri Aug 02 2019 23:02:13
 
 Add `stsRegion` specification for `getTokenUsingIam`.
 

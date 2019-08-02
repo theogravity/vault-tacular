@@ -29,7 +29,7 @@
 
 • **auth**: *[ISecretAuth](isecretauth.md)*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:17](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/interfaces/system-backend/IWrappingSysBackend.ts#L17)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:17](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/system-backend/IWrappingSysBackend.ts#L17)*
 
 ___
 
@@ -37,7 +37,7 @@ ___
 
 • **data**: *object*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:10](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/interfaces/system-backend/IWrappingSysBackend.ts#L10)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:10](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/system-backend/IWrappingSysBackend.ts#L10)*
 
 #### Type declaration:
 
@@ -47,7 +47,7 @@ ___
 
 • **lease_duration**: *number*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:8](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/interfaces/system-backend/IWrappingSysBackend.ts#L8)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:8](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/system-backend/IWrappingSysBackend.ts#L8)*
 
 ___
 
@@ -55,7 +55,7 @@ ___
 
 • **lease_id**: *string*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:7](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/interfaces/system-backend/IWrappingSysBackend.ts#L7)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:7](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/system-backend/IWrappingSysBackend.ts#L7)*
 
 ___
 
@@ -63,7 +63,7 @@ ___
 
 • **renewable**: *boolean*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:9](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/interfaces/system-backend/IWrappingSysBackend.ts#L9)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:9](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/system-backend/IWrappingSysBackend.ts#L9)*
 
 ___
 
@@ -71,7 +71,7 @@ ___
 
 • **request_id**: *string*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:6](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/interfaces/system-backend/IWrappingSysBackend.ts#L6)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:6](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/system-backend/IWrappingSysBackend.ts#L6)*
 
 ___
 
@@ -79,7 +79,7 @@ ___
 
 • **warnings**: *[VaultWarnings](../globals.md#vaultwarnings)*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:16](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/interfaces/system-backend/IWrappingSysBackend.ts#L16)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:16](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/system-backend/IWrappingSysBackend.ts#L16)*
 
 ___
 
@@ -87,4 +87,4 @@ ___
 
 • **wrap_info**: *[IWrapInfo](iwrapinfo.md)*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:15](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/interfaces/system-backend/IWrappingSysBackend.ts#L15)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:15](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/system-backend/IWrappingSysBackend.ts#L15)*

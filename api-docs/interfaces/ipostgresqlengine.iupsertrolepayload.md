@@ -30,7 +30,7 @@
 
 *Overrides [IUpsertRolePayload](ibasedatabaseengine.iupsertrolepayload.md).[creation_statements](ibasedatabaseengine.iupsertrolepayload.md#creation_statements)*
 
-*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:57](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L57)*
+*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:57](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L57)*
 
 Specifies the database statements executed to create and configure a user.
 Must be a semicolon-separated string, a base64-encoded semicolon-separated string,
@@ -45,7 +45,7 @@ ___
 
 *Inherited from [IUpsertRolePayload](ibasedatabaseengine.iupsertrolepayload.md).[db_name](ibasedatabaseengine.iupsertrolepayload.md#db_name)*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:52](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L52)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:52](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L52)*
 
 The name of the database connection to use for this role.
 
@@ -57,7 +57,7 @@ ___
 
 *Inherited from [IUpsertRolePayload](ibasedatabaseengine.iupsertrolepayload.md).[default_ttl](ibasedatabaseengine.iupsertrolepayload.md#optional-default_ttl)*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:59](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L59)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:59](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L59)*
 
  Specifies the TTL for the leases associated with this role.
  Accepts time suffixed strings ("1h") or an integer number of seconds. Defaults to
@@ -71,7 +71,7 @@ ___
 
 *Inherited from [IUpsertRolePayload](ibasedatabaseengine.iupsertrolepayload.md).[max_ttl](ibasedatabaseengine.iupsertrolepayload.md#optional-max_ttl)*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:67](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L67)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:67](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L67)*
 
  Specifies the maximum TTL for the leases associated with this role.
  Accepts time suffixed strings ("1h") or an integer number of seconds.
@@ -86,7 +86,7 @@ ___
 
 *Overrides [IUpsertRolePayload](ibasedatabaseengine.iupsertrolepayload.md).[renew_statements](ibasedatabaseengine.iupsertrolepayload.md#optional-renew_statements)*
 
-*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:83](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L83)*
+*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:83](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L83)*
 
 Specifies the database statements to be executed to renew a user. Not every plugin type will
 support this functionality. Must be a semicolon-separated string, a base64-encoded
@@ -101,7 +101,7 @@ ___
 
 *Overrides [IUpsertRolePayload](ibasedatabaseengine.iupsertrolepayload.md).[revocation_statements](ibasedatabaseengine.iupsertrolepayload.md#optional-revocation_statements)*
 
-*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:66](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L66)*
+*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:66](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L66)*
 
 Specifies the database statements to be executed to revoke a user. Must be a
 semicolon-separated string, a base64-encoded semicolon-separated string, a
@@ -117,7 +117,7 @@ ___
 
 *Overrides [IUpsertRolePayload](ibasedatabaseengine.iupsertrolepayload.md).[rollback_statements](ibasedatabaseengine.iupsertrolepayload.md#optional-rollback_statements)*
 
-*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:75](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L75)*
+*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:75](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L75)*
 
 Specifies the database statements to be executed rollback a create operation in the event of
 an error. Not every plugin type will support this functionality. Must be a

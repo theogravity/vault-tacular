@@ -72,7 +72,7 @@
 
 Ƭ **AuthTokenHelperFunc**: *function*
 
-*Defined in [interfaces/IBaseClient.ts:39](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/interfaces/IBaseClient.ts#L39)*
+*Defined in [interfaces/IBaseClient.ts:39](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/IBaseClient.ts#L39)*
 
 An auth token helper function returns a function that returns a string, representing the vault token
 
@@ -86,7 +86,7 @@ ___
 
 Ƭ **AuthTokenParam**: *[VaultToken](globals.md#vaulttoken) | [AuthTokenHelperFunc](globals.md#authtokenhelperfunc)*
 
-*Defined in [interfaces/IBaseClient.ts:40](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/interfaces/IBaseClient.ts#L40)*
+*Defined in [interfaces/IBaseClient.ts:40](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/IBaseClient.ts#L40)*
 
 ___
 
@@ -94,7 +94,7 @@ ___
 
 Ƭ **BaseUrl**: *string*
 
-*Defined in [interfaces/IBaseClient.ts:45](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/interfaces/IBaseClient.ts#L45)*
+*Defined in [interfaces/IBaseClient.ts:45](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/IBaseClient.ts#L45)*
 
 Vault API base url
 
@@ -104,7 +104,7 @@ ___
 
 Ƭ **VaultToken**: *string*
 
-*Defined in [interfaces/IBaseClient.ts:32](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/interfaces/IBaseClient.ts#L32)*
+*Defined in [interfaces/IBaseClient.ts:32](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/IBaseClient.ts#L32)*
 
 Authentication token to access the API
 
@@ -114,7 +114,7 @@ ___
 
 Ƭ **VaultWarnings**: *`Array<string>`*
 
-*Defined in [interfaces/IBaseClient.ts:34](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/interfaces/IBaseClient.ts#L34)*
+*Defined in [interfaces/IBaseClient.ts:34](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/IBaseClient.ts#L34)*
 
 ## Functions
 
@@ -122,7 +122,7 @@ ___
 
 ▸ **getStsUrlFromRegion**(`region`: string): *string*
 
-*Defined in [auth-token-helpers/get-token-using-iam.ts:47](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/auth-token-helpers/get-token-using-iam.ts#L47)*
+*Defined in [auth-token-helpers/get-token-using-iam.ts:51](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/auth-token-helpers/get-token-using-iam.ts#L51)*
 
 Translates a region to an sts host
 
@@ -142,7 +142,7 @@ ___
 
 ▸ **getTokenFromFile**(`path`: string, `cacheToken`: boolean): *[AuthTokenHelperFunc](globals.md#authtokenhelperfunc)*
 
-*Defined in [auth-token-helpers/get-token-from-file.ts:11](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/auth-token-helpers/get-token-from-file.ts#L11)*
+*Defined in [auth-token-helpers/get-token-from-file.ts:11](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/auth-token-helpers/get-token-from-file.ts#L11)*
 
 Read a token from a file. Useful if using the vault agent and need to read from a file sink.
 
@@ -163,7 +163,7 @@ ___
 
 ▸ **getTokenUsingIam**(`awsAuthClient`: [AwsAuth](classes/awsauth.md), `role`: string, `opts`: [IGetTokenUsingIamOpts](interfaces/igettokenusingiamopts.md)): *[AuthTokenHelperFunc](globals.md#authtokenhelperfunc)*
 
-*Defined in [auth-token-helpers/get-token-using-iam.ts:30](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/auth-token-helpers/get-token-using-iam.ts#L30)*
+*Defined in [auth-token-helpers/get-token-using-iam.ts:34](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/auth-token-helpers/get-token-using-iam.ts#L34)*
 
 Uses AWS IAM auth to get the vault token.
 - Caches the token

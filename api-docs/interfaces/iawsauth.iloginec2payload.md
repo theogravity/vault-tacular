@@ -26,7 +26,7 @@
 
 • **identity**: *string*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:87](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/interfaces/auth-methods/IAwsAuth.ts#L87)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:87](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/auth-methods/IAwsAuth.ts#L87)*
 
 Required for ec2 auth
 Base64 encoded EC2 instance identity document. This needs to be supplied along with the
@@ -41,7 +41,7 @@ ___
 
 *Inherited from [IBaseAwsLoginPayload](iawsauth.ibaseawsloginpayload.md).[nonce](iawsauth.ibaseawsloginpayload.md#optional-nonce)*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:36](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/interfaces/auth-methods/IAwsAuth.ts#L36)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:36](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/auth-methods/IAwsAuth.ts#L36)*
 
 The nonce to be used for subsequent login requests. If this parameter is not specified
 at all and if reauthentication is allowed, then the method will generate a random nonce,
@@ -60,7 +60,7 @@ ___
 
 • **pcks7**: *string*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:101](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/interfaces/auth-methods/IAwsAuth.ts#L101)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:101](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/auth-methods/IAwsAuth.ts#L101)*
 
 Required for ec2 auth
 PKCS7 signature of the identity document with all \n characters removed. Either this needs to
@@ -74,7 +74,7 @@ ___
 
 *Inherited from [IBaseAwsLoginPayload](iawsauth.ibaseawsloginpayload.md).[role](iawsauth.ibaseawsloginpayload.md#optional-role)*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:22](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/interfaces/auth-methods/IAwsAuth.ts#L22)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:22](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/auth-methods/IAwsAuth.ts#L22)*
 
 Name of the role against which the login is being attempted. If role is not specified, then
 the login endpoint looks for a role bearing the name of the AMI ID of the EC2 instance that
@@ -88,7 +88,7 @@ ___
 
 • **signature**: *string*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:94](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/interfaces/auth-methods/IAwsAuth.ts#L94)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:94](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/auth-methods/IAwsAuth.ts#L94)*
 
 Required for ec2 auth
 Base64 encoded SHA256 RSA signature of the instance identity document.

@@ -25,7 +25,7 @@ if both are provided, reset takes precedence.
 
 • **key**? : *string*
 
-*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:10](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/interfaces/system-backend/IUnsealSysBackend.ts#L10)*
+*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:10](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/system-backend/IUnsealSysBackend.ts#L10)*
 
 Specifies a single master key share. This is required unless reset is true.
 
@@ -35,7 +35,7 @@ ___
 
 • **migrate**? : *boolean*
 
-*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:19](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/interfaces/system-backend/IUnsealSysBackend.ts#L19)*
+*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:19](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/system-backend/IUnsealSysBackend.ts#L19)*
 
 Available in 1.0 - Used to migrate the seal from shamir to autoseal or autoseal to shamir.
 Must be provided on all unseal key calls.
@@ -46,6 +46,6 @@ ___
 
 • **reset**? : *boolean*
 
-*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:14](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/interfaces/system-backend/IUnsealSysBackend.ts#L14)*
+*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:14](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/system-backend/IUnsealSysBackend.ts#L14)*
 
 Specifies if previously-provided unseal keys are discarded and the unseal process is reset.

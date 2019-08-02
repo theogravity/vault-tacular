@@ -24,7 +24,7 @@
 
 • **auth**: *[ISecretAuth](isecretauth.md)*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:101](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L101)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:101](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L101)*
 
 ___
 
@@ -32,7 +32,7 @@ ___
 
 • **data**: *object*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:102](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L102)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:102](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L102)*
 
 #### Type declaration:
 
@@ -42,7 +42,7 @@ ___
 
 • **lease_duration**: *number*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:105](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L105)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:105](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L105)*
 
 ___
 
@@ -50,7 +50,7 @@ ___
 
 • **lease_id**: *string*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:106](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L106)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:106](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L106)*
 
 ___
 
@@ -58,4 +58,4 @@ ___
 
 • **renewable**: *boolean*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:107](https://github.com/theogravity/vault-tacular/blob/39d6e20/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L107)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:107](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L107)*
