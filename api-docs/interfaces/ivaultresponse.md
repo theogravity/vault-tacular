@@ -12,9 +12,9 @@
 
 * **IVaultResponse**
 
-### Index
+## Index
 
-#### Properties
+### Properties
 
 * [result](ivaultresponse.md#optional-result)
 
@@ -24,4 +24,4 @@
 
 • **result**? : *`T`*
 
-*Defined in [interfaces/IBaseClient.ts:48](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/IBaseClient.ts#L48)*
+*Defined in [interfaces/IBaseClient.ts:48](https://github.com/theogravity/vault-tacular/blob/c9897f3/src/interfaces/IBaseClient.ts#L48)*

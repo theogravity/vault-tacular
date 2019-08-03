@@ -4,9 +4,9 @@
 
 # Module: IAwsAuth
 
-### Index
+## Index
 
-#### Interfaces
+### Interfaces
 
 * [IAwsCredentials](../interfaces/iawsauth.iawscredentials.md)
 * [IBaseAwsLoginPayload](../interfaces/iawsauth.ibaseawsloginpayload.md)

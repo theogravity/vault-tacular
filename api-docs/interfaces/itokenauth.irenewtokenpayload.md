@@ -8,9 +8,9 @@
 
 * **IRenewTokenPayload**
 
-### Index
+## Index
 
-#### Properties
+### Properties
 
 * [increment](itokenauth.irenewtokenpayload.md#optional-increment)
 
@@ -20,6 +20,6 @@
 
 • **increment**? : *string*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:117](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/auth-methods/ITokenAuth.ts#L117)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:117](https://github.com/theogravity/vault-tacular/blob/c9897f3/src/interfaces/auth-methods/ITokenAuth.ts#L117)*
 
 An optional requested lease increment can be provided. This increment may be ignored.

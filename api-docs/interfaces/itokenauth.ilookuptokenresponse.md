@@ -10,9 +10,9 @@
 
   * [ILookupTokenAccessorResponse](itokenauth.ilookuptokenaccessorresponse.md)
 
-### Index
+## Index
 
-#### Properties
+### Properties
 
 * [data](itokenauth.ilookuptokenresponse.md#data)
 
@@ -22,4 +22,4 @@
 
 • **data**: *`ILookupTokenRes`*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:108](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/auth-methods/ITokenAuth.ts#L108)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:108](https://github.com/theogravity/vault-tacular/blob/c9897f3/src/interfaces/auth-methods/ITokenAuth.ts#L108)*

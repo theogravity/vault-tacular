@@ -8,9 +8,9 @@
 
 * **ICreateUpdateSecretResponse**
 
-### Index
+## Index
 
-#### Properties
+### Properties
 
 * [data](ikv2secretengine.icreateupdatesecretresponse.md#data)
 
@@ -20,6 +20,6 @@
 
 • **data**: *object*
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:58](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L58)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:58](https://github.com/theogravity/vault-tacular/blob/c9897f3/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L58)*
 
 #### Type declaration:

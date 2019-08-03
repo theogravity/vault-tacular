@@ -4,9 +4,9 @@
 
 # Module: ITokenAuth
 
-### Index
+## Index
 
-#### Interfaces
+### Interfaces
 
 * [ICreateTokenPayload](../interfaces/itokenauth.icreatetokenpayload.md)
 * [IListAccessorsResponse](../interfaces/itokenauth.ilistaccessorsresponse.md)

@@ -8,9 +8,9 @@
 
 * **IDestroySecretVersionsPayload**
 
-### Index
+## Index
 
-#### Properties
+### Properties
 
 * [versions](ikv2secretengine.idestroysecretversionspayload.md#versions)
 
@@ -20,6 +20,6 @@
 
 • **versions**: *number[]*
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:86](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L86)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:86](https://github.com/theogravity/vault-tacular/blob/c9897f3/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L86)*
 
 The versions to destroy. Their result will be permanently deleted.

@@ -1,6 +1,6 @@
 {
   "name": "vault-tacular",
-  "version": "0.3.7",
+  "version": "0.3.8",
   "description": "Client for Hashicorp Vault written in Typescript with detailed documentation.",
   "main": "build/index.js",
   "types": "build/index.d.ts",

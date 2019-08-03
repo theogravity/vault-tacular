@@ -10,9 +10,9 @@
 
   * **ILoginIamPayload**
 
-### Index
+## Index
 
-#### Properties
+### Properties
 
 * [iam_http_request_method](iawsauth.iloginiampayload.md#iam_http_request_method)
 * [iam_request_body](iawsauth.iloginiampayload.md#iam_request_body)
@@ -27,7 +27,7 @@
 
 • **iam_http_request_method**: *string*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:46](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/auth-methods/IAwsAuth.ts#L46)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:46](https://github.com/theogravity/vault-tacular/blob/c9897f3/src/interfaces/auth-methods/IAwsAuth.ts#L46)*
 
 Required for IAM auth
 HTTP method used in the signed request. Currently only POST is supported,
@@ -40,7 +40,7 @@ ___
 
 • **iam_request_body**: *string*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:64](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/auth-methods/IAwsAuth.ts#L64)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:64](https://github.com/theogravity/vault-tacular/blob/c9897f3/src/interfaces/auth-methods/IAwsAuth.ts#L64)*
 
 Required for IAM auth
 Base64-encoded body of the signed request.
@@ -54,7 +54,7 @@ ___
 
 • **iam_request_headers**: *string*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:77](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/auth-methods/IAwsAuth.ts#L77)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:77](https://github.com/theogravity/vault-tacular/blob/c9897f3/src/interfaces/auth-methods/IAwsAuth.ts#L77)*
 
 Required for IAM auth
 Key/value pairs of headers for use in the sts:GetCallerIdentity HTTP requests headers.
@@ -72,7 +72,7 @@ ___
 
 • **iam_request_url**: *string*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:55](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/auth-methods/IAwsAuth.ts#L55)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:55](https://github.com/theogravity/vault-tacular/blob/c9897f3/src/interfaces/auth-methods/IAwsAuth.ts#L55)*
 
 Required for IAM auth
 Base64-encoded HTTP URL used in the signed request. Most likely just
@@ -88,7 +88,7 @@ ___
 
 *Inherited from [IBaseAwsLoginPayload](iawsauth.ibaseawsloginpayload.md).[nonce](iawsauth.ibaseawsloginpayload.md#optional-nonce)*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:36](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/auth-methods/IAwsAuth.ts#L36)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:36](https://github.com/theogravity/vault-tacular/blob/c9897f3/src/interfaces/auth-methods/IAwsAuth.ts#L36)*
 
 The nonce to be used for subsequent login requests. If this parameter is not specified
 at all and if reauthentication is allowed, then the method will generate a random nonce,
@@ -109,7 +109,7 @@ ___
 
 *Inherited from [IBaseAwsLoginPayload](iawsauth.ibaseawsloginpayload.md).[role](iawsauth.ibaseawsloginpayload.md#optional-role)*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:22](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/auth-methods/IAwsAuth.ts#L22)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:22](https://github.com/theogravity/vault-tacular/blob/c9897f3/src/interfaces/auth-methods/IAwsAuth.ts#L22)*
 
 Name of the role against which the login is being attempted. If role is not specified, then
 the login endpoint looks for a role bearing the name of the AMI ID of the EC2 instance that

@@ -8,9 +8,9 @@
 
 * **IDeleteSecretVersionsPayload**
 
-### Index
+## Index
 
-#### Properties
+### Properties
 
 * [versions](ikv2secretengine.ideletesecretversionspayload.md#versions)
 
@@ -20,7 +20,7 @@
 
 • **versions**: *number[]*
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:71](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L71)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:71](https://github.com/theogravity/vault-tacular/blob/c9897f3/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L71)*
 
 The versions to be deleted. The versioned result will not be deleted, but it will no longer be
 returned in normal get requests.

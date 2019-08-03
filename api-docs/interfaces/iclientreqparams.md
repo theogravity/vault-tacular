@@ -8,9 +8,9 @@
 
 * **IClientReqParams**
 
-### Index
+## Index
 
-#### Properties
+### Properties
 
 * [authRequired](iclientreqparams.md#optional-authrequired)
 
@@ -20,6 +20,6 @@
 
 • **authRequired**? : *boolean*
 
-*Defined in [interfaces/IBaseClient.ts:148](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/interfaces/IBaseClient.ts#L148)*
+*Defined in [interfaces/IBaseClient.ts:148](https://github.com/theogravity/vault-tacular/blob/c9897f3/src/interfaces/IBaseClient.ts#L148)*
 
 True if the Authorization / X-Vault-Token header needs to be set

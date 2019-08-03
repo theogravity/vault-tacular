@@ -12,13 +12,13 @@ Username and password-based auth
 
   * **UserPassAuth**
 
-### Index
+## Index
 
-#### Constructors
+### Constructors
 
 * [constructor](userpassauth.md#constructor)
 
-#### Methods
+### Methods
 
 * [createOrUpdateUser](userpassauth.md#createorupdateuser)
 * [login](userpassauth.md#login)
@@ -29,7 +29,7 @@ Username and password-based auth
 
 \+ **new UserPassAuth**(`baseUrl`: [BaseUrl](../globals.md#baseurl), `config?`: [IBaseClientConfig](../interfaces/ibaseclientconfig.md)): *[UserPassAuth](userpassauth.md)*
 
-*Defined in [auth-methods/UserPassAuth.ts:14](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/auth-methods/UserPassAuth.ts#L14)*
+*Defined in [auth-methods/UserPassAuth.ts:14](https://github.com/theogravity/vault-tacular/blob/c9897f3/src/auth-methods/UserPassAuth.ts#L14)*
 
 **Parameters:**
 
@@ -46,7 +46,7 @@ Name | Type |
 
 ▸ **createOrUpdateUser**(`username`: string, `payload`: [IUpsertPayload](../interfaces/iuserpassauth.iupsertpayload.md)): *`Promise<IVaultResponse<void>>`*
 
-*Defined in [auth-methods/UserPassAuth.ts:27](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/auth-methods/UserPassAuth.ts#L27)*
+*Defined in [auth-methods/UserPassAuth.ts:27](https://github.com/theogravity/vault-tacular/blob/c9897f3/src/auth-methods/UserPassAuth.ts#L27)*
 
 Create or update a user.
 
@@ -67,7 +67,7 @@ ___
 
 ▸ **login**(`username`: string, `password`: string): *`Promise<IVaultResponse<ISecret>>`*
 
-*Defined in [auth-methods/UserPassAuth.ts:49](https://github.com/theogravity/vault-tacular/blob/f2b3676/src/auth-methods/UserPassAuth.ts#L49)*
+*Defined in [auth-methods/UserPassAuth.ts:49](https://github.com/theogravity/vault-tacular/blob/c9897f3/src/auth-methods/UserPassAuth.ts#L49)*
 
 Login with the username and password.
 
