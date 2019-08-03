@@ -116,9 +116,9 @@ export namespace IAwsAuth {
      */
     credentials?: IAwsCredentials
     /**
-     * The AWS STS Url. Default is https://sts.amazonaws.com
+     * AWS STS region, which determines the sts url to use.
      */
-    stsUrl?: string
+    stsRegion?: string
     /**
      * Additional headers to pass / encode for the aws sts:GetCallerIdentity call
      * This could include the Vault-AWS-IAM-Server-ID header that may be required by certain

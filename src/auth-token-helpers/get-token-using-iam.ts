@@ -5,11 +5,8 @@ import { AuthTokenHelperFunc, ISecretAuth } from '../interfaces/IBaseClient'
 
 export interface IGetTokenUsingIamOpts {
   /**
-   * The AWS STS Url. Default is https://sts.amazonaws.com if stsRegion is not specified.
-   */
-  stsUrl?: string
-  /**
-   * AWS STS region. Used to resolve the STS url if stsUrl is not specified.
+   * AWS STS region. Used to resolve the STS url. No definition will result in the final STS url of
+   * 'https://sts.amazonaws.com/' (with the aws4 lib region defaulting as 'us-east-1')
    */
   stsRegion?: string
   /**
@@ -40,58 +37,6 @@ export function getTokenUsingIam (
 
   return async () => {
     return manager.getToken()
-  }
-}
-
-/**
- * Translates a region to an sts host
- * @see https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_enable-regions.html
- * @param {string} region the AWS region
- */
-export function getStsUrlFromRegion (region: string) {
-  switch (region) {
-    case 'us-east-2':
-      return 'https://sts.us-east-2.amazonaws.com'
-    case 'us-east-1':
-      return 'https://sts.us-east-1.amazonaws.com'
-    case 'us-west-1':
-      return 'https://sts.us-west-1.amazonaws.com'
-    case 'us-west-2':
-      return 'https://sts.us-west-2.amazonaws.com'
-    case 'ca-central-1':
-      return 'https://sts.ca-central-1.amazonaws.com'
-    case 'ap-northeast-1':
-      return 'https://sts.ap-northeast-1.amazonaws.com'
-    case 'ap-northeast-2':
-      return 'https://sts.ap-northeast-2.amazonaws.com'
-    case 'ap-south-1':
-      return 'https://sts.ap-south-1.amazonaws.com'
-    case 'ap-southeast-1':
-      return 'https://sts.ap-southeast-1.amazonaws.com'
-    case 'ap-southeast-2':
-      return 'https://sts.ap-southeast-2.amazonaws.com'
-    case 'ap-east-1':
-      return 'https://sts.ap-east-1.amazonaws.com'
-    case 'me-south-1':
-      return 'https://sts.me-south-1.amazonaws.com'
-    case 'eu-central-1':
-      return 'https://sts.eu-central-1.amazonaws.com'
-    case 'eu-west-1':
-      return 'https://sts.eu-west-1.amazonaws.com'
-    case 'eu-west-2':
-      return 'https://sts.eu-west-2.amazonaws.com'
-    case 'eu-west-3':
-      return 'https://sts.eu-west-3.amazonaws.com'
-    case 'eu-north-1':
-      return 'https://sts.eu-north-1.amazonaws.com'
-    case 'sa-east-1':
-      return 'https://sts.sa-east-1.amazonaws.com'
-    default:
-      if (region) {
-        return `https://sts.${region}.amazonaws.com`
-      }
-
-      return 'https://sts.amazonaws.com'
   }
 }
 
@@ -158,8 +103,8 @@ export class IamTokenManager {
   private async doFetch (): Promise<ISecretAuth> {
     const resp = await this.awsAuthClient.getTokenUsingIamLogin({
       role: this.role,
+      stsRegion: this.opts.stsRegion,
       credentials: await loadCredentials(),
-      stsUrl: this.opts.stsUrl || getStsUrlFromRegion(this.opts.stsRegion),
       iamRequestHeaders: this.opts.iamRequestHeaders
     })
 

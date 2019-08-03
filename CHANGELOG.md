@@ -1,3 +1,10 @@
+# UNRELEASED
+
+Remove `stsUrl`. `stsRegion` now determines the STS url to use.
+
+Fixed bug where the host header of the signed aws4 request was not being
+set properly.
+
 # 0.3.7 - Fri Aug 02 2019 23:02:13
 
 Add `stsRegion` specification for `getTokenUsingIam`.
