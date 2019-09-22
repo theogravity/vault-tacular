@@ -1,3 +1,7 @@
+# UNRELEASED
+
+Bump eslint-utils from 1.4.0 to 1.4.2 to fix critical vulun. 
+
 # 0.3.8 - Sat Aug 03 2019 01:19:52
 
 Remove `stsUrl`. `stsRegion` now determines the STS url to use.
