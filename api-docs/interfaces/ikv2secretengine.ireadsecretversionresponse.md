@@ -21,7 +21,7 @@
 
 • **data**: *object*
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:25](https://github.com/theogravity/vault-tacular/blob/c9897f3/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L25)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:25](https://github.com/theogravity/vault-tacular/blob/68ec17c/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L25)*
 
 #### Type declaration:
 
@@ -33,6 +33,6 @@ ___
 
 • **metadata**: *object*
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:28](https://github.com/theogravity/vault-tacular/blob/c9897f3/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L28)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:28](https://github.com/theogravity/vault-tacular/blob/68ec17c/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L28)*
 
 #### Type declaration:
