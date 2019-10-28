@@ -1,3 +1,7 @@
+# UNRELEASED
+
+Add an `onError` handler in the token helpers.
+
 # 0.3.9 - Sun Sep 22 2019 08:19:38
 
 Bump eslint-utils from 1.4.0 to 1.4.2 to fix critical vulun. 

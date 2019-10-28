@@ -27,16 +27,27 @@ export interface IGetTokenUsingIamOpts {
  * @param {AwsAuth} awsAuthClient an instance of the AwsAuth client
  * @param {string} role The vault role to get authorization for
  * @param {IGetTokenUsingIamOpts} opts
+ * @param onError Callback for when an error is thrown
  */
 export function getTokenUsingIam (
   awsAuthClient: AwsAuth,
   role: string,
-  opts: IGetTokenUsingIamOpts = {}
+  opts: IGetTokenUsingIamOpts = {},
+  onError: (err: Error) => void
 ): AuthTokenHelperFunc {
   const manager = new IamTokenManager(awsAuthClient, role, opts)
 
   return async () => {
-    return manager.getToken()
+    try {
+      const token = await manager.getToken()
+      return token
+    } catch (e) {
+      if (onError) {
+        onError(e)
+      } else {
+        console.error(e)
+      }
+    }
   }
 }
 
