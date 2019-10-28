@@ -20,4 +20,4 @@
 
 • **data**: *[IUpsertRolePayload](ibasedatabaseengine.iupsertrolepayload.md)*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:97](https://github.com/theogravity/vault-tacular/blob/68ec17c/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L97)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:97](https://github.com/theogravity/vault-tacular/blob/07227c0/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L97)*

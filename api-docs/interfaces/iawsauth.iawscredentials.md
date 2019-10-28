@@ -22,7 +22,7 @@
 
 • **accessKeyId**? : *string*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:133](https://github.com/theogravity/vault-tacular/blob/68ec17c/src/interfaces/auth-methods/IAwsAuth.ts#L133)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:133](https://github.com/theogravity/vault-tacular/blob/07227c0/src/interfaces/auth-methods/IAwsAuth.ts#L133)*
 
 ___
 
@@ -30,7 +30,7 @@ ___
 
 • **secretAccessKey**? : *string*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:134](https://github.com/theogravity/vault-tacular/blob/68ec17c/src/interfaces/auth-methods/IAwsAuth.ts#L134)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:134](https://github.com/theogravity/vault-tacular/blob/07227c0/src/interfaces/auth-methods/IAwsAuth.ts#L134)*
 
 ___
 
@@ -38,4 +38,4 @@ ___
 
 • **sessionToken**? : *string*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:135](https://github.com/theogravity/vault-tacular/blob/68ec17c/src/interfaces/auth-methods/IAwsAuth.ts#L135)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:135](https://github.com/theogravity/vault-tacular/blob/07227c0/src/interfaces/auth-methods/IAwsAuth.ts#L135)*

@@ -1,4 +1,4 @@
-# UNRELEASED
+# 0.3.10 - Mon Oct 28 2019 20:50:13
 
 Add an `onError` handler in the token helpers.
 

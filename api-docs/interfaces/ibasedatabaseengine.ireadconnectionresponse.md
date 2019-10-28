@@ -20,6 +20,6 @@
 
 • **data**: *object*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:30](https://github.com/theogravity/vault-tacular/blob/68ec17c/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L30)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:30](https://github.com/theogravity/vault-tacular/blob/07227c0/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L30)*
 
 #### Type declaration:
