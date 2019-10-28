@@ -24,4 +24,4 @@
 
 • **result**? : *`T`*
 
-*Defined in [interfaces/IBaseClient.ts:48](https://github.com/theogravity/vault-tacular/blob/c9897f3/src/interfaces/IBaseClient.ts#L48)*
+*Defined in [interfaces/IBaseClient.ts:48](https://github.com/theogravity/vault-tacular/blob/68ec17c/src/interfaces/IBaseClient.ts#L48)*
