@@ -31,7 +31,7 @@ Represents a secret from Vault
 
 • **auth**? : *[ISecretAuth](isecretauth.md)*
 
-*Defined in [interfaces/IBaseClient.ts:115](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/IBaseClient.ts#L115)*
+*Defined in [interfaces/IBaseClient.ts:115](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/IBaseClient.ts#L115)*
 
 ___
 
@@ -39,7 +39,7 @@ ___
 
 • **data**? : *object*
 
-*Defined in [interfaces/IBaseClient.ts:105](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/IBaseClient.ts#L105)*
+*Defined in [interfaces/IBaseClient.ts:105](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/IBaseClient.ts#L105)*
 
 Secret-related result
 
@@ -49,7 +49,7 @@ ___
 
 • **lease_duration**: *number*
 
-*Defined in [interfaces/IBaseClient.ts:101](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/IBaseClient.ts#L101)*
+*Defined in [interfaces/IBaseClient.ts:101](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/IBaseClient.ts#L101)*
 
 Along with the lease ID, a lease duration can be read.
 The lease duration is a Time To Live value: the time in seconds for
@@ -61,7 +61,7 @@ ___
 
 • **lease_id**: *string*
 
-*Defined in [interfaces/IBaseClient.ts:95](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/IBaseClient.ts#L95)*
+*Defined in [interfaces/IBaseClient.ts:95](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/IBaseClient.ts#L95)*
 
 When reading a dynamic secret, such as via vault read, Vault always returns a lease_id.
 This is the ID used with commands such as vault renew and vault revoke to manage the
@@ -73,7 +73,7 @@ ___
 
 • **renewable**: *boolean*
 
-*Defined in [interfaces/IBaseClient.ts:114](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/IBaseClient.ts#L114)*
+*Defined in [interfaces/IBaseClient.ts:114](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/IBaseClient.ts#L114)*
 
 If the lease is renewable
 
@@ -83,7 +83,7 @@ ___
 
 • **request_id**: *string*
 
-*Defined in [interfaces/IBaseClient.ts:89](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/IBaseClient.ts#L89)*
+*Defined in [interfaces/IBaseClient.ts:89](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/IBaseClient.ts#L89)*
 
 ___
 
@@ -91,7 +91,7 @@ ___
 
 • **warnings**: *[VaultWarnings](../globals.md#vaultwarnings)*
 
-*Defined in [interfaces/IBaseClient.ts:109](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/IBaseClient.ts#L109)*
+*Defined in [interfaces/IBaseClient.ts:109](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/IBaseClient.ts#L109)*
 
 List of warnings
 
@@ -101,4 +101,4 @@ ___
 
 • **wrap_info**? : *[IWrapInfo](iwrapinfo.md)*
 
-*Defined in [interfaces/IBaseClient.ts:110](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/IBaseClient.ts#L110)*
+*Defined in [interfaces/IBaseClient.ts:110](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/IBaseClient.ts#L110)*

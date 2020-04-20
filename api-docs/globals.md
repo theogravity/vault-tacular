@@ -127,43 +127,43 @@
 
 • **IAwsAuth**:
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:3](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/IAwsAuth.ts#L3)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:3](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/IAwsAuth.ts#L3)*
 
 ###  IAwsCredentials
 
 • **IAwsCredentials**:
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:132](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/IAwsAuth.ts#L132)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:132](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/IAwsAuth.ts#L132)*
 
 ### `Optional` accessKeyId
 
 • **accessKeyId**? : *string*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:133](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/IAwsAuth.ts#L133)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:133](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/IAwsAuth.ts#L133)*
 
 ### `Optional` secretAccessKey
 
 • **secretAccessKey**? : *string*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:134](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/IAwsAuth.ts#L134)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:134](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/IAwsAuth.ts#L134)*
 
 ### `Optional` sessionToken
 
 • **sessionToken**? : *string*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:135](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/IAwsAuth.ts#L135)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:135](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/IAwsAuth.ts#L135)*
 
 ###  IBaseAwsLoginPayload
 
 • **IBaseAwsLoginPayload**:
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:14](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/IAwsAuth.ts#L14)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:14](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/IAwsAuth.ts#L14)*
 
 ### `Optional` nonce
 
 • **nonce**? : *string*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:36](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/IAwsAuth.ts#L36)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:36](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/IAwsAuth.ts#L36)*
 
 The nonce to be used for subsequent login requests. If this parameter is not specified
 at all and if reauthentication is allowed, then the method will generate a random nonce,
@@ -180,7 +180,7 @@ using the ec2 auth method.
 
 • **role**? : *string*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:22](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/IAwsAuth.ts#L22)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:22](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/IAwsAuth.ts#L22)*
 
 Name of the role against which the login is being attempted. If role is not specified, then
 the login endpoint looks for a role bearing the name of the AMI ID of the EC2 instance that
@@ -192,13 +192,13 @@ found, login fails.
 
 • **IGetTokenUsingIamLoginPayload**:
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:104](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/IAwsAuth.ts#L104)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:104](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/IAwsAuth.ts#L104)*
 
 ### `Optional` credentials
 
 • **credentials**? : *[IAwsCredentials](globals.md#iawscredentials)*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:117](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/IAwsAuth.ts#L117)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:117](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/IAwsAuth.ts#L117)*
 
 AWS credentials for use with signing the login request to AWS STS by the aws4 module. If not defined,
 process.env.
@@ -207,7 +207,7 @@ process.env.
 
 • **iamRequestHeaders**? : *object*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:127](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/IAwsAuth.ts#L127)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:127](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/IAwsAuth.ts#L127)*
 
 Additional headers to pass / encode for the aws sts:GetCallerIdentity call
 This could include the Vault-AWS-IAM-Server-ID header that may be required by certain
@@ -221,7 +221,7 @@ vault configurations
 
 • **role**: *string*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:112](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/IAwsAuth.ts#L112)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:112](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/IAwsAuth.ts#L112)*
 
 Name of the role against which the login is being attempted. If role is not specified, then
 the login endpoint looks for a role bearing the name of the AMI ID of the EC2 instance that
@@ -233,7 +233,7 @@ found, login fails.
 
 • **stsRegion**? : *string*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:121](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/IAwsAuth.ts#L121)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:121](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/IAwsAuth.ts#L121)*
 
 AWS STS region, which determines the sts url to use.
 
@@ -241,13 +241,13 @@ AWS STS region, which determines the sts url to use.
 
 • **ILoginEc2Payload**:
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:80](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/IAwsAuth.ts#L80)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:80](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/IAwsAuth.ts#L80)*
 
 ###  identity
 
 • **identity**: *string*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:87](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/IAwsAuth.ts#L87)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:87](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/IAwsAuth.ts#L87)*
 
 Required for ec2 auth
 Base64 encoded EC2 instance identity document. This needs to be supplied along with the
@@ -260,7 +260,7 @@ option -w 0 while piping the output to base64 binary.
 
 *Inherited from [IBaseAwsLoginPayload](globals.md#ibaseawsloginpayload).[nonce](globals.md#optional-nonce)*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:36](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/IAwsAuth.ts#L36)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:36](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/IAwsAuth.ts#L36)*
 
 The nonce to be used for subsequent login requests. If this parameter is not specified
 at all and if reauthentication is allowed, then the method will generate a random nonce,
@@ -277,7 +277,7 @@ using the ec2 auth method.
 
 • **pcks7**: *string*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:101](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/IAwsAuth.ts#L101)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:101](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/IAwsAuth.ts#L101)*
 
 Required for ec2 auth
 PKCS7 signature of the identity document with all \n characters removed. Either this needs to
@@ -289,7 +289,7 @@ be set OR both identity and signature need to be set when using the ec2 auth met
 
 *Inherited from [IBaseAwsLoginPayload](globals.md#ibaseawsloginpayload).[role](globals.md#optional-role)*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:22](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/IAwsAuth.ts#L22)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:22](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/IAwsAuth.ts#L22)*
 
 Name of the role against which the login is being attempted. If role is not specified, then
 the login endpoint looks for a role bearing the name of the AMI ID of the EC2 instance that
@@ -301,7 +301,7 @@ found, login fails.
 
 • **signature**: *string*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:94](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/IAwsAuth.ts#L94)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:94](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/IAwsAuth.ts#L94)*
 
 Required for ec2 auth
 Base64 encoded SHA256 RSA signature of the instance identity document.
@@ -311,13 +311,13 @@ This needs to be supplied along with identity parameter when using the ec2 auth 
 
 • **ILoginIamPayload**:
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:39](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/IAwsAuth.ts#L39)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:39](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/IAwsAuth.ts#L39)*
 
 ###  iam_http_request_method
 
 • **iam_http_request_method**: *string*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:46](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/IAwsAuth.ts#L46)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:46](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/IAwsAuth.ts#L46)*
 
 Required for IAM auth
 HTTP method used in the signed request. Currently only POST is supported,
@@ -328,7 +328,7 @@ using the iam auth method.
 
 • **iam_request_body**: *string*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:64](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/IAwsAuth.ts#L64)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:64](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/IAwsAuth.ts#L64)*
 
 Required for IAM auth
 Base64-encoded body of the signed request.
@@ -340,7 +340,7 @@ This is required when using the iam auth method.
 
 • **iam_request_headers**: *string*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:77](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/IAwsAuth.ts#L77)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:77](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/IAwsAuth.ts#L77)*
 
 Required for IAM auth
 Key/value pairs of headers for use in the sts:GetCallerIdentity HTTP requests headers.
@@ -356,7 +356,7 @@ This is required when using the iam auth method.
 
 • **iam_request_url**: *string*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:55](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/IAwsAuth.ts#L55)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:55](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/IAwsAuth.ts#L55)*
 
 Required for IAM auth
 Base64-encoded HTTP URL used in the signed request. Most likely just
@@ -370,7 +370,7 @@ using the iam auth method.
 
 *Inherited from [IBaseAwsLoginPayload](globals.md#ibaseawsloginpayload).[nonce](globals.md#optional-nonce)*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:36](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/IAwsAuth.ts#L36)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:36](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/IAwsAuth.ts#L36)*
 
 The nonce to be used for subsequent login requests. If this parameter is not specified
 at all and if reauthentication is allowed, then the method will generate a random nonce,
@@ -389,7 +389,7 @@ using the ec2 auth method.
 
 *Inherited from [IBaseAwsLoginPayload](globals.md#ibaseawsloginpayload).[role](globals.md#optional-role)*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:22](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/IAwsAuth.ts#L22)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:22](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/IAwsAuth.ts#L22)*
 
 Name of the role against which the login is being attempted. If role is not specified, then
 the login endpoint looks for a role bearing the name of the AMI ID of the EC2 instance that
@@ -401,49 +401,49 @@ found, login fails.
 
 • **ILoginPayload**:
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:4](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/IAwsAuth.ts#L4)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:4](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/IAwsAuth.ts#L4)*
 
 ### `Optional` iam_http_request_method
 
 • **iam_http_request_method**? : *string*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:5](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/IAwsAuth.ts#L5)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:5](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/IAwsAuth.ts#L5)*
 
 ### `Optional` iam_request_body
 
 • **iam_request_body**? : *string*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:7](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/IAwsAuth.ts#L7)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:7](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/IAwsAuth.ts#L7)*
 
 ### `Optional` iam_request_headers
 
 • **iam_request_headers**? : *string*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:8](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/IAwsAuth.ts#L8)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:8](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/IAwsAuth.ts#L8)*
 
 ### `Optional` iam_request_url
 
 • **iam_request_url**? : *string*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:6](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/IAwsAuth.ts#L6)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:6](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/IAwsAuth.ts#L6)*
 
 ### `Optional` identity
 
 • **identity**? : *string*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:9](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/IAwsAuth.ts#L9)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:9](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/IAwsAuth.ts#L9)*
 
 ### `Optional` pcks7
 
 • **pcks7**? : *string*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:11](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/IAwsAuth.ts#L11)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:11](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/IAwsAuth.ts#L11)*
 
 ### `Optional` signature
 
 • **signature**? : *string*
 
-*Defined in [interfaces/auth-methods/IAwsAuth.ts:10](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/IAwsAuth.ts#L10)*
+*Defined in [interfaces/auth-methods/IAwsAuth.ts:10](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/IAwsAuth.ts#L10)*
 
 ___
 
@@ -451,13 +451,13 @@ ___
 
 • **IBaseDatabaseEngine**:
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:3](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L3)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:3](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L3)*
 
 ###  IConfigConnectionPayload
 
 • **IConfigConnectionPayload**:
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:8](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L8)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:8](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L8)*
 
 plugin_name is not defined here on purpose
 since it will be hard-coded into the database-specific engine on init
@@ -466,7 +466,7 @@ since it will be hard-coded into the database-specific engine on init
 
 • **allowed_roles**? : *Array‹string›*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:20](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L20)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:20](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L20)*
 
 List of the roles allowed to use this connection. Defaults to empty (no roles),
 if contains a "*" any role can use this connection.
@@ -475,7 +475,7 @@ if contains a "*" any role can use this connection.
 
 • **root_rotation_statements**? : *Array‹string›*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:26](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L26)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:26](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L26)*
 
 Specifies the database statements to be executed to rotate the root user's credentials.
 See the plugin's API page for more information on support and formatting for this parameter.
@@ -484,7 +484,7 @@ See the plugin's API page for more information on support and formatting for thi
 
 • **verify_connection**? : *boolean*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:14](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L14)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:14](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L14)*
 
 Specifies if the connection is verified during initial configuration. Defaults to true.
 
@@ -494,13 +494,13 @@ Specifies if the connection is verified during initial configuration. Defaults t
 
 • **IGenerateCredsResponse**:
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:110](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L110)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:110](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L110)*
 
 ###  data
 
 • **data**: *object*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:111](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L111)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:111](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L111)*
 
 #### Type declaration:
 
@@ -512,13 +512,13 @@ Specifies if the connection is verified during initial configuration. Defaults t
 
 • **IListConnectionsResponse**:
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:42](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L42)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:42](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L42)*
 
 ###  data
 
 • **data**: *object*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:43](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L43)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:43](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L43)*
 
 #### Type declaration:
 
@@ -528,19 +528,19 @@ Specifies if the connection is verified during initial configuration. Defaults t
 
 • **IListRolesResponse**:
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:100](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L100)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:100](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L100)*
 
 ###  auth
 
 • **auth**: *[ISecretAuth](interfaces/isecretauth.md)*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:101](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L101)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:101](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L101)*
 
 ###  data
 
 • **data**: *object*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:102](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L102)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:102](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L102)*
 
 #### Type declaration:
 
@@ -550,31 +550,31 @@ Specifies if the connection is verified during initial configuration. Defaults t
 
 • **lease_duration**: *number*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:105](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L105)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:105](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L105)*
 
 ###  lease_id
 
 • **lease_id**: *string*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:106](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L106)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:106](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L106)*
 
 ###  renewable
 
 • **renewable**: *boolean*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:107](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L107)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:107](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L107)*
 
 ###  IReadConnectionResponse
 
 • **IReadConnectionResponse**:
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:29](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L29)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:29](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L29)*
 
 ###  data
 
 • **data**: *object*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:30](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L30)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:30](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L30)*
 
 #### Type declaration:
 
@@ -588,25 +588,25 @@ Specifies if the connection is verified during initial configuration. Defaults t
 
 • **IReadRoleResponse**:
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:96](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L96)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:96](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L96)*
 
 ###  data
 
 • **data**: *[IUpsertRolePayload](globals.md#iupsertrolepayload)*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:97](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L97)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:97](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L97)*
 
 ###  IUpsertRolePayload
 
 • **IUpsertRolePayload**:
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:48](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L48)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:48](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L48)*
 
 ###  creation_statements
 
 • **creation_statements**: *Array‹string›*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:73](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L73)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:73](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L73)*
 
 Specifies the database statements executed to create and configure a user. See the plugin's
 API page for more information on support and formatting for this parameter.
@@ -615,7 +615,7 @@ API page for more information on support and formatting for this parameter.
 
 • **db_name**: *string*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:52](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L52)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:52](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L52)*
 
 The name of the database connection to use for this role.
 
@@ -623,7 +623,7 @@ The name of the database connection to use for this role.
 
 • **default_ttl**? : *number | string*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:59](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L59)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:59](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L59)*
 
  Specifies the TTL for the leases associated with this role.
  Accepts time suffixed strings ("1h") or an integer number of seconds. Defaults to
@@ -633,7 +633,7 @@ The name of the database connection to use for this role.
 
 • **max_ttl**? : *number | string*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:67](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L67)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:67](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L67)*
 
  Specifies the maximum TTL for the leases associated with this role.
  Accepts time suffixed strings ("1h") or an integer number of seconds.
@@ -644,7 +644,7 @@ The name of the database connection to use for this role.
 
 • **renew_statements**? : *Array‹string›*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:93](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L93)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:93](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L93)*
 
 Specifies the database statements to be executed to renew a user. Not every plugin type will
 support this functionality. See the plugin's API page for more information on support and
@@ -654,7 +654,7 @@ formatting for this parameter.
 
 • **revocation_statements**? : *Array‹string›*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:79](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L79)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:79](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L79)*
 
  Specifies the database statements to be executed to revoke a user. See the plugin's API
  page for more information on support and formatting for this parameter.
@@ -663,7 +663,7 @@ formatting for this parameter.
 
 • **rollback_statements**? : *Array‹string›*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:86](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L86)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:86](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L86)*
 
 Specifies the database statements to be executed rollback a create operation in the event
 of an error. Not every plugin type will support this functionality. See the plugin's API
@@ -675,19 +675,19 @@ ___
 
 • **IHealthSysBackend**:
 
-*Defined in [interfaces/system-backend/IHealthSysBackend.ts:1](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IHealthSysBackend.ts#L1)*
+*Defined in [interfaces/system-backend/IHealthSysBackend.ts:1](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IHealthSysBackend.ts#L1)*
 
 ###  IReadHealthInfoPayload
 
 • **IReadHealthInfoPayload**:
 
-*Defined in [interfaces/system-backend/IHealthSysBackend.ts:2](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IHealthSysBackend.ts#L2)*
+*Defined in [interfaces/system-backend/IHealthSysBackend.ts:2](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IHealthSysBackend.ts#L2)*
 
 ### `Optional` activecode
 
 • **activecode**? : *number*
 
-*Defined in [interfaces/system-backend/IHealthSysBackend.ts:19](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IHealthSysBackend.ts#L19)*
+*Defined in [interfaces/system-backend/IHealthSysBackend.ts:19](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IHealthSysBackend.ts#L19)*
 
 Specifies the status code that should be returned for an active node.
 
@@ -695,7 +695,7 @@ Specifies the status code that should be returned for an active node.
 
 • **drsecondarycode**? : *number*
 
-*Defined in [interfaces/system-backend/IHealthSysBackend.ts:27](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IHealthSysBackend.ts#L27)*
+*Defined in [interfaces/system-backend/IHealthSysBackend.ts:27](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IHealthSysBackend.ts#L27)*
 
 Specifies the status code that should be returned for a DR secondary node.
 
@@ -703,7 +703,7 @@ Specifies the status code that should be returned for a DR secondary node.
 
 • **performancestandbycode**? : *number*
 
-*Defined in [interfaces/system-backend/IHealthSysBackend.ts:31](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IHealthSysBackend.ts#L31)*
+*Defined in [interfaces/system-backend/IHealthSysBackend.ts:31](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IHealthSysBackend.ts#L31)*
 
 Specifies the status code that should be returned for a performance standby node.
 
@@ -711,7 +711,7 @@ Specifies the status code that should be returned for a performance standby node
 
 • **perfstandbyok**? : *boolean*
 
-*Defined in [interfaces/system-backend/IHealthSysBackend.ts:15](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IHealthSysBackend.ts#L15)*
+*Defined in [interfaces/system-backend/IHealthSysBackend.ts:15](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IHealthSysBackend.ts#L15)*
 
 Specifies if being a performance standby should still return the active status code instead
 of the performance standby status code. This is useful when Vault is behind a
@@ -721,7 +721,7 @@ non-configurable load balance that just wants a 200-level response.
 
 • **sealedcode**? : *number*
 
-*Defined in [interfaces/system-backend/IHealthSysBackend.ts:35](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IHealthSysBackend.ts#L35)*
+*Defined in [interfaces/system-backend/IHealthSysBackend.ts:35](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IHealthSysBackend.ts#L35)*
 
 Specifies the status code that should be returned for a sealed node.
 
@@ -729,7 +729,7 @@ Specifies the status code that should be returned for a sealed node.
 
 • **standbycode**? : *number*
 
-*Defined in [interfaces/system-backend/IHealthSysBackend.ts:23](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IHealthSysBackend.ts#L23)*
+*Defined in [interfaces/system-backend/IHealthSysBackend.ts:23](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IHealthSysBackend.ts#L23)*
 
 Specifies the status code that should be returned for a standby node.
 
@@ -737,7 +737,7 @@ Specifies the status code that should be returned for a standby node.
 
 • **standbyok**? : *boolean*
 
-*Defined in [interfaces/system-backend/IHealthSysBackend.ts:9](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IHealthSysBackend.ts#L9)*
+*Defined in [interfaces/system-backend/IHealthSysBackend.ts:9](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IHealthSysBackend.ts#L9)*
 
 Specifies if being a standby should still return the active status code instead of the
 standby status code. This is useful when Vault is behind a non-configurable load balance
@@ -748,7 +748,7 @@ standby.
 
 • **uninitcode**? : *number*
 
-*Defined in [interfaces/system-backend/IHealthSysBackend.ts:39](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IHealthSysBackend.ts#L39)*
+*Defined in [interfaces/system-backend/IHealthSysBackend.ts:39](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IHealthSysBackend.ts#L39)*
 
 Specifies the status code that should be returned for a uninitialized node.
 
@@ -756,7 +756,7 @@ Specifies the status code that should be returned for a uninitialized node.
 
 • **IReadHealthInfoResponse**:
 
-*Defined in [interfaces/system-backend/IHealthSysBackend.ts:47](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IHealthSysBackend.ts#L47)*
+*Defined in [interfaces/system-backend/IHealthSysBackend.ts:47](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IHealthSysBackend.ts#L47)*
 
 Note: replication_perf_mode and replication_dr_mode reflect the state of the active node in
 the cluster; if you are querying it for a standby that has just come up, it can take a small
@@ -766,61 +766,61 @@ time for the active node to inform the standby of its status.
 
 • **cluster_id**: *string*
 
-*Defined in [interfaces/system-backend/IHealthSysBackend.ts:57](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IHealthSysBackend.ts#L57)*
+*Defined in [interfaces/system-backend/IHealthSysBackend.ts:57](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IHealthSysBackend.ts#L57)*
 
 ###  cluster_name
 
 • **cluster_name**: *string*
 
-*Defined in [interfaces/system-backend/IHealthSysBackend.ts:56](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IHealthSysBackend.ts#L56)*
+*Defined in [interfaces/system-backend/IHealthSysBackend.ts:56](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IHealthSysBackend.ts#L56)*
 
 ###  initialized
 
 • **initialized**: *boolean*
 
-*Defined in [interfaces/system-backend/IHealthSysBackend.ts:48](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IHealthSysBackend.ts#L48)*
+*Defined in [interfaces/system-backend/IHealthSysBackend.ts:48](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IHealthSysBackend.ts#L48)*
 
 ###  performance_standby
 
 • **performance_standby**: *boolean*
 
-*Defined in [interfaces/system-backend/IHealthSysBackend.ts:51](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IHealthSysBackend.ts#L51)*
+*Defined in [interfaces/system-backend/IHealthSysBackend.ts:51](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IHealthSysBackend.ts#L51)*
 
 ###  replication_dr_mode
 
 • **replication_dr_mode**: *string*
 
-*Defined in [interfaces/system-backend/IHealthSysBackend.ts:53](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IHealthSysBackend.ts#L53)*
+*Defined in [interfaces/system-backend/IHealthSysBackend.ts:53](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IHealthSysBackend.ts#L53)*
 
 ###  replication_perf_mode
 
 • **replication_perf_mode**: *string*
 
-*Defined in [interfaces/system-backend/IHealthSysBackend.ts:52](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IHealthSysBackend.ts#L52)*
+*Defined in [interfaces/system-backend/IHealthSysBackend.ts:52](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IHealthSysBackend.ts#L52)*
 
 ###  sealed
 
 • **sealed**: *boolean*
 
-*Defined in [interfaces/system-backend/IHealthSysBackend.ts:49](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IHealthSysBackend.ts#L49)*
+*Defined in [interfaces/system-backend/IHealthSysBackend.ts:49](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IHealthSysBackend.ts#L49)*
 
 ###  server_time_utc
 
 • **server_time_utc**: *number*
 
-*Defined in [interfaces/system-backend/IHealthSysBackend.ts:54](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IHealthSysBackend.ts#L54)*
+*Defined in [interfaces/system-backend/IHealthSysBackend.ts:54](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IHealthSysBackend.ts#L54)*
 
 ###  standby
 
 • **standby**: *boolean*
 
-*Defined in [interfaces/system-backend/IHealthSysBackend.ts:50](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IHealthSysBackend.ts#L50)*
+*Defined in [interfaces/system-backend/IHealthSysBackend.ts:50](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IHealthSysBackend.ts#L50)*
 
 ###  version
 
 • **version**: *string*
 
-*Defined in [interfaces/system-backend/IHealthSysBackend.ts:55](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IHealthSysBackend.ts#L55)*
+*Defined in [interfaces/system-backend/IHealthSysBackend.ts:55](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IHealthSysBackend.ts#L55)*
 
 ___
 
@@ -828,25 +828,25 @@ ___
 
 • **IInitSysBackend**:
 
-*Defined in [interfaces/system-backend/IInitSysBackend.ts:1](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IInitSysBackend.ts#L1)*
+*Defined in [interfaces/system-backend/IInitSysBackend.ts:1](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IInitSysBackend.ts#L1)*
 
 ###  IReadInitStatusResponse
 
 • **IReadInitStatusResponse**:
 
-*Defined in [interfaces/system-backend/IInitSysBackend.ts:2](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IInitSysBackend.ts#L2)*
+*Defined in [interfaces/system-backend/IInitSysBackend.ts:2](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IInitSysBackend.ts#L2)*
 
 ###  initialized
 
 • **initialized**: *boolean*
 
-*Defined in [interfaces/system-backend/IInitSysBackend.ts:3](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IInitSysBackend.ts#L3)*
+*Defined in [interfaces/system-backend/IInitSysBackend.ts:3](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IInitSysBackend.ts#L3)*
 
 ###  IStartInitEntPayload
 
 • **IStartInitEntPayload**:
 
-*Defined in [interfaces/system-backend/IInitSysBackend.ts:33](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IInitSysBackend.ts#L33)*
+*Defined in [interfaces/system-backend/IInitSysBackend.ts:33](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IInitSysBackend.ts#L33)*
 
 Enterprise-only features for vault initialization
 
@@ -854,7 +854,7 @@ Enterprise-only features for vault initialization
 
 • **recovery_pgp_keys**? : *Array‹string›*
 
-*Defined in [interfaces/system-backend/IInitSysBackend.ts:56](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IInitSysBackend.ts#L56)*
+*Defined in [interfaces/system-backend/IInitSysBackend.ts:56](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IInitSysBackend.ts#L56)*
 
 Specifies an array of PGP public keys used to encrypt the output recovery keys.
 Ordering is preserved. The keys must be base64-encoded from their original binary
@@ -864,7 +864,7 @@ representation. The size of this array must be the same as recovery_shares.
 
 • **recovery_shares**: *number*
 
-*Defined in [interfaces/system-backend/IInitSysBackend.ts:43](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IInitSysBackend.ts#L43)*
+*Defined in [interfaces/system-backend/IInitSysBackend.ts:43](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IInitSysBackend.ts#L43)*
 
 Specifies the number of shares to split the recovery key into.
 
@@ -872,7 +872,7 @@ Specifies the number of shares to split the recovery key into.
 
 • **recovery_threshold**: *number*
 
-*Defined in [interfaces/system-backend/IInitSysBackend.ts:49](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IInitSysBackend.ts#L49)*
+*Defined in [interfaces/system-backend/IInitSysBackend.ts:49](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IInitSysBackend.ts#L49)*
 
 Specifies the number of shares required to reconstruct the recovery key. This must
 be less than or equal to recovery_shares.
@@ -881,7 +881,7 @@ be less than or equal to recovery_shares.
 
 • **stored_shares**: *number*
 
-*Defined in [interfaces/system-backend/IInitSysBackend.ts:38](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IInitSysBackend.ts#L38)*
+*Defined in [interfaces/system-backend/IInitSysBackend.ts:38](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IInitSysBackend.ts#L38)*
 
 Specifies the number of shares that should be encrypted by the HSM and stored for
 auto-unsealing. Currently must be the same as secret_shares.
@@ -890,13 +890,13 @@ auto-unsealing. Currently must be the same as secret_shares.
 
 • **IStartInitPayload**:
 
-*Defined in [interfaces/system-backend/IInitSysBackend.ts:6](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IInitSysBackend.ts#L6)*
+*Defined in [interfaces/system-backend/IInitSysBackend.ts:6](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IInitSysBackend.ts#L6)*
 
 ### `Optional` pgp_keys
 
 • **pgp_keys**? : *Array‹string›*
 
-*Defined in [interfaces/system-backend/IInitSysBackend.ts:12](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IInitSysBackend.ts#L12)*
+*Defined in [interfaces/system-backend/IInitSysBackend.ts:12](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IInitSysBackend.ts#L12)*
 
 Specifies an array of PGP public keys used to encrypt the output unseal keys. Ordering is
 preserved. The keys must be base64-encoded from their original binary representation.
@@ -906,7 +906,7 @@ The size of this array must be the same as secret_shares.
 
 • **root_token_pgp_key**? : *string*
 
-*Defined in [interfaces/system-backend/IInitSysBackend.ts:17](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IInitSysBackend.ts#L17)*
+*Defined in [interfaces/system-backend/IInitSysBackend.ts:17](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IInitSysBackend.ts#L17)*
 
 Specifies a PGP public key used to encrypt the initial root token. The key must be
 base64-encoded from its original binary representation.
@@ -915,7 +915,7 @@ base64-encoded from its original binary representation.
 
 • **secret_shares**: *number*
 
-*Defined in [interfaces/system-backend/IInitSysBackend.ts:21](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IInitSysBackend.ts#L21)*
+*Defined in [interfaces/system-backend/IInitSysBackend.ts:21](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IInitSysBackend.ts#L21)*
 
 Specifies the number of shares to split the master key into
 
@@ -923,7 +923,7 @@ Specifies the number of shares to split the master key into
 
 • **secret_threshold**: *number*
 
-*Defined in [interfaces/system-backend/IInitSysBackend.ts:27](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IInitSysBackend.ts#L27)*
+*Defined in [interfaces/system-backend/IInitSysBackend.ts:27](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IInitSysBackend.ts#L27)*
 
 Specifies the number of shares required to reconstruct the master key. This must be less
 than or equal secret_shares. If using Vault HSM with auto-unsealing, this value must be the
@@ -933,13 +933,13 @@ same as secret_shares.
 
 • **IStartInitResponse**:
 
-*Defined in [interfaces/system-backend/IInitSysBackend.ts:59](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IInitSysBackend.ts#L59)*
+*Defined in [interfaces/system-backend/IInitSysBackend.ts:59](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IInitSysBackend.ts#L59)*
 
 ###  keys
 
 • **keys**: *Array‹string›*
 
-*Defined in [interfaces/system-backend/IInitSysBackend.ts:63](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IInitSysBackend.ts#L63)*
+*Defined in [interfaces/system-backend/IInitSysBackend.ts:63](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IInitSysBackend.ts#L63)*
 
 Master keys (encrypted if pgp_keys was provided)
 
@@ -947,7 +947,7 @@ Master keys (encrypted if pgp_keys was provided)
 
 • **keys_base64**: *Array‹string›*
 
-*Defined in [interfaces/system-backend/IInitSysBackend.ts:67](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IInitSysBackend.ts#L67)*
+*Defined in [interfaces/system-backend/IInitSysBackend.ts:67](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IInitSysBackend.ts#L67)*
 
 Master keys in base64 format
 
@@ -955,7 +955,7 @@ Master keys in base64 format
 
 • **root_token**: *string*
 
-*Defined in [interfaces/system-backend/IInitSysBackend.ts:71](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IInitSysBackend.ts#L71)*
+*Defined in [interfaces/system-backend/IInitSysBackend.ts:71](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IInitSysBackend.ts#L71)*
 
 Initial root token
 
@@ -965,31 +965,31 @@ ___
 
 • **IKv1SecretEngine**:
 
-*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:1](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L1)*
+*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:1](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L1)*
 
 ###  ICreateOrUpdateSecretPayload
 
 • **ICreateOrUpdateSecretPayload**:
 
-*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:22](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L22)*
+*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:22](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L22)*
 
 ###  IListSecretsResponse
 
 • **IListSecretsResponse**:
 
-*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:12](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L12)*
+*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:12](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L12)*
 
 ###  auth
 
 • **auth**: *string*
 
-*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:13](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L13)*
+*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:13](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L13)*
 
 ###  data
 
 • **data**: *object*
 
-*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:14](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L14)*
+*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:14](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L14)*
 
 #### Type declaration:
 
@@ -999,37 +999,37 @@ ___
 
 • **lease_duration**: *number*
 
-*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:17](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L17)*
+*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:17](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L17)*
 
 ###  lease_id
 
 • **lease_id**: *string*
 
-*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:18](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L18)*
+*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:18](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L18)*
 
 ###  renewable
 
 • **renewable**: *boolean*
 
-*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:19](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L19)*
+*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:19](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L19)*
 
 ###  IReadSecretResponse
 
 • **IReadSecretResponse**:
 
-*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:2](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L2)*
+*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:2](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L2)*
 
 ###  auth
 
 • **auth**: *string*
 
-*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:3](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L3)*
+*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:3](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L3)*
 
 ###  data
 
 • **data**: *object*
 
-*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:4](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L4)*
+*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:4](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L4)*
 
 #### Type declaration:
 
@@ -1039,19 +1039,19 @@ ___
 
 • **lease_duration**: *number*
 
-*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:7](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L7)*
+*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:7](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L7)*
 
 ###  lease_id
 
 • **lease_id**: *string*
 
-*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:8](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L8)*
+*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:8](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L8)*
 
 ###  renewable
 
 • **renewable**: *boolean*
 
-*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:9](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L9)*
+*Defined in [interfaces/secrets-engines/IKv1SecretEngine.ts:9](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv1SecretEngine.ts#L9)*
 
 ___
 
@@ -1059,19 +1059,19 @@ ___
 
 • **IKv2SecretEngine**:
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:1](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L1)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:1](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L1)*
 
 ###  ICreateUpdateSecretPayload
 
 • **ICreateUpdateSecretPayload**:
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:36](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L36)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:36](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L36)*
 
 ###  data
 
 • **data**: *object*
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:40](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L40)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:40](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L40)*
 
 The contents of the result map will be stored and returned on read
 
@@ -1083,7 +1083,7 @@ The contents of the result map will be stored and returned on read
 
 • **options**? : *object*
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:46](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L46)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:46](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L46)*
 
 An object that holds option settings
 
@@ -1095,13 +1095,13 @@ An object that holds option settings
 
 • **ICreateUpdateSecretResponse**:
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:57](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L57)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:57](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L57)*
 
 ###  data
 
 • **data**: *object*
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:58](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L58)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:58](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L58)*
 
 #### Type declaration:
 
@@ -1117,13 +1117,13 @@ An object that holds option settings
 
 • **IDeleteSecretVersionsPayload**:
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:66](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L66)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:66](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L66)*
 
 ###  versions
 
 • **versions**: *number[]*
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:71](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L71)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:71](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L71)*
 
 The versions to be deleted. The versioned result will not be deleted, but it will no longer be
 returned in normal get requests.
@@ -1132,13 +1132,13 @@ returned in normal get requests.
 
 • **IDestroySecretVersionsPayload**:
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:82](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L82)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:82](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L82)*
 
 ###  versions
 
 • **versions**: *number[]*
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:86](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L86)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:86](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L86)*
 
 The versions to destroy. Their result will be permanently deleted.
 
@@ -1146,7 +1146,7 @@ The versions to destroy. Their result will be permanently deleted.
 
 • **IGetConfigResponse**:
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:15](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L15)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:15](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L15)*
 
 ### `Optional` cas_required
 
@@ -1154,7 +1154,7 @@ The versions to destroy. Their result will be permanently deleted.
 
 *Inherited from [ISetConfigPayload](globals.md#isetconfigpayload).[cas_required](globals.md#optional-cas_required)*
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:12](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L12)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:12](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L12)*
 
 If true all keys will require the cas parameter to be set on all write requests.
 
@@ -1164,7 +1164,7 @@ If true all keys will require the cas parameter to be set on all write requests.
 
 *Inherited from [ISetConfigPayload](globals.md#isetconfigpayload).[max_versions](globals.md#optional-max_versions)*
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:8](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L8)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:8](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L8)*
 
 The number of versions to keep per key. This value applies to all keys, but a key's metadata
 setting can overwrite this value. Once a key has more than the configured allowed versions
@@ -1174,13 +1174,13 @@ the oldest version will be permanently deleted. Defaults to 10.
 
 • **IListSecretsResponse**:
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:89](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L89)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:89](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L89)*
 
 ###  data
 
 • **data**: *object*
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:90](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L90)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:90](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L90)*
 
 #### Type declaration:
 
@@ -1190,13 +1190,13 @@ the oldest version will be permanently deleted. Defaults to 10.
 
 • **IReadSecretMetadataResponse**:
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:95](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L95)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:95](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L95)*
 
 ###  data
 
 • **data**: *object*
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:96](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L96)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:96](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L96)*
 
 #### Type declaration:
 
@@ -1216,13 +1216,13 @@ the oldest version will be permanently deleted. Defaults to 10.
 
 • **IReadSecretVersionPayload**:
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:17](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L17)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:17](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L17)*
 
 ### `Optional` version
 
 • **version**? : *number*
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:21](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L21)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:21](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L21)*
 
 Specifies the version to return. If not set the latest version is returned.
 
@@ -1230,13 +1230,13 @@ Specifies the version to return. If not set the latest version is returned.
 
 • **IReadSecretVersionResponse**:
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:24](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L24)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:24](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L24)*
 
 ###  data
 
 • **data**: *object*
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:25](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L25)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:25](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L25)*
 
 #### Type declaration:
 
@@ -1246,7 +1246,7 @@ Specifies the version to return. If not set the latest version is returned.
 
 • **metadata**: *object*
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:28](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L28)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:28](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L28)*
 
 #### Type declaration:
 
@@ -1262,13 +1262,13 @@ Specifies the version to return. If not set the latest version is returned.
 
 • **ISetConfigPayload**:
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:2](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L2)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:2](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L2)*
 
 ### `Optional` cas_required
 
 • **cas_required**? : *boolean*
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:12](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L12)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:12](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L12)*
 
 If true all keys will require the cas parameter to be set on all write requests.
 
@@ -1276,7 +1276,7 @@ If true all keys will require the cas parameter to be set on all write requests.
 
 • **max_versions**? : *number*
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:8](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L8)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:8](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L8)*
 
 The number of versions to keep per key. This value applies to all keys, but a key's metadata
 setting can overwrite this value. Once a key has more than the configured allowed versions
@@ -1286,13 +1286,13 @@ the oldest version will be permanently deleted. Defaults to 10.
 
 • **IUndeleteSecretVersionsPayload**:
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:74](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L74)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:74](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L74)*
 
 ###  versions
 
 • **versions**: *number[]*
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:79](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L79)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:79](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L79)*
 
 The versions to undelete. The versions will be restored and their result will be returned
 on normal get requests.
@@ -1301,13 +1301,13 @@ on normal get requests.
 
 • **IUpdateSecretMetadataPayload**:
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:112](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L112)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:112](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L112)*
 
 ### `Optional` cas_required
 
 • **cas_required**? : *boolean*
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:123](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L123)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:123](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L123)*
 
 If true the key will require the cas parameter to be set on all write requests. If false,
 the backend’s configuration will be used.
@@ -1316,7 +1316,7 @@ the backend’s configuration will be used.
 
 • **max_versions**? : *number*
 
-*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:118](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L118)*
+*Defined in [interfaces/secrets-engines/IKv2SecretEngine.ts:118](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/IKv2SecretEngine.ts#L118)*
 
 The number of versions to keep per key. If not set, the backend’s configured max
 version is used. Once a key has more than the configured allowed versions the oldest
@@ -1328,13 +1328,13 @@ ___
 
 • **IPostgreSqlEngine**:
 
-*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:3](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L3)*
+*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:3](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L3)*
 
 ###  IPostgreConfigConnPayload
 
 • **IPostgreConfigConnPayload**:
 
-*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:4](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L4)*
+*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:4](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L4)*
 
 ### `Optional` allowed_roles
 
@@ -1342,7 +1342,7 @@ ___
 
 *Inherited from [IConfigConnectionPayload](globals.md#iconfigconnectionpayload).[allowed_roles](globals.md#optional-allowed_roles)*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:20](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L20)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:20](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L20)*
 
 List of the roles allowed to use this connection. Defaults to empty (no roles),
 if contains a "*" any role can use this connection.
@@ -1351,7 +1351,7 @@ if contains a "*" any role can use this connection.
 
 • **connection_url**: *string*
 
-*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:11](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L11)*
+*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:11](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L11)*
 
 Specifies the PostgreSQL DSN. This field can be templated and supports passing the username
 and password parameters in the following format {{field_name}}. A templated connection
@@ -1361,7 +1361,7 @@ URL is required when using root credential rotation.
 
 • **max_connection_lifetime**? : *string*
 
-*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:30](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L30)*
+*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:30](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L30)*
 
 Specifies the maximum amount of time a connection may be reused. If <= 0s connections
 are reused forever.
@@ -1372,7 +1372,7 @@ are reused forever.
 
 • **max_idle_connections**? : *number*
 
-*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:24](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L24)*
+*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:24](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L24)*
 
 Specifies the maximum number of idle connections to the database. A zero uses the value of
 max_open_connections and a negative value disables idle connections. If larger
@@ -1382,7 +1382,7 @@ than max_open_connections it will be reduced to be equal.
 
 • **max_open_connections**? : *number*
 
-*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:17](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L17)*
+*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:17](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L17)*
 
 Specifies the maximum number of open connections to the database.
 
@@ -1392,7 +1392,7 @@ Specifies the maximum number of open connections to the database.
 
 • **password**? : *string*
 
-*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:39](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L39)*
+*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:39](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L39)*
 
 The root credential password used in the connection URL.
 
@@ -1400,7 +1400,7 @@ The root credential password used in the connection URL.
 
 • **plugin_name**? : *string*
 
-*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:46](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L46)*
+*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:46](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L46)*
 
 Name of the postgres plugin to use. You should generally not have
 to define this.
@@ -1413,7 +1413,7 @@ to define this.
 
 *Inherited from [IConfigConnectionPayload](globals.md#iconfigconnectionpayload).[root_rotation_statements](globals.md#optional-root_rotation_statements)*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:26](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L26)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:26](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L26)*
 
 Specifies the database statements to be executed to rotate the root user's credentials.
 See the plugin's API page for more information on support and formatting for this parameter.
@@ -1422,7 +1422,7 @@ See the plugin's API page for more information on support and formatting for thi
 
 • **username**? : *string*
 
-*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:35](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L35)*
+*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:35](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L35)*
 
 The root credential username used in the connection URL.
 
@@ -1432,7 +1432,7 @@ The root credential username used in the connection URL.
 
 *Inherited from [IConfigConnectionPayload](globals.md#iconfigconnectionpayload).[verify_connection](globals.md#optional-verify_connection)*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:14](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L14)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:14](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L14)*
 
 Specifies if the connection is verified during initial configuration. Defaults to true.
 
@@ -1442,7 +1442,7 @@ Specifies if the connection is verified during initial configuration. Defaults t
 
 • **IUpsertRolePayload**:
 
-*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:49](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L49)*
+*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:49](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L49)*
 
 ###  creation_statements
 
@@ -1450,7 +1450,7 @@ Specifies if the connection is verified during initial configuration. Defaults t
 
 *Overrides [IUpsertRolePayload](globals.md#iupsertrolepayload).[creation_statements](globals.md#creation_statements)*
 
-*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:57](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L57)*
+*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:57](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L57)*
 
 Specifies the database statements executed to create and configure a user.
 Must be a semicolon-separated string, a base64-encoded semicolon-separated string,
@@ -1463,7 +1463,7 @@ The '{{name}}', '{{password}}' and '{{expiration}}' values will be substituted.
 
 *Inherited from [IUpsertRolePayload](globals.md#iupsertrolepayload).[db_name](globals.md#db_name)*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:52](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L52)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:52](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L52)*
 
 The name of the database connection to use for this role.
 
@@ -1473,7 +1473,7 @@ The name of the database connection to use for this role.
 
 *Inherited from [IUpsertRolePayload](globals.md#iupsertrolepayload).[default_ttl](globals.md#optional-default_ttl)*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:59](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L59)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:59](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L59)*
 
  Specifies the TTL for the leases associated with this role.
  Accepts time suffixed strings ("1h") or an integer number of seconds. Defaults to
@@ -1485,7 +1485,7 @@ The name of the database connection to use for this role.
 
 *Inherited from [IUpsertRolePayload](globals.md#iupsertrolepayload).[max_ttl](globals.md#optional-max_ttl)*
 
-*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:67](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L67)*
+*Defined in [interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts:67](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IBaseDatabaseEngine.ts#L67)*
 
  Specifies the maximum TTL for the leases associated with this role.
  Accepts time suffixed strings ("1h") or an integer number of seconds.
@@ -1498,7 +1498,7 @@ The name of the database connection to use for this role.
 
 *Overrides [IUpsertRolePayload](globals.md#iupsertrolepayload).[renew_statements](globals.md#optional-renew_statements)*
 
-*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:83](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L83)*
+*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:83](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L83)*
 
 Specifies the database statements to be executed to renew a user. Not every plugin type will
 support this functionality. Must be a semicolon-separated string, a base64-encoded
@@ -1511,7 +1511,7 @@ JSON string array. The '{{name}}' and '{{expiration}}` values will be substitute
 
 *Overrides [IUpsertRolePayload](globals.md#iupsertrolepayload).[revocation_statements](globals.md#optional-revocation_statements)*
 
-*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:66](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L66)*
+*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:66](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L66)*
 
 Specifies the database statements to be executed to revoke a user. Must be a
 semicolon-separated string, a base64-encoded semicolon-separated string, a
@@ -1525,7 +1525,7 @@ drop user statement.
 
 *Overrides [IUpsertRolePayload](globals.md#iupsertrolepayload).[rollback_statements](globals.md#optional-rollback_statements)*
 
-*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:75](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L75)*
+*Defined in [interfaces/secrets-engines/databases/IPostgreSqlEngine.ts:75](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/secrets-engines/databases/IPostgreSqlEngine.ts#L75)*
 
 Specifies the database statements to be executed rollback a create operation in the event of
 an error. Not every plugin type will support this functionality. Must be a
@@ -1539,19 +1539,19 @@ ___
 
 • **ITlsCertificateAuth**:
 
-*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:3](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L3)*
+*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:3](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L3)*
 
 ###  ICreateRolePayload
 
 • **ICreateRolePayload**:
 
-*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:26](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L26)*
+*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:26](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L26)*
 
 ### `Optional` allowed_common_names
 
 • **allowed_common_names**? : *string | Array‹string›*
 
-*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:36](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L36)*
+*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:36](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L36)*
 
 Constrain the Common Names in the client certificate with a globbed pattern.
 Value is a comma-separated list of patterns. Authentication requires at least
@@ -1561,7 +1561,7 @@ one Name matching at least one pattern. If not set, defaults to allowing all nam
 
 • **allowed_dns_names**? : *string | Array‹string›*
 
-*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:42](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L42)*
+*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:42](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L42)*
 
 Constrain the Alternative Names in the client certificate with a globbed pattern.
 Value is a comma-separated list of patterns. Authentication requires at least
@@ -1571,7 +1571,7 @@ one DNS matching at least one pattern. If not set, defaults to allowing all dns.
 
 • **allowed_email_sans**? : *string | Array‹string›*
 
-*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:48](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L48)*
+*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:48](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L48)*
 
 Constrain the Alternative Names in the client certificate with a globbed pattern.
 Value is a comma-separated list of patterns. Authentication requires at least one
@@ -1581,7 +1581,7 @@ Email matching at least one pattern. If not set, defaults to allowing all emails
 
 • **allowed_organizational_units**? : *string | Array‹string›*
 
-*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:60](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L60)*
+*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:60](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L60)*
 
  Constrain the Organizational Units (OU) in the client certificate with a globbed pattern.
  Value is a comma-separated list of OU patterns. Authentication requires at least one OU
@@ -1591,7 +1591,7 @@ Email matching at least one pattern. If not set, defaults to allowing all emails
 
 • **allowed_uri_sans**? : *string | Array‹string›*
 
-*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:54](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L54)*
+*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:54](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L54)*
 
 Constrain the Alternative Names in the client certificate with a globbed pattern.
 Value is a comma-separated list of URI patterns. Authentication requires at least
@@ -1601,7 +1601,7 @@ one URI matching at least one pattern. If not set, defaults to allowing all URIs
 
 • **bound_cidrs**? : *string | Array‹string›*
 
-*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:100](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L100)*
+*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:100](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L100)*
 
 If set, restricts usage of the certificates to client IPs falling within
 the range of the specified CIDR(s).
@@ -1610,7 +1610,7 @@ the range of the specified CIDR(s).
 
 • **certificate**: *string*
 
-*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:30](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L30)*
+*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:30](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L30)*
 
 The PEM-format CA certificate
 
@@ -1618,7 +1618,7 @@ The PEM-format CA certificate
 
 • **display_name**? : *string*
 
-*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:77](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L77)*
+*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:77](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L77)*
 
 The display_name to set on tokens issued when authenticating against this CA certificate.
 If not set, defaults to the name of the role.
@@ -1627,7 +1627,7 @@ If not set, defaults to the name of the role.
 
 • **max_ttl**? : *string*
 
-*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:88](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L88)*
+*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:88](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L88)*
 
 Duration in either number of seconds (3600) or a time duration (1h) after which the issued
 token can no longer be renewed.
@@ -1636,7 +1636,7 @@ token can no longer be renewed.
 
 • **period**? : *string*
 
-*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:95](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L95)*
+*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:95](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L95)*
 
 Duration in either number of seconds (3600) or a time duration (1h). If set, the generated
 token is a periodic token; so long as it is renewed it never expires unless max_ttl is also
@@ -1647,7 +1647,7 @@ If this value is modified, the token will pick up the new value at its next rene
 
 • **policies**? : *string*
 
-*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:72](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L72)*
+*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:72](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L72)*
 
 A comma-separated list of policies to set on tokens issued when authenticating against
 this CA certificate.
@@ -1656,7 +1656,7 @@ this CA certificate.
 
 • **required_extensions**? : *string | Array‹string›*
 
-*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:67](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L67)*
+*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:67](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L67)*
 
 Require specific Custom Extension OIDs to exist and match the pattern.
 Value is a comma separated string or array of oid:value. Expects the extension
@@ -1667,7 +1667,7 @@ Supports globbing on value.
 
 • **ttl**? : *string*
 
-*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:83](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L83)*
+*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:83](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L83)*
 
 The TTL of the token, provided in either number of seconds (3600) or a time duration (1h).
 If not provided, the token is valid for the the mount or system default TTL time,
@@ -1677,13 +1677,13 @@ in that order.
 
 • **ILoginPayload**:
 
-*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:4](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L4)*
+*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:4](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L4)*
 
 ###  ca
 
 • **ca**: *Buffer*
 
-*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:15](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L15)*
+*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:15](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L15)*
 
 Certificate authority PEM to auth with vault
 
@@ -1691,7 +1691,7 @@ Certificate authority PEM to auth with vault
 
 • **cert**: *Buffer*
 
-*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:19](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L19)*
+*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:19](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L19)*
 
 Client certificate PEM to auth with vault
 
@@ -1699,7 +1699,7 @@ Client certificate PEM to auth with vault
 
 • **key**: *Buffer*
 
-*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:23](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L23)*
+*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:23](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L23)*
 
 Private key PEM to auth with vault
 
@@ -1707,7 +1707,7 @@ Private key PEM to auth with vault
 
 • **name**: *string*
 
-*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:11](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L11)*
+*Defined in [interfaces/auth-methods/ITlsCertificateAuth.ts:11](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITlsCertificateAuth.ts#L11)*
 
 Authenticate against only the named certificate role,
 returning its policy list if successful.
@@ -1720,19 +1720,19 @@ ___
 
 • **ITokenAuth**:
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:3](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITokenAuth.ts#L3)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:3](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITokenAuth.ts#L3)*
 
 ###  ICreateTokenPayload
 
 • **ICreateTokenPayload**:
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:10](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITokenAuth.ts#L10)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:10](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITokenAuth.ts#L10)*
 
 ### `Optional` display_name
 
 • **display_name**? : *string*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:70](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITokenAuth.ts#L70)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:70](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITokenAuth.ts#L70)*
 
 The display name of the token.
 
@@ -1742,7 +1742,7 @@ The display name of the token.
 
 • **explicit_max_ttl**? : *string*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:64](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITokenAuth.ts#L64)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:64](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITokenAuth.ts#L64)*
 
 If set, the token will have an explicit max TTL set upon it. This maximum token TTL
 cannot be changed later, and unlike with normal tokens, updates to the system/mount
@@ -1753,7 +1753,7 @@ be renewed or used past the value set at issue time.
 
 • **id**? : *string*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:15](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITokenAuth.ts#L15)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:15](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITokenAuth.ts#L15)*
 
 The ID of the client token. Can only be specified by a root token. Otherwise,
 the token ID is a randomly generated value.
@@ -1762,7 +1762,7 @@ the token ID is a randomly generated value.
 
 • **meta**? : *object*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:27](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITokenAuth.ts#L27)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:27](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITokenAuth.ts#L27)*
 
 A map of string to string valued metadata. This is passed through to the audit devices.
 
@@ -1774,7 +1774,7 @@ A map of string to string valued metadata. This is passed through to the audit d
 
 • **no_default_policy**? : *boolean*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:40](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITokenAuth.ts#L40)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:40](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITokenAuth.ts#L40)*
 
 If true the default policy will not be contained in this token's policy set.
 
@@ -1782,7 +1782,7 @@ If true the default policy will not be contained in this token's policy set.
 
 • **no_parent**? : *boolean*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:35](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITokenAuth.ts#L35)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:35](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITokenAuth.ts#L35)*
 
 If true and set by a root caller, the token will not have the parent token of the caller.
 This creates a token with no parent.
@@ -1791,7 +1791,7 @@ This creates a token with no parent.
 
 • **num_uses**? : *number*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:77](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITokenAuth.ts#L77)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:77](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITokenAuth.ts#L77)*
 
 The maximum uses for the given token.
 This can be used to create a one-time-token or limited use token.
@@ -1801,7 +1801,7 @@ The value of 0 has no limit to the number of uses.
 
 • **period**? : *string*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:84](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITokenAuth.ts#L84)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:84](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITokenAuth.ts#L84)*
 
 If specified, the token will be periodic; it will have no maximum TTL
 (unless an "explicit-max-ttl" is also set) but every renewal will use the given period.
@@ -1811,7 +1811,7 @@ Requires a root/sudo token to use.
 
 • **policies**? : *Array‹string›*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:22](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITokenAuth.ts#L22)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:22](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITokenAuth.ts#L22)*
 
 A list of policies for the token. This must be a subset of the policies belonging to the
 token making the request, unless root. If not specified, defaults to all the policies
@@ -1821,7 +1821,7 @@ of the calling token.
 
 • **renewable**? : *boolean*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:49](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITokenAuth.ts#L49)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:49](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITokenAuth.ts#L49)*
 
 Set to false to disable the ability of the token to be renewed past its initial TTL.
 Setting the value to true will allow the token to be renewable up to the system/mount
@@ -1833,7 +1833,7 @@ maximum TTL.
 
 • **ttl**? : *string*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:56](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITokenAuth.ts#L56)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:56](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITokenAuth.ts#L56)*
 
 The TTL period of the token, provided as "1h", where hour is the largest suffix.
 If not provided, the token is valid for the default lease TTL,
@@ -1843,7 +1843,7 @@ or indefinitely if the root policy is used.
 
 • **IListAccessorsResponse**:
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:4](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITokenAuth.ts#L4)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:4](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITokenAuth.ts#L4)*
 
 ### `Optional` auth
 
@@ -1851,7 +1851,7 @@ or indefinitely if the root policy is used.
 
 *Inherited from [ISecret](interfaces/isecret.md).[auth](interfaces/isecret.md#optional-auth)*
 
-*Defined in [interfaces/IBaseClient.ts:115](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/IBaseClient.ts#L115)*
+*Defined in [interfaces/IBaseClient.ts:115](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/IBaseClient.ts#L115)*
 
 ###  data
 
@@ -1859,7 +1859,7 @@ or indefinitely if the root policy is used.
 
 *Overrides [ISecret](interfaces/isecret.md).[data](interfaces/isecret.md#optional-data)*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:5](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITokenAuth.ts#L5)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:5](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITokenAuth.ts#L5)*
 
 #### Type declaration:
 
@@ -1871,7 +1871,7 @@ or indefinitely if the root policy is used.
 
 *Inherited from [ISecret](interfaces/isecret.md).[lease_duration](interfaces/isecret.md#lease_duration)*
 
-*Defined in [interfaces/IBaseClient.ts:101](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/IBaseClient.ts#L101)*
+*Defined in [interfaces/IBaseClient.ts:101](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/IBaseClient.ts#L101)*
 
 Along with the lease ID, a lease duration can be read.
 The lease duration is a Time To Live value: the time in seconds for
@@ -1883,7 +1883,7 @@ which the lease is valid. A consumer of this secret must renew the lease within 
 
 *Inherited from [ISecret](interfaces/isecret.md).[lease_id](interfaces/isecret.md#lease_id)*
 
-*Defined in [interfaces/IBaseClient.ts:95](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/IBaseClient.ts#L95)*
+*Defined in [interfaces/IBaseClient.ts:95](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/IBaseClient.ts#L95)*
 
 When reading a dynamic secret, such as via vault read, Vault always returns a lease_id.
 This is the ID used with commands such as vault renew and vault revoke to manage the
@@ -1895,7 +1895,7 @@ lease of the secret.
 
 *Inherited from [ISecret](interfaces/isecret.md).[renewable](interfaces/isecret.md#renewable)*
 
-*Defined in [interfaces/IBaseClient.ts:114](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/IBaseClient.ts#L114)*
+*Defined in [interfaces/IBaseClient.ts:114](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/IBaseClient.ts#L114)*
 
 If the lease is renewable
 
@@ -1905,7 +1905,7 @@ If the lease is renewable
 
 *Inherited from [ISecret](interfaces/isecret.md).[request_id](interfaces/isecret.md#request_id)*
 
-*Defined in [interfaces/IBaseClient.ts:89](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/IBaseClient.ts#L89)*
+*Defined in [interfaces/IBaseClient.ts:89](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/IBaseClient.ts#L89)*
 
 ###  warnings
 
@@ -1913,7 +1913,7 @@ If the lease is renewable
 
 *Inherited from [ISecret](interfaces/isecret.md).[warnings](interfaces/isecret.md#warnings)*
 
-*Defined in [interfaces/IBaseClient.ts:109](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/IBaseClient.ts#L109)*
+*Defined in [interfaces/IBaseClient.ts:109](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/IBaseClient.ts#L109)*
 
 List of warnings
 
@@ -1923,19 +1923,19 @@ List of warnings
 
 *Inherited from [ISecret](interfaces/isecret.md).[wrap_info](interfaces/isecret.md#optional-wrap_info)*
 
-*Defined in [interfaces/IBaseClient.ts:110](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/IBaseClient.ts#L110)*
+*Defined in [interfaces/IBaseClient.ts:110](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/IBaseClient.ts#L110)*
 
 ###  IListTokenRolesResponse
 
 • **IListTokenRolesResponse**:
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:139](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITokenAuth.ts#L139)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:139](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITokenAuth.ts#L139)*
 
 ###  data
 
 • **data**: *object*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:140](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITokenAuth.ts#L140)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:140](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITokenAuth.ts#L140)*
 
 #### Type declaration:
 
@@ -1945,7 +1945,7 @@ List of warnings
 
 • **ILookupTokenAccessorResponse**:
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:111](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITokenAuth.ts#L111)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:111](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITokenAuth.ts#L111)*
 
 ###  data
 
@@ -1953,25 +1953,25 @@ List of warnings
 
 *Inherited from [ILookupTokenResponse](globals.md#ilookuptokenresponse).[data](globals.md#data)*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:108](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITokenAuth.ts#L108)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:108](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITokenAuth.ts#L108)*
 
 ###  ILookupTokenResponse
 
 • **ILookupTokenResponse**:
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:107](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITokenAuth.ts#L107)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:107](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITokenAuth.ts#L107)*
 
 ###  data
 
 • **data**: *ILookupTokenRes*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:108](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITokenAuth.ts#L108)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:108](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITokenAuth.ts#L108)*
 
 ###  IReadTokenRoleResponse
 
 • **IReadTokenRoleResponse**:
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:124](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITokenAuth.ts#L124)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:124](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITokenAuth.ts#L124)*
 
 ###  auth
 
@@ -1979,7 +1979,7 @@ List of warnings
 
 *Overrides [ISecret](interfaces/isecret.md).[auth](interfaces/isecret.md#optional-auth)*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:126](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITokenAuth.ts#L126)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:126](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITokenAuth.ts#L126)*
 
 ###  data
 
@@ -1987,7 +1987,7 @@ List of warnings
 
 *Overrides [ISecret](interfaces/isecret.md).[data](interfaces/isecret.md#optional-data)*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:127](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITokenAuth.ts#L127)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:127](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITokenAuth.ts#L127)*
 
 #### Type declaration:
 
@@ -2013,7 +2013,7 @@ List of warnings
 
 *Inherited from [ISecret](interfaces/isecret.md).[lease_duration](interfaces/isecret.md#lease_duration)*
 
-*Defined in [interfaces/IBaseClient.ts:101](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/IBaseClient.ts#L101)*
+*Defined in [interfaces/IBaseClient.ts:101](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/IBaseClient.ts#L101)*
 
 Along with the lease ID, a lease duration can be read.
 The lease duration is a Time To Live value: the time in seconds for
@@ -2025,7 +2025,7 @@ which the lease is valid. A consumer of this secret must renew the lease within 
 
 *Inherited from [ISecret](interfaces/isecret.md).[lease_id](interfaces/isecret.md#lease_id)*
 
-*Defined in [interfaces/IBaseClient.ts:95](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/IBaseClient.ts#L95)*
+*Defined in [interfaces/IBaseClient.ts:95](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/IBaseClient.ts#L95)*
 
 When reading a dynamic secret, such as via vault read, Vault always returns a lease_id.
 This is the ID used with commands such as vault renew and vault revoke to manage the
@@ -2037,7 +2037,7 @@ lease of the secret.
 
 *Inherited from [ISecret](interfaces/isecret.md).[renewable](interfaces/isecret.md#renewable)*
 
-*Defined in [interfaces/IBaseClient.ts:114](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/IBaseClient.ts#L114)*
+*Defined in [interfaces/IBaseClient.ts:114](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/IBaseClient.ts#L114)*
 
 If the lease is renewable
 
@@ -2047,7 +2047,7 @@ If the lease is renewable
 
 *Inherited from [ISecret](interfaces/isecret.md).[request_id](interfaces/isecret.md#request_id)*
 
-*Defined in [interfaces/IBaseClient.ts:89](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/IBaseClient.ts#L89)*
+*Defined in [interfaces/IBaseClient.ts:89](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/IBaseClient.ts#L89)*
 
 ###  warnings
 
@@ -2055,7 +2055,7 @@ If the lease is renewable
 
 *Inherited from [ISecret](interfaces/isecret.md).[warnings](interfaces/isecret.md#warnings)*
 
-*Defined in [interfaces/IBaseClient.ts:109](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/IBaseClient.ts#L109)*
+*Defined in [interfaces/IBaseClient.ts:109](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/IBaseClient.ts#L109)*
 
 List of warnings
 
@@ -2065,19 +2065,19 @@ List of warnings
 
 *Overrides [ISecret](interfaces/isecret.md).[wrap_info](interfaces/isecret.md#optional-wrap_info)*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:125](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITokenAuth.ts#L125)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:125](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITokenAuth.ts#L125)*
 
 ###  IRenewTokenPayload
 
 • **IRenewTokenPayload**:
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:113](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITokenAuth.ts#L113)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:113](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITokenAuth.ts#L113)*
 
 ### `Optional` increment
 
 • **increment**? : *string*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:117](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITokenAuth.ts#L117)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:117](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITokenAuth.ts#L117)*
 
 An optional requested lease increment can be provided. This increment may be ignored.
 
@@ -2085,25 +2085,25 @@ An optional requested lease increment can be provided. This increment may be ign
 
 • **IRenewTokenResponse**:
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:120](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITokenAuth.ts#L120)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:120](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITokenAuth.ts#L120)*
 
 ###  auth
 
 • **auth**: *[ISecretAuth](interfaces/isecretauth.md)*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:121](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITokenAuth.ts#L121)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:121](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITokenAuth.ts#L121)*
 
 ###  IUpsertTokenRolePayload
 
 • **IUpsertTokenRolePayload**:
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:145](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITokenAuth.ts#L145)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:145](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITokenAuth.ts#L145)*
 
 ### `Optional` allowed_policies
 
 • **allowed_policies**? : *Array‹string›*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:153](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITokenAuth.ts#L153)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:153](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITokenAuth.ts#L153)*
 
 If set, tokens can be created with any subset of the policies in this list, rather than
 the normal semantics of tokens being a subset of the calling token's policies.
@@ -2115,7 +2115,7 @@ the "default" policy will be added to the created token automatically.
 
 • **bound_cidrs**? : *string | Array‹string›*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:201](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITokenAuth.ts#L201)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:201](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITokenAuth.ts#L201)*
 
 If set, restricts usage of the generated token to client IPs falling within the range of the
 specified CIDR(s). Unlike most other role parameters, this is not reevaluated from the
@@ -2126,7 +2126,7 @@ will not be bound by these CIDRs; root tokens with TTLs will be bound by these C
 
 • **disallowed_policies**? : *Array‹string›*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:160](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITokenAuth.ts#L160)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:160](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITokenAuth.ts#L160)*
 
  If set, successful token creation via this role will require that no policies in the given
  list are requested. The parameter is a comma-delimited string of policy names. Adding
@@ -2137,7 +2137,7 @@ will not be bound by these CIDRs; root tokens with TTLs will be bound by these C
 
 • **explicit_max_ttl**? : *number*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:186](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITokenAuth.ts#L186)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:186](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITokenAuth.ts#L186)*
 
 Provides a maximum lifetime for any tokens issued against this role, including periodic
 tokens. Unlike direct token creation, where the value for an explicit max TTL is stored in
@@ -2149,7 +2149,7 @@ can live forever as long as they are renewed. This is an integer number of secon
 
 • **orphan**? : *boolean*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:165](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITokenAuth.ts#L165)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:165](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITokenAuth.ts#L165)*
 
 If true, tokens created against this policy will be orphan tokens (they will have no parent).
 As such, they will not be automatically revoked by the revocation of any other token.
@@ -2158,7 +2158,7 @@ As such, they will not be automatically revoked by the revocation of any other t
 
 • **path_suffix**? : *string*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:194](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITokenAuth.ts#L194)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:194](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITokenAuth.ts#L194)*
 
 If set, tokens created against this role will have the given suffix as part of their path in
 addition to the role name. This can be useful in certain scenarios, such as keeping the same
@@ -2170,7 +2170,7 @@ and then tokens with the old suffix can be revoked via /sys/leases/revoke-prefix
 
 • **period**? : *string*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:171](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITokenAuth.ts#L171)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:171](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITokenAuth.ts#L171)*
 
 If specified, the token will be periodic; it will have no maximum TTL
 (unless an "explicit-max-ttl" is also set) but every renewal will use the given period.
@@ -2180,7 +2180,7 @@ Requires a root/sudo token to use.
 
 • **renewable**? : *boolean*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:178](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITokenAuth.ts#L178)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:178](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITokenAuth.ts#L178)*
 
 Set to false to disable the ability of the token to be renewed past its initial TTL.
 Setting the value to true will allow the token to be renewable up to the system/mount
@@ -2192,7 +2192,7 @@ maximum TTL.
 
 • **token_type**? : *string*
 
-*Defined in [interfaces/auth-methods/ITokenAuth.ts:209](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/ITokenAuth.ts#L209)*
+*Defined in [interfaces/auth-methods/ITokenAuth.ts:209](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/ITokenAuth.ts#L209)*
 
  Specifies the type of tokens that should be returned by the role. If either service or
  batch is specified, that kind of token will always be returned. If default-service, service
@@ -2206,13 +2206,13 @@ ___
 
 • **IUnsealSysBackend**:
 
-*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:1](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IUnsealSysBackend.ts#L1)*
+*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:1](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IUnsealSysBackend.ts#L1)*
 
 ###  ISubmitUnsealKeyPayload
 
 • **ISubmitUnsealKeyPayload**:
 
-*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:6](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IUnsealSysBackend.ts#L6)*
+*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:6](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IUnsealSysBackend.ts#L6)*
 
 Either the key or reset parameter must be provided;
 if both are provided, reset takes precedence.
@@ -2221,7 +2221,7 @@ if both are provided, reset takes precedence.
 
 • **key**? : *string*
 
-*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:10](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IUnsealSysBackend.ts#L10)*
+*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:10](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IUnsealSysBackend.ts#L10)*
 
 Specifies a single master key share. This is required unless reset is true.
 
@@ -2229,7 +2229,7 @@ Specifies a single master key share. This is required unless reset is true.
 
 • **migrate**? : *boolean*
 
-*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:19](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IUnsealSysBackend.ts#L19)*
+*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:19](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IUnsealSysBackend.ts#L19)*
 
 Available in 1.0 - Used to migrate the seal from shamir to autoseal or autoseal to shamir.
 Must be provided on all unseal key calls.
@@ -2238,7 +2238,7 @@ Must be provided on all unseal key calls.
 
 • **reset**? : *boolean*
 
-*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:14](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IUnsealSysBackend.ts#L14)*
+*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:14](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IUnsealSysBackend.ts#L14)*
 
 Specifies if previously-provided unseal keys are discarded and the unseal process is reset.
 
@@ -2246,25 +2246,25 @@ Specifies if previously-provided unseal keys are discarded and the unseal proces
 
 • **ISubmitUnsealKeyResponse**:
 
-*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:22](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IUnsealSysBackend.ts#L22)*
+*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:22](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IUnsealSysBackend.ts#L22)*
 
 ### `Optional` cluster_id
 
 • **cluster_id**? : *string*
 
-*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:40](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IUnsealSysBackend.ts#L40)*
+*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:40](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IUnsealSysBackend.ts#L40)*
 
 ### `Optional` cluster_name
 
 • **cluster_name**? : *string*
 
-*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:39](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IUnsealSysBackend.ts#L39)*
+*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:39](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IUnsealSysBackend.ts#L39)*
 
 ###  n
 
 • **n**: *number*
 
-*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:31](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IUnsealSysBackend.ts#L31)*
+*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:31](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IUnsealSysBackend.ts#L31)*
 
 Number of shares
 
@@ -2272,7 +2272,7 @@ Number of shares
 
 • **progress**: *number*
 
-*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:35](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IUnsealSysBackend.ts#L35)*
+*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:35](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IUnsealSysBackend.ts#L35)*
 
 Number of successful shares used to unseal
 
@@ -2280,13 +2280,13 @@ Number of successful shares used to unseal
 
 • **sealed**: *boolean*
 
-*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:23](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IUnsealSysBackend.ts#L23)*
+*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:23](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IUnsealSysBackend.ts#L23)*
 
 ###  t
 
 • **t**: *number*
 
-*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:27](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IUnsealSysBackend.ts#L27)*
+*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:27](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IUnsealSysBackend.ts#L27)*
 
 Threshold
 
@@ -2294,7 +2294,7 @@ Threshold
 
 • **version**: *string*
 
-*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:36](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IUnsealSysBackend.ts#L36)*
+*Defined in [interfaces/system-backend/IUnsealSysBackend.ts:36](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IUnsealSysBackend.ts#L36)*
 
 ___
 
@@ -2302,19 +2302,19 @@ ___
 
 • **IUserPassAuth**:
 
-*Defined in [interfaces/auth-methods/IUserPassAuth.ts:1](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/IUserPassAuth.ts#L1)*
+*Defined in [interfaces/auth-methods/IUserPassAuth.ts:1](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/IUserPassAuth.ts#L1)*
 
 ###  IUpsertPayload
 
 • **IUpsertPayload**:
 
-*Defined in [interfaces/auth-methods/IUserPassAuth.ts:2](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/IUserPassAuth.ts#L2)*
+*Defined in [interfaces/auth-methods/IUserPassAuth.ts:2](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/IUserPassAuth.ts#L2)*
 
 ### `Optional` bound_cidrs
 
 • **bound_cidrs**? : *string | Array‹string›*
 
-*Defined in [interfaces/auth-methods/IUserPassAuth.ts:24](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/IUserPassAuth.ts#L24)*
+*Defined in [interfaces/auth-methods/IUserPassAuth.ts:24](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/IUserPassAuth.ts#L24)*
 
 If set, restricts usage of the login and token to client
 IPs falling within the range of the specified CIDR(s).
@@ -2323,7 +2323,7 @@ IPs falling within the range of the specified CIDR(s).
 
 • **max_ttl**? : *string*
 
-*Defined in [interfaces/auth-methods/IUserPassAuth.ts:19](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/IUserPassAuth.ts#L19)*
+*Defined in [interfaces/auth-methods/IUserPassAuth.ts:19](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/IUserPassAuth.ts#L19)*
 
 Maximum duration after which login should expire
 
@@ -2331,7 +2331,7 @@ Maximum duration after which login should expire
 
 • **password**: *string*
 
-*Defined in [interfaces/auth-methods/IUserPassAuth.ts:6](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/IUserPassAuth.ts#L6)*
+*Defined in [interfaces/auth-methods/IUserPassAuth.ts:6](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/IUserPassAuth.ts#L6)*
 
 The password for the user. Only required when creating the user
 
@@ -2339,7 +2339,7 @@ The password for the user. Only required when creating the user
 
 • **policies**? : *string*
 
-*Defined in [interfaces/auth-methods/IUserPassAuth.ts:11](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/IUserPassAuth.ts#L11)*
+*Defined in [interfaces/auth-methods/IUserPassAuth.ts:11](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/IUserPassAuth.ts#L11)*
 
 Comma-separated list of policies. If set to empty string,
 only the default policy will be applicable to the user.
@@ -2348,7 +2348,7 @@ only the default policy will be applicable to the user.
 
 • **ttl**? : *string*
 
-*Defined in [interfaces/auth-methods/IUserPassAuth.ts:15](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/auth-methods/IUserPassAuth.ts#L15)*
+*Defined in [interfaces/auth-methods/IUserPassAuth.ts:15](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/auth-methods/IUserPassAuth.ts#L15)*
 
 The lease duration which decides login expiration
 
@@ -2358,25 +2358,25 @@ ___
 
 • **IWrappingSysBackend**:
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:4](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IWrappingSysBackend.ts#L4)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:4](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IWrappingSysBackend.ts#L4)*
 
 ###  ILookupResponse
 
 • **ILookupResponse**:
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:5](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IWrappingSysBackend.ts#L5)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:5](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IWrappingSysBackend.ts#L5)*
 
 ###  auth
 
 • **auth**: *[ISecretAuth](interfaces/isecretauth.md)*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:17](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IWrappingSysBackend.ts#L17)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:17](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IWrappingSysBackend.ts#L17)*
 
 ###  data
 
 • **data**: *object*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:10](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IWrappingSysBackend.ts#L10)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:10](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IWrappingSysBackend.ts#L10)*
 
 #### Type declaration:
 
@@ -2390,43 +2390,43 @@ ___
 
 • **lease_duration**: *number*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:8](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IWrappingSysBackend.ts#L8)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:8](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IWrappingSysBackend.ts#L8)*
 
 ###  lease_id
 
 • **lease_id**: *string*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:7](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IWrappingSysBackend.ts#L7)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:7](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IWrappingSysBackend.ts#L7)*
 
 ###  renewable
 
 • **renewable**: *boolean*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:9](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IWrappingSysBackend.ts#L9)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:9](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IWrappingSysBackend.ts#L9)*
 
 ###  request_id
 
 • **request_id**: *string*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:6](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IWrappingSysBackend.ts#L6)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:6](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IWrappingSysBackend.ts#L6)*
 
 ###  warnings
 
 • **warnings**: *[VaultWarnings](globals.md#vaultwarnings)*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:16](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IWrappingSysBackend.ts#L16)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:16](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IWrappingSysBackend.ts#L16)*
 
 ###  wrap_info
 
 • **wrap_info**: *[IWrapInfo](interfaces/iwrapinfo.md)*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:15](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IWrappingSysBackend.ts#L15)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:15](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IWrappingSysBackend.ts#L15)*
 
 ###  IRewrapResponse
 
 • **IRewrapResponse**:
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:20](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IWrappingSysBackend.ts#L20)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:20](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IWrappingSysBackend.ts#L20)*
 
 ###  auth
 
@@ -2434,7 +2434,7 @@ ___
 
 *Inherited from [ILookupResponse](globals.md#ilookupresponse).[auth](globals.md#auth)*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:17](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IWrappingSysBackend.ts#L17)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:17](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IWrappingSysBackend.ts#L17)*
 
 ###  data
 
@@ -2442,7 +2442,7 @@ ___
 
 *Inherited from [ILookupResponse](globals.md#ilookupresponse).[data](globals.md#data)*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:10](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IWrappingSysBackend.ts#L10)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:10](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IWrappingSysBackend.ts#L10)*
 
 #### Type declaration:
 
@@ -2458,7 +2458,7 @@ ___
 
 *Inherited from [ILookupResponse](globals.md#ilookupresponse).[lease_duration](globals.md#lease_duration)*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:8](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IWrappingSysBackend.ts#L8)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:8](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IWrappingSysBackend.ts#L8)*
 
 ###  lease_id
 
@@ -2466,7 +2466,7 @@ ___
 
 *Inherited from [ILookupResponse](globals.md#ilookupresponse).[lease_id](globals.md#lease_id)*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:7](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IWrappingSysBackend.ts#L7)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:7](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IWrappingSysBackend.ts#L7)*
 
 ###  renewable
 
@@ -2474,7 +2474,7 @@ ___
 
 *Inherited from [ILookupResponse](globals.md#ilookupresponse).[renewable](globals.md#renewable)*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:9](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IWrappingSysBackend.ts#L9)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:9](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IWrappingSysBackend.ts#L9)*
 
 ###  request_id
 
@@ -2482,7 +2482,7 @@ ___
 
 *Inherited from [ILookupResponse](globals.md#ilookupresponse).[request_id](globals.md#request_id)*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:6](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IWrappingSysBackend.ts#L6)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:6](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IWrappingSysBackend.ts#L6)*
 
 ###  warnings
 
@@ -2490,7 +2490,7 @@ ___
 
 *Inherited from [ILookupResponse](globals.md#ilookupresponse).[warnings](globals.md#warnings)*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:16](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IWrappingSysBackend.ts#L16)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:16](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IWrappingSysBackend.ts#L16)*
 
 ###  wrap_info
 
@@ -2498,19 +2498,19 @@ ___
 
 *Inherited from [ILookupResponse](globals.md#ilookupresponse).[wrap_info](globals.md#wrap_info)*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:15](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IWrappingSysBackend.ts#L15)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:15](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IWrappingSysBackend.ts#L15)*
 
 ###  IUnwrapResponse
 
 • **IUnwrapResponse**:
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:22](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IWrappingSysBackend.ts#L22)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:22](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IWrappingSysBackend.ts#L22)*
 
 ###  data
 
 • **data**: *object*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:30](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IWrappingSysBackend.ts#L30)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:30](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IWrappingSysBackend.ts#L30)*
 
 The set of parameters in the wrapped response from wrap().
 
@@ -2522,37 +2522,37 @@ The set of parameters in the wrapped response from wrap().
 
 • **lease_duration**: *number*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:25](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IWrappingSysBackend.ts#L25)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:25](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IWrappingSysBackend.ts#L25)*
 
 ###  lease_id
 
 • **lease_id**: *string*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:24](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IWrappingSysBackend.ts#L24)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:24](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IWrappingSysBackend.ts#L24)*
 
 ###  renewable
 
 • **renewable**: *boolean*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:26](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IWrappingSysBackend.ts#L26)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:26](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IWrappingSysBackend.ts#L26)*
 
 ###  request_id
 
 • **request_id**: *string*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:23](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IWrappingSysBackend.ts#L23)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:23](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IWrappingSysBackend.ts#L23)*
 
 ###  warnings
 
 • **warnings**: *[VaultWarnings](globals.md#vaultwarnings)*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:33](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IWrappingSysBackend.ts#L33)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:33](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IWrappingSysBackend.ts#L33)*
 
 ###  IWrapPayload
 
 • **IWrapPayload**:
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:39](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IWrappingSysBackend.ts#L39)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:39](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IWrappingSysBackend.ts#L39)*
 
 The exact set of given parameters will be contained in the wrapped response.
 
@@ -2560,7 +2560,7 @@ The exact set of given parameters will be contained in the wrapped response.
 
 • **IWrapResponse**:
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:43](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IWrappingSysBackend.ts#L43)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:43](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IWrappingSysBackend.ts#L43)*
 
 ###  data
 
@@ -2568,7 +2568,7 @@ The exact set of given parameters will be contained in the wrapped response.
 
 *Inherited from [IUnwrapResponse](globals.md#iunwrapresponse).[data](globals.md#data)*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:30](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IWrappingSysBackend.ts#L30)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:30](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IWrappingSysBackend.ts#L30)*
 
 The set of parameters in the wrapped response from wrap().
 
@@ -2582,7 +2582,7 @@ The set of parameters in the wrapped response from wrap().
 
 *Inherited from [IUnwrapResponse](globals.md#iunwrapresponse).[lease_duration](globals.md#lease_duration)*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:25](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IWrappingSysBackend.ts#L25)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:25](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IWrappingSysBackend.ts#L25)*
 
 ###  lease_id
 
@@ -2590,7 +2590,7 @@ The set of parameters in the wrapped response from wrap().
 
 *Inherited from [IUnwrapResponse](globals.md#iunwrapresponse).[lease_id](globals.md#lease_id)*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:24](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IWrappingSysBackend.ts#L24)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:24](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IWrappingSysBackend.ts#L24)*
 
 ###  renewable
 
@@ -2598,7 +2598,7 @@ The set of parameters in the wrapped response from wrap().
 
 *Inherited from [IUnwrapResponse](globals.md#iunwrapresponse).[renewable](globals.md#renewable)*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:26](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IWrappingSysBackend.ts#L26)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:26](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IWrappingSysBackend.ts#L26)*
 
 ###  request_id
 
@@ -2606,7 +2606,7 @@ The set of parameters in the wrapped response from wrap().
 
 *Inherited from [IUnwrapResponse](globals.md#iunwrapresponse).[request_id](globals.md#request_id)*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:23](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IWrappingSysBackend.ts#L23)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:23](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IWrappingSysBackend.ts#L23)*
 
 ###  warnings
 
@@ -2614,13 +2614,13 @@ The set of parameters in the wrapped response from wrap().
 
 *Inherited from [IUnwrapResponse](globals.md#iunwrapresponse).[warnings](globals.md#warnings)*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:33](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IWrappingSysBackend.ts#L33)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:33](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IWrappingSysBackend.ts#L33)*
 
 ###  wrap_info
 
 • **wrap_info**: *[IWrapInfo](interfaces/iwrapinfo.md)*
 
-*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:44](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/system-backend/IWrappingSysBackend.ts#L44)*
+*Defined in [interfaces/system-backend/IWrappingSysBackend.ts:44](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/system-backend/IWrappingSysBackend.ts#L44)*
 
 ## Type aliases
 
@@ -2628,7 +2628,7 @@ The set of parameters in the wrapped response from wrap().
 
 Ƭ **AuthTokenHelperFunc**: *function*
 
-*Defined in [interfaces/IBaseClient.ts:39](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/IBaseClient.ts#L39)*
+*Defined in [interfaces/IBaseClient.ts:39](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/IBaseClient.ts#L39)*
 
 An auth token helper function returns a function that returns a string, representing the vault token
 
@@ -2642,7 +2642,7 @@ ___
 
 Ƭ **AuthTokenParam**: *[VaultToken](globals.md#vaulttoken) | [AuthTokenHelperFunc](globals.md#authtokenhelperfunc)*
 
-*Defined in [interfaces/IBaseClient.ts:40](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/IBaseClient.ts#L40)*
+*Defined in [interfaces/IBaseClient.ts:40](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/IBaseClient.ts#L40)*
 
 ___
 
@@ -2650,7 +2650,7 @@ ___
 
 Ƭ **BaseUrl**: *string*
 
-*Defined in [interfaces/IBaseClient.ts:45](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/IBaseClient.ts#L45)*
+*Defined in [interfaces/IBaseClient.ts:45](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/IBaseClient.ts#L45)*
 
 Vault API base url
 
@@ -2660,7 +2660,7 @@ ___
 
 Ƭ **VaultToken**: *string*
 
-*Defined in [interfaces/IBaseClient.ts:32](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/IBaseClient.ts#L32)*
+*Defined in [interfaces/IBaseClient.ts:32](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/IBaseClient.ts#L32)*
 
 Authentication token to access the API
 
@@ -2670,7 +2670,7 @@ ___
 
 Ƭ **VaultWarnings**: *Array‹string›*
 
-*Defined in [interfaces/IBaseClient.ts:34](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/IBaseClient.ts#L34)*
+*Defined in [interfaces/IBaseClient.ts:34](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/interfaces/IBaseClient.ts#L34)*
 
 ## Variables
 
@@ -2678,7 +2678,7 @@ ___
 
 • **CONFIGURE_CONN_PATH**: *"/config/:name"* = "/config/:name"
 
-*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:10](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/databases/BaseDatabaseEngine.ts#L10)*
+*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:10](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/secrets-engines/databases/BaseDatabaseEngine.ts#L10)*
 
 ___
 
@@ -2686,7 +2686,7 @@ ___
 
 • **CONFIGURE_ENGINE_PATH**: *"/config"* = "/config"
 
-*Defined in [secrets-engines/Kv2SecretEngine.ts:7](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/Kv2SecretEngine.ts#L7)*
+*Defined in [secrets-engines/Kv2SecretEngine.ts:7](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/secrets-engines/Kv2SecretEngine.ts#L7)*
 
 ___
 
@@ -2694,7 +2694,7 @@ ___
 
 • **CREATE_ORPHAN_TOKEN_PATH**: *"/create-orphan"* = "/create-orphan"
 
-*Defined in [auth-methods/TokenAuth.ts:13](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/auth-methods/TokenAuth.ts#L13)*
+*Defined in [auth-methods/TokenAuth.ts:13](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/auth-methods/TokenAuth.ts#L13)*
 
 ___
 
@@ -2702,7 +2702,7 @@ ___
 
 • **CREATE_ROLE_PATH**: *"/certs/:name"* = "/certs/:name"
 
-*Defined in [auth-methods/TlsCertificateAuth.ts:8](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/auth-methods/TlsCertificateAuth.ts#L8)*
+*Defined in [auth-methods/TlsCertificateAuth.ts:8](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/auth-methods/TlsCertificateAuth.ts#L8)*
 
 ___
 
@@ -2710,7 +2710,7 @@ ___
 
 • **CREATE_TOKEN_PATH**: *"/create"* = "/create"
 
-*Defined in [auth-methods/TokenAuth.ts:12](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/auth-methods/TokenAuth.ts#L12)*
+*Defined in [auth-methods/TokenAuth.ts:12](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/auth-methods/TokenAuth.ts#L12)*
 
 ___
 
@@ -2718,7 +2718,7 @@ ___
 
 • **CREATE_TOKEN_WITH_ROLE_PATH**: *"/create/:role_name"* = "/create/:role_name"
 
-*Defined in [auth-methods/TokenAuth.ts:14](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/auth-methods/TokenAuth.ts#L14)*
+*Defined in [auth-methods/TokenAuth.ts:14](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/auth-methods/TokenAuth.ts#L14)*
 
 ___
 
@@ -2726,19 +2726,19 @@ ___
 
 • **DEFAULT_MOUNT_POINT**: *"/database"* = "/database"
 
-*Defined in [auth-methods/AwsAuth.ts:8](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/auth-methods/AwsAuth.ts#L8)*
+*Defined in [auth-methods/AwsAuth.ts:8](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/auth-methods/AwsAuth.ts#L8)*
 
-*Defined in [auth-methods/TlsCertificateAuth.ts:7](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/auth-methods/TlsCertificateAuth.ts#L7)*
+*Defined in [auth-methods/TlsCertificateAuth.ts:7](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/auth-methods/TlsCertificateAuth.ts#L7)*
 
-*Defined in [auth-methods/TokenAuth.ts:10](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/auth-methods/TokenAuth.ts#L10)*
+*Defined in [auth-methods/TokenAuth.ts:10](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/auth-methods/TokenAuth.ts#L10)*
 
-*Defined in [auth-methods/UserPassAuth.ts:7](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/auth-methods/UserPassAuth.ts#L7)*
+*Defined in [auth-methods/UserPassAuth.ts:7](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/auth-methods/UserPassAuth.ts#L7)*
 
-*Defined in [secrets-engines/Kv1SecretEngine.ts:6](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/Kv1SecretEngine.ts#L6)*
+*Defined in [secrets-engines/Kv1SecretEngine.ts:6](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/secrets-engines/Kv1SecretEngine.ts#L6)*
 
-*Defined in [secrets-engines/Kv2SecretEngine.ts:6](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/Kv2SecretEngine.ts#L6)*
+*Defined in [secrets-engines/Kv2SecretEngine.ts:6](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/secrets-engines/Kv2SecretEngine.ts#L6)*
 
-*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:9](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/databases/BaseDatabaseEngine.ts#L9)*
+*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:9](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/secrets-engines/databases/BaseDatabaseEngine.ts#L9)*
 
 ___
 
@@ -2746,13 +2746,13 @@ ___
 
 • **DEFAULT_PATH**: *"/sys/init"* = "/sys/init"
 
-*Defined in [system-backends/HealthSysBackend.ts:5](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/system-backends/HealthSysBackend.ts#L5)*
+*Defined in [system-backends/HealthSysBackend.ts:5](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/system-backends/HealthSysBackend.ts#L5)*
 
-*Defined in [system-backends/RotateSysBackend.ts:4](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/system-backends/RotateSysBackend.ts#L4)*
+*Defined in [system-backends/RotateSysBackend.ts:4](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/system-backends/RotateSysBackend.ts#L4)*
 
-*Defined in [system-backends/UnsealSysBackend.ts:5](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/system-backends/UnsealSysBackend.ts#L5)*
+*Defined in [system-backends/UnsealSysBackend.ts:5](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/system-backends/UnsealSysBackend.ts#L5)*
 
-*Defined in [system-backends/InitSysBackend.ts:5](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/system-backends/InitSysBackend.ts#L5)*
+*Defined in [system-backends/InitSysBackend.ts:5](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/system-backends/InitSysBackend.ts#L5)*
 
 ___
 
@@ -2760,7 +2760,7 @@ ___
 
 • **DELETE_CONN_PATH**: *"/config/:name"* = "/config/:name"
 
-*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:13](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/databases/BaseDatabaseEngine.ts#L13)*
+*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:13](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/secrets-engines/databases/BaseDatabaseEngine.ts#L13)*
 
 ___
 
@@ -2768,7 +2768,7 @@ ___
 
 • **DELETE_ROLE_PATH**: *"/roles/:name"* = "/roles/:name"
 
-*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:19](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/databases/BaseDatabaseEngine.ts#L19)*
+*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:19](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/secrets-engines/databases/BaseDatabaseEngine.ts#L19)*
 
 ___
 
@@ -2776,7 +2776,7 @@ ___
 
 • **DELETE_TOKEN_ROLE_PATH**: *"/roles/:role_name"* = "/roles/:role_name"
 
-*Defined in [auth-methods/TokenAuth.ts:27](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/auth-methods/TokenAuth.ts#L27)*
+*Defined in [auth-methods/TokenAuth.ts:27](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/auth-methods/TokenAuth.ts#L27)*
 
 ___
 
@@ -2784,7 +2784,7 @@ ___
 
 • **GENERATE_CREDS_PATH**: *"/creds/:name"* = "/creds/:name"
 
-*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:20](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/databases/BaseDatabaseEngine.ts#L20)*
+*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:20](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/secrets-engines/databases/BaseDatabaseEngine.ts#L20)*
 
 ___
 
@@ -2792,7 +2792,7 @@ ___
 
 • **LIST_ACCESSORS_PATH**: *"/accessors"* = "/accessors"
 
-*Defined in [auth-methods/TokenAuth.ts:11](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/auth-methods/TokenAuth.ts#L11)*
+*Defined in [auth-methods/TokenAuth.ts:11](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/auth-methods/TokenAuth.ts#L11)*
 
 ___
 
@@ -2800,7 +2800,7 @@ ___
 
 • **LIST_CONN_PATH**: *"/config"* = "/config"
 
-*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:12](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/databases/BaseDatabaseEngine.ts#L12)*
+*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:12](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/secrets-engines/databases/BaseDatabaseEngine.ts#L12)*
 
 ___
 
@@ -2808,7 +2808,7 @@ ___
 
 • **LIST_ROLES_PATH**: *"/roles"* = "/roles"
 
-*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:18](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/databases/BaseDatabaseEngine.ts#L18)*
+*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:18](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/secrets-engines/databases/BaseDatabaseEngine.ts#L18)*
 
 ___
 
@@ -2816,7 +2816,7 @@ ___
 
 • **LIST_TOKEN_ROLES_PATH**: *"/roles"* = "/roles"
 
-*Defined in [auth-methods/TokenAuth.ts:25](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/auth-methods/TokenAuth.ts#L25)*
+*Defined in [auth-methods/TokenAuth.ts:25](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/auth-methods/TokenAuth.ts#L25)*
 
 ___
 
@@ -2824,11 +2824,11 @@ ___
 
 • **LOGIN_PATH**: *"/login/:username"* = "/login/:username"
 
-*Defined in [auth-methods/AwsAuth.ts:9](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/auth-methods/AwsAuth.ts#L9)*
+*Defined in [auth-methods/AwsAuth.ts:9](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/auth-methods/AwsAuth.ts#L9)*
 
-*Defined in [auth-methods/TlsCertificateAuth.ts:9](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/auth-methods/TlsCertificateAuth.ts#L9)*
+*Defined in [auth-methods/TlsCertificateAuth.ts:9](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/auth-methods/TlsCertificateAuth.ts#L9)*
 
-*Defined in [auth-methods/UserPassAuth.ts:8](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/auth-methods/UserPassAuth.ts#L8)*
+*Defined in [auth-methods/UserPassAuth.ts:8](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/auth-methods/UserPassAuth.ts#L8)*
 
 ___
 
@@ -2836,7 +2836,7 @@ ___
 
 • **LOOKUP_ACCESSOR_PATH**: *"/lookup-accessor"* = "/lookup-accessor"
 
-*Defined in [auth-methods/TokenAuth.ts:17](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/auth-methods/TokenAuth.ts#L17)*
+*Defined in [auth-methods/TokenAuth.ts:17](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/auth-methods/TokenAuth.ts#L17)*
 
 ___
 
@@ -2844,7 +2844,7 @@ ___
 
 • **LOOKUP_TOKEN_PATH**: *"/lookup"* = "/lookup"
 
-*Defined in [auth-methods/TokenAuth.ts:15](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/auth-methods/TokenAuth.ts#L15)*
+*Defined in [auth-methods/TokenAuth.ts:15](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/auth-methods/TokenAuth.ts#L15)*
 
 ___
 
@@ -2852,7 +2852,7 @@ ___
 
 • **LOOKUP_TOKEN_SELF_PATH**: *"/lookup-self"* = "/lookup-self"
 
-*Defined in [auth-methods/TokenAuth.ts:16](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/auth-methods/TokenAuth.ts#L16)*
+*Defined in [auth-methods/TokenAuth.ts:16](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/auth-methods/TokenAuth.ts#L16)*
 
 ___
 
@@ -2860,7 +2860,7 @@ ___
 
 • **PLUGIN_NAME**: *"postgresql-database-plugin"* = "postgresql-database-plugin"
 
-*Defined in [secrets-engines/databases/PostgreSqlEngine.ts:9](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/databases/PostgreSqlEngine.ts#L9)*
+*Defined in [secrets-engines/databases/PostgreSqlEngine.ts:9](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/secrets-engines/databases/PostgreSqlEngine.ts#L9)*
 
 ___
 
@@ -2868,7 +2868,7 @@ ___
 
 • **READ_CONN_PATH**: *"/config/:name"* = "/config/:name"
 
-*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:11](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/databases/BaseDatabaseEngine.ts#L11)*
+*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:11](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/secrets-engines/databases/BaseDatabaseEngine.ts#L11)*
 
 ___
 
@@ -2876,7 +2876,7 @@ ___
 
 • **READ_ROLE_PATH**: *"/roles/:name"* = "/roles/:name"
 
-*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:17](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/databases/BaseDatabaseEngine.ts#L17)*
+*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:17](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/secrets-engines/databases/BaseDatabaseEngine.ts#L17)*
 
 ___
 
@@ -2884,7 +2884,7 @@ ___
 
 • **READ_TOKEN_ROLE_PATH**: *"/roles/:role_name"* = "/roles/:role_name"
 
-*Defined in [auth-methods/TokenAuth.ts:24](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/auth-methods/TokenAuth.ts#L24)*
+*Defined in [auth-methods/TokenAuth.ts:24](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/auth-methods/TokenAuth.ts#L24)*
 
 ___
 
@@ -2892,7 +2892,7 @@ ___
 
 • **RENEW_TOKEN_PATH**: *"/renew"* = "/renew"
 
-*Defined in [auth-methods/TokenAuth.ts:18](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/auth-methods/TokenAuth.ts#L18)*
+*Defined in [auth-methods/TokenAuth.ts:18](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/auth-methods/TokenAuth.ts#L18)*
 
 ___
 
@@ -2900,7 +2900,7 @@ ___
 
 • **RENEW_TOKEN_SELF_PATH**: *"/renew-self"* = "/renew-self"
 
-*Defined in [auth-methods/TokenAuth.ts:19](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/auth-methods/TokenAuth.ts#L19)*
+*Defined in [auth-methods/TokenAuth.ts:19](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/auth-methods/TokenAuth.ts#L19)*
 
 ___
 
@@ -2908,7 +2908,7 @@ ___
 
 • **RESET_CONN_PATH**: *"/reset/:name"* = "/reset/:name"
 
-*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:14](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/databases/BaseDatabaseEngine.ts#L14)*
+*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:14](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/secrets-engines/databases/BaseDatabaseEngine.ts#L14)*
 
 ___
 
@@ -2916,7 +2916,7 @@ ___
 
 • **REVOKE_ACCESSOR_PATH**: *"/revoke-accessor"* = "/revoke-accessor"
 
-*Defined in [auth-methods/TokenAuth.ts:22](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/auth-methods/TokenAuth.ts#L22)*
+*Defined in [auth-methods/TokenAuth.ts:22](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/auth-methods/TokenAuth.ts#L22)*
 
 ___
 
@@ -2924,7 +2924,7 @@ ___
 
 • **REVOKE_ORPHAN_AND_CHILDREN_PATH**: *"/revoke-orphan"* = "/revoke-orphan"
 
-*Defined in [auth-methods/TokenAuth.ts:23](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/auth-methods/TokenAuth.ts#L23)*
+*Defined in [auth-methods/TokenAuth.ts:23](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/auth-methods/TokenAuth.ts#L23)*
 
 ___
 
@@ -2932,7 +2932,7 @@ ___
 
 • **REVOKE_TOKEN_PATH**: *"/revoke"* = "/revoke"
 
-*Defined in [auth-methods/TokenAuth.ts:20](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/auth-methods/TokenAuth.ts#L20)*
+*Defined in [auth-methods/TokenAuth.ts:20](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/auth-methods/TokenAuth.ts#L20)*
 
 ___
 
@@ -2940,7 +2940,7 @@ ___
 
 • **REVOKE_TOKEN_SELF_PATH**: *"/revoke-self"* = "/revoke-self"
 
-*Defined in [auth-methods/TokenAuth.ts:21](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/auth-methods/TokenAuth.ts#L21)*
+*Defined in [auth-methods/TokenAuth.ts:21](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/auth-methods/TokenAuth.ts#L21)*
 
 ___
 
@@ -2948,7 +2948,7 @@ ___
 
 • **ROTATE_ROOT_CREDS_PATH**: *"/rotate-root/:name"* = "/rotate-root/:name"
 
-*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:15](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/databases/BaseDatabaseEngine.ts#L15)*
+*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:15](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/secrets-engines/databases/BaseDatabaseEngine.ts#L15)*
 
 ___
 
@@ -2956,7 +2956,7 @@ ___
 
 • **SECRET_CREATE_UPDATE_PATH**: *"/data/:path"* = "/data/:path"
 
-*Defined in [secrets-engines/Kv2SecretEngine.ts:9](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/Kv2SecretEngine.ts#L9)*
+*Defined in [secrets-engines/Kv2SecretEngine.ts:9](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/secrets-engines/Kv2SecretEngine.ts#L9)*
 
 ___
 
@@ -2964,7 +2964,7 @@ ___
 
 • **SECRET_DELETE_LATEST_PATH**: *"/data/:path"* = "/data/:path"
 
-*Defined in [secrets-engines/Kv2SecretEngine.ts:10](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/Kv2SecretEngine.ts#L10)*
+*Defined in [secrets-engines/Kv2SecretEngine.ts:10](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/secrets-engines/Kv2SecretEngine.ts#L10)*
 
 ___
 
@@ -2972,7 +2972,7 @@ ___
 
 • **SECRET_DELETE_METADATA_AND_ALL_VERS_PATH**: *"/metadata/:path"* = "/metadata/:path"
 
-*Defined in [secrets-engines/Kv2SecretEngine.ts:17](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/Kv2SecretEngine.ts#L17)*
+*Defined in [secrets-engines/Kv2SecretEngine.ts:17](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/secrets-engines/Kv2SecretEngine.ts#L17)*
 
 ___
 
@@ -2980,7 +2980,7 @@ ___
 
 • **SECRET_DELETE_PATH**: *"/:path"* = "/:path"
 
-*Defined in [secrets-engines/Kv1SecretEngine.ts:10](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/Kv1SecretEngine.ts#L10)*
+*Defined in [secrets-engines/Kv1SecretEngine.ts:10](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/secrets-engines/Kv1SecretEngine.ts#L10)*
 
 ___
 
@@ -2988,7 +2988,7 @@ ___
 
 • **SECRET_DELETE_VERSIONS_PATH**: *"/delete/:path"* = "/delete/:path"
 
-*Defined in [secrets-engines/Kv2SecretEngine.ts:11](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/Kv2SecretEngine.ts#L11)*
+*Defined in [secrets-engines/Kv2SecretEngine.ts:11](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/secrets-engines/Kv2SecretEngine.ts#L11)*
 
 ___
 
@@ -2996,7 +2996,7 @@ ___
 
 • **SECRET_DESTROY_VERSIONS_PATH**: *"/destroy/:path"* = "/destroy/:path"
 
-*Defined in [secrets-engines/Kv2SecretEngine.ts:13](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/Kv2SecretEngine.ts#L13)*
+*Defined in [secrets-engines/Kv2SecretEngine.ts:13](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/secrets-engines/Kv2SecretEngine.ts#L13)*
 
 ___
 
@@ -3004,9 +3004,9 @@ ___
 
 • **SECRET_LIST_PATH**: *"/metadata/:path"* = "/metadata/:path"
 
-*Defined in [secrets-engines/Kv1SecretEngine.ts:8](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/Kv1SecretEngine.ts#L8)*
+*Defined in [secrets-engines/Kv1SecretEngine.ts:8](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/secrets-engines/Kv1SecretEngine.ts#L8)*
 
-*Defined in [secrets-engines/Kv2SecretEngine.ts:14](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/Kv2SecretEngine.ts#L14)*
+*Defined in [secrets-engines/Kv2SecretEngine.ts:14](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/secrets-engines/Kv2SecretEngine.ts#L14)*
 
 ___
 
@@ -3014,7 +3014,7 @@ ___
 
 • **SECRET_READ_METADATA_PATH**: *"/metadata/:path"* = "/metadata/:path"
 
-*Defined in [secrets-engines/Kv2SecretEngine.ts:15](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/Kv2SecretEngine.ts#L15)*
+*Defined in [secrets-engines/Kv2SecretEngine.ts:15](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/secrets-engines/Kv2SecretEngine.ts#L15)*
 
 ___
 
@@ -3022,7 +3022,7 @@ ___
 
 • **SECRET_READ_PATH**: *"/:path"* = "/:path"
 
-*Defined in [secrets-engines/Kv1SecretEngine.ts:7](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/Kv1SecretEngine.ts#L7)*
+*Defined in [secrets-engines/Kv1SecretEngine.ts:7](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/secrets-engines/Kv1SecretEngine.ts#L7)*
 
 ___
 
@@ -3030,7 +3030,7 @@ ___
 
 • **SECRET_UNDELETE_VERSIONS_PATH**: *"/undelete/:path"* = "/undelete/:path"
 
-*Defined in [secrets-engines/Kv2SecretEngine.ts:12](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/Kv2SecretEngine.ts#L12)*
+*Defined in [secrets-engines/Kv2SecretEngine.ts:12](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/secrets-engines/Kv2SecretEngine.ts#L12)*
 
 ___
 
@@ -3038,7 +3038,7 @@ ___
 
 • **SECRET_UPDATE_METADATA_PATH**: *"/metadata/:path"* = "/metadata/:path"
 
-*Defined in [secrets-engines/Kv2SecretEngine.ts:16](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/Kv2SecretEngine.ts#L16)*
+*Defined in [secrets-engines/Kv2SecretEngine.ts:16](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/secrets-engines/Kv2SecretEngine.ts#L16)*
 
 ___
 
@@ -3046,7 +3046,7 @@ ___
 
 • **SECRET_UPSERT_PATH**: *"/:path"* = "/:path"
 
-*Defined in [secrets-engines/Kv1SecretEngine.ts:9](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/Kv1SecretEngine.ts#L9)*
+*Defined in [secrets-engines/Kv1SecretEngine.ts:9](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/secrets-engines/Kv1SecretEngine.ts#L9)*
 
 ___
 
@@ -3054,7 +3054,7 @@ ___
 
 • **SECRET_VERSION_PATH**: *"/data/:path"* = "/data/:path"
 
-*Defined in [secrets-engines/Kv2SecretEngine.ts:8](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/Kv2SecretEngine.ts#L8)*
+*Defined in [secrets-engines/Kv2SecretEngine.ts:8](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/secrets-engines/Kv2SecretEngine.ts#L8)*
 
 ___
 
@@ -3062,7 +3062,7 @@ ___
 
 • **TIDY_TOKEN_PATH**: *"/token/tidy"* = "/token/tidy"
 
-*Defined in [auth-methods/TokenAuth.ts:28](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/auth-methods/TokenAuth.ts#L28)*
+*Defined in [auth-methods/TokenAuth.ts:28](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/auth-methods/TokenAuth.ts#L28)*
 
 ___
 
@@ -3070,7 +3070,7 @@ ___
 
 • **UPSERT_PATH**: *"/users/:username"* = "/users/:username"
 
-*Defined in [auth-methods/UserPassAuth.ts:9](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/auth-methods/UserPassAuth.ts#L9)*
+*Defined in [auth-methods/UserPassAuth.ts:9](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/auth-methods/UserPassAuth.ts#L9)*
 
 ___
 
@@ -3078,7 +3078,7 @@ ___
 
 • **UPSERT_ROLE_PATH**: *"/roles/:name"* = "/roles/:name"
 
-*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:16](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/databases/BaseDatabaseEngine.ts#L16)*
+*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:16](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/secrets-engines/databases/BaseDatabaseEngine.ts#L16)*
 
 ___
 
@@ -3086,7 +3086,7 @@ ___
 
 • **UPSERT_TOKEN_ROLE_PATH**: *"/roles/:role_name"* = "/roles/:role_name"
 
-*Defined in [auth-methods/TokenAuth.ts:26](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/auth-methods/TokenAuth.ts#L26)*
+*Defined in [auth-methods/TokenAuth.ts:26](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/auth-methods/TokenAuth.ts#L26)*
 
 ___
 
@@ -3094,7 +3094,7 @@ ___
 
 • **WRAPPING_LOOKUP_PATH**: *"/sys/wrapping/lookup"* = "/sys/wrapping/lookup"
 
-*Defined in [system-backends/WrappingSysBackend.ts:5](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/system-backends/WrappingSysBackend.ts#L5)*
+*Defined in [system-backends/WrappingSysBackend.ts:5](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/system-backends/WrappingSysBackend.ts#L5)*
 
 ___
 
@@ -3102,7 +3102,7 @@ ___
 
 • **WRAPPING_REWRAP_PATH**: *"/sys/wrapping/rewrap"* = "/sys/wrapping/rewrap"
 
-*Defined in [system-backends/WrappingSysBackend.ts:6](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/system-backends/WrappingSysBackend.ts#L6)*
+*Defined in [system-backends/WrappingSysBackend.ts:6](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/system-backends/WrappingSysBackend.ts#L6)*
 
 ___
 
@@ -3110,7 +3110,7 @@ ___
 
 • **WRAPPING_UNWRAP_PATH**: *"/sys/wrapping/unwrap"* = "/sys/wrapping/unwrap"
 
-*Defined in [system-backends/WrappingSysBackend.ts:7](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/system-backends/WrappingSysBackend.ts#L7)*
+*Defined in [system-backends/WrappingSysBackend.ts:7](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/system-backends/WrappingSysBackend.ts#L7)*
 
 ___
 
@@ -3118,7 +3118,7 @@ ___
 
 • **WRAPPING_WRAP_PATH**: *"/sys/wrapping/wrap"* = "/sys/wrapping/wrap"
 
-*Defined in [system-backends/WrappingSysBackend.ts:8](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/system-backends/WrappingSysBackend.ts#L8)*
+*Defined in [system-backends/WrappingSysBackend.ts:8](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/system-backends/WrappingSysBackend.ts#L8)*
 
 ___
 
@@ -3126,7 +3126,7 @@ ___
 
 • **readFileAsync**: *__promisify__* = promisify(readFile)
 
-*Defined in [auth-token-helpers/get-token-from-file.ts:5](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/auth-token-helpers/get-token-from-file.ts#L5)*
+*Defined in [auth-token-helpers/get-token-from-file.ts:5](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/auth-token-helpers/get-token-from-file.ts#L5)*
 
 ## Functions
 
@@ -3134,7 +3134,7 @@ ___
 
 ▸ **getTokenFromFile**(`path`: string, `cacheToken`: boolean, `onError`: function): *[AuthTokenHelperFunc](globals.md#authtokenhelperfunc)*
 
-*Defined in [auth-token-helpers/get-token-from-file.ts:15](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/auth-token-helpers/get-token-from-file.ts#L15)*
+*Defined in [auth-token-helpers/get-token-from-file.ts:15](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/auth-token-helpers/get-token-from-file.ts#L15)*
 
 Read a token from a file. Useful if using the vault agent and need to read from a file sink.
 
@@ -3171,7 +3171,7 @@ ___
 
 ▸ **getTokenUsingIam**(`awsAuthClient`: [AwsAuth](classes/awsauth.md), `role`: string, `opts`: [IGetTokenUsingIamOpts](interfaces/igettokenusingiamopts.md), `onError`: function): *[AuthTokenHelperFunc](globals.md#authtokenhelperfunc)*
 
-*Defined in [auth-token-helpers/get-token-using-iam.ts:63](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/auth-token-helpers/get-token-using-iam.ts#L63)*
+*Defined in [auth-token-helpers/get-token-using-iam.ts:64](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/auth-token-helpers/get-token-using-iam.ts#L64)*
 
 Uses AWS IAM auth to get the vault token.
 - Caches the token
@@ -3209,6 +3209,6 @@ ___
 
 ▸ **loadCredentials**(): *Promise‹[IAwsCredentials](globals.md#iawscredentials)›*
 
-*Defined in [auth-token-helpers/get-token-using-iam.ts:76](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/auth-token-helpers/get-token-using-iam.ts#L76)*
+*Defined in [auth-token-helpers/get-token-using-iam.ts:77](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/auth-token-helpers/get-token-using-iam.ts#L77)*
 
 **Returns:** *Promise‹[IAwsCredentials](globals.md#iawscredentials)›*
