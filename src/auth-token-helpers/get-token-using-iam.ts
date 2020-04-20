@@ -150,7 +150,6 @@ export class IamTokenManager {
         },
         {
           onRetry: (err, attempt) => {
-            console.log(attempt)
             console.error(err)
           },
           ...(this.opts.retryOpts || {})
