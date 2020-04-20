@@ -1,6 +1,4 @@
-> **[Vault client for node.js](../README.md)**
-
-[Globals](../globals.md) / [IBaseLoginPayload](ibaseloginpayload.md) /
+[Vault client for node.js](../README.md) › [Globals](../globals.md) › [IBaseLoginPayload](ibaseloginpayload.md)
 
 # Interface: IBaseLoginPayload
 
@@ -8,8 +6,8 @@
 
 * **IBaseLoginPayload**
 
-  * [ILoginPayload](iawsauth.iloginpayload.md)
+  ↳ [ILoginPayload](../globals.md#iloginpayload)
 
-  * [IBaseAwsLoginPayload](iawsauth.ibaseawsloginpayload.md)
+  ↳ [IBaseAwsLoginPayload](../globals.md#ibaseawsloginpayload)
 
-  * [ILoginPayload](itlscertificateauth.iloginpayload.md)
+  ↳ [ILoginPayload](../globals.md#iloginpayload)

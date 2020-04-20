@@ -1,6 +1,4 @@
-> **[Vault client for node.js](../README.md)**
-
-[Globals](../globals.md) / [BaseClient](baseclient.md) /
+[Vault client for node.js](../README.md) › [Globals](../globals.md) › [BaseClient](baseclient.md)
 
 # Class: BaseClient
 
@@ -8,8 +6,8 @@
 
 * **BaseClient**
 
-  * [BaseAuth](baseauth.md)
+  ↳ [BaseAuth](baseauth.md)
 
-  * [BaseSysBackend](basesysbackend.md)
+  ↳ [BaseSysBackend](basesysbackend.md)
 
-  * [BaseSecretEngine](basesecretengine.md)
+  ↳ [BaseSecretEngine](basesecretengine.md)

@@ -1,6 +1,4 @@
-> **[Vault client for node.js](../README.md)**
-
-[Globals](../globals.md) / [BaseAuth](baseauth.md) /
+[Vault client for node.js](../README.md) › [Globals](../globals.md) › [BaseAuth](baseauth.md)
 
 # Class: BaseAuth
 
@@ -8,12 +6,12 @@
 
 * [BaseClient](baseclient.md)
 
-  * **BaseAuth**
+  ↳ **BaseAuth**
 
-  * [AwsAuth](awsauth.md)
+  ↳ [AwsAuth](awsauth.md)
 
-  * [TlsCertificateAuth](tlscertificateauth.md)
+  ↳ [TlsCertificateAuth](tlscertificateauth.md)
 
-  * [TokenAuth](tokenauth.md)
+  ↳ [TokenAuth](tokenauth.md)
 
-  * [UserPassAuth](userpassauth.md)
+  ↳ [UserPassAuth](userpassauth.md)

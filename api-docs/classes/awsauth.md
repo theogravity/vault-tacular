@@ -1,6 +1,4 @@
-> **[Vault client for node.js](../README.md)**
-
-[Globals](../globals.md) / [AwsAuth](awsauth.md) /
+[Vault client for node.js](../README.md) › [Globals](../globals.md) › [AwsAuth](awsauth.md)
 
 # Class: AwsAuth
 
@@ -8,9 +6,9 @@ The AWS secrets engine generates AWS access credentials dynamically based on IAM
 
 ## Hierarchy
 
-  * [BaseAuth](baseauth.md)
+  ↳ [BaseAuth](baseauth.md)
 
-  * **AwsAuth**
+  ↳ **AwsAuth**
 
 ## Index
 
@@ -32,7 +30,9 @@ The AWS secrets engine generates AWS access credentials dynamically based on IAM
 
 \+ **new AwsAuth**(`baseUrl`: [BaseUrl](../globals.md#baseurl), `config?`: [IBaseClientConfig](../interfaces/ibaseclientconfig.md)): *[AwsAuth](awsauth.md)*
 
-*Defined in [auth-methods/AwsAuth.ts:14](https://github.com/theogravity/vault-tacular/blob/07227c0/src/auth-methods/AwsAuth.ts#L14)*
+*Overrides void*
+
+*Defined in [auth-methods/AwsAuth.ts:14](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/auth-methods/AwsAuth.ts#L14)*
 
 **Parameters:**
 
@@ -47,9 +47,9 @@ Name | Type |
 
 ###  getTokenUsingIamLogin
 
-▸ **getTokenUsingIamLogin**(`payload`: [IGetTokenUsingIamLoginPayload](../interfaces/iawsauth.igettokenusingiamloginpayload.md)): *`Promise<IVaultResponse<ISecret>>`*
+▸ **getTokenUsingIamLogin**(`payload`: [IGetTokenUsingIamLoginPayload](../globals.md#igettokenusingiamloginpayload)): *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹[ISecret](../interfaces/isecret.md)››*
 
-*Defined in [auth-methods/AwsAuth.ts:45](https://github.com/theogravity/vault-tacular/blob/07227c0/src/auth-methods/AwsAuth.ts#L45)*
+*Defined in [auth-methods/AwsAuth.ts:45](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/auth-methods/AwsAuth.ts#L45)*
 
 Wrapper around loginUsingIam() that performs the additional steps
 necessary to construct a proper IAM login request to get a token
@@ -58,17 +58,17 @@ necessary to construct a proper IAM login request to get a token
 
 Name | Type |
 ------ | ------ |
-`payload` | [IGetTokenUsingIamLoginPayload](../interfaces/iawsauth.igettokenusingiamloginpayload.md) |
+`payload` | [IGetTokenUsingIamLoginPayload](../globals.md#igettokenusingiamloginpayload) |
 
-**Returns:** *`Promise<IVaultResponse<ISecret>>`*
+**Returns:** *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹[ISecret](../interfaces/isecret.md)››*
 
 ___
 
 ###  login
 
-▸ **login**(`payload`: [ILoginPayload](../interfaces/iawsauth.iloginpayload.md)): *`Promise<IVaultResponse<ISecret>>`*
+▸ **login**(`payload`: [ILoginPayload](../globals.md#iloginpayload)): *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹[ISecret](../interfaces/isecret.md)››*
 
-*Defined in [auth-methods/AwsAuth.ts:28](https://github.com/theogravity/vault-tacular/blob/07227c0/src/auth-methods/AwsAuth.ts#L28)*
+*Defined in [auth-methods/AwsAuth.ts:28](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/auth-methods/AwsAuth.ts#L28)*
 
 Generic AWS login
 
@@ -78,17 +78,17 @@ Generic AWS login
 
 Name | Type | Default | Description |
 ------ | ------ | ------ | ------ |
-`payload` | [ILoginPayload](../interfaces/iawsauth.iloginpayload.md) |  {} |   |
+`payload` | [ILoginPayload](../globals.md#iloginpayload) | {} |   |
 
-**Returns:** *`Promise<IVaultResponse<ISecret>>`*
+**Returns:** *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹[ISecret](../interfaces/isecret.md)››*
 
 ___
 
 ###  loginUsingEc2
 
-▸ **loginUsingEc2**(`payload`: [ILoginEc2Payload](../interfaces/iawsauth.iloginec2payload.md)): *`Promise<IVaultResponse<ISecret>>`*
+▸ **loginUsingEc2**(`payload`: [ILoginEc2Payload](../globals.md#iloginec2payload)): *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹[ISecret](../interfaces/isecret.md)››*
 
-*Defined in [auth-methods/AwsAuth.ts:89](https://github.com/theogravity/vault-tacular/blob/07227c0/src/auth-methods/AwsAuth.ts#L89)*
+*Defined in [auth-methods/AwsAuth.ts:89](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/auth-methods/AwsAuth.ts#L89)*
 
 AWS EC2 login with EC2-required payload only
 
@@ -98,17 +98,17 @@ AWS EC2 login with EC2-required payload only
 
 Name | Type |
 ------ | ------ |
-`payload` | [ILoginEc2Payload](../interfaces/iawsauth.iloginec2payload.md) |
+`payload` | [ILoginEc2Payload](../globals.md#iloginec2payload) |
 
-**Returns:** *`Promise<IVaultResponse<ISecret>>`*
+**Returns:** *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹[ISecret](../interfaces/isecret.md)››*
 
 ___
 
 ###  loginUsingIam
 
-▸ **loginUsingIam**(`payload`: [ILoginIamPayload](../interfaces/iawsauth.iloginiampayload.md)): *`Promise<IVaultResponse<ISecret>>`*
+▸ **loginUsingIam**(`payload`: [ILoginIamPayload](../globals.md#iloginiampayload)): *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹[ISecret](../interfaces/isecret.md)››*
 
-*Defined in [auth-methods/AwsAuth.ts:79](https://github.com/theogravity/vault-tacular/blob/07227c0/src/auth-methods/AwsAuth.ts#L79)*
+*Defined in [auth-methods/AwsAuth.ts:79](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/auth-methods/AwsAuth.ts#L79)*
 
 AWS IAM login with IAM-required payload only
 
@@ -118,9 +118,9 @@ AWS IAM login with IAM-required payload only
 
 Name | Type |
 ------ | ------ |
-`payload` | [ILoginIamPayload](../interfaces/iawsauth.iloginiampayload.md) |
+`payload` | [ILoginIamPayload](../globals.md#iloginiampayload) |
 
-**Returns:** *`Promise<IVaultResponse<ISecret>>`*
+**Returns:** *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹[ISecret](../interfaces/isecret.md)››*
 
 ___
 
@@ -128,7 +128,7 @@ ___
 
 ▸ **getStsHostFromRegion**(`region`: string): *string*
 
-*Defined in [auth-methods/AwsAuth.ts:100](https://github.com/theogravity/vault-tacular/blob/07227c0/src/auth-methods/AwsAuth.ts#L100)*
+*Defined in [auth-methods/AwsAuth.ts:100](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/auth-methods/AwsAuth.ts#L100)*
 
 Translates a region to an sts host
 

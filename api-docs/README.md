@@ -1,6 +1,6 @@
-> **[Vault client for node.js](README.md)**
+[Vault client for node.js](README.md) › [Globals](globals.md)
 
-[Globals](globals.md) /
+# Vault client for node.js
 
 # vault-tacular API Listing
 

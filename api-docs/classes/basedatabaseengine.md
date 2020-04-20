@@ -1,16 +1,14 @@
-> **[Vault client for node.js](../README.md)**
-
-[Globals](../globals.md) / [BaseDatabaseEngine](basedatabaseengine.md) /
+[Vault client for node.js](../README.md) › [Globals](../globals.md) › [BaseDatabaseEngine](basedatabaseengine.md)
 
 # Class: BaseDatabaseEngine
 
 ## Hierarchy
 
-  * [BaseSecretEngine](basesecretengine.md)
+  ↳ [BaseSecretEngine](basesecretengine.md)
 
-  * **BaseDatabaseEngine**
+  ↳ **BaseDatabaseEngine**
 
-  * [PostgreSqlEngine](postgresqlengine.md)
+  ↳ [PostgreSqlEngine](postgresqlengine.md)
 
 ## Index
 
@@ -36,7 +34,9 @@
 
 \+ **new BaseDatabaseEngine**(`baseUrl`: [BaseUrl](../globals.md#baseurl), `config?`: [IBaseClientConfig](../interfaces/ibaseclientconfig.md)): *[BaseDatabaseEngine](basedatabaseengine.md)*
 
-*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:22](https://github.com/theogravity/vault-tacular/blob/07227c0/src/secrets-engines/databases/BaseDatabaseEngine.ts#L22)*
+*Overrides void*
+
+*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:22](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/databases/BaseDatabaseEngine.ts#L22)*
 
 **Parameters:**
 
@@ -51,9 +51,9 @@ Name | Type |
 
 ###  deleteConnection
 
-▸ **deleteConnection**(`name`: string): *`Promise<IVaultResponse<void>>`*
+▸ **deleteConnection**(`name`: string): *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹void››*
 
-*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:109](https://github.com/theogravity/vault-tacular/blob/07227c0/src/secrets-engines/databases/BaseDatabaseEngine.ts#L109)*
+*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:109](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/databases/BaseDatabaseEngine.ts#L109)*
 
 This endpoint deletes a connection.
 
@@ -65,15 +65,15 @@ Name | Type | Description |
 ------ | ------ | ------ |
 `name` | string | Specifies the name for this database connection.  |
 
-**Returns:** *`Promise<IVaultResponse<void>>`*
+**Returns:** *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹void››*
 
 ___
 
 ###  deleteRole
 
-▸ **deleteRole**(`name`: string): *`Promise<IVaultResponse<void>>`*
+▸ **deleteRole**(`name`: string): *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹void››*
 
-*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:236](https://github.com/theogravity/vault-tacular/blob/07227c0/src/secrets-engines/databases/BaseDatabaseEngine.ts#L236)*
+*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:236](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/databases/BaseDatabaseEngine.ts#L236)*
 
 Deletes the role definition.
 
@@ -85,15 +85,15 @@ Name | Type | Description |
 ------ | ------ | ------ |
 `name` | string | Specifies the name of the role to delete  |
 
-**Returns:** *`Promise<IVaultResponse<void>>`*
+**Returns:** *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹void››*
 
 ___
 
 ###  generateCreds
 
-▸ **generateCreds**(`name`: string): *`Promise<IVaultResponse<IGenerateCredsResponse>>`*
+▸ **generateCreds**(`name`: string): *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹[IGenerateCredsResponse](../globals.md#igeneratecredsresponse)››*
 
-*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:255](https://github.com/theogravity/vault-tacular/blob/07227c0/src/secrets-engines/databases/BaseDatabaseEngine.ts#L255)*
+*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:255](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/databases/BaseDatabaseEngine.ts#L255)*
 
 Generates a new set of dynamic credentials based on the named role.
 
@@ -105,43 +105,43 @@ Name | Type | Description |
 ------ | ------ | ------ |
 `name` | string | Specifies the name of the role to create credentials against.  |
 
-**Returns:** *`Promise<IVaultResponse<IGenerateCredsResponse>>`*
+**Returns:** *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹[IGenerateCredsResponse](../globals.md#igeneratecredsresponse)››*
 
 ___
 
 ###  listConnections
 
-▸ **listConnections**(): *`Promise<IVaultResponse<IListConnectionsResponse>>`*
+▸ **listConnections**(): *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹[IListConnectionsResponse](../globals.md#ilistconnectionsresponse)››*
 
-*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:86](https://github.com/theogravity/vault-tacular/blob/07227c0/src/secrets-engines/databases/BaseDatabaseEngine.ts#L86)*
+*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:86](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/databases/BaseDatabaseEngine.ts#L86)*
 
 Returns a list of available connections. Only the connection names are returned, not any values.
 
 **`link`** https://www.vaultproject.io/api/secret/databases/index.html#list-connections
 
-**Returns:** *`Promise<IVaultResponse<IListConnectionsResponse>>`*
+**Returns:** *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹[IListConnectionsResponse](../globals.md#ilistconnectionsresponse)››*
 
 ___
 
 ###  listRoles
 
-▸ **listRoles**(): *`Promise<IVaultResponse<IListRolesResponse>>`*
+▸ **listRoles**(): *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹[IListRolesResponse](../globals.md#ilistrolesresponse)››*
 
-*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:213](https://github.com/theogravity/vault-tacular/blob/07227c0/src/secrets-engines/databases/BaseDatabaseEngine.ts#L213)*
+*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:213](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/databases/BaseDatabaseEngine.ts#L213)*
 
 Returns a list of available roles. Only the role names are returned, not any values.
 
 **`link`** https://www.vaultproject.io/api/secret/databases/index.html#list-roles
 
-**Returns:** *`Promise<IVaultResponse<IListRolesResponse>>`*
+**Returns:** *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹[IListRolesResponse](../globals.md#ilistrolesresponse)››*
 
 ___
 
 ###  readConnection
 
-▸ **readConnection**(`name`: string): *`Promise<IVaultResponse<IReadConnectionResponse>>`*
+▸ **readConnection**(`name`: string): *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹[IReadConnectionResponse](../globals.md#ireadconnectionresponse)››*
 
-*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:64](https://github.com/theogravity/vault-tacular/blob/07227c0/src/secrets-engines/databases/BaseDatabaseEngine.ts#L64)*
+*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:64](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/databases/BaseDatabaseEngine.ts#L64)*
 
 This endpoint returns the configuration settings for a connection.
 
@@ -153,15 +153,15 @@ Name | Type | Description |
 ------ | ------ | ------ |
 `name` | string | Specifies the name for this database connection.  |
 
-**Returns:** *`Promise<IVaultResponse<IReadConnectionResponse>>`*
+**Returns:** *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹[IReadConnectionResponse](../globals.md#ireadconnectionresponse)››*
 
 ___
 
 ###  readRole
 
-▸ **readRole**(`name`: string): *`Promise<IVaultResponse<IReadRoleResponse>>`*
+▸ **readRole**(`name`: string): *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹[IReadRoleResponse](../globals.md#ireadroleresponse)››*
 
-*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:191](https://github.com/theogravity/vault-tacular/blob/07227c0/src/secrets-engines/databases/BaseDatabaseEngine.ts#L191)*
+*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:191](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/databases/BaseDatabaseEngine.ts#L191)*
 
 Queries the role definition.
 
@@ -173,15 +173,15 @@ Name | Type | Description |
 ------ | ------ | ------ |
 `name` | string | Specifies the name of the role to read.  |
 
-**Returns:** *`Promise<IVaultResponse<IReadRoleResponse>>`*
+**Returns:** *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹[IReadRoleResponse](../globals.md#ireadroleresponse)››*
 
 ___
 
 ###  resetConnection
 
-▸ **resetConnection**(`name`: string): *`Promise<IVaultResponse<void>>`*
+▸ **resetConnection**(`name`: string): *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹void››*
 
-*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:129](https://github.com/theogravity/vault-tacular/blob/07227c0/src/secrets-engines/databases/BaseDatabaseEngine.ts#L129)*
+*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:129](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/databases/BaseDatabaseEngine.ts#L129)*
 
 Closes a connection and it's underlying plugin and restarts it with the configuration
 stored in the barrier.
@@ -194,15 +194,15 @@ Name | Type | Description |
 ------ | ------ | ------ |
 `name` | string | Specifies the name for this database connection.  |
 
-**Returns:** *`Promise<IVaultResponse<void>>`*
+**Returns:** *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹void››*
 
 ___
 
 ###  rotateRootCreds
 
-▸ **rotateRootCreds**(`name`: string): *`Promise<IVaultResponse<void>>`*
+▸ **rotateRootCreds**(`name`: string): *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹void››*
 
-*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:149](https://github.com/theogravity/vault-tacular/blob/07227c0/src/secrets-engines/databases/BaseDatabaseEngine.ts#L149)*
+*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:149](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/databases/BaseDatabaseEngine.ts#L149)*
 
 Rotate the root superuser credentials stored for the database connection. This user must
 have permissions to update its own password.
@@ -215,4 +215,4 @@ Name | Type | Description |
 ------ | ------ | ------ |
 `name` | string | Specifies the name of the connection to rotate.  |
 
-**Returns:** *`Promise<IVaultResponse<void>>`*
+**Returns:** *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹void››*

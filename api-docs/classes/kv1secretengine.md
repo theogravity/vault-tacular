@@ -1,6 +1,4 @@
-> **[Vault client for node.js](../README.md)**
-
-[Globals](../globals.md) / [Kv1SecretEngine](kv1secretengine.md) /
+[Vault client for node.js](../README.md) › [Globals](../globals.md) › [Kv1SecretEngine](kv1secretengine.md)
 
 # Class: Kv1SecretEngine
 
@@ -8,9 +6,9 @@ Vault KV secrets engine.
 
 ## Hierarchy
 
-  * [BaseSecretEngine](basesecretengine.md)
+  ↳ [BaseSecretEngine](basesecretengine.md)
 
-  * **Kv1SecretEngine**
+  ↳ **Kv1SecretEngine**
 
 ## Index
 
@@ -31,7 +29,9 @@ Vault KV secrets engine.
 
 \+ **new Kv1SecretEngine**(`baseUrl`: [BaseUrl](../globals.md#baseurl), `config?`: [IBaseClientConfig](../interfaces/ibaseclientconfig.md)): *[Kv1SecretEngine](kv1secretengine.md)*
 
-*Defined in [secrets-engines/Kv1SecretEngine.ts:15](https://github.com/theogravity/vault-tacular/blob/07227c0/src/secrets-engines/Kv1SecretEngine.ts#L15)*
+*Overrides void*
+
+*Defined in [secrets-engines/Kv1SecretEngine.ts:15](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/Kv1SecretEngine.ts#L15)*
 
 **Parameters:**
 
@@ -46,9 +46,9 @@ Name | Type |
 
 ###  createOrUpdateSecret
 
-▸ **createOrUpdateSecret**(`path`: string, `payload`: [ICreateOrUpdateSecretPayload](../interfaces/ikv1secretengine.icreateorupdatesecretpayload.md)): *`Promise<IVaultResponse<void>>`*
+▸ **createOrUpdateSecret**(`path`: string, `payload`: [ICreateOrUpdateSecretPayload](../globals.md#icreateorupdatesecretpayload)): *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹void››*
 
-*Defined in [secrets-engines/Kv1SecretEngine.ts:77](https://github.com/theogravity/vault-tacular/blob/07227c0/src/secrets-engines/Kv1SecretEngine.ts#L77)*
+*Defined in [secrets-engines/Kv1SecretEngine.ts:77](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/Kv1SecretEngine.ts#L77)*
 
 Stores a secret at the specified location. If the value does not yet exist, the calling
 token must have an ACL policy granting the create capability. If the value already exists,
@@ -61,17 +61,17 @@ the calling token must have an ACL policy granting the update capability.
 Name | Type |
 ------ | ------ |
 `path` | string |
-`payload` | [ICreateOrUpdateSecretPayload](../interfaces/ikv1secretengine.icreateorupdatesecretpayload.md) |
+`payload` | [ICreateOrUpdateSecretPayload](../globals.md#icreateorupdatesecretpayload) |
 
-**Returns:** *`Promise<IVaultResponse<void>>`*
+**Returns:** *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹void››*
 
 ___
 
 ###  deleteSecret
 
-▸ **deleteSecret**(`path`: string): *`Promise<IVaultResponse<void>>`*
+▸ **deleteSecret**(`path`: string): *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹void››*
 
-*Defined in [secrets-engines/Kv1SecretEngine.ts:99](https://github.com/theogravity/vault-tacular/blob/07227c0/src/secrets-engines/Kv1SecretEngine.ts#L99)*
+*Defined in [secrets-engines/Kv1SecretEngine.ts:99](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/Kv1SecretEngine.ts#L99)*
 
 Deletes the secret at the specified location.
 
@@ -83,15 +83,15 @@ Name | Type |
 ------ | ------ |
 `path` | string |
 
-**Returns:** *`Promise<IVaultResponse<void>>`*
+**Returns:** *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹void››*
 
 ___
 
 ###  listSecrets
 
-▸ **listSecrets**(`path`: string): *`Promise<IVaultResponse<IListSecretsResponse>>`*
+▸ **listSecrets**(`path`: string): *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹[IListSecretsResponse](../globals.md#ilistsecretsresponse)››*
 
-*Defined in [secrets-engines/Kv1SecretEngine.ts:53](https://github.com/theogravity/vault-tacular/blob/07227c0/src/secrets-engines/Kv1SecretEngine.ts#L53)*
+*Defined in [secrets-engines/Kv1SecretEngine.ts:53](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/Kv1SecretEngine.ts#L53)*
 
 returns a list of key names at the specified location. Folders are suffixed with /. The input
 must be a folder; list on a file will not return a value. Note that no policy-based filtering
@@ -106,15 +106,15 @@ Name | Type |
 ------ | ------ |
 `path` | string |
 
-**Returns:** *`Promise<IVaultResponse<IListSecretsResponse>>`*
+**Returns:** *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹[IListSecretsResponse](../globals.md#ilistsecretsresponse)››*
 
 ___
 
 ###  readSecret
 
-▸ **readSecret**(`path`: string): *`Promise<IVaultResponse<IReadSecretResponse>>`*
+▸ **readSecret**(`path`: string): *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹[IReadSecretResponse](../globals.md#ireadsecretresponse)››*
 
-*Defined in [secrets-engines/Kv1SecretEngine.ts:28](https://github.com/theogravity/vault-tacular/blob/07227c0/src/secrets-engines/Kv1SecretEngine.ts#L28)*
+*Defined in [secrets-engines/Kv1SecretEngine.ts:28](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/secrets-engines/Kv1SecretEngine.ts#L28)*
 
 This endpoint retrieves the secret at the specified location
 
@@ -126,4 +126,4 @@ Name | Type |
 ------ | ------ |
 `path` | string |
 
-**Returns:** *`Promise<IVaultResponse<IReadSecretResponse>>`*
+**Returns:** *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹[IReadSecretResponse](../globals.md#ireadsecretresponse)››*

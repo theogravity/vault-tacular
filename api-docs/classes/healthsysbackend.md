@@ -1,14 +1,12 @@
-> **[Vault client for node.js](../README.md)**
-
-[Globals](../globals.md) / [HealthSysBackend](healthsysbackend.md) /
+[Vault client for node.js](../README.md) › [Globals](../globals.md) › [HealthSysBackend](healthsysbackend.md)
 
 # Class: HealthSysBackend
 
 ## Hierarchy
 
-  * [BaseSysBackend](basesysbackend.md)
+  ↳ [BaseSysBackend](basesysbackend.md)
 
-  * **HealthSysBackend**
+  ↳ **HealthSysBackend**
 
 ## Index
 
@@ -29,7 +27,9 @@
 
 *Inherited from [BaseSysBackend](basesysbackend.md).[constructor](basesysbackend.md#constructor)*
 
-*Defined in [system-backends/BaseSysBackend.ts:4](https://github.com/theogravity/vault-tacular/blob/07227c0/src/system-backends/BaseSysBackend.ts#L4)*
+*Overrides void*
+
+*Defined in [system-backends/BaseSysBackend.ts:4](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/system-backends/BaseSysBackend.ts#L4)*
 
 **Parameters:**
 
@@ -44,9 +44,9 @@ Name | Type | Description |
 
 ###  checkStatus
 
-▸ **checkStatus**(`payload`: [IReadHealthInfoPayload](../interfaces/ihealthsysbackend.ireadhealthinfopayload.md)): *`Promise<IVaultResponse<void>>`*
+▸ **checkStatus**(`payload`: [IReadHealthInfoPayload](../globals.md#ireadhealthinfopayload)): *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹void››*
 
-*Defined in [system-backends/HealthSysBackend.ts:40](https://github.com/theogravity/vault-tacular/blob/07227c0/src/system-backends/HealthSysBackend.ts#L40)*
+*Defined in [system-backends/HealthSysBackend.ts:40](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/system-backends/HealthSysBackend.ts#L40)*
 
 Same as readHealthInfo, but only returns a status code and no response body.
 
@@ -56,17 +56,17 @@ Same as readHealthInfo, but only returns a status code and no response body.
 
 Name | Type | Default |
 ------ | ------ | ------ |
-`payload` | [IReadHealthInfoPayload](../interfaces/ihealthsysbackend.ireadhealthinfopayload.md) |  {} |
+`payload` | [IReadHealthInfoPayload](../globals.md#ireadhealthinfopayload) | {} |
 
-**Returns:** *`Promise<IVaultResponse<void>>`*
+**Returns:** *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹void››*
 
 ___
 
 ###  readHealthInfo
 
-▸ **readHealthInfo**(`payload`: [IReadHealthInfoPayload](../interfaces/ihealthsysbackend.ireadhealthinfopayload.md)): *`Promise<IVaultResponse<IReadHealthInfoResponse>>`*
+▸ **readHealthInfo**(`payload`: [IReadHealthInfoPayload](../globals.md#ireadhealthinfopayload)): *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹[IReadHealthInfoResponse](../globals.md#ireadhealthinforesponse)››*
 
-*Defined in [system-backends/HealthSysBackend.ts:23](https://github.com/theogravity/vault-tacular/blob/07227c0/src/system-backends/HealthSysBackend.ts#L23)*
+*Defined in [system-backends/HealthSysBackend.ts:23](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/system-backends/HealthSysBackend.ts#L23)*
 
 This endpoint returns the health status of Vault. This matches the semantics of a Consul HTTP
 health check and provides a simple way to monitor the health of a Vault instance.
@@ -86,6 +86,6 @@ The default status codes are:
 
 Name | Type | Default |
 ------ | ------ | ------ |
-`payload` | [IReadHealthInfoPayload](../interfaces/ihealthsysbackend.ireadhealthinfopayload.md) |  {} |
+`payload` | [IReadHealthInfoPayload](../globals.md#ireadhealthinfopayload) | {} |
 
-**Returns:** *`Promise<IVaultResponse<IReadHealthInfoResponse>>`*
+**Returns:** *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹[IReadHealthInfoResponse](../globals.md#ireadhealthinforesponse)››*

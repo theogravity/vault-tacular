@@ -1,6 +1,4 @@
-> **[Vault client for node.js](../README.md)**
-
-[Globals](../globals.md) / [UserPassAuth](userpassauth.md) /
+[Vault client for node.js](../README.md) › [Globals](../globals.md) › [UserPassAuth](userpassauth.md)
 
 # Class: UserPassAuth
 
@@ -8,9 +6,9 @@ Username and password-based auth
 
 ## Hierarchy
 
-  * [BaseAuth](baseauth.md)
+  ↳ [BaseAuth](baseauth.md)
 
-  * **UserPassAuth**
+  ↳ **UserPassAuth**
 
 ## Index
 
@@ -29,7 +27,9 @@ Username and password-based auth
 
 \+ **new UserPassAuth**(`baseUrl`: [BaseUrl](../globals.md#baseurl), `config?`: [IBaseClientConfig](../interfaces/ibaseclientconfig.md)): *[UserPassAuth](userpassauth.md)*
 
-*Defined in [auth-methods/UserPassAuth.ts:14](https://github.com/theogravity/vault-tacular/blob/07227c0/src/auth-methods/UserPassAuth.ts#L14)*
+*Overrides void*
+
+*Defined in [auth-methods/UserPassAuth.ts:14](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/auth-methods/UserPassAuth.ts#L14)*
 
 **Parameters:**
 
@@ -44,9 +44,9 @@ Name | Type |
 
 ###  createOrUpdateUser
 
-▸ **createOrUpdateUser**(`username`: string, `payload`: [IUpsertPayload](../interfaces/iuserpassauth.iupsertpayload.md)): *`Promise<IVaultResponse<void>>`*
+▸ **createOrUpdateUser**(`username`: string, `payload`: [IUpsertPayload](../globals.md#iupsertpayload)): *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹void››*
 
-*Defined in [auth-methods/UserPassAuth.ts:27](https://github.com/theogravity/vault-tacular/blob/07227c0/src/auth-methods/UserPassAuth.ts#L27)*
+*Defined in [auth-methods/UserPassAuth.ts:27](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/auth-methods/UserPassAuth.ts#L27)*
 
 Create or update a user.
 
@@ -57,17 +57,17 @@ Create or update a user.
 Name | Type |
 ------ | ------ |
 `username` | string |
-`payload` | [IUpsertPayload](../interfaces/iuserpassauth.iupsertpayload.md) |
+`payload` | [IUpsertPayload](../globals.md#iupsertpayload) |
 
-**Returns:** *`Promise<IVaultResponse<void>>`*
+**Returns:** *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹void››*
 
 ___
 
 ###  login
 
-▸ **login**(`username`: string, `password`: string): *`Promise<IVaultResponse<ISecret>>`*
+▸ **login**(`username`: string, `password`: string): *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹[ISecret](../interfaces/isecret.md)››*
 
-*Defined in [auth-methods/UserPassAuth.ts:49](https://github.com/theogravity/vault-tacular/blob/07227c0/src/auth-methods/UserPassAuth.ts#L49)*
+*Defined in [auth-methods/UserPassAuth.ts:49](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/auth-methods/UserPassAuth.ts#L49)*
 
 Login with the username and password.
 
@@ -80,4 +80,4 @@ Name | Type |
 `username` | string |
 `password` | string |
 
-**Returns:** *`Promise<IVaultResponse<ISecret>>`*
+**Returns:** *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹[ISecret](../interfaces/isecret.md)››*

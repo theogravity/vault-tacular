@@ -1,6 +1,4 @@
-> **[Vault client for node.js](../README.md)**
-
-[Globals](../globals.md) / [TlsCertificateAuth](tlscertificateauth.md) /
+[Vault client for node.js](../README.md) › [Globals](../globals.md) › [TlsCertificateAuth](tlscertificateauth.md)
 
 # Class: TlsCertificateAuth
 
@@ -8,9 +6,9 @@ Uses TLS certificates for authentication.
 
 ## Hierarchy
 
-  * [BaseAuth](baseauth.md)
+  ↳ [BaseAuth](baseauth.md)
 
-  * **TlsCertificateAuth**
+  ↳ **TlsCertificateAuth**
 
 ## Index
 
@@ -29,7 +27,9 @@ Uses TLS certificates for authentication.
 
 \+ **new TlsCertificateAuth**(`baseUrl`: [BaseUrl](../globals.md#baseurl), `config?`: [IBaseClientConfig](../interfaces/ibaseclientconfig.md)): *[TlsCertificateAuth](tlscertificateauth.md)*
 
-*Defined in [auth-methods/TlsCertificateAuth.ts:14](https://github.com/theogravity/vault-tacular/blob/07227c0/src/auth-methods/TlsCertificateAuth.ts#L14)*
+*Overrides void*
+
+*Defined in [auth-methods/TlsCertificateAuth.ts:14](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/auth-methods/TlsCertificateAuth.ts#L14)*
 
 **Parameters:**
 
@@ -44,9 +44,9 @@ Name | Type |
 
 ###  createRole
 
-▸ **createRole**(`name`: string, `payload`: [ICreateRolePayload](../interfaces/itlscertificateauth.icreaterolepayload.md)): *`Promise<IVaultResponse<void>>`*
+▸ **createRole**(`name`: string, `payload`: [ICreateRolePayload](../globals.md#icreaterolepayload)): *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹void››*
 
-*Defined in [auth-methods/TlsCertificateAuth.ts:27](https://github.com/theogravity/vault-tacular/blob/07227c0/src/auth-methods/TlsCertificateAuth.ts#L27)*
+*Defined in [auth-methods/TlsCertificateAuth.ts:27](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/auth-methods/TlsCertificateAuth.ts#L27)*
 
 Sets a CA cert and associated parameters in a role name.
 
@@ -57,17 +57,17 @@ Sets a CA cert and associated parameters in a role name.
 Name | Type |
 ------ | ------ |
 `name` | string |
-`payload` | [ICreateRolePayload](../interfaces/itlscertificateauth.icreaterolepayload.md) |
+`payload` | [ICreateRolePayload](../globals.md#icreaterolepayload) |
 
-**Returns:** *`Promise<IVaultResponse<void>>`*
+**Returns:** *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹void››*
 
 ___
 
 ###  login
 
-▸ **login**(`payload`: [ILoginPayload](../interfaces/itlscertificateauth.iloginpayload.md)): *`Promise<IVaultResponse<ISecret>>`*
+▸ **login**(`payload`: [ILoginPayload](../globals.md#iloginpayload)): *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹[ISecret](../interfaces/isecret.md)››*
 
-*Defined in [auth-methods/TlsCertificateAuth.ts:55](https://github.com/theogravity/vault-tacular/blob/07227c0/src/auth-methods/TlsCertificateAuth.ts#L55)*
+*Defined in [auth-methods/TlsCertificateAuth.ts:55](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/auth-methods/TlsCertificateAuth.ts#L55)*
 
 Log in and fetch a token. If there is a valid chain to a CA configured in the method and all
 role constraints are matched, a token will be issued. If the certificate has DNS SANs in it,
@@ -83,6 +83,6 @@ The certificate *must* have signing capability
 
 Name | Type |
 ------ | ------ |
-`payload` | [ILoginPayload](../interfaces/itlscertificateauth.iloginpayload.md) |
+`payload` | [ILoginPayload](../globals.md#iloginpayload) |
 
-**Returns:** *`Promise<IVaultResponse<ISecret>>`*
+**Returns:** *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹[ISecret](../interfaces/isecret.md)››*

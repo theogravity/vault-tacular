@@ -1,6 +1,4 @@
-> **[Vault client for node.js](../README.md)**
-
-[Globals](../globals.md) / [BaseSecretEngine](basesecretengine.md) /
+[Vault client for node.js](../README.md) › [Globals](../globals.md) › [BaseSecretEngine](basesecretengine.md)
 
 # Class: BaseSecretEngine
 
@@ -8,10 +6,10 @@
 
 * [BaseClient](baseclient.md)
 
-  * **BaseSecretEngine**
+  ↳ **BaseSecretEngine**
 
-  * [Kv1SecretEngine](kv1secretengine.md)
+  ↳ [Kv1SecretEngine](kv1secretengine.md)
 
-  * [Kv2SecretEngine](kv2secretengine.md)
+  ↳ [Kv2SecretEngine](kv2secretengine.md)
 
-  * [BaseDatabaseEngine](basedatabaseengine.md)
+  ↳ [BaseDatabaseEngine](basedatabaseengine.md)

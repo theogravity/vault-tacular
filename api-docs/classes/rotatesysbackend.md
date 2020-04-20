@@ -1,14 +1,12 @@
-> **[Vault client for node.js](../README.md)**
-
-[Globals](../globals.md) / [RotateSysBackend](rotatesysbackend.md) /
+[Vault client for node.js](../README.md) › [Globals](../globals.md) › [RotateSysBackend](rotatesysbackend.md)
 
 # Class: RotateSysBackend
 
 ## Hierarchy
 
-  * [BaseSysBackend](basesysbackend.md)
+  ↳ [BaseSysBackend](basesysbackend.md)
 
-  * **RotateSysBackend**
+  ↳ **RotateSysBackend**
 
 ## Index
 
@@ -28,7 +26,9 @@
 
 *Inherited from [BaseSysBackend](basesysbackend.md).[constructor](basesysbackend.md#constructor)*
 
-*Defined in [system-backends/BaseSysBackend.ts:4](https://github.com/theogravity/vault-tacular/blob/07227c0/src/system-backends/BaseSysBackend.ts#L4)*
+*Overrides void*
+
+*Defined in [system-backends/BaseSysBackend.ts:4](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/system-backends/BaseSysBackend.ts#L4)*
 
 **Parameters:**
 
@@ -43,9 +43,9 @@ Name | Type | Description |
 
 ###  rotateEncryptionKey
 
-▸ **rotateEncryptionKey**(): *`Promise<IVaultResponse<void>>`*
+▸ **rotateEncryptionKey**(): *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹void››*
 
-*Defined in [system-backends/RotateSysBackend.ts:14](https://github.com/theogravity/vault-tacular/blob/07227c0/src/system-backends/RotateSysBackend.ts#L14)*
+*Defined in [system-backends/RotateSysBackend.ts:14](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/system-backends/RotateSysBackend.ts#L14)*
 
 triggers a rotation of the backend encryption key. This is the key that is used to encrypt
 result written to the storage backend, and is not provided to operators. This operation is done
@@ -54,4 +54,4 @@ previous encryption keys.
 
 **`link`** https://www.vaultproject.io/api/system/rotate.html#rotate-encryption-key
 
-**Returns:** *`Promise<IVaultResponse<void>>`*
+**Returns:** *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹void››*

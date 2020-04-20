@@ -1,6 +1,4 @@
-> **[Vault client for node.js](../README.md)**
-
-[Globals](../globals.md) / [IVaultResponse](ivaultresponse.md) /
+[Vault client for node.js](../README.md) › [Globals](../globals.md) › [IVaultResponse](ivaultresponse.md)
 
 # Interface: IVaultResponse <**T**>
 
@@ -22,6 +20,6 @@
 
 ### `Optional` result
 
-• **result**? : *`T`*
+• **result**? : *T*
 
-*Defined in [interfaces/IBaseClient.ts:48](https://github.com/theogravity/vault-tacular/blob/07227c0/src/interfaces/IBaseClient.ts#L48)*
+*Defined in [interfaces/IBaseClient.ts:48](https://github.com/theogravity/vault-tacular/blob/4b12cd9/src/interfaces/IBaseClient.ts#L48)*
