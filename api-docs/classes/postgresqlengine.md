@@ -36,7 +36,7 @@
 
 *Overrides [BaseDatabaseEngine](basedatabaseengine.md).[constructor](basedatabaseengine.md#constructor)*
 
-*Defined in [secrets-engines/databases/PostgreSqlEngine.ts:11](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/secrets-engines/databases/PostgreSqlEngine.ts#L11)*
+*Defined in [secrets-engines/databases/PostgreSqlEngine.ts:11](https://github.com/theogravity/vault-tacular/blob/3b53ca7/src/secrets-engines/databases/PostgreSqlEngine.ts#L11)*
 
 **Parameters:**
 
@@ -53,7 +53,7 @@ Name | Type |
 
 ▸ **configConnection**(`name`: string, `payload`: [IPostgreConfigConnPayload](../globals.md#ipostgreconfigconnpayload)): *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹void››*
 
-*Defined in [secrets-engines/databases/PostgreSqlEngine.ts:22](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/secrets-engines/databases/PostgreSqlEngine.ts#L22)*
+*Defined in [secrets-engines/databases/PostgreSqlEngine.ts:22](https://github.com/theogravity/vault-tacular/blob/3b53ca7/src/secrets-engines/databases/PostgreSqlEngine.ts#L22)*
 
 Configures a Postgre connection
 
@@ -76,7 +76,7 @@ ___
 
 *Overrides void*
 
-*Defined in [secrets-engines/databases/PostgreSqlEngine.ts:45](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/secrets-engines/databases/PostgreSqlEngine.ts#L45)*
+*Defined in [secrets-engines/databases/PostgreSqlEngine.ts:45](https://github.com/theogravity/vault-tacular/blob/3b53ca7/src/secrets-engines/databases/PostgreSqlEngine.ts#L45)*
 
 Creates or updates a role definition.
 
@@ -101,7 +101,7 @@ ___
 
 *Inherited from [BaseDatabaseEngine](basedatabaseengine.md).[deleteConnection](basedatabaseengine.md#deleteconnection)*
 
-*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:109](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/secrets-engines/databases/BaseDatabaseEngine.ts#L109)*
+*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:109](https://github.com/theogravity/vault-tacular/blob/3b53ca7/src/secrets-engines/databases/BaseDatabaseEngine.ts#L109)*
 
 This endpoint deletes a connection.
 
@@ -123,7 +123,7 @@ ___
 
 *Inherited from [BaseDatabaseEngine](basedatabaseengine.md).[deleteRole](basedatabaseengine.md#deleterole)*
 
-*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:236](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/secrets-engines/databases/BaseDatabaseEngine.ts#L236)*
+*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:236](https://github.com/theogravity/vault-tacular/blob/3b53ca7/src/secrets-engines/databases/BaseDatabaseEngine.ts#L236)*
 
 Deletes the role definition.
 
@@ -145,7 +145,7 @@ ___
 
 *Inherited from [BaseDatabaseEngine](basedatabaseengine.md).[generateCreds](basedatabaseengine.md#generatecreds)*
 
-*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:255](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/secrets-engines/databases/BaseDatabaseEngine.ts#L255)*
+*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:255](https://github.com/theogravity/vault-tacular/blob/3b53ca7/src/secrets-engines/databases/BaseDatabaseEngine.ts#L255)*
 
 Generates a new set of dynamic credentials based on the named role.
 
@@ -167,7 +167,7 @@ ___
 
 *Inherited from [BaseDatabaseEngine](basedatabaseengine.md).[listConnections](basedatabaseengine.md#listconnections)*
 
-*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:86](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/secrets-engines/databases/BaseDatabaseEngine.ts#L86)*
+*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:86](https://github.com/theogravity/vault-tacular/blob/3b53ca7/src/secrets-engines/databases/BaseDatabaseEngine.ts#L86)*
 
 Returns a list of available connections. Only the connection names are returned, not any values.
 
@@ -183,7 +183,7 @@ ___
 
 *Inherited from [BaseDatabaseEngine](basedatabaseengine.md).[listRoles](basedatabaseengine.md#listroles)*
 
-*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:213](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/secrets-engines/databases/BaseDatabaseEngine.ts#L213)*
+*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:213](https://github.com/theogravity/vault-tacular/blob/3b53ca7/src/secrets-engines/databases/BaseDatabaseEngine.ts#L213)*
 
 Returns a list of available roles. Only the role names are returned, not any values.
 
@@ -199,7 +199,7 @@ ___
 
 *Inherited from [BaseDatabaseEngine](basedatabaseengine.md).[readConnection](basedatabaseengine.md#readconnection)*
 
-*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:64](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/secrets-engines/databases/BaseDatabaseEngine.ts#L64)*
+*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:64](https://github.com/theogravity/vault-tacular/blob/3b53ca7/src/secrets-engines/databases/BaseDatabaseEngine.ts#L64)*
 
 This endpoint returns the configuration settings for a connection.
 
@@ -221,7 +221,7 @@ ___
 
 *Inherited from [BaseDatabaseEngine](basedatabaseengine.md).[readRole](basedatabaseengine.md#readrole)*
 
-*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:191](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/secrets-engines/databases/BaseDatabaseEngine.ts#L191)*
+*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:191](https://github.com/theogravity/vault-tacular/blob/3b53ca7/src/secrets-engines/databases/BaseDatabaseEngine.ts#L191)*
 
 Queries the role definition.
 
@@ -243,7 +243,7 @@ ___
 
 *Inherited from [BaseDatabaseEngine](basedatabaseengine.md).[resetConnection](basedatabaseengine.md#resetconnection)*
 
-*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:129](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/secrets-engines/databases/BaseDatabaseEngine.ts#L129)*
+*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:129](https://github.com/theogravity/vault-tacular/blob/3b53ca7/src/secrets-engines/databases/BaseDatabaseEngine.ts#L129)*
 
 Closes a connection and it's underlying plugin and restarts it with the configuration
 stored in the barrier.
@@ -266,7 +266,7 @@ ___
 
 *Inherited from [BaseDatabaseEngine](basedatabaseengine.md).[rotateRootCreds](basedatabaseengine.md#rotaterootcreds)*
 
-*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:149](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/secrets-engines/databases/BaseDatabaseEngine.ts#L149)*
+*Defined in [secrets-engines/databases/BaseDatabaseEngine.ts:149](https://github.com/theogravity/vault-tacular/blob/3b53ca7/src/secrets-engines/databases/BaseDatabaseEngine.ts#L149)*
 
 Rotate the root superuser credentials stored for the database connection. This user must
 have permissions to update its own password.

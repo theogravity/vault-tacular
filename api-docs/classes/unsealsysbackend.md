@@ -28,7 +28,7 @@
 
 *Overrides void*
 
-*Defined in [system-backends/BaseSysBackend.ts:4](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/system-backends/BaseSysBackend.ts#L4)*
+*Defined in [system-backends/BaseSysBackend.ts:4](https://github.com/theogravity/vault-tacular/blob/3b53ca7/src/system-backends/BaseSysBackend.ts#L4)*
 
 **Parameters:**
 
@@ -45,7 +45,7 @@ Name | Type | Description |
 
 ▸ **submitUnsealKey**(`payload`: [ISubmitUnsealKeyPayload](../globals.md#isubmitunsealkeypayload)): *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹[ISubmitUnsealKeyResponse](../globals.md#isubmitunsealkeyresponse)››*
 
-*Defined in [system-backends/UnsealSysBackend.ts:14](https://github.com/theogravity/vault-tacular/blob/2b36c08/src/system-backends/UnsealSysBackend.ts#L14)*
+*Defined in [system-backends/UnsealSysBackend.ts:14](https://github.com/theogravity/vault-tacular/blob/3b53ca7/src/system-backends/UnsealSysBackend.ts#L14)*
 
 This endpoint is used to enter a single master key share to progress the unsealing of the
 Vault. If the threshold number of master key shares is reached, Vault will attempt to unseal

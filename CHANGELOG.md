@@ -1,4 +1,4 @@
-# UNRELEASED
+# 0.4.3 - Mon Apr 20 2020 23:48:30
 
 - Remove stray `console.log` entry for retry handler in IAM token helper
 
