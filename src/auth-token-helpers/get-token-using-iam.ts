@@ -1,4 +1,5 @@
 import awscred from 'awscred'
+import retry from 'async-retry'
 import { EventEmitter } from 'events'
 import { AwsAuth, IAwsAuth } from '..'
 import { AuthTokenHelperFunc, ISecretAuth } from '../interfaces/IBaseClient'
@@ -16,6 +17,36 @@ export interface IGetTokenUsingIamOpts {
    */
   iamRequestHeaders?: {
     [key: string]: string
+  }
+
+  /**
+   * async-retry options when token fetch fails
+   */
+  retryOpts?: {
+    /**
+     * The maximum amount of times to retry the operation. Default is 10.
+     */
+    retries?: number
+    /**
+     * The exponential factor to use. Default is 2.
+     */
+    factor?: number
+    /**
+     * The number of milliseconds before starting the first retry. Default is 1000.
+     */
+    minTimeout?: number
+    /**
+     * The maximum number of milliseconds between two retries. Default is Infinity.
+     */
+    maxTimeout?: number
+    /**
+     * Randomizes the timeouts by multiplying with a factor between 1 to 2. Default is true.
+     */
+    randomize?: boolean
+    /**
+     * An optional Function that is invoked after a new retry is performed. It's passed the Error that triggered it as a parameter.
+     */
+    onRetry?: (err: Error) => void
   }
 }
 
@@ -35,19 +66,10 @@ export function getTokenUsingIam (
   opts: IGetTokenUsingIamOpts = {},
   onError: (err: Error) => void
 ): AuthTokenHelperFunc {
-  const manager = new IamTokenManager(awsAuthClient, role, opts)
+  const manager = new IamTokenManager(awsAuthClient, role, opts, onError)
 
   return async () => {
-    try {
-      const token = await manager.getToken()
-      return token
-    } catch (e) {
-      if (onError) {
-        onError(e)
-      } else {
-        console.error(e)
-      }
-    }
+    return manager.getToken()
   }
 }
 
@@ -75,15 +97,18 @@ export class IamTokenManager {
   private em: EventEmitter
   private awsAuthClient: AwsAuth
   private opts: IGetTokenUsingIamOpts
+  private onError: (err: Error) => void
 
   constructor (
     awsAuthClient: AwsAuth,
     role: string,
-    opts: IGetTokenUsingIamOpts = {}
+    opts: IGetTokenUsingIamOpts = {},
+    onError?: (err: Error) => void
   ) {
     this.awsAuthClient = awsAuthClient
     this.role = role
     this.opts = opts
+    this.onError = onError
 
     // an event emitter is used for token refreshes, so we do not do recursive calls that would eventually
     // drain the app of memory
@@ -112,14 +137,34 @@ export class IamTokenManager {
   }
 
   private async doFetch (): Promise<ISecretAuth> {
-    const resp = await this.awsAuthClient.getTokenUsingIamLogin({
-      role: this.role,
-      stsRegion: this.opts.stsRegion,
-      credentials: await loadCredentials(),
-      iamRequestHeaders: this.opts.iamRequestHeaders
-    })
+    let resp
 
-    return resp.result.auth
+    try {
+      await retry(
+        async () => {
+          resp = await this.awsAuthClient.getTokenUsingIamLogin({
+            role: this.role,
+            stsRegion: this.opts.stsRegion,
+            credentials: await loadCredentials(),
+            iamRequestHeaders: this.opts.iamRequestHeaders
+          })
+        },
+        {
+          onRetry: err => {
+            console.error(err)
+          },
+          ...(this.opts.retryOpts || {})
+        }
+      )
+
+      return resp.result.auth
+    } catch (e) {
+      if (this.onError) {
+        this.onError(e)
+      } else {
+        console.error(e)
+      }
+    }
   }
 
   private processRes (data: ISecretAuth) {
