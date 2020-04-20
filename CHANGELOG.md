@@ -1,3 +1,7 @@
+# UNRELEASED
+
+- Improve the retry interface for IAM token helper
+
 # 0.4.1 - Mon Apr 20 2020 20:50:52
 
 - Updated IAM token helper to properly catch all errors, especially during token refresh

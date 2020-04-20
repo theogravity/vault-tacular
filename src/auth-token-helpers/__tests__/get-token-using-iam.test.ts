@@ -55,6 +55,7 @@ describe('get-token-using-iam', () => {
         auth,
         'getTokenUsingIamLogin'
       ) as jest.Mock
+
       getTokenMock.mockResolvedValue({
         result: {
           auth: {
@@ -73,6 +74,41 @@ describe('get-token-using-iam', () => {
       expect(setTimeout).toHaveBeenCalledTimes(1)
       // 1000 secs * 1000 ms / s
       expect(setTimeout).toHaveBeenLastCalledWith(expect.any(Function), 1000000)
+    })
+
+    it('should trigger retry if the API call fails', async done => {
+      const getTokenMock = jest.spyOn(
+        auth,
+        'getTokenUsingIamLogin'
+      ) as jest.Mock
+
+      getTokenMock.mockImplementation(() => {
+        throw new Error('API failure')
+      })
+
+      const manager = new IamTokenManager(
+        auth,
+        TEST_ROLE,
+        {
+          retryOpts: {
+            retries: 2,
+            randomize: false,
+            onRetry: err => {
+              // make sure the next retry executes quickly
+              jest.runAllTimers()
+              expect(err.message).toBe('API failure')
+            }
+          }
+        },
+        err => {
+          expect(err.message).toBe('API failure')
+          // initial call, then the two retries
+          expect(getTokenMock).toBeCalledTimes(3)
+          done()
+        }
+      )
+
+      await manager.getToken()
     })
   })
 })

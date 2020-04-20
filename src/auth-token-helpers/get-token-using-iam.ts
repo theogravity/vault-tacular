@@ -44,9 +44,10 @@ export interface IGetTokenUsingIamOpts {
      */
     randomize?: boolean
     /**
-     * An optional Function that is invoked after a new retry is performed. It's passed the Error that triggered it as a parameter.
+     * An optional Function that is invoked after a new retry is performed.
+     * It's passed the Error that triggered it as a parameter, with the current times retry has executed.
      */
-    onRetry?: (err: Error) => void
+    onRetry?: (err?: Error, attemptNo?: number) => void
   }
 }
 
@@ -137,12 +138,10 @@ export class IamTokenManager {
   }
 
   private async doFetch (): Promise<ISecretAuth> {
-    let resp
-
     try {
-      await retry(
+      const resp = await retry(
         async () => {
-          resp = await this.awsAuthClient.getTokenUsingIamLogin({
+          return this.awsAuthClient.getTokenUsingIamLogin({
             role: this.role,
             stsRegion: this.opts.stsRegion,
             credentials: await loadCredentials(),
@@ -150,7 +149,8 @@ export class IamTokenManager {
           })
         },
         {
-          onRetry: err => {
+          onRetry: (err, attempt) => {
+            console.log(attempt)
             console.error(err)
           },
           ...(this.opts.retryOpts || {})
