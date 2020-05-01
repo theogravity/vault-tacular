@@ -24,7 +24,9 @@
     "changelog:release": "changelog-version release",
     "lint": "prettier-standard src/**/*.ts && standard src/**/*.ts",
     "ts-node-dev": "ts-node-dev",
-    "typedoc": "typedoc --options typedoc.js --out api-docs src/"
+    "typedoc": "typedoc --options typedoc.js --out api-docs src/",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "repository": {
     "type": "git",
@@ -51,7 +53,8 @@
     "debug": "^4.1.1",
     "request": "^2.88.2",
     "request-promise-native": "^1.0.8",
-    "url-join": "^4.0.1"
+    "url-join": "^4.0.1",
+    "snyk": "^1.316.1"
   },
   "optionalDependencies": {
     "aws4": "^1.9.1",
@@ -102,5 +105,6 @@
     "lint-staged",
     "test",
     "build"
-  ]
+  ],
+  "snyk": true
 }
