@@ -133,17 +133,17 @@ execute before vault requests to fetch the token.
 ### Basic token read example
 
 ```javascript
-import { UserPassAuth } from 'vault-tacular'
+import { Kv2SecretEngine } from 'vault-tacular'
 
-const auth = new UserPassAuth('http://localhost:8200/v1', {
+const secrets = new Kv2SecretEngine('http://localhost:8200/v1', {
   authToken: 'my-token'
 })
 ```
 
 ```javascript
-import { UserPassAuth } from 'vault-tacular'
+import { Kv2SecretEngine } from 'vault-tacular'
 
-const auth = new UserPassAuth('http://localhost:8200/v1', {
+const secrets = new Kv2SecretEngine('http://localhost:8200/v1', {
   // callback function
   authToken: async () => {
     return 'my-token'
@@ -155,12 +155,30 @@ const auth = new UserPassAuth('http://localhost:8200/v1', {
 
 `vault-tacular` provides some helpers for common use-cases.
 
+#### Read a token via username / password
+
+```javascript
+import { Kv2SecretEngine, UserPassAuth, AuthTokenHelpers } from 'vault-tacular'
+
+const vaultClient = new Kv2SecretEngine('http://localhost:8200/v1', {
+  authToken: AuthTokenHelpers.getTokenUsingUserPass({
+    userPassAuthClient: new UserPassAuth('http://localhost:8200/v1'),
+    username: 'username',
+    password: 'password',
+    // number of times calling the API has been retried and failed
+    onError: (err, retryCount) => {
+      
+    }
+  })
+})
+```
+
 #### Read a token from a file
 
 ```javascript
-import { UserPassAuth, AuthTokenHelpers } from 'vault-tacular'
+import { Kv2SecretEngine, AuthTokenHelpers } from 'vault-tacular'
 
-const auth = new UserPassAuth('http://localhost:8200/v1', {
+const secrets = new Kv2SecretEngine('http://localhost:8200/v1', {
   // getTokenFromFile returns a function that when executes,
   // reads the current value from '/tmp/token'
   authToken: AuthTokenHelpers.getTokenFromFile('/tmp/token')

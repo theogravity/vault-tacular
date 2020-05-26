@@ -1,6 +1,6 @@
 {
   "name": "vault-tacular",
-  "version": "0.4.3",
+  "version": "0.5.0",
   "description": "Client for Hashicorp Vault written in Typescript with detailed documentation.",
   "main": "build/index.js",
   "types": "build/index.d.ts",
@@ -54,34 +54,34 @@
     "url-join": "^4.0.1"
   },
   "optionalDependencies": {
-    "aws4": "^1.9.1",
+    "aws4": "^1.10.0",
     "awscred": "^1.5.0"
   },
   "devDependencies": {
     "@theo.gravity/changelog-version": "^2.1.10",
     "@theo.gravity/version-bump": "^2.0.9",
     "@types/aws4": "^1.5.1",
-    "@types/jest": "^25.2.1",
+    "@types/jest": "^25.2.3",
     "@types/request-promise-native": "^1.0.17",
-    "@typescript-eslint/eslint-plugin": "^2.29.0",
-    "@typescript-eslint/parser": "^2.29.0",
+    "@typescript-eslint/eslint-plugin": "^3.0.1",
+    "@typescript-eslint/parser": "^3.0.1",
     "crypto-random-string": "^3.2.0",
-    "eslint": "^6.8.0",
-    "jest": "^25.4.0",
-    "jest-cli": "^25.4.0",
+    "eslint": "^7.1.0",
+    "jest": "^26.0.1",
+    "jest-cli": "^26.0.1",
     "jest-junit-reporter": "^1.1.0",
-    "lint-staged": "^10.1.6",
+    "lint-staged": "^10.2.6",
     "pre-commit": "^1.2.2",
-    "prettier-standard": "^16.2.1",
+    "prettier-standard": "^16.3.0",
     "regenerator-runtime": "^0.13.5",
-    "source-map-support": "^0.5.17",
-    "standard": "^14.3.3",
-    "ts-jest": "^25.4.0",
-    "ts-node": "^8.8.2",
+    "source-map-support": "^0.5.19",
+    "standard": "^14.3.4",
+    "ts-jest": "^26.0.0",
+    "ts-node": "^8.10.1",
     "ts-node-dev": "^1.0.0-pre.44",
-    "typedoc": "^0.17.4",
+    "typedoc": "^0.17.7",
     "typedoc-plugin-markdown": "^2.2.17",
-    "typescript": "^3.8.3"
+    "typescript": "^3.9.3"
   },
   "standard": {
     "ignore": [

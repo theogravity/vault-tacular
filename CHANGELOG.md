@@ -1,3 +1,10 @@
+# UNRELEASED
+
+- Built using node.js 10
+- Add `getTokenUsingUserPass()` token helper
+- Fix a bug in the helpers if the token lease time exceeds a 32-bit signed int
+- Update `IBaseClient` object references to `Record<string, any>` type
+
 # 0.4.3 - Mon Apr 20 2020 23:48:30
 
 - Remove stray `console.log` entry for retry handler in IAM token helper

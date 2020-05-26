@@ -131,6 +131,12 @@ export class IamTokenManager {
       this.refreshTimer = null
     }
 
+    // timeout exceeds 32-bit integer
+    if (secs * 1000 >= 2147483647) {
+      // set to 1 day
+      secs = 86400
+    }
+
     this.refreshTimer = setTimeout(async () => {
       const rslt = await this.doFetch()
       this.processRes(rslt)
@@ -167,9 +173,9 @@ export class IamTokenManager {
   }
 
   private processRes (data: ISecretAuth) {
-    this.token = data.client_token
+    this.token = data?.client_token
 
-    if (data.renewable) {
+    if (data?.renewable) {
       if (!this.em) {
         this.em = new EventEmitter()
 
