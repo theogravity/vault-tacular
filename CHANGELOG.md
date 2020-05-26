@@ -1,4 +1,4 @@
-# UNRELEASED
+# 0.5.1 - Tue May 26 2020 04:12:33
 
 - Built using node.js 10
 - Add `getTokenUsingUserPass()` token helper
