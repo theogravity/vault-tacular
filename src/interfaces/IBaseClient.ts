@@ -63,7 +63,7 @@ export interface ISecretAuth {
   /**
    * Metadata for the auth
    */
-  metadata: object
+  metadata: Record<string, any>
   /**
    * Policies attached to the auth
    */
@@ -80,6 +80,7 @@ export interface ISecretAuth {
   entity_id: string
   token_type: string
   orphan: boolean
+  [key: string]: any
 }
 
 /**
@@ -102,7 +103,7 @@ export interface ISecret {
   /**
    * Secret-related result
    */
-  data?: object
+  data?: Record<string, any>
   /**
    * List of warnings
    */

@@ -8,6 +8,12 @@ Auth information for the secret
 
 * **ISecretAuth**
 
+## Indexable
+
+* \[ **key**: *string*\]: any
+
+Auth information for the secret
+
 ## Index
 
 ### Properties
@@ -29,7 +35,7 @@ Auth information for the secret
 
 • **accessor**: *string*
 
-*Defined in [interfaces/IBaseClient.ts:74](https://github.com/theogravity/vault-tacular/blob/3b53ca7/src/interfaces/IBaseClient.ts#L74)*
+*Defined in [interfaces/IBaseClient.ts:74](https://github.com/theogravity/vault-tacular/blob/a3c7591/src/interfaces/IBaseClient.ts#L74)*
 
 Accessor of the token
 
@@ -39,7 +45,7 @@ ___
 
 • **client_token**: *string*
 
-*Defined in [interfaces/IBaseClient.ts:78](https://github.com/theogravity/vault-tacular/blob/3b53ca7/src/interfaces/IBaseClient.ts#L78)*
+*Defined in [interfaces/IBaseClient.ts:78](https://github.com/theogravity/vault-tacular/blob/a3c7591/src/interfaces/IBaseClient.ts#L78)*
 
 Token for this auth
 
@@ -49,7 +55,7 @@ ___
 
 • **entity_id**: *string*
 
-*Defined in [interfaces/IBaseClient.ts:80](https://github.com/theogravity/vault-tacular/blob/3b53ca7/src/interfaces/IBaseClient.ts#L80)*
+*Defined in [interfaces/IBaseClient.ts:80](https://github.com/theogravity/vault-tacular/blob/a3c7591/src/interfaces/IBaseClient.ts#L80)*
 
 ___
 
@@ -57,7 +63,7 @@ ___
 
 • **lease_duration**: *number*
 
-*Defined in [interfaces/IBaseClient.ts:62](https://github.com/theogravity/vault-tacular/blob/3b53ca7/src/interfaces/IBaseClient.ts#L62)*
+*Defined in [interfaces/IBaseClient.ts:62](https://github.com/theogravity/vault-tacular/blob/a3c7591/src/interfaces/IBaseClient.ts#L62)*
 
 Number of seconds the token is valid
 
@@ -65,9 +71,9 @@ ___
 
 ###  metadata
 
-• **metadata**: *object*
+• **metadata**: *Record‹string, any›*
 
-*Defined in [interfaces/IBaseClient.ts:66](https://github.com/theogravity/vault-tacular/blob/3b53ca7/src/interfaces/IBaseClient.ts#L66)*
+*Defined in [interfaces/IBaseClient.ts:66](https://github.com/theogravity/vault-tacular/blob/a3c7591/src/interfaces/IBaseClient.ts#L66)*
 
 Metadata for the auth
 
@@ -77,7 +83,7 @@ ___
 
 • **orphan**: *boolean*
 
-*Defined in [interfaces/IBaseClient.ts:82](https://github.com/theogravity/vault-tacular/blob/3b53ca7/src/interfaces/IBaseClient.ts#L82)*
+*Defined in [interfaces/IBaseClient.ts:82](https://github.com/theogravity/vault-tacular/blob/a3c7591/src/interfaces/IBaseClient.ts#L82)*
 
 ___
 
@@ -85,7 +91,7 @@ ___
 
 • **policies**: *Array‹string›*
 
-*Defined in [interfaces/IBaseClient.ts:70](https://github.com/theogravity/vault-tacular/blob/3b53ca7/src/interfaces/IBaseClient.ts#L70)*
+*Defined in [interfaces/IBaseClient.ts:70](https://github.com/theogravity/vault-tacular/blob/a3c7591/src/interfaces/IBaseClient.ts#L70)*
 
 Policies attached to the auth
 
@@ -95,7 +101,7 @@ ___
 
 • **renewable**: *boolean*
 
-*Defined in [interfaces/IBaseClient.ts:58](https://github.com/theogravity/vault-tacular/blob/3b53ca7/src/interfaces/IBaseClient.ts#L58)*
+*Defined in [interfaces/IBaseClient.ts:58](https://github.com/theogravity/vault-tacular/blob/a3c7591/src/interfaces/IBaseClient.ts#L58)*
 
 Is the auth renewable?
 
@@ -105,7 +111,7 @@ ___
 
 • **token_policies**: *Array‹string›*
 
-*Defined in [interfaces/IBaseClient.ts:79](https://github.com/theogravity/vault-tacular/blob/3b53ca7/src/interfaces/IBaseClient.ts#L79)*
+*Defined in [interfaces/IBaseClient.ts:79](https://github.com/theogravity/vault-tacular/blob/a3c7591/src/interfaces/IBaseClient.ts#L79)*
 
 ___
 
@@ -113,4 +119,4 @@ ___
 
 • **token_type**: *string*
 
-*Defined in [interfaces/IBaseClient.ts:81](https://github.com/theogravity/vault-tacular/blob/3b53ca7/src/interfaces/IBaseClient.ts#L81)*
+*Defined in [interfaces/IBaseClient.ts:81](https://github.com/theogravity/vault-tacular/blob/a3c7591/src/interfaces/IBaseClient.ts#L81)*
