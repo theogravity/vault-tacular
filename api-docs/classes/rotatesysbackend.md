@@ -28,7 +28,7 @@
 
 *Overrides void*
 
-*Defined in [system-backends/BaseSysBackend.ts:4](https://github.com/theogravity/vault-tacular/blob/058247d/src/system-backends/BaseSysBackend.ts#L4)*
+*Defined in [system-backends/BaseSysBackend.ts:4](https://github.com/theogravity/vault-tacular/blob/c9b4b35/src/system-backends/BaseSysBackend.ts#L4)*
 
 **Parameters:**
 
@@ -45,7 +45,7 @@ Name | Type | Description |
 
 ▸ **rotateEncryptionKey**(): *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹void››*
 
-*Defined in [system-backends/RotateSysBackend.ts:14](https://github.com/theogravity/vault-tacular/blob/058247d/src/system-backends/RotateSysBackend.ts#L14)*
+*Defined in [system-backends/RotateSysBackend.ts:14](https://github.com/theogravity/vault-tacular/blob/c9b4b35/src/system-backends/RotateSysBackend.ts#L14)*
 
 triggers a rotation of the backend encryption key. This is the key that is used to encrypt
 result written to the storage backend, and is not provided to operators. This operation is done

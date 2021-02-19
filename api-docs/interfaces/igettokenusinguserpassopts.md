@@ -22,7 +22,7 @@
 
 • **onError**: *function*
 
-*Defined in [auth-token-helpers/get-token-from-user-pass.ts:17](https://github.com/theogravity/vault-tacular/blob/058247d/src/auth-token-helpers/get-token-from-user-pass.ts#L17)*
+*Defined in [auth-token-helpers/get-token-from-user-pass.ts:17](https://github.com/theogravity/vault-tacular/blob/c9b4b35/src/auth-token-helpers/get-token-from-user-pass.ts#L17)*
 
 Called when there is an error fetching or refreshing the token
 
@@ -43,7 +43,7 @@ ___
 
 • **password**: *string*
 
-*Defined in [auth-token-helpers/get-token-from-user-pass.ts:13](https://github.com/theogravity/vault-tacular/blob/058247d/src/auth-token-helpers/get-token-from-user-pass.ts#L13)*
+*Defined in [auth-token-helpers/get-token-from-user-pass.ts:13](https://github.com/theogravity/vault-tacular/blob/c9b4b35/src/auth-token-helpers/get-token-from-user-pass.ts#L13)*
 
 ___
 
@@ -51,7 +51,7 @@ ___
 
 • **retryOpts**? : *object*
 
-*Defined in [auth-token-helpers/get-token-from-user-pass.ts:21](https://github.com/theogravity/vault-tacular/blob/058247d/src/auth-token-helpers/get-token-from-user-pass.ts#L21)*
+*Defined in [auth-token-helpers/get-token-from-user-pass.ts:21](https://github.com/theogravity/vault-tacular/blob/c9b4b35/src/auth-token-helpers/get-token-from-user-pass.ts#L21)*
 
 async-retry options when token fetch fails
 
@@ -73,7 +73,7 @@ ___
 
 • **userPassAuthClient**: *[UserPassAuth](../classes/userpassauth.md)*
 
-*Defined in [auth-token-helpers/get-token-from-user-pass.ts:11](https://github.com/theogravity/vault-tacular/blob/058247d/src/auth-token-helpers/get-token-from-user-pass.ts#L11)*
+*Defined in [auth-token-helpers/get-token-from-user-pass.ts:11](https://github.com/theogravity/vault-tacular/blob/c9b4b35/src/auth-token-helpers/get-token-from-user-pass.ts#L11)*
 
 Instance of a configured UserPassAuth
 
@@ -83,4 +83,4 @@ ___
 
 • **username**: *string*
 
-*Defined in [auth-token-helpers/get-token-from-user-pass.ts:12](https://github.com/theogravity/vault-tacular/blob/058247d/src/auth-token-helpers/get-token-from-user-pass.ts#L12)*
+*Defined in [auth-token-helpers/get-token-from-user-pass.ts:12](https://github.com/theogravity/vault-tacular/blob/c9b4b35/src/auth-token-helpers/get-token-from-user-pass.ts#L12)*

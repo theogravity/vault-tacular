@@ -1,4 +1,4 @@
-# UNRELEASED
+# 0.5.2 - Fri Feb 19 2021 21:22:20
 
 - Add support for an optional credentials function in `get-token-using-iam.ts`
 

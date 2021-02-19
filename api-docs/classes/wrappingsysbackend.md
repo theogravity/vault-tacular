@@ -31,7 +31,7 @@
 
 *Overrides void*
 
-*Defined in [system-backends/BaseSysBackend.ts:4](https://github.com/theogravity/vault-tacular/blob/058247d/src/system-backends/BaseSysBackend.ts#L4)*
+*Defined in [system-backends/BaseSysBackend.ts:4](https://github.com/theogravity/vault-tacular/blob/c9b4b35/src/system-backends/BaseSysBackend.ts#L4)*
 
 **Parameters:**
 
@@ -48,7 +48,7 @@ Name | Type | Description |
 
 ▸ **lookup**(`token`: string): *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹[ILookupResponse](../globals.md#ilookupresponse)››*
 
-*Defined in [system-backends/WrappingSysBackend.ts:17](https://github.com/theogravity/vault-tacular/blob/058247d/src/system-backends/WrappingSysBackend.ts#L17)*
+*Defined in [system-backends/WrappingSysBackend.ts:17](https://github.com/theogravity/vault-tacular/blob/c9b4b35/src/system-backends/WrappingSysBackend.ts#L17)*
 
 Looks up wrapping properties for the given token.
 
@@ -68,7 +68,7 @@ ___
 
 ▸ **rewrap**(`token`: string): *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹[IRewrapResponse](../globals.md#irewrapresponse)››*
 
-*Defined in [system-backends/WrappingSysBackend.ts:47](https://github.com/theogravity/vault-tacular/blob/058247d/src/system-backends/WrappingSysBackend.ts#L47)*
+*Defined in [system-backends/WrappingSysBackend.ts:47](https://github.com/theogravity/vault-tacular/blob/c9b4b35/src/system-backends/WrappingSysBackend.ts#L47)*
 
 Rewraps a response-wrapped token. The new token will use the same creation TTL as the
 original token and contain the same response. The old token will be invalidated.
@@ -91,7 +91,7 @@ ___
 
 ▸ **unwrap**(`token?`: string): *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹[IUnwrapResponse](../globals.md#iunwrapresponse)››*
 
-*Defined in [system-backends/WrappingSysBackend.ts:85](https://github.com/theogravity/vault-tacular/blob/058247d/src/system-backends/WrappingSysBackend.ts#L85)*
+*Defined in [system-backends/WrappingSysBackend.ts:85](https://github.com/theogravity/vault-tacular/blob/c9b4b35/src/system-backends/WrappingSysBackend.ts#L85)*
 
 Returns the original response inside the given wrapping token. Unlike simply reading
 cubbyhole/response (which is deprecated), this endpoint provides additional validation
@@ -121,7 +121,7 @@ ___
 
 ▸ **wrap**(`wrapTtl`: number | string, `payload`: [IWrapPayload](../globals.md#iwrappayload)): *Promise‹[IVaultResponse](../interfaces/ivaultresponse.md)‹[IWrapResponse](../globals.md#iwrapresponse)››*
 
-*Defined in [system-backends/WrappingSysBackend.ts:116](https://github.com/theogravity/vault-tacular/blob/058247d/src/system-backends/WrappingSysBackend.ts#L116)*
+*Defined in [system-backends/WrappingSysBackend.ts:116](https://github.com/theogravity/vault-tacular/blob/c9b4b35/src/system-backends/WrappingSysBackend.ts#L116)*
 
 wraps the given user-supplied result inside a response-wrapped token.
 
