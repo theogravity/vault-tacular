@@ -1,3 +1,7 @@
+# UNRELEASED
+
+- Add support for an optional credentials function in `get-token-using-iam.ts`
+
 # 0.5.1 - Tue May 26 2020 04:12:33
 
 - Built using node.js 10
