@@ -20,6 +20,11 @@ export interface IGetTokenUsingIamOpts {
   }
 
   /**
+   * Optional function for injecting credentials instead of loading credentials through the awscred library 
+   */
+  credentialFunc?: () => Promise<IAwsAuth.IAwsCredentials>
+
+  /**
    * async-retry options when token fetch fails
    */
   retryOpts?: {
@@ -150,7 +155,7 @@ export class IamTokenManager {
           return this.awsAuthClient.getTokenUsingIamLogin({
             role: this.role,
             stsRegion: this.opts.stsRegion,
-            credentials: await loadCredentials(),
+            credentials: this.opts.credentialFunc ? await this.opts.credentialFunc() : await loadCredentials(),
             iamRequestHeaders: this.opts.iamRequestHeaders
           })
         },
