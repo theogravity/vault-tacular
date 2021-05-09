@@ -26,7 +26,7 @@
 
 \+ **new UserPassTokenManager**(`params`: [IGetTokenUsingUserPassOpts](../interfaces/igettokenusinguserpassopts.md)): *[UserPassTokenManager](userpasstokenmanager.md)*
 
-*Defined in [auth-token-helpers/get-token-from-user-pass.ts:63](https://github.com/theogravity/vault-tacular/blob/c9b4b35/src/auth-token-helpers/get-token-from-user-pass.ts#L63)*
+*Defined in [auth-token-helpers/get-token-from-user-pass.ts:63](https://github.com/theogravity/vault-tacular/blob/126b0b1/src/auth-token-helpers/get-token-from-user-pass.ts#L63)*
 
 **Parameters:**
 
@@ -42,7 +42,7 @@ Name | Type |
 
 • **params**: *[IGetTokenUsingUserPassOpts](../interfaces/igettokenusinguserpassopts.md)*
 
-*Defined in [auth-token-helpers/get-token-from-user-pass.ts:59](https://github.com/theogravity/vault-tacular/blob/c9b4b35/src/auth-token-helpers/get-token-from-user-pass.ts#L59)*
+*Defined in [auth-token-helpers/get-token-from-user-pass.ts:59](https://github.com/theogravity/vault-tacular/blob/126b0b1/src/auth-token-helpers/get-token-from-user-pass.ts#L59)*
 
 ## Methods
 
@@ -50,6 +50,6 @@ Name | Type |
 
 ▸ **getToken**(): *Promise‹string›*
 
-*Defined in [auth-token-helpers/get-token-from-user-pass.ts:75](https://github.com/theogravity/vault-tacular/blob/c9b4b35/src/auth-token-helpers/get-token-from-user-pass.ts#L75)*
+*Defined in [auth-token-helpers/get-token-from-user-pass.ts:75](https://github.com/theogravity/vault-tacular/blob/126b0b1/src/auth-token-helpers/get-token-from-user-pass.ts#L75)*
 
 **Returns:** *Promise‹string›*

@@ -21,7 +21,7 @@
 
 • **credentialFunc**? : *function*
 
-*Defined in [auth-token-helpers/get-token-using-iam.ts:25](https://github.com/theogravity/vault-tacular/blob/c9b4b35/src/auth-token-helpers/get-token-using-iam.ts#L25)*
+*Defined in [auth-token-helpers/get-token-using-iam.ts:25](https://github.com/theogravity/vault-tacular/blob/126b0b1/src/auth-token-helpers/get-token-using-iam.ts#L25)*
 
 Optional function for injecting credentials instead of loading credentials through the awscred library
 
@@ -35,7 +35,7 @@ ___
 
 • **iamRequestHeaders**? : *object*
 
-*Defined in [auth-token-helpers/get-token-using-iam.ts:18](https://github.com/theogravity/vault-tacular/blob/c9b4b35/src/auth-token-helpers/get-token-using-iam.ts#L18)*
+*Defined in [auth-token-helpers/get-token-using-iam.ts:18](https://github.com/theogravity/vault-tacular/blob/126b0b1/src/auth-token-helpers/get-token-using-iam.ts#L18)*
 
 Additional headers to pass / encode for the aws sts:GetCallerIdentity call
 This could include the Vault-AWS-IAM-Server-ID header that may be required by certain
@@ -51,7 +51,7 @@ ___
 
 • **retryOpts**? : *object*
 
-*Defined in [auth-token-helpers/get-token-using-iam.ts:30](https://github.com/theogravity/vault-tacular/blob/c9b4b35/src/auth-token-helpers/get-token-using-iam.ts#L30)*
+*Defined in [auth-token-helpers/get-token-using-iam.ts:30](https://github.com/theogravity/vault-tacular/blob/126b0b1/src/auth-token-helpers/get-token-using-iam.ts#L30)*
 
 async-retry options when token fetch fails
 
@@ -77,7 +77,7 @@ ___
 
 • **stsRegion**? : *string*
 
-*Defined in [auth-token-helpers/get-token-using-iam.ts:12](https://github.com/theogravity/vault-tacular/blob/c9b4b35/src/auth-token-helpers/get-token-using-iam.ts#L12)*
+*Defined in [auth-token-helpers/get-token-using-iam.ts:12](https://github.com/theogravity/vault-tacular/blob/126b0b1/src/auth-token-helpers/get-token-using-iam.ts#L12)*
 
 AWS STS region. Used to resolve the STS url. No definition will result in the final STS url of
 'https://sts.amazonaws.com/' (with the aws4 lib region defaulting as 'us-east-1')
